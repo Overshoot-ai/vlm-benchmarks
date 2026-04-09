@@ -4,6 +4,14 @@ A comprehensive, auto-updating catalog of **3,019 benchmarks** for evaluating Vi
 
 Updated daily via automated arXiv scanning.
 
+<p align="center">
+  <img src="assets/timeline.svg" alt="Benchmarks by quarter" width="700"/>
+</p>
+
+<p align="center">
+  <img src="assets/categories.svg" alt="Benchmarks by category" width="520"/>
+</p>
+
 ## Data
 
 Available in two formats:
