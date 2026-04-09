@@ -5,11 +5,11 @@ A comprehensive, auto-updating catalog of **3,019 benchmarks** for evaluating Vi
 Updated daily via automated arXiv scanning.
 
 <p align="center">
-  <img src="assets/timeline.svg" alt="Benchmarks by quarter" width="700"/>
+  <img src="assets/timeline.png" alt="Benchmarks by quarter"/>
 </p>
 
 <p align="center">
-  <img src="assets/categories.svg" alt="Benchmarks by category" width="520"/>
+  <img src="assets/categories.png" alt="Benchmarks by category"/>
 </p>
 
 ## Data
@@ -53,30 +53,7 @@ has_data = [b for b in benchmarks if b["repo_links"]]
 
 ## Categories
 
-| Category | Count |
-|----------|-------|
-| General Multimodal | 307 |
-| Visual Reasoning | 298 |
-| Video Understanding | 219 |
-| Medical | 210 |
-| Safety & Bias | 191 |
-| Egocentric & Embodied | 189 |
-| Spatial & 3D | 144 |
-| Math & Science | 118 |
-| Document & OCR | 106 |
-| GUI & Web Agents | 90 |
-| Audio-Visual | 81 |
-| Geospatial | 74 |
-| Hallucination | 68 |
-| Temporal Reasoning | 66 |
-| Grounding & Localization | 59 |
-| Chart & Figure | 56 |
-| Long Video | 52 |
-| Quality & Aesthetics | 49 |
-| Multi-Image | 22 |
-| Video Hallucination | 19 |
-| Streaming Video | 14 |
-| Other | 587 |
+22 categories spanning general multimodal, visual reasoning, video understanding, medical, safety, spatial, document/OCR, and more. See the dotstrip chart above for the full breakdown.
 
 ## How it works
 
