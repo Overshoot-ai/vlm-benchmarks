@@ -1,20 +1,27 @@
 """
 Daily scanner: queries arXiv for new VLM benchmark papers,
-classifies them, extracts repo links, and appends to data/benchmarks.json.
+classifies them, extracts repo links, appends to data/benchmarks.json,
+and syncs new entries to Supabase.
 """
 
 import arxiv
 import anthropic
+import csv
 import json
 import os
 import re
 import time
 import urllib.request
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 BENCHMARKS_FILE = DATA_DIR / "benchmarks.json"
 SEEN_FILE = DATA_DIR / "seen_ids.json"
+
+SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://xffdlyzkioroekuzpocg.supabase.co")
+SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "")
+OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 
 QUERIES = [
     'ti:"benchmark" AND abs:("vision language model" OR "VLM")',
@@ -48,9 +55,13 @@ JUNK = [
     'github.com/features', 'github.com/pricing', 'github.com/login', 'github.com/signup',
 ]
 
-CLASSIFY_PROMPT = """You will receive arXiv papers. For each, determine if it introduces a NEW benchmark/dataset for evaluating VLMs/MLLMs/Video-LLMs. The benchmark must be the PRIMARY contribution.
+CLASSIFY_PROMPT = """You will receive arXiv papers. For each, determine if it introduces a NEW benchmark/dataset for evaluating VLMs/MLLMs/Video-LLMs. The benchmark must be the PRIMARY contribution and must require VISUAL input (images, video, etc.).
 
-For benchmarks, respond with JSON:
+Answer NO if: the paper just proposes a model, is a survey, is text-only/audio-only, or the benchmark doesn't require visual input.
+
+Also extract any URLs from the abstract that point to the benchmark's project page, code, or dataset.
+
+For each paper, respond with JSON:
 - "arxiv_id": echo back
 - "is_benchmark": true/false
 - "benchmark_name": name or null
@@ -59,6 +70,7 @@ For benchmarks, respond with JSON:
 - "description": 2-3 sentence summary of what makes it unique
 - "task_types": list if mentioned, else null
 - "modalities": list, else null
+- "urls": list of project/repo/data URLs found in abstract, else []
 
 Return ONLY a JSON array."""
 
@@ -73,6 +85,10 @@ def extract_urls(text):
 def load_seen():
     if SEEN_FILE.exists():
         return set(json.loads(SEEN_FILE.read_text()))
+    # Bootstrap from existing benchmarks.json so we never re-add old papers
+    if BENCHMARKS_FILE.exists():
+        existing = json.loads(BENCHMARKS_FILE.read_text())
+        return {b["arxiv_id"] for b in existing}
     return set()
 
 
@@ -84,11 +100,16 @@ def fetch_papers(seen):
     client = arxiv.Client(page_size=50, delay_seconds=5.0, num_retries=5)
     papers = []
     new_ids = set()
+    cutoff = datetime.now(timezone.utc) - timedelta(days=5)
 
     for query in QUERIES:
         search = arxiv.Search(query=query, max_results=50, sort_by=arxiv.SortCriterion.SubmittedDate)
         try:
             for r in client.results(search):
+                # Skip papers older than 5 days
+                if r.published < cutoff:
+                    break
+
                 aid = r.entry_id.split("/abs/")[-1].split("v")[0]
                 if aid in seen or aid in new_ids:
                     continue
@@ -144,6 +165,10 @@ def classify(papers):
             for r in results:
                 if r.get("is_benchmark"):
                     paper = next((p for p in batch if p["arxiv_id"] == r["arxiv_id"]), {})
+                    # Merge URLs from regex + LLM extraction
+                    all_urls = list(dict.fromkeys(
+                        (paper.get("repo_links") or []) + (r.get("urls") or [])
+                    ))
                     benchmarks.append({
                         "benchmark_name": r.get("benchmark_name"),
                         "category": r.get("category", "other"),
@@ -151,7 +176,7 @@ def classify(papers):
                         "modalities": r.get("modalities") or [],
                         "task_types": r.get("task_types") or [],
                         "description": r.get("description"),
-                        "repo_links": paper.get("repo_links", []),
+                        "repo_links": all_urls,
                         "paper_title": paper.get("title"),
                         "arxiv_id": paper.get("arxiv_id"),
                         "arxiv_url": paper.get("url"),
@@ -184,6 +209,78 @@ def find_missing_links(benchmarks):
             continue
 
 
+def sync_to_supabase(added):
+    """Insert new benchmarks into Supabase with embeddings."""
+    if not added or not SUPABASE_KEY or not OPENROUTER_KEY:
+        if not SUPABASE_KEY:
+            print("Skipping Supabase sync: no SUPABASE_SERVICE_KEY")
+        if not OPENROUTER_KEY:
+            print("Skipping Supabase sync: no OPENROUTER_API_KEY")
+        return
+
+    import httpx
+
+    # Generate embeddings
+    texts = [
+        f"{b.get('benchmark_name') or ''}. {b.get('category') or ''}. {b.get('description') or ''}".strip()
+        for b in added
+    ]
+
+    try:
+        resp = httpx.post(
+            "https://openrouter.ai/api/v1/embeddings",
+            headers={"Authorization": f"Bearer {OPENROUTER_KEY}"},
+            json={"model": "openai/text-embedding-3-large", "input": texts},
+            timeout=60,
+        )
+        if resp.status_code != 200:
+            print(f"Embedding error: {resp.status_code} {resp.text[:200]}")
+            return
+        embeddings = [e["embedding"] for e in resp.json()["data"]]
+    except Exception as e:
+        print(f"Embedding error: {e}")
+        return
+
+    # Insert into Supabase via REST API
+    headers = {
+        "apikey": SUPABASE_KEY,
+        "Authorization": f"Bearer {SUPABASE_KEY}",
+        "Content-Type": "application/json",
+        "Prefer": "resolution=ignore-duplicates",
+    }
+
+    for b, emb in zip(added, embeddings):
+        row = {
+            "benchmark_name": b.get("benchmark_name"),
+            "category": b.get("category"),
+            "num_samples": b.get("num_samples"),
+            "modalities": b.get("modalities") or [],
+            "task_types": b.get("task_types") or [],
+            "description": b.get("description"),
+            "repo_links": b.get("repo_links") or [],
+            "paper_title": b.get("paper_title"),
+            "arxiv_id": b.get("arxiv_id"),
+            "arxiv_url": b.get("arxiv_url"),
+            "published": b.get("published"),
+            "authors": b.get("authors") or [],
+            "embed_text": texts[added.index(b)],
+            "embedding": str(emb),
+        }
+        try:
+            r = httpx.post(
+                f"{SUPABASE_URL}/rest/v1/benchmarks",
+                headers=headers,
+                json=row,
+                timeout=10,
+            )
+            if r.status_code not in (200, 201, 409):
+                print(f"Supabase insert error for {b.get('arxiv_id')}: {r.status_code} {r.text[:100]}")
+        except Exception as e:
+            print(f"Supabase insert error: {e}")
+
+    print(f"Synced {len(added)} benchmarks to Supabase")
+
+
 def main():
     seen = load_seen()
     print(f"Previously seen: {len(seen)}")
@@ -196,7 +293,7 @@ def main():
 
     find_missing_links(benchmarks)
 
-    # Append to existing
+    # Append to existing JSON
     existing = json.loads(BENCHMARKS_FILE.read_text()) if BENCHMARKS_FILE.exists() else []
     existing_ids = {b["arxiv_id"] for b in existing}
     added = [b for b in benchmarks if b["arxiv_id"] not in existing_ids]
@@ -206,6 +303,9 @@ def main():
         existing.sort(key=lambda x: x.get("category", ""))
         BENCHMARKS_FILE.write_text(json.dumps(existing, indent=2, ensure_ascii=False))
         print(f"Added {len(added)} benchmarks. Total: {len(existing)}")
+
+        # Sync to Supabase
+        sync_to_supabase(added)
     else:
         print("No new benchmarks to add.")
 
@@ -213,8 +313,7 @@ def main():
     seen.update(p["arxiv_id"] for p in papers)
     save_seen(seen)
 
-    # Also update CSV
-    import csv
+    # Update CSV
     csv_file = DATA_DIR / "benchmarks.csv"
     with open(csv_file, "w", newline="") as f:
         w = csv.writer(f)

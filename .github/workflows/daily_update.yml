@@ -18,11 +18,13 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install arxiv anthropic matplotlib numpy
+        run: pip install arxiv anthropic matplotlib numpy httpx
 
       - name: Scan for new benchmarks
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: python scripts/scan.py
 
       - name: Update README stats
