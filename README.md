@@ -4,6 +4,8 @@ A comprehensive, auto-updating catalog of **2,726 benchmarks** for evaluating Vi
 
 Updated daily via automated arXiv scanning.
 
+**[Search all benchmarks →](https://vlm-benchmarks-search.vercel.app)**
+
 <p align="center">
   <img src="assets/timeline.png" alt="Benchmarks by quarter"/>
 </p>
