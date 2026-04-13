@@ -48858,6 +48858,58 @@
     ]
   },
   {
+    "benchmark_name": "MARINER",
+    "category": "other",
+    "num_samples": 16629,
+    "modalities": [
+      "images"
+    ],
+    "task_types": [
+      "fine-grained classification",
+      "object detection",
+      "visual question answering"
+    ],
+    "description": "A comprehensive maritime benchmark built under the Entity-Environment-Event (3E) paradigm with 63 fine-grained vessel categories and 5 dynamic maritime incidents. It covers classification, detection, and VQA tasks in open-water environments to evaluate fine-grained visual understanding and reasoning in maritime scenes.",
+    "repo_links": [
+      "https://lxixim.github.io/MARINER"
+    ],
+    "paper_title": "MARINER: A 3E-Driven Benchmark for Fine-Grained Perception and Complex Reasoning in Open-Water Environments",
+    "arxiv_id": "2604.08615",
+    "arxiv_url": "http://arxiv.org/abs/2604.08615v1",
+    "published": "2026-04-09",
+    "authors": [
+      "Xingming Liao",
+      "Ning Chen",
+      "Muying Shu",
+      "Yunpeng Yin",
+      "Peijian Zeng"
+    ]
+  },
+  {
+    "benchmark_name": "HM-Bench",
+    "category": "other",
+    "num_samples": 19337,
+    "modalities": [
+      "hyperspectral images"
+    ],
+    "task_types": [],
+    "description": "The first benchmark designed specifically to evaluate multimodal large language models in hyperspectral image understanding. It features a dual-modality evaluation framework that transforms HSI data into PCA-based composite images and structured textual reports across 13 task categories.",
+    "repo_links": [
+      "https://github.com/HuoRiLi-Yu/HM-Bench"
+    ],
+    "paper_title": "HM-Bench: A Comprehensive Benchmark for Multimodal Large Language Models in Hyperspectral Remote Sensing",
+    "arxiv_id": "2604.08884",
+    "arxiv_url": "http://arxiv.org/abs/2604.08884v1",
+    "published": "2026-04-10",
+    "authors": [
+      "Xinyu Zhang",
+      "Zurong Mai",
+      "Qingmei Li",
+      "Zjin Liao",
+      "Yibin Wen"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -54729,6 +54781,33 @@
     ]
   },
   {
+    "benchmark_name": "Phone-Harm",
+    "category": "safety_bias",
+    "num_samples": null,
+    "modalities": [
+      "images"
+    ],
+    "task_types": [
+      "safety violation detection",
+      "harm assessment"
+    ],
+    "description": "A new benchmark of mobile safety violations with step-level harm labels under real-world settings. It evaluates safety violations in mobile GUI automation tasks to assess the risk of harmful actions by vision-language models.",
+    "repo_links": [
+      "cora-agent.github.io"
+    ],
+    "paper_title": "CORA: Conformal Risk-Controlled Agents for Safeguarded Mobile GUI Automation",
+    "arxiv_id": "2604.09155",
+    "arxiv_url": "http://arxiv.org/abs/2604.09155v1",
+    "published": "2026-04-10",
+    "authors": [
+      "Yushi Feng",
+      "Junye Du",
+      "Qifan Wang",
+      "Zizhan Ma",
+      "Qian Niu"
+    ]
+  },
+  {
     "benchmark_name": "SRBench",
     "category": "spatial_3d",
     "num_samples": null,
@@ -58611,6 +58690,33 @@
       "Yuchen Deng",
       "Haibin Ling",
       "Bingyao Huang"
+    ]
+  },
+  {
+    "benchmark_name": "AssemBench",
+    "category": "spatial_3d",
+    "num_samples": 900000,
+    "modalities": [
+      "point clouds",
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "6D pose reasoning",
+      "assembly task prediction"
+    ],
+    "description": "A large-scale dataset and benchmark for assembly-oriented spatial reasoning with precise 6D pose annotations. It extends spatial reasoning evaluation beyond 2D into full 3D geometric inference for robotic assembly tasks.",
+    "repo_links": [],
+    "paper_title": "AssemLM: Spatial Reasoning Multimodal Large Language Models for Robotic Assembly",
+    "arxiv_id": "2604.08983",
+    "arxiv_url": "http://arxiv.org/abs/2604.08983v1",
+    "published": "2026-04-10",
+    "authors": [
+      "Zhi Jing",
+      "Jinbin Qiao",
+      "Ouyang Lu",
+      "Jicong Ao",
+      "Shuang Qiu"
     ]
   },
   {
@@ -67156,6 +67262,60 @@
       "Long Zhao",
       "Hao Zhou",
       "Yin Cui"
+    ]
+  },
+  {
+    "benchmark_name": "PinpointQA",
+    "category": "video_understanding",
+    "num_samples": 10094,
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "Target Presence Verification",
+      "Nearest Reference Identification",
+      "Fine-Grained Spatial Description",
+      "Structured Spatial Prediction"
+    ],
+    "description": "The first dataset and benchmark for small object-centric spatial understanding in indoor videos, built from ScanNet++ and ScanNet200. It comprises four progressively challenging tasks to evaluate whether models can localize target objects in video with sufficient precision for downstream use.",
+    "repo_links": [
+      "https://rainchowz.github.io/PinpointQA"
+    ],
+    "paper_title": "PinpointQA: A Dataset and Benchmark for Small Object-Centric Spatial Understanding in Indoor Videos",
+    "arxiv_id": "2604.08991",
+    "arxiv_url": "http://arxiv.org/abs/2604.08991v1",
+    "published": "2026-04-10",
+    "authors": [
+      "Zhiyu Zhou",
+      "Peilin Liu",
+      "Ruoxuan Zhang",
+      "Luyang Zhang",
+      "Cheng Zhang"
+    ]
+  },
+  {
+    "benchmark_name": "SiMing-Bench",
+    "category": "video_understanding",
+    "num_samples": null,
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "procedural judgment",
+      "process-level assessment"
+    ],
+    "description": "The first benchmark for evaluating procedural correctness from continuous interactions in clinical skill videos. It targets rubric-grounded process-level judgment using full-length clinical examination videos spanning cardiopulmonary resuscitation, automated external defibrillator operation, and bag-mask ventilation.",
+    "repo_links": [],
+    "paper_title": "SiMing-Bench: Evaluating Procedural Correctness from Continuous Interactions in Clinical Skill Videos",
+    "arxiv_id": "2604.09037",
+    "arxiv_url": "http://arxiv.org/abs/2604.09037v1",
+    "published": "2026-04-10",
+    "authors": [
+      "Xiyang Huang",
+      "Jiawei Lin",
+      "Keying Wu",
+      "Jiaxin Huang",
+      "Kailai Yang"
     ]
   },
   {
