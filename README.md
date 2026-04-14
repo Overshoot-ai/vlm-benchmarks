@@ -4,7 +4,11 @@ A comprehensive, auto-updating catalog of **2,732 benchmarks** for evaluating Vi
 
 Updated daily via automated arXiv scanning.
 
-**[Search all benchmarks →](https://vlm-benchmarks-search.vercel.app)**
+<p align="center">
+  <a href="https://vlm-benchmarks-search.vercel.app">
+    <img src="https://img.shields.io/badge/Search%20all%20benchmarks-vlm--benchmarks--search.vercel.app-6366f1?style=for-the-badge&logo=searchengineshortcuts&logoColor=white" alt="Search all benchmarks"/>
+  </a>
+</p>
 
 <p align="center">
   <img src="assets/timeline.png" alt="Benchmarks by quarter"/>
