@@ -19561,6 +19561,34 @@
     ]
   },
   {
+    "benchmark_name": "MR²Bench",
+    "category": "general_multimodal",
+    "num_samples": 94000,
+    "modalities": [
+      "images",
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "reward modeling",
+      "preference learning",
+      "video question answering"
+    ],
+    "description": "Two new benchmarks for multi-response reward evaluation: MR²Bench-Image with human-annotated rankings over 8 model responses, and MR²Bench-Video derived from 94K crowdsourced pairwise human judgments over video question-answering spanning 19 models.",
+    "repo_links": [],
+    "paper_title": "You Only Judge Once: Multi-response Reward Modeling in a Single Forward Pass",
+    "arxiv_id": "2604.10966",
+    "arxiv_url": "http://arxiv.org/abs/2604.10966v1",
+    "published": "2026-04-13",
+    "authors": [
+      "Yinuo Yang",
+      "Zixian Ma",
+      "Manasi Ganti",
+      "Jieyu Zhang",
+      "Ranjay Krishna"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -28826,6 +28854,31 @@
     ]
   },
   {
+    "benchmark_name": "LVSum",
+    "category": "long_video",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "video summarization",
+      "temporal reasoning"
+    ],
+    "description": "A human-annotated benchmark for evaluating long video summarization with fine-grained temporal alignment. Features diverse long-form videos across 13 domains with human-generated summaries containing precise temporal references.",
+    "repo_links": [],
+    "paper_title": "LVSum: A Benchmark for Timestamp-Aware Long Video Summarization",
+    "arxiv_id": "2604.10024",
+    "arxiv_url": "http://arxiv.org/abs/2604.10024v1",
+    "published": "2026-04-11",
+    "authors": [
+      "Alkesh Patel",
+      "Melis Ozyildirim",
+      "Ying-Chang Cheng",
+      "Ganesh Nagarajan"
+    ]
+  },
+  {
     "benchmark_name": "DynaMath",
     "category": "math_science",
     "num_samples": 501,
@@ -36906,6 +36959,92 @@
       "Yifan Zhu",
       "Zijun Yu",
       "Qicen Wu"
+    ]
+  },
+  {
+    "benchmark_name": "GazeVaLM",
+    "category": "medical",
+    "num_samples": 960,
+    "modalities": [
+      "medical images",
+      "eye tracking",
+      "text"
+    ],
+    "task_types": [
+      "diagnostic assessment",
+      "authenticity detection",
+      "visual turing test"
+    ],
+    "description": "An eye-tracking dataset comprising 960 gaze recordings from 16 expert radiologists interpreting real and AI-generated chest X-rays. Includes raw gaze data, fixation maps, diagnostic labels, and enables human-AI comparison in medical image authenticity assessment.",
+    "repo_links": [
+      "https://huggingface.co/datasets/davidcwong/GazeVaLM"
+    ],
+    "paper_title": "GazeVaLM: A Multi-Observer Eye-Tracking Benchmark for Evaluating Clinical Realism in AI-Generated X-Rays",
+    "arxiv_id": "2604.11653",
+    "arxiv_url": "http://arxiv.org/abs/2604.11653v1",
+    "published": "2026-04-13",
+    "authors": [
+      "David Wong",
+      "Zeynep Isik",
+      "Bin Wang",
+      "Marouane Tliba",
+      "Gorkem Durak"
+    ]
+  },
+  {
+    "benchmark_name": "MMRareBench",
+    "category": "medical",
+    "num_samples": 1756,
+    "modalities": [
+      "medical images",
+      "text"
+    ],
+    "task_types": [
+      "diagnosis",
+      "treatment planning",
+      "cross-image evidence alignment",
+      "examination suggestion"
+    ],
+    "description": "The first rare-disease benchmark evaluating multimodal and multi-image clinical capability across four tracks: diagnosis, treatment planning, cross-image evidence alignment, and examination suggestion. Comprises 1,756 question-answer pairs with 7,958 associated medical images from PMC case reports.",
+    "repo_links": [],
+    "paper_title": "MMRareBench: A Rare-Disease Multimodal and Multi-Image Medical Benchmark",
+    "arxiv_id": "2604.10755",
+    "arxiv_url": "http://arxiv.org/abs/2604.10755v1",
+    "published": "2026-04-12",
+    "authors": [
+      "Junzhi Ning",
+      "Jiashi Lin",
+      "Yingying Fang",
+      "Wei Li",
+      "Jiyao Liu"
+    ]
+  },
+  {
+    "benchmark_name": "ReXSonoVQA",
+    "category": "medical",
+    "num_samples": 514,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "video question answering",
+      "action-goal reasoning",
+      "artifact resolution",
+      "procedure planning"
+    ],
+    "description": "A video QA benchmark with 514 video clips and 514 questions targeting procedure-centric ultrasound understanding. Focuses on three competencies: Action-Goal Reasoning, Artifact Resolution & Optimization, and Procedure Context & Planning.",
+    "repo_links": [],
+    "paper_title": "ReXSonoVQA: A Video QA Benchmark for Procedure-Centric Ultrasound Understanding",
+    "arxiv_id": "2604.10916",
+    "arxiv_url": "http://arxiv.org/abs/2604.10916v1",
+    "published": "2026-04-13",
+    "authors": [
+      "Xucheng Wang",
+      "Xiaoman Zhang",
+      "Sung Eun Kim",
+      "Ankit Pal",
+      "Pranav Rajpurkar"
     ]
   },
   {
@@ -48910,6 +49049,92 @@
     ]
   },
   {
+    "benchmark_name": "CARTBENCH",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "recognition",
+      "reasoning",
+      "appreciation",
+      "authenticity discrimination"
+    ],
+    "description": "A museum-grounded benchmark for evaluating vision-language models on Chinese artworks beyond short-form recognition. Comprises four subtasks including evidence-grounded reasoning, expert-style appreciation, reinterpretation, and authenticity discrimination across Palace Museum objects.",
+    "repo_links": [],
+    "paper_title": "CArtBench: Evaluating Vision-Language Models on Chinese Art Understanding, Interpretation, and Authenticity",
+    "arxiv_id": "2604.11632",
+    "arxiv_url": "http://arxiv.org/abs/2604.11632v1",
+    "published": "2026-04-13",
+    "authors": [
+      "Xuefeng Wei",
+      "Zhixuan Wang",
+      "Xuan Zhou",
+      "Zhi Qu",
+      "Hongyao Li"
+    ]
+  },
+  {
+    "benchmark_name": "DiningBench",
+    "category": "other",
+    "num_samples": 3021,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "fine-grained classification",
+      "nutrition estimation",
+      "visual question answering"
+    ],
+    "description": "A hierarchical, multi-view benchmark for evaluating VLMs in the dietary domain across three cognitive complexity levels: Fine-Grained Classification, Nutrition Estimation, and Visual Question Answering. Comprises 3,021 distinct dishes with an average of 5.27 images per entry.",
+    "repo_links": [
+      "https://github.com/meituan/DiningBench"
+    ],
+    "paper_title": "DiningBench: A Hierarchical Multi-view Benchmark for Perception and Reasoning in the Dietary Domain",
+    "arxiv_id": "2604.10425",
+    "arxiv_url": "http://arxiv.org/abs/2604.10425v1",
+    "published": "2026-04-12",
+    "authors": [
+      "Song Jin",
+      "Juntian Zhang",
+      "Xun Zhang",
+      "Zeying Tian",
+      "Fei Jiang"
+    ]
+  },
+  {
+    "benchmark_name": "PlantXpert",
+    "category": "other",
+    "num_samples": 3000,
+    "modalities": [
+      "UAV images",
+      "text"
+    ],
+    "task_types": [
+      "plant phenotyping",
+      "disease detection",
+      "pest control",
+      "weed management",
+      "yield assessment"
+    ],
+    "description": "An evidence-grounded multimodal reasoning benchmark for soybean and cotton phenotyping from UAV imagery. Features 385 digital images and over 3,000 benchmark samples spanning disease, pest control, weed management, and yield domains.",
+    "repo_links": [],
+    "paper_title": "From UAV Imagery to Agronomic Reasoning: A Multimodal LLM Benchmark for Plant Phenotyping",
+    "arxiv_id": "2604.09907",
+    "arxiv_url": "http://arxiv.org/abs/2604.09907v1",
+    "published": "2026-04-10",
+    "authors": [
+      "Yu Wu",
+      "Guangzeng Han",
+      "Ibra Niang Niang",
+      "Francia Ravelombola",
+      "Maiara Oliveira"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -58717,6 +58942,29 @@
       "Ouyang Lu",
       "Jicong Ao",
       "Shuang Qiu"
+    ]
+  },
+  {
+    "benchmark_name": "TraversalBench",
+    "category": "spatial_3d",
+    "num_samples": null,
+    "modalities": [
+      "images"
+    ],
+    "task_types": [
+      "visual path traversal",
+      "spatial reasoning"
+    ],
+    "description": "A controlled benchmark for exact visual path traversal where models must recover the ordered sequence encountered when following continuous polylines with start markers and vertices. Explicitly balances path-structural factors while minimizing reliance on OCR and world knowledge.",
+    "repo_links": [],
+    "paper_title": "TraversalBench: Challenging Paths to Follow for Vision Language Models",
+    "arxiv_id": "2604.10999",
+    "arxiv_url": "http://arxiv.org/abs/2604.10999v1",
+    "published": "2026-04-13",
+    "authors": [
+      "Clara Petrova",
+      "Zhuo Chen",
+      "Marin Soljačić"
     ]
   },
   {
@@ -75054,6 +75302,29 @@
       "Mahbod Khaleti",
       "MohammadAmin Fazli",
       "Mahdieh Soleymani Baghshah"
+    ]
+  },
+  {
+    "benchmark_name": "BareBones",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "images"
+    ],
+    "task_types": [
+      "geometric shape comprehension",
+      "visual reasoning"
+    ],
+    "description": "A zero-shot benchmark designed to stress-test pure geometric shape comprehension using pixel-level silhouettes. Includes WTP-Bench, an extreme fine-grained visual puzzle forcing models to identify geometric concepts from boundary contours alone.",
+    "repo_links": [],
+    "paper_title": "BareBones: Benchmarking Zero-Shot Geometric Comprehension in VLMs",
+    "arxiv_id": "2604.10528",
+    "arxiv_url": "http://arxiv.org/abs/2604.10528v1",
+    "published": "2026-04-12",
+    "authors": [
+      "Aaditya Baranwal",
+      "Vishal Yadav",
+      "Abhishek Rajora"
     ]
   }
 ]
