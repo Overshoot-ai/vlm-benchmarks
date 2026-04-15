@@ -1365,6 +1365,59 @@
     ]
   },
   {
+    "benchmark_name": "HumDial-EIBench",
+    "category": "audio_visual",
+    "num_samples": null,
+    "modalities": [
+      "audio",
+      "text"
+    ],
+    "task_types": [
+      "emotional tracking",
+      "causal reasoning",
+      "empathetic response generation"
+    ],
+    "description": "A comprehensive benchmark for evaluating audio language models' emotional intelligence using real-recorded human dialogues. Reformulates emotional tracking and causal reasoning into multiple-choice questions with adversarial distractors.",
+    "repo_links": [],
+    "paper_title": "HumDial-EIBench: A Human-Recorded Multi-Turn Emotional Intelligence Benchmark for Audio Language Models",
+    "arxiv_id": "2604.11594",
+    "arxiv_url": "http://arxiv.org/abs/2604.11594v1",
+    "published": "2026-04-13",
+    "authors": [
+      "Shuiyuan Wang",
+      "Zhixian Zhao",
+      "Hongfei Yue",
+      "Chengyou Wang",
+      "Shuai Wang"
+    ]
+  },
+  {
+    "benchmark_name": "VidAudio-Bench",
+    "category": "audio_visual",
+    "num_samples": 1634,
+    "modalities": [
+      "video",
+      "audio",
+      "text"
+    ],
+    "task_types": [
+      "video-to-audio generation",
+      "video-text-to-audio generation"
+    ],
+    "description": "A multi-task benchmark for Video-to-Audio generation evaluation across four audio categories (sound effects, music, speech, singing). Features task-specific, reference-free metrics validated through subjective studies.",
+    "repo_links": [],
+    "paper_title": "VidAudio-Bench: Benchmarking V2A and VT2A Generation across Four Audio Categories",
+    "arxiv_id": "2604.10542",
+    "arxiv_url": "http://arxiv.org/abs/2604.10542v1",
+    "published": "2026-04-12",
+    "authors": [
+      "Qian Zhang",
+      "Yuqin Cao",
+      "Yixuan Gao",
+      "Xiongkuo Min"
+    ]
+  },
+  {
     "benchmark_name": "ChartAB",
     "category": "chart_figure",
     "num_samples": null,
@@ -2895,6 +2948,32 @@
       "Victoria Sara Wesołowska",
       "Zuzanna Bączek",
       "Piotr Sankowski"
+    ]
+  },
+  {
+    "benchmark_name": "Multi-Scale Candlestick Charts Dataset",
+    "category": "chart_figure",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "visual stock price forecasting",
+      "multi-scale temporal analysis"
+    ],
+    "description": "A multi-scale candlestick charts dataset with standardized evaluation framework for assessing VLMs' ability to integrate short-term and long-term visual market dynamics. Evaluates stock price forecasting using confusion-matrix-based diagnostics and information coefficient time series metrics.",
+    "repo_links": [],
+    "paper_title": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+    "arxiv_id": "2604.12659",
+    "arxiv_url": "http://arxiv.org/abs/2604.12659v1",
+    "published": "2026-04-14",
+    "authors": [
+      "Kaiqi Hu",
+      "Linda Xiao",
+      "Shiyue Xu",
+      "Ziyi Tang",
+      "Mingwen Liu"
     ]
   },
   {
@@ -5845,6 +5924,89 @@
       "Hanqing Wang",
       "Zhuoyu Li",
       "Wenbin Dai"
+    ]
+  },
+  {
+    "benchmark_name": "INDOTABVQA",
+    "category": "document_ocr",
+    "num_samples": 1593,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "table visual question answering",
+      "cross-lingual understanding"
+    ],
+    "description": "A cross-lingual Table Visual Question Answering benchmark for Bahasa Indonesia documents with questions in four languages. Evaluates VLMs in monolingual and cross-lingual settings on tables with different visual styles.",
+    "repo_links": [
+      "https://huggingface.co/datasets/NusaBharat/INDOTABVQA"
+    ],
+    "paper_title": "INDOTABVQA: A Benchmark for Cross-Lingual Table Understanding in Bahasa Indonesia Documents",
+    "arxiv_id": "2604.11970",
+    "arxiv_url": "http://arxiv.org/abs/2604.11970v1",
+    "published": "2026-04-13",
+    "authors": [
+      "Somraj Gautam",
+      "Anathapindika Dravichi",
+      "Gaurav Harit"
+    ]
+  },
+  {
+    "benchmark_name": "PaperScope",
+    "category": "document_ocr",
+    "num_samples": 2000,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "reasoning",
+      "retrieval",
+      "summarization",
+      "problem solving"
+    ],
+    "description": "A multi-modal multi-document benchmark for agentic deep research across scientific papers. Built on knowledge graph of over 2,000 AI papers with QA pairs across reasoning, retrieval, summarization, and problem solving.",
+    "repo_links": [],
+    "paper_title": "PaperScope: A Multi-Modal Multi-Document Benchmark for Agentic Deep Research Across Massive Scientific Papers",
+    "arxiv_id": "2604.11307",
+    "arxiv_url": "http://arxiv.org/abs/2604.11307v1",
+    "published": "2026-04-13",
+    "authors": [
+      "Lei Xiong",
+      "Huaying Yuan",
+      "Zheng Liu",
+      "Zhao Cao",
+      "Zhicheng Dou"
+    ]
+  },
+  {
+    "benchmark_name": "GlotOCR Bench",
+    "category": "document_ocr",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "optical character recognition",
+      "multilingual text recognition"
+    ],
+    "description": "A comprehensive benchmark evaluating OCR generalization across 100+ Unicode scripts with clean and degraded image variants. Images rendered from real multilingual texts supporting both LTR and RTL scripts.",
+    "repo_links": [
+      "https://github.com/cisnlp/glotocr-bench",
+      "https://hf.co/datasets/cis-lmu/glotocr-bench"
+    ],
+    "paper_title": "GlotOCR Bench: OCR Models Still Struggle Beyond a Handful of Unicode Scripts",
+    "arxiv_id": "2604.12978",
+    "arxiv_url": "http://arxiv.org/abs/2604.12978v1",
+    "published": "2026-04-14",
+    "authors": [
+      "Amir Hossein Kargaran",
+      "Nafiseh Nikeghbal",
+      "Jana Diesner",
+      "François Yvon",
+      "Hinrich Schütze"
     ]
   },
   {
@@ -11167,6 +11329,61 @@
       "Reuben Tan",
       "Yu Wang",
       "Jianfeng Gao"
+    ]
+  },
+  {
+    "benchmark_name": "AffordSim",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "3d"
+    ],
+    "task_types": [
+      "grasping",
+      "placing",
+      "stacking",
+      "pushing/pulling",
+      "pouring",
+      "mug hanging",
+      "long-horizon composite"
+    ],
+    "description": "A simulation framework and benchmark for affordance-aware robotic manipulation with 50 tasks across 7 categories. Integrates open-vocabulary 3D affordance prediction into manipulation data generation using VoxAfford model.",
+    "repo_links": [],
+    "paper_title": "AffordSim: A Scalable Data Generator and Benchmark for Affordance-Aware Robotic Manipulation",
+    "arxiv_id": "2604.11674",
+    "arxiv_url": "http://arxiv.org/abs/2604.11674v1",
+    "published": "2026-04-13",
+    "authors": [
+      "Mingyang Li",
+      "Haofan Xu",
+      "Haowen Sun",
+      "Xinzhe Chen",
+      "Sihua Ren"
+    ]
+  },
+  {
+    "benchmark_name": "VULCAN Fire Disaster Benchmark",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "multi-modal"
+    ],
+    "task_types": [
+      "multi-agent navigation",
+      "search and rescue",
+      "disaster response"
+    ],
+    "description": "A multi-agent cooperative navigation benchmark for indoor fire disaster response extending Habitat-Matterport3D. Simulates physically realistic fire scenarios including smoke diffusion, thermal hazards, and sensor degradation.",
+    "repo_links": [],
+    "paper_title": "VULCAN: Vision-Language-Model Enhanced Multi-Agent Cooperative Navigation for Indoor Fire-Disaster Response",
+    "arxiv_id": "2604.12831",
+    "arxiv_url": "http://arxiv.org/abs/2604.12831v1",
+    "published": "2026-04-14",
+    "authors": [
+      "Shengding Liu",
+      "Qiben Yan"
     ]
   },
   {
@@ -27405,6 +27622,33 @@
       "Xiao Zhang",
       "Haolong Yan",
       "Muxi Diao"
+    ]
+  },
+  {
+    "benchmark_name": "VLM-DeflectionBench",
+    "category": "hallucination",
+    "num_samples": 2775,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "knowledge-intensive multimodal questions",
+      "deflection",
+      "retrieval robustness"
+    ],
+    "description": "A benchmark designed to probe LVLM behavior under conflicting or insufficient evidence, evaluating deflection capabilities (generating responses like 'Sorry, I cannot answer...'). Features dynamic data curation pipeline to preserve difficulty over time.",
+    "repo_links": [],
+    "paper_title": "Benchmarking Deflection and Hallucination in Large Vision-Language Models",
+    "arxiv_id": "2604.12033",
+    "arxiv_url": "http://arxiv.org/abs/2604.12033v1",
+    "published": "2026-04-13",
+    "authors": [
+      "Nicholas Moratelli",
+      "Christopher Davis",
+      "Leonardo F. R. Ribeiro",
+      "Bill Byrne",
+      "Gonzalo Iglesias"
     ]
   },
   {
@@ -49135,6 +49379,32 @@
     ]
   },
   {
+    "benchmark_name": "MMR-AD",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "anomaly detection",
+      "anomaly localization"
+    ],
+    "description": "A comprehensive benchmark for training and evaluating MLLM-based general anomaly detection models. Designed to facilitate MLLM-based general AD research with multimodal data specifically for anomaly detection tasks.",
+    "repo_links": [],
+    "paper_title": "MMR-AD: A Large-Scale Multimodal Dataset for Benchmarking General Anomaly Detection with Multimodal Large Language Models",
+    "arxiv_id": "2604.10971",
+    "arxiv_url": "http://arxiv.org/abs/2604.10971v1",
+    "published": "2026-04-13",
+    "authors": [
+      "Xincheng Yao",
+      "Zefeng Qian",
+      "Chao Shi",
+      "Jiayang Song",
+      "Chongyang Zhang"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -55033,6 +55303,34 @@
     ]
   },
   {
+    "benchmark_name": "Edu-MMBias",
+    "category": "safety_bias",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "bias auditing",
+      "educational decision-making"
+    ],
+    "description": "A three-tier multimodal benchmark for auditing social bias in VLMs under educational contexts. Diagnoses bias across cognitive, affective, and behavioral dimensions using contamination-resistant student profiles.",
+    "repo_links": [
+      "https://anonymous.4open.science/r/EduMMBias-63B2"
+    ],
+    "paper_title": "Edu-MMBias: A Three-Tier Multimodal Benchmark for Auditing Social Bias in Vision-Language Models under Educational Contexts",
+    "arxiv_id": "2604.10200",
+    "arxiv_url": "http://arxiv.org/abs/2604.10200v2",
+    "published": "2026-04-11",
+    "authors": [
+      "Ruijia Li",
+      "Mingzi Zhang",
+      "Zengyi Yu",
+      "Yuang Wei",
+      "Bo Jiang"
+    ]
+  },
+  {
     "benchmark_name": "SRBench",
     "category": "spatial_3d",
     "num_samples": null,
@@ -58965,6 +59263,54 @@
       "Clara Petrova",
       "Zhuo Chen",
       "Marin Soljačić"
+    ]
+  },
+  {
+    "benchmark_name": "FieldWorkArena",
+    "category": "spatial_3d",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "spatial question answering",
+      "spatial reasoning"
+    ],
+    "description": "A multimodal spatial question-answering benchmark spanning factory, warehouse, and retail environments. Uses compute-grounded reasoning with structured spatial scene graphs and deterministic computation.",
+    "repo_links": [
+      "https://github.com/arunshar/spatial-atlas"
+    ],
+    "paper_title": "Spatial Atlas: Compute-Grounded Reasoning for Spatial-Aware Research Agent Benchmarks",
+    "arxiv_id": "2604.12102",
+    "arxiv_url": "http://arxiv.org/abs/2604.12102v1",
+    "published": "2026-04-13",
+    "authors": [
+      "Arun Sharma"
+    ]
+  },
+  {
+    "benchmark_name": "SceneCritic",
+    "category": "spatial_3d",
+    "num_samples": null,
+    "modalities": [
+      "3d",
+      "text"
+    ],
+    "task_types": [
+      "3D scene synthesis",
+      "spatial layout evaluation"
+    ],
+    "description": "A symbolic evaluator for 3D indoor scene synthesis using SceneOnto ontology. Provides object-level and relationship-level assessments for semantic, orientation, and geometric coherence across object relationships.",
+    "repo_links": [],
+    "paper_title": "SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis",
+    "arxiv_id": "2604.13035",
+    "arxiv_url": "http://arxiv.org/abs/2604.13035v1",
+    "published": "2026-04-14",
+    "authors": [
+      "Kathakoli Sengupta",
+      "Kai Ao",
+      "Paola Cascante-Bonilla"
     ]
   },
   {
@@ -67567,6 +67913,58 @@
     ]
   },
   {
+    "benchmark_name": "EgoEsportsQA",
+    "category": "video_understanding",
+    "num_samples": 1745,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "video question answering",
+      "esports analysis",
+      "tactical reasoning"
+    ],
+    "description": "A video question-answering benchmark for grounding perception and reasoning in expert esports knowledge. Features high-quality QA pairs from professional matches across 3 first-person shooter games with two-dimensional taxonomy.",
+    "repo_links": [],
+    "paper_title": "EgoEsportsQA: An Egocentric Video Benchmark for Perception and Reasoning in Esports",
+    "arxiv_id": "2604.12320",
+    "arxiv_url": "http://arxiv.org/abs/2604.12320v1",
+    "published": "2026-04-14",
+    "authors": [
+      "Jianzhe Ma",
+      "Zhonghao Cao",
+      "Shangkui Chen",
+      "Yichen Xu",
+      "Wenxuan Wang"
+    ]
+  },
+  {
+    "benchmark_name": "GTASA",
+    "category": "video_understanding",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text",
+      "3d"
+    ],
+    "task_types": [
+      "spatiotemporal reasoning",
+      "video captioning"
+    ],
+    "description": "A corpus of multi-actor videos with per-frame spatial relation graphs and event-level temporal mappings. Enables 11 spatiotemporal reasoning tasks with exact 3D ground truth for evaluating video encoders.",
+    "repo_links": [],
+    "paper_title": "GTASA: Ground Truth Annotations for Spatiotemporal Analysis, Evaluation and Training of Video Models",
+    "arxiv_id": "2604.10385",
+    "arxiv_url": "http://arxiv.org/abs/2604.10385v1",
+    "published": "2026-04-12",
+    "authors": [
+      "Nicolae Cudlenco",
+      "Mihai Masala",
+      "Marius Leordeanu"
+    ]
+  },
+  {
     "benchmark_name": "GraphVLM",
     "category": "visual_reasoning",
     "num_samples": null,
@@ -75325,6 +75723,31 @@
       "Aaditya Baranwal",
       "Vishal Yadav",
       "Abhishek Rajora"
+    ]
+  },
+  {
+    "benchmark_name": "VLM-Fix",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "rule mapping",
+      "semantic reasoning",
+      "strategy games"
+    ],
+    "description": "A controlled benchmark over four abstract strategy games evaluating semantic fixation in VLMs. Tests identical terminal board states under paired standard and inverse rule formulations to isolate perception vs rule-mapping failures.",
+    "repo_links": [
+      "https://maveryn.github.io/vlm-fix/"
+    ],
+    "paper_title": "Beyond Perception Errors: Semantic Fixation in Large Vision-Language Models",
+    "arxiv_id": "2604.12119",
+    "arxiv_url": "http://arxiv.org/abs/2604.12119v1",
+    "published": "2026-04-13",
+    "authors": [
+      "Md Tanvirul Alam"
     ]
   }
 ]
