@@ -1418,6 +1418,35 @@
     ]
   },
   {
+    "benchmark_name": "AVID",
+    "category": "audio_visual",
+    "num_samples": 39400,
+    "modalities": [
+      "audio",
+      "visual",
+      "video"
+    ],
+    "task_types": [
+      "inconsistency detection",
+      "temporal grounding",
+      "classification",
+      "reasoning"
+    ],
+    "description": "The first large-scale benchmark for audio-visual inconsistency understanding in videos with 11.2K long videos and 39.4K annotated inconsistency events. It evaluates cross-modal conflict perception through detection, temporal grounding, classification, and reasoning across 8 fine-grained inconsistency categories.",
+    "repo_links": [],
+    "paper_title": "AVID: A Benchmark for Omni-Modal Audio-Visual Inconsistency Understanding via Agent-Driven Construction",
+    "arxiv_id": "2604.13593",
+    "arxiv_url": "http://arxiv.org/abs/2604.13593v1",
+    "published": "2026-04-15",
+    "authors": [
+      "Zixuan Chen",
+      "Depeng Wang",
+      "Hao Lin",
+      "Li Luo",
+      "Ke Xu"
+    ]
+  },
+  {
     "benchmark_name": "ChartAB",
     "category": "chart_figure",
     "num_samples": null,
@@ -21826,6 +21855,34 @@
     ]
   },
   {
+    "benchmark_name": "GeoAgentBench (GABench)",
+    "category": "geospatial",
+    "num_samples": 53,
+    "modalities": [
+      "visual",
+      "text",
+      "geospatial"
+    ],
+    "task_types": [
+      "spatial analysis",
+      "parameter configuration",
+      "multi-step reasoning"
+    ],
+    "description": "A dynamic and interactive evaluation benchmark for tool-augmented GIS agents that provides a realistic execution sandbox with 117 atomic GIS tools. It encompasses 53 typical spatial analysis tasks across 6 core GIS domains with dynamic runtime feedback and multimodal spatial outputs.",
+    "repo_links": [],
+    "paper_title": "GeoAgentBench: A Dynamic Execution Benchmark for Tool-Augmented Agents in Spatial Analysis",
+    "arxiv_id": "2604.13888",
+    "arxiv_url": "http://arxiv.org/abs/2604.13888v1",
+    "published": "2026-04-15",
+    "authors": [
+      "Bo Yu",
+      "Cheng Yang",
+      "Dongyang Hou",
+      "Chengfu Liu",
+      "Jiayao Liu"
+    ]
+  },
+  {
     "benchmark_name": "Point-It-Out (PIO)",
     "category": "grounding_localization",
     "num_samples": null,
@@ -37292,6 +37349,34 @@
     ]
   },
   {
+    "benchmark_name": "MedRCube",
+    "category": "medical",
+    "num_samples": null,
+    "modalities": [
+      "medical imaging",
+      "text"
+    ],
+    "task_types": [
+      "medical diagnosis",
+      "reasoning credibility assessment"
+    ],
+    "description": "A multidimensional framework for fine-grained and in-depth evaluation of MLLMs in medical imaging that provides systematic evaluation aligned with real-world medical practice. It includes a credibility evaluation subset to quantify reasoning credibility and assess trustworthy clinical deployment.",
+    "repo_links": [
+      "https://github.com/F1mc/MedRCube"
+    ],
+    "paper_title": "MedRCube: A Multidimensional Framework for Fine-Grained and In-Depth Evaluation of MLLMs in Medical Imaging",
+    "arxiv_id": "2604.13756",
+    "arxiv_url": "http://arxiv.org/abs/2604.13756v1",
+    "published": "2026-04-15",
+    "authors": [
+      "Zhijie Bao",
+      "Fangke Chen",
+      "Licheng Bao",
+      "Chenhui Zhang",
+      "Wei Chen"
+    ]
+  },
+  {
     "benchmark_name": "MIRB",
     "category": "multi_image",
     "num_samples": null,
@@ -49402,6 +49487,35 @@
       "Chao Shi",
       "Jiayang Song",
       "Chongyang Zhang"
+    ]
+  },
+  {
+    "benchmark_name": "MERRIN",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "text",
+      "visual",
+      "video",
+      "audio"
+    ],
+    "task_types": [
+      "evidence retrieval",
+      "multi-hop reasoning",
+      "web search"
+    ],
+    "description": "A human-annotated benchmark for evaluating search-augmented agents in multimodal evidence retrieval and reasoning over noisy web environments. It uses natural language queries without explicit modality cues and incorporates underexplored modalities like video and audio for complex multi-hop reasoning.",
+    "repo_links": [],
+    "paper_title": "MERRIN: A Benchmark for Multimodal Evidence Retrieval and Reasoning in Noisy Web Environments",
+    "arxiv_id": "2604.13418",
+    "arxiv_url": "http://arxiv.org/abs/2604.13418v1",
+    "published": "2026-04-15",
+    "authors": [
+      "Han Wang",
+      "David Wan",
+      "Hyunji Lee",
+      "Thinh Pham",
+      "Mikaela Cankosyan"
     ]
   },
   {
@@ -75748,6 +75862,33 @@
     "published": "2026-04-13",
     "authors": [
       "Md Tanvirul Alam"
+    ]
+  },
+  {
+    "benchmark_name": "DailyClue",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "visual clue identification",
+      "reasoning",
+      "multi-step analysis"
+    ],
+    "description": "A benchmark designed for visual clue-driven reasoning in daily scenarios that compels MLLMs to actively explore suitable visual clues and leverage them for reasoning. It spans four major daily domains and 16 distinct subtasks, focusing on authentic daily activities rather than simple recognition.",
+    "repo_links": [],
+    "paper_title": "Seek-and-Solve: Benchmarking MLLMs for Visual Clue-Driven Reasoning in Daily Scenarios",
+    "arxiv_id": "2604.14041",
+    "arxiv_url": "http://arxiv.org/abs/2604.14041v1",
+    "published": "2026-04-15",
+    "authors": [
+      "Xiaomin Li",
+      "Tala Wang",
+      "Zichen Zhong",
+      "Ying Zhang",
+      "Zirui Zheng"
     ]
   }
 ]
