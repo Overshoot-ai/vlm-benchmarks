@@ -11416,6 +11416,61 @@
     ]
   },
   {
+    "benchmark_name": "DynAfford",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "affordance reasoning",
+      "commonsense planning",
+      "embodied AI"
+    ],
+    "description": "A benchmark that evaluates embodied agents in dynamic environments where object affordances may change over time and are not specified in the instruction. Requires agents to perceive object states, infer implicit preconditions, and adapt their actions accordingly.",
+    "repo_links": [],
+    "paper_title": "ADAPT: Benchmarking Commonsense Planning under Unspecified Affordance Constraints",
+    "arxiv_id": "2604.14902",
+    "arxiv_url": "http://arxiv.org/abs/2604.14902v1",
+    "published": "2026-04-16",
+    "authors": [
+      "Pei-An Chen",
+      "Yong-Ching Liang",
+      "Jia-Fong Yeh",
+      "Hung-Ting Su",
+      "Yi-Ting Chen"
+    ]
+  },
+  {
+    "benchmark_name": "MirrorBench",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "visual"
+    ],
+    "task_types": [
+      "self-recognition",
+      "embodied intelligence",
+      "self-centric reasoning"
+    ],
+    "description": "A simulation-based benchmark inspired by the Mirror Self-Recognition test in psychology. Extends this paradigm to embodied MLLMs through a tiered framework of progressively challenging tasks, assessing agents from basic visual perception to high-level self-representation.",
+    "repo_links": [
+      "https://fflahm.github.io/mirror-bench-page/"
+    ],
+    "paper_title": "MirrorBench: Evaluating Self-centric Intelligence in MLLMs by Introducing a Mirror",
+    "arxiv_id": "2604.14785",
+    "arxiv_url": "http://arxiv.org/abs/2604.14785v1",
+    "published": "2026-04-16",
+    "authors": [
+      "Shengyu Guo",
+      "Tongrui Ye",
+      "Jianbo Zhang",
+      "Zicheng Zhang",
+      "Chunyi Li"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "general_multimodal",
     "num_samples": null,
@@ -19832,6 +19887,30 @@
       "Manasi Ganti",
       "Jieyu Zhang",
       "Ranjay Krishna"
+    ]
+  },
+  {
+    "benchmark_name": "MM-AQA",
+    "category": "general_multimodal",
+    "num_samples": 2079,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "abstention evaluation",
+      "multimodal reasoning"
+    ],
+    "description": "A benchmark that constructs unanswerable instances from answerable ones via transformations along visual modality dependency and evidence sufficiency axes. Evaluates effective abstention in multimodal reasoning systems.",
+    "repo_links": [],
+    "paper_title": "Knowing When Not to Answer: Evaluating Abstention in Multimodal Reasoning Systems",
+    "arxiv_id": "2604.14799",
+    "arxiv_url": "http://arxiv.org/abs/2604.14799v1",
+    "published": "2026-04-16",
+    "authors": [
+      "Nishanth Madhusudhan",
+      "Vikas Yadav",
+      "Alexandre Lacoste"
     ]
   },
   {
@@ -37377,6 +37456,60 @@
     ]
   },
   {
+    "benchmark_name": "MetaDent",
+    "category": "medical",
+    "num_samples": 60669,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "VQA",
+      "classification",
+      "image captioning"
+    ],
+    "description": "A comprehensive dentistry image dataset with semi-structured annotations for intraoral photography. Includes approximately 15K Visual Question Answering pairs and an 18-class multi-label classification dataset for evaluating VLMs on dental image understanding.",
+    "repo_links": [],
+    "paper_title": "MetaDent: Labeling Clinical Images for Vision-Language Models in Dentistry",
+    "arxiv_id": "2604.14866",
+    "arxiv_url": "http://arxiv.org/abs/2604.14866v1",
+    "published": "2026-04-16",
+    "authors": [
+      "Meng-Xun Li",
+      "Wen-Hui Deng",
+      "Zhi-Xing Wu",
+      "Chun-Xiao Jin",
+      "Jia-Min Wu"
+    ]
+  },
+  {
+    "benchmark_name": "MedImageEdu",
+    "category": "medical",
+    "num_samples": 150,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "patient education",
+      "multi-turn dialogue",
+      "medical explanation"
+    ],
+    "description": "A benchmark for multi-turn, evidence-grounded radiology patient education. Features DoctorAgent and PatientAgent interactions with drawing tools for visual support, evaluating multimodal patient education capabilities across five dimensions.",
+    "repo_links": [],
+    "paper_title": "Rethinking Patient Education as Multi-turn Multi-modal Interaction",
+    "arxiv_id": "2604.14656",
+    "arxiv_url": "http://arxiv.org/abs/2604.14656v1",
+    "published": "2026-04-16",
+    "authors": [
+      "Zonghai Yao",
+      "Zhipeng Tang",
+      "Chengtao Lin",
+      "Xiong Luo",
+      "Benlu Wang"
+    ]
+  },
+  {
     "benchmark_name": "MIRB",
     "category": "multi_image",
     "num_samples": null,
@@ -49516,6 +49649,31 @@
       "Hyunji Lee",
       "Thinh Pham",
       "Mikaela Cankosyan"
+    ]
+  },
+  {
+    "benchmark_name": "FoodSense",
+    "category": "other",
+    "num_samples": 66842,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "cross-sensory inference",
+      "sensory prediction"
+    ],
+    "description": "A human-annotated dataset for cross-sensory inference containing participant-image pairs across food images. Each pair includes numeric ratings and free-text descriptors for four sensory dimensions: taste, smell, texture, and sound from food images.",
+    "repo_links": [],
+    "paper_title": "FoodSense: A Multisensory Food Dataset and Benchmark for Predicting Taste, Smell, Texture, and Sound from Images",
+    "arxiv_id": "2604.14388",
+    "arxiv_url": "http://arxiv.org/abs/2604.14388v1",
+    "published": "2026-04-15",
+    "authors": [
+      "Sabab Ishraq",
+      "Aarushi Aarushi",
+      "Juncai Jiang",
+      "Chen Chen"
     ]
   },
   {
