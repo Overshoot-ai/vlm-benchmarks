@@ -6039,6 +6039,34 @@
     ]
   },
   {
+    "benchmark_name": "DenTab",
+    "category": "document_ocr",
+    "num_samples": 2208,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "table recognition",
+      "table visual question answering",
+      "structure recovery",
+      "arithmetic reasoning"
+    ],
+    "description": "A dataset of 2,000 cropped table images from dental estimates with high-quality HTML annotations, enabling evaluation of table recognition and table visual question answering. Includes 2,208 questions across eleven categories spanning retrieval, aggregation, and logic/consistency checks.",
+    "repo_links": [
+      "https://github.com/hamdilaziz/DenTab"
+    ],
+    "paper_title": "DenTab: A Dataset for Table Recognition and Visual QA on Real-World Dental Estimates",
+    "arxiv_id": "2604.16099",
+    "arxiv_url": "http://arxiv.org/abs/2604.16099v1",
+    "published": "2026-04-17",
+    "authors": [
+      "Laziz Hamdi",
+      "Amine Tamasna",
+      "Thierry Paquet"
+    ]
+  },
+  {
     "benchmark_name": "EGONORMIA",
     "category": "egocentric_embodied",
     "num_samples": 1853,
@@ -25949,6 +25977,36 @@
     ]
   },
   {
+    "benchmark_name": "GTA-2",
+    "category": "gui_web_agent",
+    "num_samples": null,
+    "modalities": [
+      "multimodal",
+      "text"
+    ],
+    "task_types": [
+      "tool use",
+      "workflow completion",
+      "atomic tasks",
+      "open-ended tasks"
+    ],
+    "description": "A hierarchical benchmark for General Tool Agents spanning atomic tool use and open-ended workflows. Built on real-world authenticity with real user queries, deployed tools, and multimodal contexts, featuring both short-horizon closed-ended tasks and long-horizon open-ended workflows.",
+    "repo_links": [
+      "https://github.com/open-compass/GTA"
+    ],
+    "paper_title": "GTA-2: Benchmarking General Tool Agents from Atomic Tool-Use to Open-Ended Workflows",
+    "arxiv_id": "2604.15715",
+    "arxiv_url": "http://arxiv.org/abs/2604.15715v1",
+    "published": "2026-04-17",
+    "authors": [
+      "Jize Wang",
+      "Xuanxuan Liu",
+      "Yining Li",
+      "Songyang Zhang",
+      "Yijun Wang"
+    ]
+  },
+  {
     "benchmark_name": "DeCapBench",
     "category": "hallucination",
     "num_samples": null,
@@ -37507,6 +37565,36 @@
       "Chengtao Lin",
       "Xiong Luo",
       "Benlu Wang"
+    ]
+  },
+  {
+    "benchmark_name": "SGMRI-VQA",
+    "category": "medical",
+    "num_samples": 41307,
+    "modalities": [
+      "medical imaging",
+      "text"
+    ],
+    "task_types": [
+      "detection",
+      "localization",
+      "counting",
+      "classification",
+      "captioning",
+      "spatial reasoning"
+    ],
+    "description": "A 41,307-pair benchmark for multi-frame, spatially grounded reasoning on volumetric MRI. Built from expert radiologist annotations with clinician-aligned chain-of-thought traces and frame-indexed bounding box coordinates for detection, localization, counting, classification, and captioning tasks.",
+    "repo_links": [],
+    "paper_title": "Beyond a Single Frame: Multi-Frame Spatially Grounded Reasoning Across Volumetric MRI",
+    "arxiv_id": "2604.15808",
+    "arxiv_url": "http://arxiv.org/abs/2604.15808v1",
+    "published": "2026-04-17",
+    "authors": [
+      "Lama Moukheiber",
+      "Caleb M. Yeung",
+      "Haotian Xue",
+      "Alec Helbling",
+      "Zelin Zhao"
     ]
   },
   {
@@ -68237,6 +68325,64 @@
     ]
   },
   {
+    "benchmark_name": "VEFX-Bench",
+    "category": "video_understanding",
+    "num_samples": 300,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "video editing evaluation",
+      "instruction following",
+      "visual quality assessment"
+    ],
+    "description": "A benchmark for evaluating video editing systems with 300 curated video-prompt pairs. Built on VEFX-Dataset containing 5,049 human-annotated video editing examples across 9 major categories and 32 subcategories, labeled along three dimensions: Instruction Following, Rendering Quality, and Edit Exclusivity.",
+    "repo_links": [],
+    "paper_title": "VEFX-Bench: A Holistic Benchmark for Generic Video Editing and Visual Effects",
+    "arxiv_id": "2604.16272",
+    "arxiv_url": "http://arxiv.org/abs/2604.16272v1",
+    "published": "2026-04-17",
+    "authors": [
+      "Xiangbo Gao",
+      "Sicong Jiang",
+      "Bangya Liu",
+      "Xinghao Chen",
+      "Minglai Yang"
+    ]
+  },
+  {
+    "benchmark_name": "UniEditBench",
+    "category": "video_understanding",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "image editing",
+      "video editing",
+      "instruction-driven editing",
+      "compositional tasks"
+    ],
+    "description": "A unified benchmark for image and video editing that supports reconstruction-based and instruction-driven methods. Includes a structured taxonomy of nine image operations and eight video operations, with coverage of challenging compositional tasks such as counting and spatial reordering.",
+    "repo_links": [
+      "https://github.com/wesar1/UniEditBench"
+    ],
+    "paper_title": "UniEditBench: A Unified and Cost-Effective Benchmark for Image and Video Editing via Distilled MLLMs",
+    "arxiv_id": "2604.15871",
+    "arxiv_url": "http://arxiv.org/abs/2604.15871v1",
+    "published": "2026-04-17",
+    "authors": [
+      "Lifan Jiang",
+      "Tianrun Wu",
+      "Yuhang Pei",
+      "Chenyang Wang",
+      "Boxi Wu"
+    ]
+  },
+  {
     "benchmark_name": "GraphVLM",
     "category": "visual_reasoning",
     "num_samples": null,
@@ -76047,6 +76193,118 @@
       "Zichen Zhong",
       "Ying Zhang",
       "Zirui Zheng"
+    ]
+  },
+  {
+    "benchmark_name": "HyperGVL",
+    "category": "visual_reasoning",
+    "num_samples": 84000,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "hypergraph understanding",
+      "visual reasoning",
+      "component counting",
+      "NP-hard problem reasoning"
+    ],
+    "description": "The first benchmark to evaluate the proficiency of LVLMs in hypergraph understanding and reasoning. Provides comprehensive assessment across 84,000 vision-language QA samples spanning 12 tasks, ranging from basic component counting to complex NP-hard problem reasoning.",
+    "repo_links": [],
+    "paper_title": "HyperGVL: Benchmarking and Improving Large Vision-Language Models in Hypergraph Understanding and Reasoning",
+    "arxiv_id": "2604.15648",
+    "arxiv_url": "http://arxiv.org/abs/2604.15648v1",
+    "published": "2026-04-17",
+    "authors": [
+      "Yanbin Wei",
+      "Chun Kang",
+      "Siwei Li",
+      "Haoxuan Che",
+      "Yang Chen"
+    ]
+  },
+  {
+    "benchmark_name": "Mind's Eye",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "pattern induction",
+      "analogical relation mapping",
+      "mental transformation",
+      "visual abstraction"
+    ],
+    "description": "A multiple-choice benchmark of eight visuo-cognitive tasks inspired by classic human intelligence tests, organized under an 'A-R-T' taxonomy: Abstraction, Relation, and Transformation. The tasks probe core processes of fluid intelligence such as pattern induction, analogical relation mapping, and mental transformation.",
+    "repo_links": [],
+    "paper_title": "Mind's Eye: A Benchmark of Visual Abstraction, Transformation and Composition for Multimodal LLMs",
+    "arxiv_id": "2604.16054",
+    "arxiv_url": "http://arxiv.org/abs/2604.16054v1",
+    "published": "2026-04-17",
+    "authors": [
+      "Rohit Sinha",
+      "Aditya Kanade",
+      "Sai Srinivas Kancheti",
+      "Vineeth N Balasubramanian",
+      "Tanuja Ganu"
+    ]
+  },
+  {
+    "benchmark_name": "ReactBench",
+    "category": "visual_reasoning",
+    "num_samples": 1618,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "structural reasoning",
+      "topological analysis",
+      "chemical diagram understanding"
+    ],
+    "description": "A benchmark that reveals fundamental limitations in structural reasoning through chemical reaction diagrams. Comprises 1,618 expert-annotated QA pairs across four hierarchical task dimensions, testing both precise local recognition and coherent global reasoning on complex topological structures.",
+    "repo_links": [],
+    "paper_title": "ReactBench: A Benchmark for Topological Reasoning in MLLMs on Chemical Reaction Diagrams",
+    "arxiv_id": "2604.15994",
+    "arxiv_url": "http://arxiv.org/abs/2604.15994v1",
+    "published": "2026-04-17",
+    "authors": [
+      "Qiang Xu",
+      "Shengyuan Bai",
+      "Yu Wang",
+      "He Cao",
+      "Leqing Chen"
+    ]
+  },
+  {
+    "benchmark_name": "CrossMath",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "multimodal reasoning",
+      "mathematical reasoning",
+      "cross-modal comparison"
+    ],
+    "description": "A novel multimodal reasoning benchmark designed for controlled cross-modal comparisons. Each problem is constructed in text-only, image-only, and image+text formats with identical task-relevant information to isolate modality-specific reasoning differences.",
+    "repo_links": [
+      "https://github.com/xuyige/CrossMath"
+    ],
+    "paper_title": "Do Vision-Language Models Truly Perform Vision Reasoning? A Rigorous Study of the Modality Gap",
+    "arxiv_id": "2604.16256",
+    "arxiv_url": "http://arxiv.org/abs/2604.16256v1",
+    "published": "2026-04-17",
+    "authors": [
+      "Yige Xu",
+      "Yongjie Wang",
+      "Zizhuo Wu",
+      "Kaisong Song",
+      "Jun Lin"
     ]
   }
 ]
