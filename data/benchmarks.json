@@ -19942,6 +19942,32 @@
     ]
   },
   {
+    "benchmark_name": "Multi-PixMo",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "visual question answering",
+      "multimodal reasoning"
+    ],
+    "description": "Multilingual training and evaluation resources for Vision-Language Models spanning five European languages. Includes translated benchmarks (MMbench, ScienceQA, MME, POPE, AI2D) and training corpus from regenerated existing datasets.",
+    "repo_links": [],
+    "paper_title": "Multilingual Training and Evaluation Resources for Vision-Language Models",
+    "arxiv_id": "2604.18347",
+    "arxiv_url": "http://arxiv.org/abs/2604.18347v1",
+    "published": "2026-04-20",
+    "authors": [
+      "Daniela Baiamonte",
+      "Elena Fano",
+      "Matteo Gabburo",
+      "Stefano Simonazzi",
+      "Leonardo Rigutini"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -26007,6 +26033,58 @@
     ]
   },
   {
+    "benchmark_name": "DailyDroid",
+    "category": "gui_web_agent",
+    "num_samples": 75,
+    "modalities": [
+      "screenshot",
+      "text"
+    ],
+    "task_types": [
+      "smartphone automation",
+      "UI interaction"
+    ],
+    "description": "A benchmark of smartphone automation tasks across 25 Android apps with five scenarios and three difficulty levels. Evaluates LLM-driven mobile agents using both text-only and multimodal inputs to mimic everyday smartphone use.",
+    "repo_links": [],
+    "paper_title": "Do LLMs Need to See Everything? A Benchmark and Study of Failures in LLM-driven Smartphone Automation using Screentext vs. Screenshots",
+    "arxiv_id": "2604.17817",
+    "arxiv_url": "http://arxiv.org/abs/2604.17817v1",
+    "published": "2026-04-20",
+    "authors": [
+      "Shiquan Zhang",
+      "Tianyi Zhang",
+      "Le Fang",
+      "Simon D'Alfonso",
+      "Hong Jia"
+    ]
+  },
+  {
+    "benchmark_name": "HalluClear",
+    "category": "gui_web_agent",
+    "num_samples": null,
+    "modalities": [
+      "GUI screenshots",
+      "text"
+    ],
+    "task_types": [
+      "GUI interaction",
+      "hallucination detection"
+    ],
+    "description": "A comprehensive suite for hallucination mitigation in GUI agents featuring GUI-specific hallucination taxonomy and calibrated evaluation workflow. Includes expert-annotated benchmarking for fine-grained diagnosis of GUI agent hallucinations.",
+    "repo_links": [],
+    "paper_title": "HalluClear: Diagnosing, Evaluating and Mitigating Hallucinations in GUI Agents",
+    "arxiv_id": "2604.17284",
+    "arxiv_url": "http://arxiv.org/abs/2604.17284v1",
+    "published": "2026-04-19",
+    "authors": [
+      "Chao Jin",
+      "Wenkui Yang",
+      "Hao Sun",
+      "Yuqi Liao",
+      "Qianyi Jiang"
+    ]
+  },
+  {
     "benchmark_name": "DeCapBench",
     "category": "hallucination",
     "num_samples": null,
@@ -27843,6 +27921,32 @@
       "Leonardo F. R. Ribeiro",
       "Bill Byrne",
       "Gonzalo Iglesias"
+    ]
+  },
+  {
+    "benchmark_name": "VisualTextTrap",
+    "category": "hallucination",
+    "num_samples": 6057,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "hallucination detection",
+      "video question answering"
+    ],
+    "description": "A benchmark for evaluating Text Overlay-Induced Hallucination (TOIH) in Vision Language Models. Features human-validated samples with hallucination intensity quantified on a five-level scale across 88 fine-grained attributes within four dimensions.",
+    "repo_links": [],
+    "paper_title": "When Text Hijacks Vision: Benchmarking and Mitigating Text Overlay-Induced Hallucination in Vision Language Models",
+    "arxiv_id": "2604.17375",
+    "arxiv_url": "http://arxiv.org/abs/2604.17375v1",
+    "published": "2026-04-19",
+    "authors": [
+      "Cui Yakun",
+      "Xingqun Qi",
+      "TianTian Geng",
+      "Yuyao Zhang",
+      "Sirui Han"
     ]
   },
   {
@@ -32037,6 +32141,35 @@
       "Peiyao Xiao",
       "Qinhao Kong",
       "Ben Wang"
+    ]
+  },
+  {
+    "benchmark_name": "MathNet",
+    "category": "math_science",
+    "num_samples": 30676,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "problem solving",
+      "mathematical reasoning",
+      "retrieval"
+    ],
+    "description": "A multilingual, multimodal benchmark of Olympiad-level math problems spanning 47 countries and 17 languages. Supports problem solving, math-aware retrieval, and retrieval-augmented problem solving tasks with expert-authored solutions.",
+    "repo_links": [
+      "https://mathnet.mit.edu"
+    ],
+    "paper_title": "MathNet: a Global Multimodal Benchmark for Mathematical Reasoning and Retrieval",
+    "arxiv_id": "2604.18584",
+    "arxiv_url": "http://arxiv.org/abs/2604.18584v1",
+    "published": "2026-04-20",
+    "authors": [
+      "Shaden Alshammari",
+      "Kevin Wen",
+      "Abrar Zainal",
+      "Mark Hamilton",
+      "Navid Safaei"
     ]
   },
   {
@@ -37595,6 +37728,32 @@
       "Haotian Xue",
       "Alec Helbling",
       "Zelin Zhao"
+    ]
+  },
+  {
+    "benchmark_name": "PBSBench",
+    "category": "medical",
+    "num_samples": null,
+    "modalities": [
+      "medical images",
+      "text"
+    ],
+    "task_types": [
+      "visual question answering",
+      "medical image interpretation"
+    ],
+    "description": "A visual question answering benchmark for hematopathology Peripheral Blood Smear interpretation. Features four question categories and six PBS interpretation tasks, along with PBSInstr dataset containing 353 PBS WSIs and 29k cell-level annotations.",
+    "repo_links": [],
+    "paper_title": "PBSBench: A Multi-Level Vision-Language Framework and Benchmark for Hematopathology Whole Slide Image Interpretation",
+    "arxiv_id": "2604.17570",
+    "arxiv_url": "http://arxiv.org/abs/2604.17570v1",
+    "published": "2026-04-19",
+    "authors": [
+      "Yuanlong Wang",
+      "Weichi Chen",
+      "Adrian Rajab",
+      "Wenfang Liu",
+      "Yulan Jin"
     ]
   },
   {
@@ -55691,6 +55850,30 @@
     ]
   },
   {
+    "benchmark_name": "MM-JudgeBias",
+    "category": "safety_bias",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "bias evaluation",
+      "model judgment"
+    ],
+    "description": "A benchmark for evaluating compositional biases in MLLM-as-a-Judge systems. Features over 1,800 curated multimodal samples from 29 source benchmarks with controlled perturbations across Query, Image, and Response to diagnose nine bias types.",
+    "repo_links": [],
+    "paper_title": "MM-JudgeBias: A Benchmark for Evaluating Compositional Biases in MLLM-as-a-Judge",
+    "arxiv_id": "2604.18164",
+    "arxiv_url": "http://arxiv.org/abs/2604.18164v1",
+    "published": "2026-04-20",
+    "authors": [
+      "Sua Lee",
+      "Sanghee Park",
+      "Jinbae Im"
+    ]
+  },
+  {
     "benchmark_name": "SRBench",
     "category": "spatial_3d",
     "num_samples": null,
@@ -59674,6 +59857,62 @@
     ]
   },
   {
+    "benchmark_name": "E3VS-Bench",
+    "category": "spatial_3d",
+    "num_samples": 2014,
+    "modalities": [
+      "3D visual",
+      "text"
+    ],
+    "task_types": [
+      "visual search",
+      "question answering",
+      "viewpoint planning"
+    ],
+    "description": "A benchmark for embodied 3D visual search using 3D Gaussian Splatting scenes with 5-DoF viewpoint control. Features 99 high-fidelity 3D scenes and evaluates agents' ability to actively explore and gather viewpoint-dependent evidence for question answering.",
+    "repo_links": [],
+    "paper_title": "E3VS-Bench: A Benchmark for Viewpoint-Dependent Active Perception in 3D Gaussian Splatting Scenes",
+    "arxiv_id": "2604.17969",
+    "arxiv_url": "http://arxiv.org/abs/2604.17969v1",
+    "published": "2026-04-20",
+    "authors": [
+      "Koya Sakamoto",
+      "Taiki Miyanishi",
+      "Daichi Azuma",
+      "Shuhei Kurita",
+      "Shu Morikuni"
+    ]
+  },
+  {
+    "benchmark_name": "MUSES",
+    "category": "spatial_3d",
+    "num_samples": null,
+    "modalities": [
+      "RGB",
+      "LiDAR",
+      "radar",
+      "event camera"
+    ],
+    "task_types": [
+      "panoptic segmentation"
+    ],
+    "description": "A multi-sensor benchmark for panoptic segmentation in adverse-to-extreme weather conditions. Includes RGB frame camera, LiDAR, radar, and event camera data with weighted Panoptic Quality as the evaluation metric.",
+    "repo_links": [
+      "https://urvis-workshop.github.io/challenge-Muses.html"
+    ],
+    "paper_title": "Adverse-to-the-eXtreme Panoptic Segmentation: URVIS 2026 Study and Benchmark",
+    "arxiv_id": "2604.16984",
+    "arxiv_url": "http://arxiv.org/abs/2604.16984v1",
+    "published": "2026-04-18",
+    "authors": [
+      "Yiting Wang",
+      "Nolwenn Peyratout",
+      "Tim Brodermann",
+      "Jiahui Wang",
+      "Yusi Cao"
+    ]
+  },
+  {
     "benchmark_name": "Temporally-Grounded Language Generation (TGLG)",
     "category": "streaming_video",
     "num_samples": null,
@@ -61624,6 +61863,34 @@
       "Zhike Han",
       "Ningli Wang",
       "Guotao Liang"
+    ]
+  },
+  {
+    "benchmark_name": "HiTSR",
+    "category": "temporal_reasoning",
+    "num_samples": 83000,
+    "modalities": [
+      "time series visualizations",
+      "text"
+    ],
+    "task_types": [
+      "time series reasoning",
+      "temporal analysis"
+    ],
+    "description": "A hierarchical time series reasoning dataset with four levels of increasing cognitive complexity and verified Chain-of-Thought trajectories. Evaluates comprehensive understanding of time series through diverse task combinations.",
+    "repo_links": [
+      "https://github.com/RainingNovember/LLaTiSA"
+    ],
+    "paper_title": "LLaTiSA: Towards Difficulty-Stratified Time Series Reasoning from Visual Perception to Semantics",
+    "arxiv_id": "2604.17295",
+    "arxiv_url": "http://arxiv.org/abs/2604.17295v1",
+    "published": "2026-04-19",
+    "authors": [
+      "Yueyang Ding",
+      "HaoPeng Zhang",
+      "Rui Dai",
+      "Yi Wang",
+      "Tianyu Zong"
     ]
   },
   {
@@ -76305,6 +76572,28 @@
       "Zizhuo Wu",
       "Kaisong Song",
       "Jun Lin"
+    ]
+  },
+  {
+    "benchmark_name": "DIVA",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "schematic images",
+      "text"
+    ],
+    "task_types": [
+      "semantic interpretation",
+      "visual grounding"
+    ],
+    "description": "A controlled benchmark that evaluates Vision-Language Models' ability to represent abstract meaning through paired visualizations for literal and idiomatic readings of noun compounds. Uses schematic iconicity to replace high-fidelity visual detail.",
+    "repo_links": [],
+    "paper_title": "More Than Meets the Eye: Measuring the Semiotic Gap in Vision-Language Models via Semantic Anchorage",
+    "arxiv_id": "2604.17354",
+    "arxiv_url": "http://arxiv.org/abs/2604.17354v1",
+    "published": "2026-04-19",
+    "authors": [
+      "Wei He"
     ]
   }
 ]
