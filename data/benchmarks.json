@@ -19968,6 +19968,60 @@
     ]
   },
   {
+    "benchmark_name": "MM-JudgeBench",
+    "category": "general_multimodal",
+    "num_samples": 60000,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "judge model evaluation",
+      "multilingual evaluation",
+      "preference learning"
+    ],
+    "description": "The first large-scale benchmark for multilingual and multimodal judge model evaluation with over 60K pairwise preference instances spanning 25 languages. Includes general vision-language preference evaluation and chart-centric visual-text reasoning subsets.",
+    "repo_links": [],
+    "paper_title": "Lost in Translation: Do LVLM Judges Generalize Across Languages?",
+    "arxiv_id": "2604.19405",
+    "arxiv_url": "http://arxiv.org/abs/2604.19405v1",
+    "published": "2026-04-21",
+    "authors": [
+      "Md Tahmid Rahman Laskar",
+      "Mohammed Saidul Islam",
+      "Mir Tafseer Nayeem",
+      "Amran Bhuiyan",
+      "Mizanur Rahman"
+    ]
+  },
+  {
+    "benchmark_name": "Multilingual Negation Benchmark",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "negation understanding",
+      "multilingual evaluation",
+      "vision-language comprehension"
+    ],
+    "description": "The first human-verified multilingual negation benchmark spanning seven typologically diverse languages for evaluating VLMs' understanding of negation. Tests how linguistic properties like morphology, script, and negation structure affect model performance.",
+    "repo_links": [],
+    "paper_title": "Disparities In Negation Understanding Across Languages In Vision-Language Models",
+    "arxiv_id": "2604.18942",
+    "arxiv_url": "http://arxiv.org/abs/2604.18942v1",
+    "published": "2026-04-21",
+    "authors": [
+      "Charikleia Moraitaki",
+      "Sarah Pan",
+      "Skyler Pulling",
+      "Gwendolyn Flusche",
+      "Kumail Alhamoud"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -27950,6 +28004,33 @@
     ]
   },
   {
+    "benchmark_name": "Ghost-100",
+    "category": "hallucination",
+    "num_samples": 800,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "hallucination detection",
+      "visual grounding",
+      "prompt sensitivity"
+    ],
+    "description": "A benchmark of 800 synthetically generated images designed to evaluate tone-induced hallucination in VLMs. Features negative-ground-truth principle with 5-level prompt intensity framework to isolate tone as the sole variable.",
+    "repo_links": [],
+    "paper_title": "LLM-as-Judge Framework for Evaluating Tone-Induced Hallucination in Vision-Language Models",
+    "arxiv_id": "2604.18803",
+    "arxiv_url": "http://arxiv.org/abs/2604.18803v1",
+    "published": "2026-04-20",
+    "authors": [
+      "Zhiyuan Jiang",
+      "Weihao Hong",
+      "Xinlei Guan",
+      "Tejaswi Dhandu",
+      "Miles Q. Li"
+    ]
+  },
+  {
     "benchmark_name": "SceneBench",
     "category": "long_video",
     "num_samples": null,
@@ -32170,6 +32251,35 @@
       "Abrar Zainal",
       "Mark Hamilton",
       "Navid Safaei"
+    ]
+  },
+  {
+    "benchmark_name": "StepSTEM",
+    "category": "math_science",
+    "num_samples": 283,
+    "modalities": [
+      "text",
+      "images"
+    ],
+    "task_types": [
+      "multimodal reasoning",
+      "step-level evaluation",
+      "STEM problem solving"
+    ],
+    "description": "A graduate-level benchmark of 283 problems across STEM fields for fine-grained evaluation of cross-modal reasoning in MLLMs. Features strict complementarity between textual and visual inputs with step-level evaluation framework.",
+    "repo_links": [
+      "https://github.com/lll-hhh/STEPSTEM"
+    ],
+    "paper_title": "Unveiling Fine-Grained Visual Traces: Evaluating Multimodal Interleaved Reasoning Chains in Multimodal STEM Tasks",
+    "arxiv_id": "2604.19697",
+    "arxiv_url": "http://arxiv.org/abs/2604.19697v1",
+    "published": "2026-04-21",
+    "authors": [
+      "Jing Jin",
+      "Hao Liu",
+      "Yan Bai",
+      "Yihang Lou",
+      "Zhenke Wang"
     ]
   },
   {
@@ -55874,6 +55984,32 @@
     ]
   },
   {
+    "benchmark_name": "Face Anti-Spoofing Vision Foundation Models Benchmark",
+    "category": "safety_bias",
+    "num_samples": null,
+    "modalities": [
+      "images"
+    ],
+    "task_types": [
+      "face anti-spoofing",
+      "domain generalization"
+    ],
+    "description": "A systematic benchmarking of 15 pre-trained vision models for face anti-spoofing under severe cross-domain scenarios. Evaluates supervised CNNs, supervised ViTs, and self-supervised ViTs using MICO and Limited Source Domains (LSD) protocols.",
+    "repo_links": [
+      "https://gsisaoki.github.io/FAS-VFMbenchmark-CVPRW2026/"
+    ],
+    "paper_title": "Benchmarking Vision Foundation Models for Domain-Generalizable Face Anti-Spoofing",
+    "arxiv_id": "2604.19196",
+    "arxiv_url": "http://arxiv.org/abs/2604.19196v1",
+    "published": "2026-04-21",
+    "authors": [
+      "Mika Feng",
+      "Pierre Gallin-Martel",
+      "Koichi Ito",
+      "Takafumi Aoki"
+    ]
+  },
+  {
     "benchmark_name": "SRBench",
     "category": "spatial_3d",
     "num_samples": null,
@@ -59910,6 +60046,34 @@
       "Tim Brodermann",
       "Jiahui Wang",
       "Yusi Cao"
+    ]
+  },
+  {
+    "benchmark_name": "PC2Model",
+    "category": "spatial_3d",
+    "num_samples": null,
+    "modalities": [
+      "point clouds",
+      "3D models"
+    ],
+    "task_types": [
+      "point cloud registration",
+      "3D model alignment"
+    ],
+    "description": "ISPRS benchmark for 3D point cloud to model registration that combines simulated and real-world point clouds with corresponding 3D models. Designed to support training and evaluation of both classical and data-driven methods for point cloud alignment.",
+    "repo_links": [
+      "https://zenodo.org/uploads/17581812"
+    ],
+    "paper_title": "PC2Model: ISPRS benchmark on 3D point cloud to model registration",
+    "arxiv_id": "2604.19596",
+    "arxiv_url": "http://arxiv.org/abs/2604.19596v1",
+    "published": "2026-04-21",
+    "authors": [
+      "Mehdi Maboudi",
+      "Said Harb",
+      "Jackson Ferrao",
+      "Kourosh Khoshelham",
+      "Yelda Turkan"
     ]
   },
   {
@@ -76594,6 +76758,31 @@
     "published": "2026-04-19",
     "authors": [
       "Wei He"
+    ]
+  },
+  {
+    "benchmark_name": "Image-Relation-Pair Dataset (IRPD)",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "visual semantic arithmetic",
+      "relational reasoning",
+      "cross-modal reasoning"
+    ],
+    "description": "A dataset for evaluating visual semantic arithmetic in LVLMs, featuring two-term subtraction and three-term operations tasks. Designed to test cross-modal relational reasoning capabilities similar to text analogies but with images.",
+    "repo_links": [],
+    "paper_title": "Multi-modal Reasoning with LLMs for Visual Semantic Arithmetic",
+    "arxiv_id": "2604.19567",
+    "arxiv_url": "http://arxiv.org/abs/2604.19567v1",
+    "published": "2026-04-21",
+    "authors": [
+      "Chuou Xu",
+      "Liya Ji",
+      "Qifeng Chen"
     ]
   }
 ]
