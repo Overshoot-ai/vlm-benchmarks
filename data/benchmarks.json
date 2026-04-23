@@ -11499,6 +11499,33 @@
     ]
   },
   {
+    "benchmark_name": "G-W3DA",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "driver attention prediction",
+      "object-level gaze tracking",
+      "autonomous driving"
+    ],
+    "description": "An object-level driver attention dataset that decouples macroscopic heatmaps into object-level masks using multimodal LLM integration with SAM3. Enables precise object-level attention prediction for interpretable autonomous driving.",
+    "repo_links": [],
+    "paper_title": "From Scene to Object: Text-Guided Dual-Gaze Prediction",
+    "arxiv_id": "2604.20191",
+    "arxiv_url": "http://arxiv.org/abs/2604.20191v1",
+    "published": "2026-04-22",
+    "authors": [
+      "Zehong Ke",
+      "Yanbo Jiang",
+      "Jinhao Li",
+      "Zhiyuan Liu",
+      "Yiqian Tu"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "general_multimodal",
     "num_samples": null,
@@ -37867,6 +37894,64 @@
     ]
   },
   {
+    "benchmark_name": "X-PCR",
+    "category": "medical",
+    "num_samples": 177868,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "progressive clinical reasoning",
+      "cross-modality reasoning",
+      "medical diagnosis"
+    ],
+    "description": "The first comprehensive evaluation of MLLMs through a complete ophthalmology diagnostic workflow with progressive reasoning and cross-modality integration tasks. Comprises 26,415 images and 177,868 expert-verified VQA pairs covering 52 ophthalmic diseases.",
+    "repo_links": [
+      "https://github.com/CVI-SZU/X-PCR"
+    ],
+    "paper_title": "X-PCR: A Benchmark for Cross-modality Progressive Clinical Reasoning in Ophthalmic Diagnosis",
+    "arxiv_id": "2604.20350",
+    "arxiv_url": "http://arxiv.org/abs/2604.20350v1",
+    "published": "2026-04-22",
+    "authors": [
+      "Gui Wang",
+      "Zehao Zhong",
+      "YongSong Zhou",
+      "Yudong Li",
+      "Ende Wu"
+    ]
+  },
+  {
+    "benchmark_name": "SurgCoT",
+    "category": "medical",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "chain-of-thought reasoning",
+      "spatiotemporal reasoning",
+      "surgical video analysis"
+    ],
+    "description": "A unified benchmark for evaluating chain-of-thought reasoning in MLLMs across 7 surgical specialties and 35 procedures. Assesses five core reasoning dimensions including causal action ordering and anomaly onset tracking through structured CoT framework.",
+    "repo_links": [
+      "https://github.com/CVI-SZU/SurgCoT"
+    ],
+    "paper_title": "SurgCoT: Advancing Spatiotemporal Reasoning in Surgical Videos through a Chain-of-Thought Benchmark",
+    "arxiv_id": "2604.20319",
+    "arxiv_url": "http://arxiv.org/abs/2604.20319v1",
+    "published": "2026-04-22",
+    "authors": [
+      "Gui Wang",
+      "YongSong Zhou",
+      "Kaijun Deng",
+      "Wooi Ping Cheah",
+      "Rong Qu"
+    ]
+  },
+  {
     "benchmark_name": "MIRB",
     "category": "multi_image",
     "num_samples": null,
@@ -38534,6 +38619,32 @@
       "Patrick Poirson",
       "David Xue",
       "Hao-Yu Wu"
+    ]
+  },
+  {
+    "benchmark_name": "OMIBench",
+    "category": "multi_image",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "multi-image reasoning",
+      "Olympiad-level problems"
+    ],
+    "description": "A benchmark designed to evaluate Olympiad-level reasoning when required evidence is distributed across multiple images. Contains problems from biology, chemistry, mathematics, and physics Olympiads with manually annotated rationales.",
+    "repo_links": [],
+    "paper_title": "OMIBench: Benchmarking Olympiad-Level Multi-Image Reasoning in Large Vision-Language Model",
+    "arxiv_id": "2604.20806",
+    "arxiv_url": "http://arxiv.org/abs/2604.20806v1",
+    "published": "2026-04-22",
+    "authors": [
+      "Qiguang Chen",
+      "Chengyu Luan",
+      "Jiajun Wu",
+      "Qiming Yu",
+      "Yi Yang"
     ]
   },
   {
@@ -50034,6 +50145,62 @@
     ]
   },
   {
+    "benchmark_name": "WildFireVQA",
+    "category": "other",
+    "num_samples": 207298,
+    "modalities": [
+      "RGB",
+      "thermal",
+      "text"
+    ],
+    "task_types": [
+      "wildfire monitoring",
+      "aerial VQA",
+      "thermal reasoning"
+    ],
+    "description": "A large-scale VQA benchmark for aerial wildfire monitoring that integrates RGB imagery with radiometric thermal data. Contains 6,097 RGB-thermal samples with 34 questions each, spanning wildfire detection, classification, and flight planning tasks.",
+    "repo_links": [
+      "https://github.com/mobiiin/WildFire_VQA"
+    ],
+    "paper_title": "WildFireVQA: A Large-Scale Radiometric Thermal VQA Benchmark for Aerial Wildfire Monitoring",
+    "arxiv_id": "2604.20190",
+    "arxiv_url": "http://arxiv.org/abs/2604.20190v1",
+    "published": "2026-04-22",
+    "authors": [
+      "Mobin Habibpour",
+      "Niloufar Alipour Talemi",
+      "John Spodnik",
+      "Camren J. Khoury",
+      "Fatemeh Afghah"
+    ]
+  },
+  {
+    "benchmark_name": "Evian benchmark",
+    "category": "other",
+    "num_samples": 300000,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "data auditing",
+      "quality assessment",
+      "instruction-following evaluation"
+    ],
+    "description": "A large-scale benchmark for visual instruction-tuning data auditing with systematically injected diverse defects. Uses decomposition-then-evaluation paradigm to assess image-text consistency, logical coherence, and factual accuracy.",
+    "repo_links": [],
+    "paper_title": "Evian: Towards Explainable Visual Instruction-tuning Data Auditing",
+    "arxiv_id": "2604.20544",
+    "arxiv_url": "http://arxiv.org/abs/2604.20544v1",
+    "published": "2026-04-22",
+    "authors": [
+      "Zimu Jia",
+      "Mingjie Xu",
+      "Andrew Estornell",
+      "Jiaheng Wei"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -51380,6 +51547,30 @@
       "Youyun Tang",
       "Xiaochao Qu",
       "Haoxiang Li"
+    ]
+  },
+  {
+    "benchmark_name": "DistortBench",
+    "category": "quality_aesthetics",
+    "num_samples": 13500,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "distortion identification",
+      "image quality assessment"
+    ],
+    "description": "A diagnostic benchmark for no-reference distortion perception in VLMs containing four-choice questions covering 27 distortion types, six perceptual categories, and five severity levels. Evaluates VLMs' ability to recognize distortion type and severity in images.",
+    "repo_links": [],
+    "paper_title": "DistortBench: Benchmarking Vision Language Models on Image Distortion Identification",
+    "arxiv_id": "2604.19966",
+    "arxiv_url": "http://arxiv.org/abs/2604.19966v1",
+    "published": "2026-04-21",
+    "authors": [
+      "Divyanshu Goyal",
+      "Akhil Eppa",
+      "Vanya Bannihatti Kumar"
     ]
   },
   {
@@ -68811,6 +69002,62 @@
       "Yuhang Pei",
       "Chenyang Wang",
       "Boxi Wu"
+    ]
+  },
+  {
+    "benchmark_name": "CCTVBench",
+    "category": "video_understanding",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "traffic reasoning",
+      "contrastive consistency",
+      "safety-critical analysis"
+    ],
+    "description": "A contrastive consistency traffic VideoQA benchmark built on paired real accident videos and world-model-generated counterfactual counterparts. Enforces structured decision patterns and provides actionable diagnostics for traffic safety reasoning.",
+    "repo_links": [],
+    "paper_title": "CCTVBench: Contrastive Consistency Traffic VideoQA Benchmark for Multimodal LLMs",
+    "arxiv_id": "2604.20460",
+    "arxiv_url": "http://arxiv.org/abs/2604.20460v1",
+    "published": "2026-04-22",
+    "authors": [
+      "Xingcheng Zhou",
+      "Hao Guo",
+      "Rui Song",
+      "Walter Zimmer",
+      "Mingyu Liu"
+    ]
+  },
+  {
+    "benchmark_name": "Video-ToC-SFT-1k and Video-ToC-RL-2k",
+    "category": "video_understanding",
+    "num_samples": 3000,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "video reasoning",
+      "tree-of-cue reasoning",
+      "visual cue localization"
+    ],
+    "description": "Datasets for supervised fine-tuning and reinforcement learning training constructed through automated annotation pipeline. Designed to enhance video understanding through tree-of-cue reasoning with structured visual cue localization.",
+    "repo_links": [
+      "https://github.com/qizhongtan/Video-ToC"
+    ],
+    "paper_title": "Video-ToC: Video Tree-of-Cue Reasoning",
+    "arxiv_id": "2604.20473",
+    "arxiv_url": "http://arxiv.org/abs/2604.20473v1",
+    "published": "2026-04-22",
+    "authors": [
+      "Qizhong Tan",
+      "Zhuotao Tian",
+      "Guangming Lu",
+      "Jun Yu",
+      "Wenjie Pei"
     ]
   },
   {
