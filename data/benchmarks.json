@@ -3006,6 +3006,59 @@
     ]
   },
   {
+    "benchmark_name": "PolyChartQA",
+    "category": "chart_figure",
+    "num_samples": 2694,
+    "modalities": [
+      "multi-chart images",
+      "text"
+    ],
+    "task_types": [
+      "multi-chart question answering",
+      "visual reasoning",
+      "chart interpretation"
+    ],
+    "description": "A mid-scale dataset for question answering over multi-chart images sourced from peer-reviewed research publications. Addresses the gap in understanding multiple related charts together with 534 multi-chart images containing 2,297 sub-charts.",
+    "repo_links": [],
+    "paper_title": "Beyond Single Plots: A Benchmark for Question Answering on Multi-Charts",
+    "arxiv_id": "2604.21344",
+    "arxiv_url": "http://arxiv.org/abs/2604.21344v1",
+    "published": "2026-04-23",
+    "authors": [
+      "Azher Ahmed Efat",
+      "Seok Hwan Song",
+      "Wallapak Tavanapong"
+    ]
+  },
+  {
+    "benchmark_name": "iPlotBench",
+    "category": "chart_figure",
+    "num_samples": 500,
+    "modalities": [
+      "interactive charts",
+      "specifications",
+      "text"
+    ],
+    "task_types": [
+      "interactive chart understanding",
+      "data reconstruction",
+      "visual question answering"
+    ],
+    "description": "A benchmark of interactive Plotly figures with binary questions and ground-truth specifications for evaluating visualization agents. Addresses the Pixel-Only Bottleneck by enabling spec-grounded introspection and view-grounded interaction.",
+    "repo_links": [],
+    "paper_title": "Beyond Pixels: Introspective and Interactive Grounding for Visualization Agents",
+    "arxiv_id": "2604.21134",
+    "arxiv_url": "http://arxiv.org/abs/2604.21134v1",
+    "published": "2026-04-22",
+    "authors": [
+      "Yiyang Lu",
+      "Woong Shin",
+      "Ahmad Maroof Karimi",
+      "Feiyi Wang",
+      "Jie Ren"
+    ]
+  },
+  {
     "benchmark_name": "Document Haystack",
     "category": "document_ocr",
     "num_samples": 8250,
@@ -6064,6 +6117,38 @@
       "Laziz Hamdi",
       "Amine Tamasna",
       "Thierry Paquet"
+    ]
+  },
+  {
+    "benchmark_name": "PAPERMIND",
+    "category": "document_ocr",
+    "num_samples": null,
+    "modalities": [
+      "scientific papers",
+      "text",
+      "figures",
+      "charts"
+    ],
+    "task_types": [
+      "multimodal grounding",
+      "experimental interpretation",
+      "cross-source evidence reasoning",
+      "critical assessment"
+    ],
+    "description": "A benchmark for evaluating integrated and agent-oriented scientific reasoning over research papers across seven domains. Features four complementary task families operationalizing multimodal grounding, experimental interpretation, cross-source evidence reasoning, and critical assessment.",
+    "repo_links": [
+      "https://github.com/Yanjun-Zhao/PaperMind"
+    ],
+    "paper_title": "PAPERMIND: Benchmarking Agentic Reasoning and Critique over Scientific Papers in Multimodal LLMs",
+    "arxiv_id": "2604.21304",
+    "arxiv_url": "http://arxiv.org/abs/2604.21304v1",
+    "published": "2026-04-23",
+    "authors": [
+      "Yanjun Zhao",
+      "Tianxin Wei",
+      "Jiaru Zou",
+      "Xuying Ning",
+      "Yuanchen Bei"
     ]
   },
   {
@@ -11523,6 +11608,36 @@
       "Jinhao Li",
       "Zhiyuan Liu",
       "Yiqian Tu"
+    ]
+  },
+  {
+    "benchmark_name": "EgoPoint-Bench",
+    "category": "egocentric_embodied",
+    "num_samples": 11000,
+    "modalities": [
+      "egocentric images",
+      "text",
+      "pointing gestures"
+    ],
+    "task_types": [
+      "pointing gesture understanding",
+      "referential reasoning",
+      "spatial grounding"
+    ],
+    "description": "A comprehensive question-answering benchmark for evaluating multimodal pointing reasoning in egocentric views. Addresses 'Referential Hallucination' by testing spatial semantics of pointing gestures across five evaluation dimensions.",
+    "repo_links": [
+      "https://guyyyug.github.io/EgoPoint-Bench/"
+    ],
+    "paper_title": "Do MLLMs Understand Pointing? Benchmarking and Enhancing Referential Reasoning in Egocentric Vision",
+    "arxiv_id": "2604.21461",
+    "arxiv_url": "http://arxiv.org/abs/2604.21461v1",
+    "published": "2026-04-23",
+    "authors": [
+      "Chentao Li",
+      "Zirui Gao",
+      "Mingze Gao",
+      "Yinglian Ren",
+      "Jianjiang Feng"
     ]
   },
   {
@@ -28055,6 +28170,61 @@
       "Xinlei Guan",
       "Tejaswi Dhandu",
       "Miles Q. Li"
+    ]
+  },
+  {
+    "benchmark_name": "VLM Evaluator Reliability Benchmark",
+    "category": "hallucination",
+    "num_samples": 4000,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "evaluator reliability assessment",
+      "hallucination detection",
+      "spatial reasoning evaluation"
+    ],
+    "description": "A comprehensive benchmark testing the reliability of Evaluator VLMs across image-to-text and text-to-image tasks. Introduces targeted perturbations across 40 dimensions to evaluate whether VLMs can detect quality degrading errors including hallucinations and spatial reasoning failures.",
+    "repo_links": [],
+    "paper_title": "Seeing Isn't Believing: Uncovering Blind Spots in Evaluator Vision-Language Models",
+    "arxiv_id": "2604.21523",
+    "arxiv_url": "http://arxiv.org/abs/2604.21523v1",
+    "published": "2026-04-23",
+    "authors": [
+      "Mohammed Safi Ur Rahman Khan",
+      "Sanjay Suryanarayanan",
+      "Tushar Anand",
+      "Mitesh M. Khapra"
+    ]
+  },
+  {
+    "benchmark_name": "HalluScope",
+    "category": "hallucination",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "hallucination analysis",
+      "textual prior evaluation",
+      "visual grounding assessment"
+    ],
+    "description": "A benchmark designed to understand factors that induce hallucinations in large vision-language models. Focuses on analyzing excessive reliance on textual priors and background knowledge, particularly information from textual instructions.",
+    "repo_links": [
+      "https://pegah-kh.github.io/projects/prompts-override-vision/"
+    ],
+    "paper_title": "When Prompts Override Vision: Prompt-Induced Hallucinations in LVLMs",
+    "arxiv_id": "2604.21911",
+    "arxiv_url": "http://arxiv.org/abs/2604.21911v1",
+    "published": "2026-04-23",
+    "authors": [
+      "Pegah Khayatan",
+      "Jayneel Parekh",
+      "Arnaud Dapogny",
+      "Mustafa Shukor",
+      "Alasdair Newson"
     ]
   },
   {
@@ -50201,6 +50371,63 @@
     ]
   },
   {
+    "benchmark_name": "Climate Change Social Media Visual Discourse Dataset",
+    "category": "other",
+    "num_samples": 1200000,
+    "modalities": [
+      "social media images",
+      "text"
+    ],
+    "task_types": [
+      "visual discourse analysis",
+      "climate change content analysis",
+      "social media analysis"
+    ],
+    "description": "A large-scale dataset for automated visual discourse analysis of climate change content on social media. Includes expert-annotated and validated images spanning five annotation dimensions including animal content, climate consequences, and climate action.",
+    "repo_links": [
+      "https://github.com/KathPra/Codebooks2VLMs.git"
+    ],
+    "paper_title": "From Codebooks to VLMs: Evaluating Automated Visual Discourse Analysis for Climate Change on Social Media",
+    "arxiv_id": "2604.21786",
+    "arxiv_url": "http://arxiv.org/abs/2604.21786v1",
+    "published": "2026-04-23",
+    "authors": [
+      "Katharina Prasse",
+      "Steffen Jung",
+      "Isaac Bravo",
+      "Stefanie Walter",
+      "Patrick Knab"
+    ]
+  },
+  {
+    "benchmark_name": "PlantInquiryVQA",
+    "category": "other",
+    "num_samples": 138068,
+    "modalities": [
+      "plant images",
+      "text",
+      "diagnostic questions"
+    ],
+    "task_types": [
+      "botanical diagnosis",
+      "multi-step visual reasoning",
+      "intent-driven inquiry"
+    ],
+    "description": "A benchmark for studying multi-step, intent-driven visual reasoning in botanical diagnosis using Chain of Inquiry framework. Contains expert-curated plant images with question-answer pairs annotated with visual grounding, severity labels, and reasoning templates.",
+    "repo_links": [],
+    "paper_title": "Thinking Like a Botanist: Challenging Multimodal Language Models with Intent-Driven Chain-of-Inquiry",
+    "arxiv_id": "2604.20983",
+    "arxiv_url": "http://arxiv.org/abs/2604.20983v1",
+    "published": "2026-04-22",
+    "authors": [
+      "Syed Nazmus Sakib",
+      "Nafiul Haque",
+      "Shahrear Bin Amin",
+      "Hasan Muhammad Abdullah",
+      "Md. Mehedi Hasan"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -62249,6 +62476,35 @@
     ]
   },
   {
+    "benchmark_name": "ARFBench",
+    "category": "temporal_reasoning",
+    "num_samples": 750,
+    "modalities": [
+      "time series",
+      "text"
+    ],
+    "task_types": [
+      "time series question answering",
+      "anomaly detection",
+      "incident response"
+    ],
+    "description": "A time series question-answering benchmark evaluating multimodal foundation models on time series anomalies from software incident data. Contains questions across production incidents sourced from internal telemetry at Datadog.",
+    "repo_links": [
+      "https://huggingface.co/datasets/Datadog/ARFBench"
+    ],
+    "paper_title": "ARFBench: Benchmarking Time Series Question Answering Ability for Software Incident Response",
+    "arxiv_id": "2604.21199",
+    "arxiv_url": "http://arxiv.org/abs/2604.21199v1",
+    "published": "2026-04-23",
+    "authors": [
+      "Stephan Xie",
+      "Ben Cohen",
+      "Mononito Goswami",
+      "Junhong Shen",
+      "Emaad Khwaja"
+    ]
+  },
+  {
     "benchmark_name": "AEGIS",
     "category": "video_hallucination",
     "num_samples": 10000,
@@ -69058,6 +69314,36 @@
       "Guangming Lu",
       "Jun Yu",
       "Wenjie Pei"
+    ]
+  },
+  {
+    "benchmark_name": "WorldMark",
+    "category": "video_understanding",
+    "num_samples": 500,
+    "modalities": [
+      "image",
+      "video",
+      "action sequences"
+    ],
+    "task_types": [
+      "interactive video generation",
+      "world model evaluation",
+      "trajectory planning"
+    ],
+    "description": "The first unified benchmark for evaluating interactive Image-to-Video world models with standardized test conditions. Provides identical scenes and action sequences across different models with a hierarchical test suite covering first- and third-person viewpoints.",
+    "repo_links": [
+      "warena.ai"
+    ],
+    "paper_title": "WorldMark: A Unified Benchmark Suite for Interactive Video World Models",
+    "arxiv_id": "2604.21686",
+    "arxiv_url": "http://arxiv.org/abs/2604.21686v1",
+    "published": "2026-04-23",
+    "authors": [
+      "Xiaojie Xu",
+      "Zhengyuan Lin",
+      "Kang He",
+      "Yukang Feng",
+      "Xiaofeng Mao"
     ]
   },
   {
@@ -77030,6 +77316,33 @@
       "Chuou Xu",
       "Liya Ji",
       "Qifeng Chen"
+    ]
+  },
+  {
+    "benchmark_name": "VG-CoT",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "text",
+      "reasoning chains"
+    ],
+    "task_types": [
+      "grounded reasoning",
+      "visual evidence linking",
+      "multi-step reasoning"
+    ],
+    "description": "A Visual Grounding Chain-of-Thought dataset that explicitly links each reasoning step to real visual evidence through automated pipeline. Evaluates LVLMs across Rationale Quality, Answer Accuracy, and Reasoning-Answer Alignment dimensions.",
+    "repo_links": [],
+    "paper_title": "VG-CoT: Towards Trustworthy Visual Reasoning via Grounded Chain-of-Thought",
+    "arxiv_id": "2604.21396",
+    "arxiv_url": "http://arxiv.org/abs/2604.21396v1",
+    "published": "2026-04-23",
+    "authors": [
+      "Byeonggeuk Lim",
+      "Kyeonghyun Kim",
+      "JungMin Yun",
+      "YoungBin Kim"
     ]
   }
 ]
