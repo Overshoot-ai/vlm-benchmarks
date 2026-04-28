@@ -3059,6 +3059,33 @@
     ]
   },
   {
+    "benchmark_name": "MQUD",
+    "category": "chart_figure",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "question generation",
+      "multimodal reasoning",
+      "scientific figure analysis"
+    ],
+    "description": "A dataset of research papers with inquisitive questions made explicit and annotated by original authors, extending Questions Under Discussion theory to multimodal contexts. It focuses on generating high-quality questions that require reasoning across both figures and text in scientific papers.",
+    "repo_links": [],
+    "paper_title": "Multimodal QUD: Inquisitive Questions from Scientific Figures",
+    "arxiv_id": "2604.23733",
+    "arxiv_url": "http://arxiv.org/abs/2604.23733v1",
+    "published": "2026-04-26",
+    "authors": [
+      "Yating Wu",
+      "William Rudman",
+      "Venkata S Govindarajan",
+      "Alexandros G. Dimakis",
+      "Junyi Jessy Li"
+    ]
+  },
+  {
     "benchmark_name": "Document Haystack",
     "category": "document_ocr",
     "num_samples": 8250,
@@ -6149,6 +6176,35 @@
       "Jiaru Zou",
       "Xuying Ning",
       "Yuanchen Bei"
+    ]
+  },
+  {
+    "benchmark_name": "ShredBench",
+    "category": "document_ocr",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "document reconstruction",
+      "fragment assembly",
+      "semantic reasoning"
+    ],
+    "description": "A benchmark for evaluating semantic reasoning capabilities in document reconstruction from shredded fragments. It features an automated generation pipeline that renders fragmented documents directly from Markdown across four scenarios with three fragmentation granularities.",
+    "repo_links": [
+      "https://github.com/ythere-y/ShredBench"
+    ],
+    "paper_title": "ShredBench: Evaluating the Semantic Reasoning Capabilities of Multimodal LLMs in Document Reconstruction",
+    "arxiv_id": "2604.23813",
+    "arxiv_url": "http://arxiv.org/abs/2604.23813v1",
+    "published": "2026-04-26",
+    "authors": [
+      "Zichun Guo",
+      "Yuling Shi",
+      "Wenhao Zeng",
+      "Chao Hu",
+      "Haotian Lin"
     ]
   },
   {
@@ -26310,6 +26366,33 @@
     ]
   },
   {
+    "benchmark_name": "AutoGUI-v2",
+    "category": "gui_web_agent",
+    "num_samples": 2753,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "functional grounding",
+      "functionality captioning",
+      "interaction outcome prediction"
+    ],
+    "description": "A comprehensive benchmark designed to evaluate deep GUI functionality understanding and interaction outcome prediction. It tests agents on region and element-level semantics, grounding, and dynamic state prediction across six operating systems using a novel VLM-human collaborative pipeline.",
+    "repo_links": [],
+    "paper_title": "AutoGUI-v2: A Comprehensive Multi-Modal GUI Functionality Understanding Benchmark",
+    "arxiv_id": "2604.24441",
+    "arxiv_url": "http://arxiv.org/abs/2604.24441v1",
+    "published": "2026-04-27",
+    "authors": [
+      "Hongxin Li",
+      "Xiping Wang",
+      "Jingran Su",
+      "Zheng Ju",
+      "Yuntao Chen"
+    ]
+  },
+  {
     "benchmark_name": "DeCapBench",
     "category": "hallucination",
     "num_samples": null,
@@ -28254,6 +28337,30 @@
       "Arnaud Dapogny",
       "Mustafa Shukor",
       "Alasdair Newson"
+    ]
+  },
+  {
+    "benchmark_name": "SycoPhantasy",
+    "category": "hallucination",
+    "num_samples": 173810,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "image-text alignment evaluation",
+      "sycophancy detection"
+    ],
+    "description": "A benchmark of AI-generated character portraits paired with detailed textual descriptions to quantify sycophantic behavior in VLMs. It introduces the Bluffing Coefficient metric to measure the mismatch between a model's score and its evidence recall.",
+    "repo_links": [],
+    "paper_title": "SycoPhantasy: Quantifying Sycophancy and Hallucination in Small Open Weight VLMs for Vision-Language Scoring of Fantasy Characters",
+    "arxiv_id": "2604.24346",
+    "arxiv_url": "http://arxiv.org/abs/2604.24346v1",
+    "published": "2026-04-27",
+    "authors": [
+      "Arya Shah",
+      "Deepali Mishra",
+      "Chaklam Silpasuwanchai"
     ]
   },
   {
@@ -50486,6 +50593,64 @@
     ]
   },
   {
+    "benchmark_name": "K-MetBench",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "expert visual reasoning",
+      "logical validity assessment",
+      "geo-cultural comprehension"
+    ],
+    "description": "A diagnostic benchmark for Korean meteorology grounded in national qualification exams. It evaluates expert visual reasoning of charts, logical validity, Korean-specific geo-cultural comprehension, and fine-grained domain analysis across four dimensions.",
+    "repo_links": [
+      "https://huggingface.co/datasets/soyeonbot/K-MetBench"
+    ],
+    "paper_title": "K-MetBench: A Multi-Dimensional Benchmark for Fine-Grained Evaluation of Expert Reasoning, Locality, and Multimodality in Meteorology",
+    "arxiv_id": "2604.24645",
+    "arxiv_url": "http://arxiv.org/abs/2604.24645v1",
+    "published": "2026-04-27",
+    "authors": [
+      "Soyeon Kim",
+      "Cheongwoong Kang",
+      "Myeongjin Lee",
+      "Eun-Chul Chang",
+      "Jaedeok Lee"
+    ]
+  },
+  {
+    "benchmark_name": "AstroVLBench",
+    "category": "other",
+    "num_samples": 4100,
+    "modalities": [
+      "images",
+      "text",
+      "numerical data"
+    ],
+    "task_types": [
+      "optical imaging analysis",
+      "radio interferometry",
+      "photometry",
+      "light curve analysis",
+      "spectroscopy"
+    ],
+    "description": "A comprehensive benchmark comprising expert-verified instances across five astronomical tasks spanning optical imaging, radio interferometry, multi-wavelength photometry, time-domain light curves, and optical spectroscopy. It provides the first systematic, multi-modal baselines for VLMs in observational astronomy.",
+    "repo_links": [],
+    "paper_title": "A systematic evaluation of vision-language models for observational astronomical reasoning tasks",
+    "arxiv_id": "2604.24589",
+    "arxiv_url": "http://arxiv.org/abs/2604.24589v1",
+    "published": "2026-04-27",
+    "authors": [
+      "Wenke Ren",
+      "Hengxiao Guo",
+      "Wenwen Zuo",
+      "Xiaoman Zhang"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -60553,6 +60718,33 @@
     ]
   },
   {
+    "benchmark_name": "ReVSI",
+    "category": "spatial_3d",
+    "num_samples": 381,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "3D spatial reasoning",
+      "object detection",
+      "geometry understanding"
+    ],
+    "description": "A benchmark and protocol that ensures each QA pair is answerable and correct under the model's actual inputs for 3D spatial reasoning. It re-annotates objects and geometry across scenes from 5 datasets with rigorous bias mitigation and human verification.",
+    "repo_links": [],
+    "paper_title": "ReVSI: Rebuilding Visual Spatial Intelligence Evaluation for Accurate Assessment of VLM 3D Reasoning",
+    "arxiv_id": "2604.24300",
+    "arxiv_url": "http://arxiv.org/abs/2604.24300v1",
+    "published": "2026-04-27",
+    "authors": [
+      "Yiming Zhang",
+      "Jiacheng Chen",
+      "Jiaqi Tan",
+      "Yongsen Mao",
+      "Wenhu Chen"
+    ]
+  },
+  {
     "benchmark_name": "Temporally-Grounded Language Generation (TGLG)",
     "category": "streaming_video",
     "num_samples": null,
@@ -69402,6 +69594,59 @@
       "Kang He",
       "Yukang Feng",
       "Xiaofeng Mao"
+    ]
+  },
+  {
+    "benchmark_name": "EmoTrans",
+    "category": "video_understanding",
+    "num_samples": 1000,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "Emotion Change Detection",
+      "Emotion State Identification",
+      "Emotion Transition Reasoning",
+      "Next Emotion Prediction"
+    ],
+    "description": "A benchmark for evaluating emotion dynamics understanding in multimodal videos, covering 12 real-world scenarios. It introduces four progressive tasks from coarse-grained detection to deeper reasoning and prediction of emotion transitions.",
+    "repo_links": [
+      "https://github.com/Emo-gml/EmoTrans"
+    ],
+    "paper_title": "EmoTrans: A Benchmark for Understanding, Reasoning, and Predicting Emotion Transitions in Multimodal LLMs",
+    "arxiv_id": "2604.23348",
+    "arxiv_url": "http://arxiv.org/abs/2604.23348v1",
+    "published": "2026-04-25",
+    "authors": [
+      "He Hu",
+      "Tengjin Weng",
+      "Zebang Cheng",
+      "Yu Wang",
+      "Jiachen Luo"
+    ]
+  },
+  {
+    "benchmark_name": "MLVU(VS)-Eval",
+    "category": "video_understanding",
+    "num_samples": 800,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "video summarization",
+      "multimodal question answering"
+    ],
+    "description": "A new annotated benchmark derived from the MLVU dataset for video summarization evaluation. It comprises summaries generated from 200 videos using state-of-the-art video-language multimodal models, establishing a transparent framework for evaluation.",
+    "repo_links": [],
+    "paper_title": "QEVA: A Reference-Free Evaluation Metric for Narrative Video Summarization with Multimodal Question Answering",
+    "arxiv_id": "2604.24052",
+    "arxiv_url": "http://arxiv.org/abs/2604.24052v1",
+    "published": "2026-04-27",
+    "authors": [
+      "Woojun Jung",
+      "Junyeong Kim"
     ]
   },
   {
