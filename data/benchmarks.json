@@ -3086,6 +3086,31 @@
     ]
   },
   {
+    "benchmark_name": "QCalEval",
+    "category": "chart_figure",
+    "num_samples": 243,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "question answering"
+    ],
+    "description": "First VLM benchmark for quantum calibration plots with 243 samples across 87 scenario types from 22 experiment families, spanning superconducting qubits and neutral atoms. Evaluates models on six question types in both zero-shot and in-context learning settings.",
+    "repo_links": [],
+    "paper_title": "QCalEval: Benchmarking Vision-Language Models for Quantum Calibration Plot Understanding",
+    "arxiv_id": "2604.25884",
+    "arxiv_url": "http://arxiv.org/abs/2604.25884v1",
+    "published": "2026-04-28",
+    "authors": [
+      "Shuxiang Cao",
+      "Zijian Zhang",
+      "Abhishek Agarwal",
+      "Grace Bratrud",
+      "Niyaz R. Beysengulov"
+    ]
+  },
+  {
     "benchmark_name": "Document Haystack",
     "category": "document_ocr",
     "num_samples": 8250,
@@ -6205,6 +6230,33 @@
       "Wenhao Zeng",
       "Chao Hu",
       "Haotian Lin"
+    ]
+  },
+  {
+    "benchmark_name": "FCMBench-Video",
+    "category": "document_ocr",
+    "num_samples": 11322,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "document perception",
+      "temporal grounding",
+      "evidence-grounded reasoning"
+    ],
+    "description": "Benchmark for document-video intelligence built from 495 atomic videos composed into 1,200 long-form videos with 11,322 expert-annotated question-answer instances. Evaluates document perception, temporal grounding, and evidence-grounded reasoning under realistic capture conditions across 28 document types.",
+    "repo_links": [],
+    "paper_title": "FCMBench-Video: Benchmarking Document Video Intelligence",
+    "arxiv_id": "2604.25186",
+    "arxiv_url": "http://arxiv.org/abs/2604.25186v1",
+    "published": "2026-04-28",
+    "authors": [
+      "Runze Cui",
+      "Fangxin Shang",
+      "Yehui Yang",
+      "Qing Yang",
+      "Tao Chen"
     ]
   },
   {
@@ -11723,6 +11775,31 @@
       "Chunlei Meng",
       "Zhangquan Chen",
       "Yitong Qiao"
+    ]
+  },
+  {
+    "benchmark_name": "EM-QnF",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "episodic memory",
+      "interactive feedback",
+      "egocentric video understanding"
+    ],
+    "description": "Episodic Memory with Questions and Feedback task where users provide feedback on model predictions for natural language queries over long egocentric videos. Introduces interactive framework allowing users to refine predictions through feedback and additional information.",
+    "repo_links": [],
+    "paper_title": "Interactive Episodic Memory with User Feedback",
+    "arxiv_id": "2604.24893",
+    "arxiv_url": "http://arxiv.org/abs/2604.24893v1",
+    "published": "2026-04-27",
+    "authors": [
+      "Nikesh Subedi",
+      "Loris Bazzani",
+      "Ziad Al-Halah"
     ]
   },
   {
@@ -20249,6 +20326,33 @@
     ]
   },
   {
+    "benchmark_name": "XTC-Bench",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "cross-task consistency",
+      "visual semantic alignment",
+      "generation-understanding alignment"
+    ],
+    "description": "Scene-graph-grounded evaluation framework measuring cross-task visual semantic consistency in unified multimodal models. Enables fact-level alignment analysis across objects, attributes, and relations by deriving both generation prompts and understanding queries from structured scene graphs.",
+    "repo_links": [],
+    "paper_title": "Beyond Accuracy: Benchmarking Cross-Task Consistency in Unified Multimodal Models",
+    "arxiv_id": "2604.25072",
+    "arxiv_url": "http://arxiv.org/abs/2604.25072v1",
+    "published": "2026-04-27",
+    "authors": [
+      "Weixing Wang",
+      "Liudvikas Zekas",
+      "Anton Hackl",
+      "Constantin Alexander Auga",
+      "Parisa Shahabinejad"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -26390,6 +26494,36 @@
       "Jingran Su",
       "Zheng Ju",
       "Yuntao Chen"
+    ]
+  },
+  {
+    "benchmark_name": "DV-World",
+    "category": "gui_web_agent",
+    "num_samples": 260,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "data visualization",
+      "chart creation",
+      "spreadsheet manipulation",
+      "diagnostic repair"
+    ],
+    "description": "Benchmark of 260 tasks evaluating data visualization agents across real-world professional lifecycles including native spreadsheet manipulation, chart creation, diagnostic repair, and proactive intent alignment. Features hybrid evaluation framework with Table-value Alignment and MLLM-as-a-Judge assessment.",
+    "repo_links": [
+      "https://github.com/DA-Open/DV-World"
+    ],
+    "paper_title": "DV-World: Benchmarking Data Visualization Agents in Real-World Scenarios",
+    "arxiv_id": "2604.25914",
+    "arxiv_url": "http://arxiv.org/abs/2604.25914v1",
+    "published": "2026-04-28",
+    "authors": [
+      "Jinxiang Meng",
+      "Shaoping Huang",
+      "Fangyu Lei",
+      "Jingyu Guo",
+      "Haoxiang Liu"
     ]
   },
   {
@@ -50651,6 +50785,33 @@
     ]
   },
   {
+    "benchmark_name": "HotComment",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "content quality evaluation",
+      "popularity prediction",
+      "user behavior simulation"
+    ],
+    "description": "Multimodal benchmark integrating video and text modalities to evaluate popularity of online comments from three aspects: content quality, popularity prediction, and user behavior simulation. Features agent-based framework for approximating engagement scores through user distribution modeling.",
+    "repo_links": [],
+    "paper_title": "HotComment: A Benchmark for Evaluating Popularity of Online Comments",
+    "arxiv_id": "2604.25614",
+    "arxiv_url": "http://arxiv.org/abs/2604.25614v1",
+    "published": "2026-04-28",
+    "authors": [
+      "Yafeng Wu",
+      "Yunyao Zhang",
+      "Liliang Ye",
+      "Guiyi Zeng",
+      "Junqing Yu"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -69650,6 +69811,31 @@
     ]
   },
   {
+    "benchmark_name": "HuM-Eval/HuM-Bench",
+    "category": "video_understanding",
+    "num_samples": 1000,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "human motion evaluation",
+      "anatomical correctness",
+      "motion stability"
+    ],
+    "description": "Human-centric video evaluation framework with coarse-to-fine strategy using Vision Language Model for global assessment and 2D/3D pose analysis for fine-grained evaluation. Includes HuM-Bench comprehensive benchmark with 1,000 diverse prompts for text-to-video model evaluation.",
+    "repo_links": [],
+    "paper_title": "HuM-Eval: A Coarse-to-Fine Framework for Human-Centric Video Evaluation",
+    "arxiv_id": "2604.25361",
+    "arxiv_url": "http://arxiv.org/abs/2604.25361v1",
+    "published": "2026-04-28",
+    "authors": [
+      "Bingzi Zhang",
+      "Kaisi Guan",
+      "Ruihua Song"
+    ]
+  },
+  {
     "benchmark_name": "GraphVLM",
     "category": "visual_reasoning",
     "num_samples": null,
@@ -77646,6 +77832,62 @@
       "Kyeonghyun Kim",
       "JungMin Yun",
       "YoungBin Kim"
+    ]
+  },
+  {
+    "benchmark_name": "DRAGON",
+    "category": "visual_reasoning",
+    "num_samples": 11664,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "evidence grounding",
+      "visual reasoning",
+      "bounding box prediction"
+    ],
+    "description": "Benchmark for evaluating evidence-grounded visual reasoning in diagrams that requires models to predict bounding boxes corresponding to visual elements needed to justify answers. Contains 11,664 annotated question instances from six diagram QA datasets with human-verified reasoning evidence annotations.",
+    "repo_links": [],
+    "paper_title": "DRAGON: A Benchmark for Evidence-Grounded Visual Reasoning over Diagrams",
+    "arxiv_id": "2604.25231",
+    "arxiv_url": "http://arxiv.org/abs/2604.25231v1",
+    "published": "2026-04-28",
+    "authors": [
+      "Anirudh Iyengar Kaniyar Narayana Iyengar",
+      "Tampu Ravi Kumar",
+      "Gaurav Najpande",
+      "Manan Suri",
+      "Dinesh Manocha"
+    ]
+  },
+  {
+    "benchmark_name": "M³-VQA",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "multi-hop reasoning",
+      "knowledge-based VQA",
+      "multi-entity understanding"
+    ],
+    "description": "Knowledge-based VQA benchmark focusing on multimodal, multi-entity, multi-hop visual question answering with diverse multi-entity questions involving multiple distinct entities. Requires sequential and parallel multi-hop reasoning across multiple documents with traceable evidence and curated multimodal knowledge base.",
+    "repo_links": [
+      "https://github.com/CASIA-IVA-Lab/M3VQA"
+    ],
+    "paper_title": "M$^3$-VQA: A Benchmark for Multimodal, Multi-Entity, Multi-Hop Visual Question Answering",
+    "arxiv_id": "2604.25122",
+    "arxiv_url": "http://arxiv.org/abs/2604.25122v1",
+    "published": "2026-04-28",
+    "authors": [
+      "Jiatong Ma",
+      "Longteng Guo",
+      "Yuchen Liu",
+      "Zijia Zhao",
+      "Dongze Hao"
     ]
   }
 ]
