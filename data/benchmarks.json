@@ -26527,6 +26527,33 @@
     ]
   },
   {
+    "benchmark_name": "AniMINT",
+    "category": "gui_web_agent",
+    "num_samples": 300,
+    "modalities": [
+      "video",
+      "UI animations"
+    ],
+    "task_types": [
+      "animation effect perception",
+      "animation purpose identification",
+      "animation meaning interpretation"
+    ],
+    "description": "A novel dataset of 300 densely annotated UI animation videos for evaluating VLMs' understanding of dynamic UI animations. It systematically tests VLMs' abilities to perceive animation effects, identify animation purposes, and interpret animation meaning.",
+    "repo_links": [],
+    "paper_title": "Beyond Screenshots: Evaluating VLMs' Understanding of UI Animations",
+    "arxiv_id": "2604.26148",
+    "arxiv_url": "http://arxiv.org/abs/2604.26148v1",
+    "published": "2026-04-28",
+    "authors": [
+      "Chen Liang",
+      "Xirui Jiang",
+      "Naihao Deng",
+      "Eytan Adar",
+      "Anhong Guo"
+    ]
+  },
+  {
     "benchmark_name": "DeCapBench",
     "category": "hallucination",
     "num_samples": null,
