@@ -26554,6 +26554,34 @@
     ]
   },
   {
+    "benchmark_name": "FineState-Bench",
+    "category": "gui_web_agent",
+    "num_samples": 2209,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "GUI interaction",
+      "state-conditioned grounding"
+    ],
+    "description": "A benchmark evaluating whether agents can correctly ground instructions to UI controls and reach exact target states. It comprises instances across desktop, web, and mobile platforms with explicit target state specifications for fine-grained state setting evaluation.",
+    "repo_links": [
+      "https://github.com/FengxianJi/FineState-Bench"
+    ],
+    "paper_title": "FineState-Bench: Benchmarking State-Conditioned Grounding for Fine-grained GUI State Setting",
+    "arxiv_id": "2604.27974",
+    "arxiv_url": "http://arxiv.org/abs/2604.27974v1",
+    "published": "2026-04-30",
+    "authors": [
+      "Fengxian Ji",
+      "Jingpu Yang",
+      "Zirui Song",
+      "Yuanxi Wang",
+      "Zhexuan Cui"
+    ]
+  },
+  {
     "benchmark_name": "DeCapBench",
     "category": "hallucination",
     "num_samples": null,
@@ -32774,6 +32802,60 @@
       "Yan Bai",
       "Yihang Lou",
       "Zhenke Wang"
+    ]
+  },
+  {
+    "benchmark_name": "SpecVQA",
+    "category": "math_science",
+    "num_samples": 3100,
+    "modalities": [
+      "scientific images",
+      "text"
+    ],
+    "task_types": [
+      "visual question answering",
+      "spectral understanding",
+      "scientific reasoning"
+    ],
+    "description": "A professional scientific-image benchmark for evaluating multimodal models on scientific spectral understanding, covering 7 representative spectrum types. Contains 620 figures and 3100 QA pairs curated from peer-reviewed literature targeting both direct information extraction and domain-specific reasoning.",
+    "repo_links": [],
+    "paper_title": "SpecVQA: A Benchmark for Spectral Understanding and Visual Question Answering in Scientific Images",
+    "arxiv_id": "2604.28039",
+    "arxiv_url": "http://arxiv.org/abs/2604.28039v1",
+    "published": "2026-04-30",
+    "authors": [
+      "Jialu Shen",
+      "Han Lyu",
+      "Suyang Zhong",
+      "Hanzheng Li",
+      "Haoyi Tao"
+    ]
+  },
+  {
+    "benchmark_name": "SPUR",
+    "category": "math_science",
+    "num_samples": 4264,
+    "modalities": [
+      "scientific images",
+      "text"
+    ],
+    "task_types": [
+      "visual perception",
+      "cross-panel reasoning",
+      "scientific reasoning"
+    ],
+    "description": "A comprehensive benchmark for scientific experimental image perception, understanding, and reasoning comprising 4,264 QA pairs from 1,084 expert-curated images. Features panel-level perception evaluation, cross-panel relation understanding with complex multi-panel images, and expert-level reasoning assessment.",
+    "repo_links": [],
+    "paper_title": "Decoding Scientific Experimental Images: The SPUR Benchmark for Perception, Understanding, and Reasoning",
+    "arxiv_id": "2604.27604",
+    "arxiv_url": "http://arxiv.org/abs/2604.27604v1",
+    "published": "2026-04-30",
+    "authors": [
+      "Junpeng Ding",
+      "Zichen Tang",
+      "Haihong E",
+      "Mengyuan Ji",
+      "Yang Liu"
     ]
   },
   {
@@ -39112,6 +39194,32 @@
       "Jiajun Wu",
       "Qiming Yu",
       "Yi Yang"
+    ]
+  },
+  {
+    "benchmark_name": "COHERENCE",
+    "category": "multi_image",
+    "num_samples": 6161,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "image-text alignment",
+      "interleaved context understanding"
+    ],
+    "description": "A benchmark designed to evaluate MLLMs' ability to recover fine-grained image-text correspondences in interleaved multimodal contexts. Covers content from four representative domains and enables fine-grained attribution of failures in interleaved image-text understanding.",
+    "repo_links": [],
+    "paper_title": "COHERENCE: Benchmarking Fine-Grained Image-Text Alignment in Interleaved Multimodal Contexts",
+    "arxiv_id": "2604.27389",
+    "arxiv_url": "http://arxiv.org/abs/2604.27389v1",
+    "published": "2026-04-30",
+    "authors": [
+      "Bingli Wang",
+      "Huanze Tang",
+      "Haijun Lv",
+      "Zhishan Lin",
+      "Lixin Gu"
     ]
   },
   {
@@ -56839,6 +56947,33 @@
     ]
   },
   {
+    "benchmark_name": "AEGIS",
+    "category": "safety_bias",
+    "num_samples": null,
+    "modalities": [
+      "images"
+    ],
+    "task_types": [
+      "forensic analysis",
+      "detection",
+      "reasoning",
+      "localization"
+    ],
+    "description": "A holistic benchmark for evaluating forensic analysis of AI-generated academic images covering seven academic categories with 39 fine-grained subtypes. It models four prevalent academic forgery strategies across 25 generative models with multi-dimensional evaluation of detection, reasoning, and localization.",
+    "repo_links": [],
+    "paper_title": "AEGIS: A Holistic Benchmark for Evaluating Forensic Analysis of AI-Generated Academic Images",
+    "arxiv_id": "2604.28177",
+    "arxiv_url": "http://arxiv.org/abs/2604.28177v1",
+    "published": "2026-04-30",
+    "authors": [
+      "Bo Zhang",
+      "Tzu-Yen Ma",
+      "Zichen Tang",
+      "Junpeng Ding",
+      "Zirui Wang"
+    ]
+  },
+  {
     "benchmark_name": "SRBench",
     "category": "spatial_3d",
     "num_samples": null,
@@ -69860,6 +69995,34 @@
       "Bingzi Zhang",
       "Kaisi Guan",
       "Ruihua Song"
+    ]
+  },
+  {
+    "benchmark_name": "TransVLM STD Benchmark",
+    "category": "video_understanding",
+    "num_samples": null,
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "shot transition detection"
+    ],
+    "description": "A comprehensive benchmark for Shot Transition Detection (STD) that focuses on detecting continuous temporal segments of transitions rather than isolated cut points. The benchmark addresses the limitations of traditional Shot Boundary Detection by providing diverse transition videos for robust evaluation.",
+    "repo_links": [
+      "https://chence17.github.io/TransVLM/",
+      "https://www.heygen.com/research",
+      "https://www.heygen.com/research/avatar-v-model"
+    ],
+    "paper_title": "TransVLM: A Vision-Language Framework and Benchmark for Detecting Any Shot Transitions",
+    "arxiv_id": "2604.27975",
+    "arxiv_url": "http://arxiv.org/abs/2604.27975v1",
+    "published": "2026-04-30",
+    "authors": [
+      "Ce Chen",
+      "Yi Ren",
+      "Yuanming Li",
+      "Viktor Goriachko",
+      "Zhenhui Ye"
     ]
   },
   {
