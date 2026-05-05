@@ -1447,6 +1447,33 @@
     ]
   },
   {
+    "benchmark_name": "MedMosaic",
+    "category": "audio_visual",
+    "num_samples": 46701,
+    "modalities": [
+      "audio",
+      "text"
+    ],
+    "task_types": [
+      "question answering",
+      "multi-hop reasoning",
+      "answer generation"
+    ],
+    "description": "A medical audio question-answering dataset featuring diverse medical audio types including physiological sounds, synthetic voices with artifacts, and clinical conversations. Enables systematic evaluation of multi-hop reasoning and answer generation capabilities.",
+    "repo_links": [],
+    "paper_title": "MedMosaic: A Challenging Large Scale Benchmark of Diverse Medical Audio",
+    "arxiv_id": "2605.00969",
+    "arxiv_url": "http://arxiv.org/abs/2605.00969v1",
+    "published": "2026-05-01",
+    "authors": [
+      "Harshit Rajgarhia",
+      "Shuubham Ojha",
+      "Asif Shaik",
+      "Akhil Pothanapalli",
+      "Rachuri Lokesh"
+    ]
+  },
+  {
     "benchmark_name": "ChartAB",
     "category": "chart_figure",
     "num_samples": null,
@@ -6257,6 +6284,32 @@
       "Yehui Yang",
       "Qing Yang",
       "Tao Chen"
+    ]
+  },
+  {
+    "benchmark_name": "WildTableBench",
+    "category": "document_ocr",
+    "num_samples": 928,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "table understanding",
+      "question answering"
+    ],
+    "description": "The first question-answering benchmark for naturally occurring table images from real-world settings. Features high-information-density table images with varied layouts and domains requiring sophisticated structural perception and numerical reasoning.",
+    "repo_links": [],
+    "paper_title": "WildTableBench: Benchmarking Multimodal Foundation Models on Table Understanding In the Wild",
+    "arxiv_id": "2605.01018",
+    "arxiv_url": "http://arxiv.org/abs/2605.01018v1",
+    "published": "2026-05-01",
+    "authors": [
+      "Junzhe Huang",
+      "Xiaoxiao Sun",
+      "Yan Yang",
+      "Yuxuan Hou",
+      "Ruotian Zhang"
     ]
   },
   {
@@ -11800,6 +11853,62 @@
       "Nikesh Subedi",
       "Loris Bazzani",
       "Ziad Al-Halah"
+    ]
+  },
+  {
+    "benchmark_name": "SFI-Bench",
+    "category": "egocentric_embodied",
+    "num_samples": 1500,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "conditional counting",
+      "multi-hop relational reasoning",
+      "functional pairing",
+      "troubleshooting"
+    ],
+    "description": "A video-based benchmark evaluating spatial-functional intelligence in MLLMs using expert-annotated questions from egocentric indoor video scans. Focuses on structured spatial reasoning and functional reasoning about object affordances and context-dependent utility.",
+    "repo_links": [],
+    "paper_title": "From Where Things Are to What They Are For: Benchmarking Spatial-Functional Intelligence in Multimodal LLMs",
+    "arxiv_id": "2605.02130",
+    "arxiv_url": "http://arxiv.org/abs/2605.02130v1",
+    "published": "2026-05-04",
+    "authors": [
+      "Le Zhang",
+      "Jihan Yang",
+      "Soundarya Krishnan",
+      "Jimit Majmudar",
+      "Xiou Ge"
+    ]
+  },
+  {
+    "benchmark_name": "ESARBench",
+    "category": "egocentric_embodied",
+    "num_samples": 600,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "embodied search and rescue",
+      "spatial reasoning",
+      "decision-making"
+    ],
+    "description": "The first comprehensive benchmark for MLLM-driven UAV agents in realistic Search and Rescue scenarios. Features high-fidelity environments mapped from real-world GIS data with dynamic variables including weather conditions and stochastic clue placement.",
+    "repo_links": [
+      "https://4amgodvzx.github.io/ESAR.github.io"
+    ],
+    "paper_title": "ESARBench: A Benchmark for Agentic UAV Embodied Search and Rescue",
+    "arxiv_id": "2605.01371",
+    "arxiv_url": "http://arxiv.org/abs/2605.01371v1",
+    "published": "2026-05-02",
+    "authors": [
+      "Daoxuan Zhang",
+      "Ping Chen",
+      "Jianyi Zhou",
+      "Shuo Yang"
     ]
   },
   {
@@ -38501,6 +38610,60 @@
     ]
   },
   {
+    "benchmark_name": "OralMLLM-Bench",
+    "category": "medical",
+    "num_samples": 3820,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "perception",
+      "comprehension",
+      "prediction",
+      "decision-making"
+    ],
+    "description": "A comprehensive benchmark evaluating cognitive capabilities of MLLMs in dental radiographic analysis across three imaging modalities. Defines four cognitive categories: perception, comprehension, prediction, and decision-making with clinically grounded tasks.",
+    "repo_links": [],
+    "paper_title": "OralMLLM-Bench: Evaluating Cognitive Capabilities of Multimodal Large Language Models in Dental Practice",
+    "arxiv_id": "2605.01333",
+    "arxiv_url": "http://arxiv.org/abs/2605.01333v1",
+    "published": "2026-05-02",
+    "authors": [
+      "Rongyang Wang",
+      "Shuang Zhou",
+      "Jiashuo Wang",
+      "Wenya Xie",
+      "Xiaoxia Che"
+    ]
+  },
+  {
+    "benchmark_name": "SurgCheck",
+    "category": "medical",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "visual question answering",
+      "bias evaluation"
+    ],
+    "description": "A diagnostic benchmark for quantifying linguistic shortcut reliance in surgical VQA using paired-question design. Employs original questions with entity names versus less-biased counterparts to measure genuine visual understanding versus linguistic bias.",
+    "repo_links": [],
+    "paper_title": "SurgCheck: Do Vision-Language Models Really Look at Images in Surgical VQA?",
+    "arxiv_id": "2605.01911",
+    "arxiv_url": "http://arxiv.org/abs/2605.01911v1",
+    "published": "2026-05-03",
+    "authors": [
+      "Jongmin Shin",
+      "Ka Young Kim",
+      "Eunki Cho",
+      "Seong Tae Kim",
+      "Namkee Oh"
+    ]
+  },
+  {
     "benchmark_name": "MIRB",
     "category": "multi_image",
     "num_samples": null,
@@ -50947,6 +51110,83 @@
     ]
   },
   {
+    "benchmark_name": "EmoMM",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "audio",
+      "text"
+    ],
+    "task_types": [
+      "multimodal emotion recognition"
+    ],
+    "description": "A comprehensive benchmark for Multimodal Emotion Recognition featuring modality-aligned, conflict, and missing subsets. Investigates MLLM decision-making mechanisms under modality conflict and missingness conditions.",
+    "repo_links": [],
+    "paper_title": "EmoMM: Benchmarking and Steering MLLM for Multimodal Emotion Recognition under Conflict and Missingness",
+    "arxiv_id": "2605.01024",
+    "arxiv_url": "http://arxiv.org/abs/2605.01024v1",
+    "published": "2026-05-01",
+    "authors": [
+      "Yueru Sun",
+      "Yimeng Zhang",
+      "Haoyu Gu",
+      "Nuo Chen",
+      "Dong She"
+    ]
+  },
+  {
+    "benchmark_name": "MLLMU-Bench",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "machine unlearning evaluation"
+    ],
+    "description": "A systematic study of metric reliability in multimodal machine unlearning for Vision-Language Models. Introduces the Unified Quality Score (UQS) as a composite metric for more reliable evaluation of unlearning methods.",
+    "repo_links": [
+      "https://github.com/neurips26/UnifiedUnl"
+    ],
+    "paper_title": "Metric Unreliability in Multimodal Machine Unlearning: A Systematic Analysis and Principled Unified Score",
+    "arxiv_id": "2605.02206",
+    "arxiv_url": "http://arxiv.org/abs/2605.02206v1",
+    "published": "2026-05-04",
+    "authors": [
+      "Abdullah Ahmad Khan",
+      "Hamid Laga",
+      "Ferdous Sohel"
+    ]
+  },
+  {
+    "benchmark_name": "VIDA",
+    "category": "other",
+    "num_samples": 2500,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "multimodal machine translation",
+      "ambiguity resolution"
+    ],
+    "description": "A dataset for visually-dependent ambiguity in multimodal machine translation where resolving ambiguous source spans requires visual evidence. Features carefully curated instances with disambiguation-centric metrics using LLM-as-a-judge evaluation.",
+    "repo_links": [],
+    "paper_title": "A Multimodal Dataset for Visually Grounded Ambiguity in Machine Translation",
+    "arxiv_id": "2605.02035",
+    "arxiv_url": "http://arxiv.org/abs/2605.02035v1",
+    "published": "2026-05-03",
+    "authors": [
+      "Jingheng Pan",
+      "Xintong Wang",
+      "Longyue Wang",
+      "Liang Ding",
+      "Weihua Luo"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -52317,6 +52557,32 @@
       "Divyanshu Goyal",
       "Akhil Eppa",
       "Vanya Bannihatti Kumar"
+    ]
+  },
+  {
+    "benchmark_name": "GameScope",
+    "category": "quality_aesthetics",
+    "num_samples": 4048,
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "video quality assessment",
+      "codec evaluation"
+    ],
+    "description": "The largest gaming video quality dataset covering H.264, H.265, and AV1 codecs with both user-generated and professional content. Features extensive visual diversity with coarse-grained quality attributes for understanding perceptual factors in gaming video assessment.",
+    "repo_links": [
+      "https://rajeshsureddi.github.io/GameScope/"
+    ],
+    "paper_title": "GameScope: A Multi-Attribute, Multi-Codec Benchmark Dataset for Gaming Video Quality Assessment",
+    "arxiv_id": "2605.01272",
+    "arxiv_url": "http://arxiv.org/abs/2605.01272v1",
+    "published": "2026-05-02",
+    "authors": [
+      "Rajesh Sureddi",
+      "Shreshth Saini",
+      "Avinab Saha",
+      "Alan C. Bovik"
     ]
   },
   {
@@ -56971,6 +57237,61 @@
       "Zichen Tang",
       "Junpeng Ding",
       "Zirui Wang"
+    ]
+  },
+  {
+    "benchmark_name": "Omni-Fake",
+    "category": "safety_bias",
+    "num_samples": 1000000,
+    "modalities": [
+      "image",
+      "audio",
+      "video",
+      "audio-video"
+    ],
+    "task_types": [
+      "deepfake detection",
+      "localization",
+      "explanation"
+    ],
+    "description": "A unified omni-dataset for comprehensive multimodal deepfake detection in social media settings. Spans four modalities with joint detection-localization-explanation protocol and includes out-of-distribution benchmark for generalization evaluation.",
+    "repo_links": [
+      "https://tianxiao1201.github.io/omni-fake-project-page/"
+    ],
+    "paper_title": "Omni-Fake: Benchmarking Unified Multimodal Social Media Deepfake Detection",
+    "arxiv_id": "2605.01638",
+    "arxiv_url": "http://arxiv.org/abs/2605.01638v1",
+    "published": "2026-05-02",
+    "authors": [
+      "Tianxiao Li",
+      "Zhenglin Huang",
+      "Haiquan Wen",
+      "Yiwei He",
+      "Xinze Li"
+    ]
+  },
+  {
+    "benchmark_name": "VisInject",
+    "category": "safety_bias",
+    "num_samples": 6615,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "adversarial attack evaluation"
+    ],
+    "description": "A dual-dimension evaluation benchmark for universal adversarial attacks on VLMs. Distinguishes between output perturbation (Influence) and precise target concept injection, revealing that most attacks cause disruption without achieving actual injection.",
+    "repo_links": [
+      "huggingface.co/datasets/jeffliulab/visinject"
+    ],
+    "paper_title": "VisInject: Disruption != Injection -- A Dual-Dimension Evaluation of Universal Adversarial Attacks on Vision-Language Models",
+    "arxiv_id": "2605.01449",
+    "arxiv_url": "http://arxiv.org/abs/2605.01449v1",
+    "published": "2026-05-02",
+    "authors": [
+      "Pang Liu",
+      "Yingjie Lao"
     ]
   },
   {
@@ -63075,6 +63396,35 @@
       "Mononito Goswami",
       "Junhong Shen",
       "Emaad Khwaja"
+    ]
+  },
+  {
+    "benchmark_name": "Soccer-GMR",
+    "category": "temporal_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "moment retrieval",
+      "temporal localization",
+      "null-set rejection"
+    ],
+    "description": "A large-scale benchmark for Generalized Moment Retrieval built on challenging soccer videos. Features realistic negative and positive queries requiring retrieval of complete sets of relevant moments or predicting empty sets when no matches exist.",
+    "repo_links": [
+      "https://github.com/dymm9977/generalized-moment-retrieval"
+    ],
+    "paper_title": "Retrieving Any Relevant Moments: Benchmark and Models for Generalized Moment Retrieval",
+    "arxiv_id": "2605.02623",
+    "arxiv_url": "http://arxiv.org/abs/2605.02623v1",
+    "published": "2026-05-04",
+    "authors": [
+      "Yiming Ding",
+      "Siyu Cao",
+      "Luyuan Jiao",
+      "Yixuan Li",
+      "Zitong Wang"
     ]
   },
   {
@@ -70023,6 +70373,59 @@
       "Yuanming Li",
       "Viktor Goriachko",
       "Zhenhui Ye"
+    ]
+  },
+  {
+    "benchmark_name": "VISTA",
+    "category": "video_understanding",
+    "num_samples": 12000,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "spatio-temporal understanding",
+      "multi-entity interaction",
+      "multi-action recognition"
+    ],
+    "description": "A benchmark for open-set, multi-entity and multi-action spatio-temporal understanding in VLMs. It decomposes videos into interpretable entities, actions, and relational dynamics, enabling multi-axis diagnostics across relational, spatial, and temporal understanding dimensions.",
+    "repo_links": [],
+    "paper_title": "VISTA: Video Interaction Spatio-Temporal Analysis Benchmark",
+    "arxiv_id": "2605.01391",
+    "arxiv_url": "http://arxiv.org/abs/2605.01391v1",
+    "published": "2026-05-02",
+    "authors": [
+      "Alejandro Aparcedo",
+      "Akash Kumar",
+      "Aaryan Garg",
+      "Dalton Pham",
+      "Wen-Kai Chen"
+    ]
+  },
+  {
+    "benchmark_name": "VideoNet",
+    "category": "video_understanding",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "action recognition",
+      "domain-specific classification"
+    ],
+    "description": "A domain-specific action recognition benchmark covering 1,000 distinct actions from 37 domains. Designed to revitalize action recognition evaluation for vision-language models with challenging, diverse domain-specific actions.",
+    "repo_links": [],
+    "paper_title": "VideoNet: A Large-Scale Dataset for Domain-Specific Action Recognition",
+    "arxiv_id": "2605.02834",
+    "arxiv_url": "http://arxiv.org/abs/2605.02834v1",
+    "published": "2026-05-04",
+    "authors": [
+      "Tanush Yadav",
+      "Mohammadreza Salehi",
+      "Jae Sung Park",
+      "Vivek Ramanujan",
+      "Hannaneh Hajishirzi"
     ]
   },
   {
@@ -78078,6 +78481,35 @@
       "Yuchen Liu",
       "Zijia Zhao",
       "Dongze Hao"
+    ]
+  },
+  {
+    "benchmark_name": "Wiki-CoE",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "iterative retrieval",
+      "visual attribution",
+      "multi-hop reasoning"
+    ],
+    "description": "A large-scale dataset of structured web pages derived from 2WikiMultiHopQA for evaluating Chain of Evidence framework. Enables pixel-level visual attribution in iterative retrieval-augmented generation with precise bounding box outputs.",
+    "repo_links": [
+      "https://github.com/PeiYangLiu/CoE.git"
+    ],
+    "paper_title": "Chain of Evidence: Pixel-Level Visual Attribution for Iterative Retrieval-Augmented Generation",
+    "arxiv_id": "2605.01284",
+    "arxiv_url": "http://arxiv.org/abs/2605.01284v1",
+    "published": "2026-05-02",
+    "authors": [
+      "Peiyang Liu",
+      "Ziqiang Cui",
+      "Xi Wang",
+      "Di Liang",
+      "Wei Ye"
     ]
   }
 ]
