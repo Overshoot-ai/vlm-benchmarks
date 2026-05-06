@@ -1474,6 +1474,35 @@
     ]
   },
   {
+    "benchmark_name": "ReasonAudio",
+    "category": "audio_visual",
+    "num_samples": 1000,
+    "modalities": [
+      "audio",
+      "text"
+    ],
+    "task_types": [
+      "text-audio retrieval",
+      "reasoning",
+      "negation",
+      "temporal ordering",
+      "duration discrimination"
+    ],
+    "description": "The first reasoning-intensive benchmark for Text-Audio Retrieval comprising 1,000 queries and 10,000 composite audio clips across five fundamental reasoning tasks. Focuses on advanced reasoning abilities including negation understanding, temporal ordering, and duration discrimination.",
+    "repo_links": [],
+    "paper_title": "ReasonAudio: A Benchmark for Evaluating Reasoning Beyond Matching in Text-Audio Retrieval",
+    "arxiv_id": "2605.03361",
+    "arxiv_url": "http://arxiv.org/abs/2605.03361v1",
+    "published": "2026-05-05",
+    "authors": [
+      "Honglei Zhang",
+      "Yuting Chen",
+      "Chenpeng Hu",
+      "Siyue Zhang",
+      "Yilei Shi"
+    ]
+  },
+  {
     "benchmark_name": "ChartAB",
     "category": "chart_figure",
     "num_samples": null,
@@ -6310,6 +6339,37 @@
       "Yan Yang",
       "Yuxuan Hou",
       "Ruotian Zhang"
+    ]
+  },
+  {
+    "benchmark_name": "CC-OCR V2",
+    "category": "document_ocr",
+    "num_samples": 7093,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "text recognition",
+      "document parsing",
+      "document grounding",
+      "key information extraction",
+      "document question answering"
+    ],
+    "description": "A comprehensive OCR benchmark tailored to real-world document processing covering 5 major OCR-centric tracks with high-difficulty samples. Focuses on practical enterprise document processing tasks and incorporates hard corner cases critical for real applications.",
+    "repo_links": [
+      "https://github.com/eioss/CC-OCR-V2"
+    ],
+    "paper_title": "CC-OCR V2: Benchmarking Large Multimodal Models for Literacy in Real-world Document Processing",
+    "arxiv_id": "2605.03903",
+    "arxiv_url": "http://arxiv.org/abs/2605.03903v1",
+    "published": "2026-05-05",
+    "authors": [
+      "Zhipeng Xu",
+      "Junhao Ji",
+      "Zulong Chen",
+      "Zhenghao Liu",
+      "Qing Liu"
     ]
   },
   {
@@ -22510,6 +22570,31 @@
     ]
   },
   {
+    "benchmark_name": "Sentinel2Cap",
+    "category": "geospatial",
+    "num_samples": null,
+    "modalities": [
+      "SAR",
+      "multi-spectral",
+      "language"
+    ],
+    "task_types": [
+      "image captioning",
+      "multimodal remote sensing"
+    ],
+    "description": "A human-annotated multimodal captioning dataset containing Sentinel-1 SAR and Sentinel-2 multi-spectral image patches at 10m and 20m spatial resolution. Focuses on diverse land cover compositions for remote sensing image captioning tasks.",
+    "repo_links": [],
+    "paper_title": "Sentinel2Cap: A Human-Annotated Benchmark Dataset for Multimodal Remote Sensing Image Captioning",
+    "arxiv_id": "2605.03189",
+    "arxiv_url": "http://arxiv.org/abs/2605.03189v1",
+    "published": "2026-05-04",
+    "authors": [
+      "Lucrezia Tosato",
+      "Gianluca Lombardi",
+      "Ronny Hansch"
+    ]
+  },
+  {
     "benchmark_name": "Point-It-Out (PIO)",
     "category": "grounding_localization",
     "num_samples": null,
@@ -28659,6 +28744,33 @@
       "Arya Shah",
       "Deepali Mishra",
       "Chaklam Silpasuwanchai"
+    ]
+  },
+  {
+    "benchmark_name": "ReMem",
+    "category": "hallucination",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "memorization",
+      "unlearning",
+      "multi-hop reasoning"
+    ],
+    "description": "A Reliable Multi-hop and Multi-image Memorization Benchmark for evaluating memorization and unlearning in Large Vision-Language Models. It addresses the critical stage 1 failure where models fail to memorize target information initially, using principled data scaling and reasoning-aware QA pairs.",
+    "repo_links": [],
+    "paper_title": "Before Forgetting, Learn to Remember: Revisiting Foundational Learning Failures in LVLM Unlearning Benchmarks",
+    "arxiv_id": "2605.03759",
+    "arxiv_url": "http://arxiv.org/abs/2605.03759v1",
+    "published": "2026-05-05",
+    "authors": [
+      "JuneHyoung Kwon",
+      "MiHyeon Kim",
+      "Eunju Lee",
+      "JungMin Yun",
+      "Byeonggeuk Lim"
     ]
   },
   {
@@ -38661,6 +38773,36 @@
       "Eunki Cho",
       "Seong Tae Kim",
       "Namkee Oh"
+    ]
+  },
+  {
+    "benchmark_name": "DALPHIN",
+    "category": "medical",
+    "num_samples": 1236,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "visual question answering",
+      "digital pathology",
+      "medical diagnosis"
+    ],
+    "description": "The first multicentric open benchmark for digital pathology AI copilots comprising 1236 images from 300 cases spanning 130 diagnoses across 6 countries and 14 subspecialties. Includes human performance benchmark from 31 pathologists for comparative evaluation.",
+    "repo_links": [
+      "https://github.com/computationalpathologygroup/DALPHIN",
+      "dalphin.grand-challenge.org"
+    ],
+    "paper_title": "DALPHIN: Benchmarking Digital Pathology AI Copilots Against Pathologists on an Open Multicentric Dataset",
+    "arxiv_id": "2605.03544",
+    "arxiv_url": "http://arxiv.org/abs/2605.03544v1",
+    "published": "2026-05-05",
+    "authors": [
+      "Carlijn Lems",
+      "Sander Moonemans",
+      "Natálie Klubíčková",
+      "Biagio Brattoli",
+      "Taebum Lee"
     ]
   },
   {
@@ -57295,6 +57437,30 @@
     ]
   },
   {
+    "benchmark_name": "CoVUBench",
+    "category": "safety_bias",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "copyright unlearning evaluation",
+      "multimodal concept erasure"
+    ],
+    "description": "The first framework specifically designed for evaluating copyright content unlearning in Large Vision-Language Models. Uses procedurally generated synthetic data with systematic visual variations to assess both forgetting efficacy and preservation of model utility.",
+    "repo_links": [],
+    "paper_title": "Erase Persona, Forget Lore: Benchmarking Multimodal Copyright Unlearning in Large Vision Language Models",
+    "arxiv_id": "2605.03547",
+    "arxiv_url": "http://arxiv.org/abs/2605.03547v1",
+    "published": "2026-05-05",
+    "authors": [
+      "JuneHyoung Kwon",
+      "JungMin Yun",
+      "YoungBin Kim"
+    ]
+  },
+  {
     "benchmark_name": "SRBench",
     "category": "spatial_3d",
     "num_samples": null,
@@ -70429,6 +70595,30 @@
     ]
   },
   {
+    "benchmark_name": "WorldJen",
+    "category": "video_understanding",
+    "num_samples": 2696,
+    "modalities": [
+      "video",
+      "language"
+    ],
+    "task_types": [
+      "video generation evaluation",
+      "multi-dimensional quality assessment"
+    ],
+    "description": "An end-to-end multi-dimensional benchmark for generative video models using adversarially curated prompts that exercise up to 16 quality dimensions simultaneously. Features VLM-as-a-judge evaluation with Likert-scale questionnaires and human preference study validation.",
+    "repo_links": [],
+    "paper_title": "WorldJen: An End-to-End Multi-Dimensional Benchmark for Generative Video Models",
+    "arxiv_id": "2605.03475",
+    "arxiv_url": "http://arxiv.org/abs/2605.03475v1",
+    "published": "2026-05-05",
+    "authors": [
+      "Karthik Inbasekar",
+      "Guy Rom",
+      "Omer Shlomovits"
+    ]
+  },
+  {
     "benchmark_name": "GraphVLM",
     "category": "visual_reasoning",
     "num_samples": null,
@@ -78510,6 +78700,33 @@
       "Xi Wang",
       "Di Liang",
       "Wei Ye"
+    ]
+  },
+  {
+    "benchmark_name": "MHPR",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "perception",
+      "reasoning",
+      "human-centric analysis"
+    ],
+    "description": "A comprehensive benchmark for joint perception-reasoning over human-centric scenes spanning individual, multi-person, and human-object interaction dimensions. Features multi-level data design with automated caption/VQA generation pipeline for fine-grained human attribute evaluation.",
+    "repo_links": [],
+    "paper_title": "MHPR: Multidimensional Human Perception and Reasoning Benchmark for Large Vision-Languate Models",
+    "arxiv_id": "2605.03485",
+    "arxiv_url": "http://arxiv.org/abs/2605.03485v1",
+    "published": "2026-05-05",
+    "authors": [
+      "Kangkang Wang",
+      "Qinting Jiang",
+      "Wanping Zhang",
+      "Bowen Ren",
+      "Shengzhao Wen"
     ]
   }
 ]
