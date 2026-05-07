@@ -51329,6 +51329,33 @@
     ]
   },
   {
+    "benchmark_name": "RF-Analyzer",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "spectrogram",
+      "text"
+    ],
+    "task_types": [
+      "physical attribute extraction",
+      "signal understanding",
+      "spectrogram interpretation"
+    ],
+    "description": "An SDR-to-AI analysis platform that integrates live spectrum captures with VLM-based interpretation for evaluating vision-language models on RF spectrogram understanding. Features a benchmark framework with three metrics (PAES, PLR, hallucination count) to assess signal understanding and grounding capabilities.",
+    "repo_links": [],
+    "paper_title": "RF-Analyzer: Can Vision-Language Models Learn RF Understanding from Synthetic Data?",
+    "arxiv_id": "2605.04676",
+    "arxiv_url": "http://arxiv.org/abs/2605.04676v1",
+    "published": "2026-05-06",
+    "authors": [
+      "Anis Bara",
+      "Lina Bariah",
+      "Hang Zou",
+      "Brahim Mefgouda",
+      "Merouane Debbah"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -78727,6 +78754,33 @@
       "Wanping Zhang",
       "Bowen Ren",
       "Shengzhao Wen"
+    ]
+  },
+  {
+    "benchmark_name": "DiffCap-Bench",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "image difference captioning",
+      "change perception",
+      "cross-modal reasoning"
+    ],
+    "description": "A comprehensive benchmark for Image Difference Captioning that covers ten distinct difference categories to evaluate models' ability to identify and describe visual changes between image pairs. Features an LLM-as-a-Judge evaluation protocol grounded in human-validated Difference Lists for robust assessment of multimodal large language models.",
+    "repo_links": [],
+    "paper_title": "DiffCap-Bench: A Comprehensive, Challenging, Robust Benchmark for Image Difference Captioning",
+    "arxiv_id": "2605.04503",
+    "arxiv_url": "http://arxiv.org/abs/2605.04503v1",
+    "published": "2026-05-06",
+    "authors": [
+      "Yuancheng Wei",
+      "Haojie Zhang",
+      "Linli Yao",
+      "Lei Li",
+      "Jiali Chen"
     ]
   }
 ]
