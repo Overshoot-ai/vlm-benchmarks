@@ -3167,6 +3167,58 @@
     ]
   },
   {
+    "benchmark_name": "TableVista",
+    "category": "chart_figure",
+    "num_samples": 30000,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "table reasoning",
+      "visual question answering"
+    ],
+    "description": "A comprehensive benchmark for evaluating foundation models in multimodal table reasoning under visual and structural complexity. Contains 3,000 high-quality problems expanded into 10 visual variants each, testing reasoning consistency across diverse rendering styles and structural layouts.",
+    "repo_links": [],
+    "paper_title": "TableVista: Benchmarking Multimodal Table Reasoning under Visual and Structural Complexity",
+    "arxiv_id": "2605.05955",
+    "arxiv_url": "http://arxiv.org/abs/2605.05955v1",
+    "published": "2026-05-07",
+    "authors": [
+      "Zheyuan Yang",
+      "Liqiang Shang",
+      "Junjie Chen",
+      "Xun Yang",
+      "Chenglong Xu"
+    ]
+  },
+  {
+    "benchmark_name": "ChartZero",
+    "category": "chart_figure",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "chart data extraction",
+      "line chart parsing"
+    ],
+    "description": "A parsing framework and benchmark for zero-shot chart data extraction that uses synthetic priors to enable robust data extraction from line charts. Includes a new metric and benchmark designed for full end-to-end reconstruction evaluation.",
+    "repo_links": [],
+    "paper_title": "ChartZero: Synthetic Priors Enable Zero Shot Chart Data Extraction",
+    "arxiv_id": "2605.05820",
+    "arxiv_url": "http://arxiv.org/abs/2605.05820v1",
+    "published": "2026-05-07",
+    "authors": [
+      "Md Touhidul Islam",
+      "Yasir Mahmud",
+      "Sujan Kumar Saha",
+      "Mark Tehranipoor",
+      "Farimah Farahmandi"
+    ]
+  },
+  {
     "benchmark_name": "Document Haystack",
     "category": "document_ocr",
     "num_samples": 8250,
@@ -11972,6 +12024,34 @@
     ]
   },
   {
+    "benchmark_name": "VISER",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text",
+      "3D"
+    ],
+    "task_types": [
+      "grasping",
+      "placing",
+      "long-horizon tasks"
+    ],
+    "description": "A visually realistic benchmark for evaluating robot manipulation in simulation with high-fidelity 3D assets and physically-based rendering. Features over 1,000 3D assets and aims to reduce the sim-to-real visual gap for better evaluation of Vision-Language-Action models.",
+    "repo_links": [],
+    "paper_title": "Toward Visually Realistic Simulation: A Benchmark for Evaluating Robot Manipulation in Simulation",
+    "arxiv_id": "2605.06311",
+    "arxiv_url": "http://arxiv.org/abs/2605.06311v1",
+    "published": "2026-05-07",
+    "authors": [
+      "Yixin Zhu",
+      "Zixiong Wang",
+      "Jian Yang",
+      "Jin Xie",
+      "Jingyi Yu"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "general_multimodal",
     "num_samples": null,
@@ -20519,6 +20599,63 @@
       "Anton Hackl",
       "Constantin Alexander Auga",
       "Parisa Shahabinejad"
+    ]
+  },
+  {
+    "benchmark_name": "CrossCult-KIBench",
+    "category": "general_multimodal",
+    "num_samples": 9800,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "cross-cultural knowledge insertion",
+      "cultural adaptation evaluation"
+    ],
+    "description": "A comprehensive evaluation benchmark for assessing cross-cultural knowledge insertion in multimodal large language models. Covers 49 culturally relevant visual scenarios across English, Chinese, and Arabic language-culture groups to test cultural adaptation while preserving original behavior.",
+    "repo_links": [],
+    "paper_title": "CrossCult-KIBench: A Benchmark for Cross-Cultural Knowledge Insertion in MLLMs",
+    "arxiv_id": "2605.06115",
+    "arxiv_url": "http://arxiv.org/abs/2605.06115v1",
+    "published": "2026-05-07",
+    "authors": [
+      "Zhen Zeng",
+      "Leijiang Gu",
+      "Feng Li",
+      "Jing Yu",
+      "Zenglin Shi"
+    ]
+  },
+  {
+    "benchmark_name": "MMDG-Bench",
+    "category": "general_multimodal",
+    "num_samples": 7402,
+    "modalities": [
+      "video",
+      "audio",
+      "text",
+      "sensor data"
+    ],
+    "task_types": [
+      "action recognition",
+      "mechanical fault diagnosis",
+      "sentiment analysis"
+    ],
+    "description": "The first unified and comprehensive benchmark for Multimodal Domain Generalization, standardizing evaluation across six datasets spanning action recognition, mechanical fault diagnosis, and sentiment analysis. Evaluates corruption robustness, missing-modality generalization, and model trustworthiness.",
+    "repo_links": [
+      "https://github.com/lihongzhao99/MMDG_Benchmark"
+    ],
+    "paper_title": "Are We Making Progress in Multimodal Domain Generalization? A Comprehensive Benchmark Study",
+    "arxiv_id": "2605.06643",
+    "arxiv_url": "http://arxiv.org/abs/2605.06643v1",
+    "published": "2026-05-07",
+    "authors": [
+      "Hao Dong",
+      "Hongzhao Li",
+      "Shupan Li",
+      "Muhammad Haris Khan",
+      "Eleni Chatzi"
     ]
   },
   {
@@ -38806,6 +38943,60 @@
     ]
   },
   {
+    "benchmark_name": "CXR-ContraBench",
+    "category": "medical",
+    "num_samples": 135754,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "medical VQA",
+      "negation detection",
+      "polarity reasoning"
+    ],
+    "description": "A diagnostic benchmark for evaluating negated-option attraction in medical vision-language models, specifically focusing on chest X-ray interpretation. Tests whether models incorrectly select negated answer options that contradict visual evidence in chest X-rays.",
+    "repo_links": [
+      "https://github.com/fangzr/cxr-contrabench-code"
+    ],
+    "paper_title": "CXR-ContraBench: Benchmarking Negated-Option Attraction in Medical VLMs",
+    "arxiv_id": "2605.05810",
+    "arxiv_url": "http://arxiv.org/abs/2605.05810v1",
+    "published": "2026-05-07",
+    "authors": [
+      "Zhengru Fang",
+      "Yanan Ma",
+      "Yu Guo",
+      "Senkang Hu",
+      "Yixian Zhang"
+    ]
+  },
+  {
+    "benchmark_name": "iTRIALSPACE",
+    "category": "medical",
+    "num_samples": 55469,
+    "modalities": [
+      "CT scan",
+      "text"
+    ],
+    "task_types": [
+      "lesion detection",
+      "medical image analysis"
+    ],
+    "description": "A programmable evaluation framework for controlled assessment of lung CT models using virtual lesion trials. Composes real clinical CTs and lesion profiles into controlled scenarios, built on a unified 54-attribute nodule-profile dataset from 13,140 annotated nodules.",
+    "repo_links": [],
+    "paper_title": "iTRIALSPACE: Programmable Virtual Lesion Trials for Controlled Evaluation of Lung CT Models",
+    "arxiv_id": "2605.05761",
+    "arxiv_url": "http://arxiv.org/abs/2605.05761v1",
+    "published": "2026-05-07",
+    "authors": [
+      "Fakrul Islam Tushar",
+      "Umme Hafsa Momy",
+      "Joseph Y. Lo",
+      "Geoffrey D. Rubin"
+    ]
+  },
+  {
     "benchmark_name": "MIRB",
     "category": "multi_image",
     "num_samples": null,
@@ -39525,6 +39716,34 @@
       "Haijun Lv",
       "Zhishan Lin",
       "Lixin Gu"
+    ]
+  },
+  {
+    "benchmark_name": "Multimodal Conference Dataset (MCD)",
+    "category": "multi_image",
+    "num_samples": null,
+    "modalities": [
+      "text",
+      "video",
+      "image",
+      "slides"
+    ],
+    "task_types": [
+      "cross-format correspondence",
+      "multimodal alignment"
+    ],
+    "description": "The first benchmark that integrates research papers, presentation videos, explanatory videos, and slides from the same works. Evaluates fine-grained cross-format correspondences and establishes systematic benchmarking for multimodal scientific understanding.",
+    "repo_links": [
+      "https://github.com/meghamariamkm2002/MCD"
+    ],
+    "paper_title": "Unifying Scientific Communication: Fine-Grained Correspondence Across Scientific Media",
+    "arxiv_id": "2605.05831",
+    "arxiv_url": "http://arxiv.org/abs/2605.05831v1",
+    "published": "2026-05-07",
+    "authors": [
+      "Megha Mariam K. M",
+      "Vineeth N. Balasubramanian",
+      "C. V. Jawahar"
     ]
   },
   {
@@ -51356,6 +51575,32 @@
     ]
   },
   {
+    "benchmark_name": "GlazyBench",
+    "category": "other",
+    "num_samples": 23148,
+    "modalities": [
+      "image",
+      "text",
+      "material composition"
+    ],
+    "task_types": [
+      "property prediction",
+      "image generation"
+    ],
+    "description": "The first dataset for AI-assisted ceramic glaze design, comprising real glaze formulations. Supports two primary tasks: predicting post-firing surface properties from raw materials and generating visual representations of glazes based on their properties.",
+    "repo_links": [],
+    "paper_title": "GlazyBench: A Benchmark for Ceramic Glaze Property Prediction and Image Generation",
+    "arxiv_id": "2605.06641",
+    "arxiv_url": "http://arxiv.org/abs/2605.06641v1",
+    "published": "2026-05-07",
+    "authors": [
+      "Ziyu Zhai",
+      "Siyou Li",
+      "Juexi Shao",
+      "Juntao Yu"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -57485,6 +57730,35 @@
       "JuneHyoung Kwon",
       "JungMin Yun",
       "YoungBin Kim"
+    ]
+  },
+  {
+    "benchmark_name": "ImmersedPrivacy",
+    "category": "safety_bias",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "audio",
+      "text"
+    ],
+    "task_types": [
+      "privacy awareness",
+      "sensitive item detection",
+      "social context adaptation"
+    ],
+    "description": "An interactive audio-visual evaluation framework that simulates realistic physical environments using Unity-based simulator to evaluate privacy awareness in vision-language models. Tests ability to identify sensitive items, adapt to social contexts, and resolve privacy conflicts.",
+    "repo_links": [
+      "https://github.com/immersed-privacy/immersed-privacy"
+    ],
+    "paper_title": "How Far Are VLMs from Privacy Awareness in the Physical World? An Empirical Study",
+    "arxiv_id": "2605.05340",
+    "arxiv_url": "http://arxiv.org/abs/2605.05340v1",
+    "published": "2026-05-06",
+    "authors": [
+      "Junran Wang",
+      "Xinjie Shen",
+      "Zehao Jin",
+      "Pan Li"
     ]
   },
   {
@@ -70643,6 +70917,33 @@
       "Karthik Inbasekar",
       "Guy Rom",
       "Omer Shlomovits"
+    ]
+  },
+  {
+    "benchmark_name": "VQAU-Bench",
+    "category": "video_understanding",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "affective moment localization",
+      "emotion classification",
+      "rationale generation"
+    ],
+    "description": "A benchmark for Vague-Query-driven video Affective Understanding that integrates long videos, vague affective queries, temporal clip annotations, emotion labels, and rationale explanations. Enables assessment of semantic-temporal-affective alignment and emotion reasoning in long videos.",
+    "repo_links": [],
+    "paper_title": "AffectSeek: Agentic Affective Understanding in Long Videos under Vague User Queries",
+    "arxiv_id": "2605.05640",
+    "arxiv_url": "http://arxiv.org/abs/2605.05640v1",
+    "published": "2026-05-07",
+    "authors": [
+      "Zhen Zhang",
+      "Yuhang Yang",
+      "Yunxiang Jiang",
+      "Yuhuan Lu",
+      "Haifeng Lu"
     ]
   },
   {
