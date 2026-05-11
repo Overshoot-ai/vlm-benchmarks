@@ -1503,6 +1503,33 @@
     ]
   },
   {
+    "benchmark_name": "TraceAV-Bench",
+    "category": "audio_visual",
+    "num_samples": 2200,
+    "modalities": [
+      "audio",
+      "video"
+    ],
+    "task_types": [
+      "multi-hop reasoning",
+      "multimodal hallucination evaluation",
+      "temporal reasoning"
+    ],
+    "description": "The first benchmark to jointly evaluate multi-hop reasoning over long audio-visual trajectories spanning 578 videos totaling 339.5 hours. Features questions grounded in explicit reasoning chains averaging 3.68 hops across 15.1-minute temporal spans.",
+    "repo_links": [],
+    "paper_title": "TraceAV-Bench: Benchmarking Multi-Hop Trajectory Reasoning over Long Audio-Visual Videos",
+    "arxiv_id": "2605.07593",
+    "arxiv_url": "http://arxiv.org/abs/2605.07593v1",
+    "published": "2026-05-08",
+    "authors": [
+      "Hengyi Feng",
+      "Hao Liang",
+      "Mingrui Chen",
+      "Bohan Zeng",
+      "Meiyi Qiang"
+    ]
+  },
+  {
     "benchmark_name": "ChartAB",
     "category": "chart_figure",
     "num_samples": null,
@@ -12049,6 +12076,32 @@
       "Jian Yang",
       "Jin Xie",
       "Jingyi Yu"
+    ]
+  },
+  {
+    "benchmark_name": "EgoPro-Bench",
+    "category": "egocentric_embodied",
+    "num_samples": 2400,
+    "modalities": [
+      "egocentric video"
+    ],
+    "task_types": [
+      "proactive interaction",
+      "intent recognition",
+      "human-machine interaction"
+    ],
+    "description": "A benchmark for training and evaluating proactive interaction capabilities based on streaming egocentric videos with simulated user profiles. Features over 12,000 training videos across 12 domains with focus on human-machine interaction timing.",
+    "repo_links": [],
+    "paper_title": "EgoPro-Bench: Benchmarking Personalized Proactive Interaction in Egocentric Video Streams",
+    "arxiv_id": "2605.07299",
+    "arxiv_url": "http://arxiv.org/abs/2605.07299v1",
+    "published": "2026-05-08",
+    "authors": [
+      "Dongchuan Ran",
+      "Linyu Ou",
+      "Xueheng Li",
+      "Wenwen Tong",
+      "Chenxu Guo"
     ]
   },
   {
@@ -22729,6 +22782,36 @@
       "Lucrezia Tosato",
       "Gianluca Lombardi",
       "Ronny Hansch"
+    ]
+  },
+  {
+    "benchmark_name": "LithoBench",
+    "category": "geospatial",
+    "num_samples": 10000,
+    "modalities": [
+      "remote sensing imagery"
+    ],
+    "task_types": [
+      "multiple-choice",
+      "open-ended",
+      "identification",
+      "comparative analysis",
+      "mechanism explanation",
+      "practical application",
+      "comprehensive reasoning"
+    ],
+    "description": "A multi-level benchmark for evaluating geological semantic understanding in remote sensing lithology interpretation with expert-annotated instances across 12 lithological categories. Features 4,000 multiple-choice and 6,000 open-ended tasks organized into five cognitive levels including identification, analysis, and reasoning.",
+    "repo_links": [],
+    "paper_title": "LithoBench: Benchmarking Large Multimodal Models for Remote-Sensing Lithology Interpretation",
+    "arxiv_id": "2605.07640",
+    "arxiv_url": "http://arxiv.org/abs/2605.07640v1",
+    "published": "2026-05-08",
+    "authors": [
+      "Jun Wang",
+      "Fengpeng Li",
+      "Hang Dong",
+      "Tianjin Huang",
+      "Wei Han"
     ]
   },
   {
@@ -38997,6 +39080,33 @@
     ]
   },
   {
+    "benchmark_name": "MedVIGIL",
+    "category": "medical",
+    "num_samples": 300,
+    "modalities": [
+      "medical images",
+      "text"
+    ],
+    "task_types": [
+      "medical VQA",
+      "trustworthiness evaluation",
+      "clinical risk assessment"
+    ],
+    "description": "An evaluation suite for trustworthy medical VLMs under broken visual evidence, featuring cases with false premises, corrupted images, and clinical risk assessment. All cases are supervised end-to-end by board-certified radiologists.",
+    "repo_links": [],
+    "paper_title": "MedVIGIL: Evaluating Trustworthy Medical VLMs Under Broken Visual Evidence",
+    "arxiv_id": "2605.07919",
+    "arxiv_url": "http://arxiv.org/abs/2605.07919v1",
+    "published": "2026-05-08",
+    "authors": [
+      "Hanqi Jiang",
+      "Junhao Chen",
+      "Yi Pan",
+      "Lifeng Chen",
+      "Weihang You"
+    ]
+  },
+  {
     "benchmark_name": "MIRB",
     "category": "multi_image",
     "num_samples": null,
@@ -51601,6 +51711,197 @@
     ]
   },
   {
+    "benchmark_name": "Agentick",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text",
+      "ASCII"
+    ],
+    "task_types": [
+      "sequential decision-making",
+      "planning",
+      "multi-agent tasks"
+    ],
+    "description": "A unified benchmark for sequential decision-making agents with 37 procedurally generated tasks across six capability categories and multiple difficulty levels. Evaluates RL, LLM, VLM, hybrid, and human agents on common ground through a single interface.",
+    "repo_links": [],
+    "paper_title": "Agentick: A Unified Benchmark for General Sequential Decision-Making Agents",
+    "arxiv_id": "2605.06869",
+    "arxiv_url": "http://arxiv.org/abs/2605.06869v1",
+    "published": "2026-05-07",
+    "authors": [
+      "Roger Creus Castanyer",
+      "Pablo Samuel Castro",
+      "Glen Berseth"
+    ]
+  },
+  {
+    "benchmark_name": "ShellfishNet",
+    "category": "other",
+    "num_samples": 8691,
+    "modalities": [
+      "images"
+    ],
+    "task_types": [
+      "visual recognition",
+      "fine-grained categorization",
+      "image captioning"
+    ],
+    "description": "A comprehensive image benchmark dataset for marine mollusk recognition designed for real-world ecological monitoring. Constructed through field photography and web scraping with samples from complex underwater environments and includes image corruption benchmarks.",
+    "repo_links": [],
+    "paper_title": "ShellfishNet: A Domain-Specific Benchmark for Visual Recognition of Marine Molluscs",
+    "arxiv_id": "2605.07338",
+    "arxiv_url": "http://arxiv.org/abs/2605.07338v1",
+    "published": "2026-05-08",
+    "authors": [
+      "Ziheng Zhou",
+      "Yang Wang",
+      "Nan Wang",
+      "Chengliang Wu",
+      "Jun Yan"
+    ]
+  },
+  {
+    "benchmark_name": "InterLV-Search",
+    "category": "other",
+    "num_samples": 2061,
+    "modalities": [
+      "text",
+      "images"
+    ],
+    "task_types": [
+      "visual evidence seeking",
+      "multimodal search",
+      "interleaved reasoning"
+    ],
+    "description": "A benchmark for Interleaved Language-Vision Agentic Search where textual and visual evidence is repeatedly used to condition later search. Features three levels from active visual evidence seeking to open-web multimodal search.",
+    "repo_links": [
+      "https://github.com/hbhalpha/InterLV-Search-Bench"
+    ],
+    "paper_title": "InterLV-Search: Benchmarking Interleaved Multimodal Agentic Search",
+    "arxiv_id": "2605.07510",
+    "arxiv_url": "http://arxiv.org/abs/2605.07510v1",
+    "published": "2026-05-08",
+    "authors": [
+      "Bohan Hou",
+      "Jiuning Gu",
+      "Jiayan Guo",
+      "Ronghao Dang",
+      "Sicong Leng"
+    ]
+  },
+  {
+    "benchmark_name": "EDA-Schema-V2",
+    "category": "other",
+    "num_samples": 7776,
+    "modalities": [
+      "circuit designs",
+      "physical layouts"
+    ],
+    "task_types": [
+      "timing prediction",
+      "power prediction",
+      "area prediction",
+      "routing metrics"
+    ],
+    "description": "A multimodal schema and benchmark for machine learning in digital physical design with datasets spanning multiple stages of electronic design automation. Comprises design instances from 18 benchmark circuits with over 275 million gates and timing paths.",
+    "repo_links": [],
+    "paper_title": "EDA-Schema-V2: A Multimodal Schema, Open Datasets, and Benchmarks for Machine Learning in Digital Physical Design",
+    "arxiv_id": "2605.06952",
+    "arxiv_url": "http://arxiv.org/abs/2605.06952v1",
+    "published": "2026-05-07",
+    "authors": [
+      "Pratik Shrestha",
+      "Alec Aversa",
+      "Ioannis Savidis"
+    ]
+  },
+  {
+    "benchmark_name": "McNdroid",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "static features",
+      "dynamic features",
+      "graphs"
+    ],
+    "task_types": [
+      "malware detection",
+      "drift analysis",
+      "temporal generalization"
+    ],
+    "description": "The largest longitudinal multimodal Android malware benchmark spanning 2013-2025 with three aligned modalities: static features, dynamic behavioral features, and graph-based features. Designed for malware detection and drift analysis over time.",
+    "repo_links": [],
+    "paper_title": "McNdroid: A Longitudinal Multimodal Benchmark for Robust Drift Detection in Android Malware",
+    "arxiv_id": "2605.06894",
+    "arxiv_url": "http://arxiv.org/abs/2605.06894v1",
+    "published": "2026-05-07",
+    "authors": [
+      "Md Mahmuduzzaman Kamol",
+      "Jesus Lopez",
+      "Saeefa Rubaiyet Nowmi",
+      "Emilia Rivas",
+      "Md Ahsanul Haque"
+    ]
+  },
+  {
+    "benchmark_name": "ReasonEdit-22K",
+    "category": "other",
+    "num_samples": 22000,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "image editing evaluation",
+      "chain-of-thought reasoning",
+      "interpretability assessment"
+    ],
+    "description": "The first dataset combining edited images with Chain-of-Thought samples and human judgments for interpretable image editing evaluation. Features 113K CoT samples and 1.3M human judgments assessing interpretation quality.",
+    "repo_links": [
+      "https://github.com/IntMeGroup/ReasonEdit"
+    ],
+    "paper_title": "ReasonEdit: Towards Interpretable Image Editing Evaluation via Reinforcement Learning",
+    "arxiv_id": "2605.07477",
+    "arxiv_url": "http://arxiv.org/abs/2605.07477v1",
+    "published": "2026-05-08",
+    "authors": [
+      "Honghua Chen",
+      "Zitong Xu",
+      "Huiyu Duan",
+      "Xinyun Zhang",
+      "Xiongkuo Min"
+    ]
+  },
+  {
+    "benchmark_name": "PolarVQA",
+    "category": "other",
+    "num_samples": 75000,
+    "modalities": [
+      "polarization images",
+      "text"
+    ],
+    "task_types": [
+      "polarization-aware VQA",
+      "physics-grounded reasoning",
+      "optical ambiguity resolution"
+    ],
+    "description": "The first benchmark for polarization-aware VQA featuring physics-grounded instruction-tuning pairs targeting reflective and transparent scenes. Integrates polarimetric physical parameters to resolve optical ambiguities.",
+    "repo_links": [],
+    "paper_title": "PolarVLM: Bridging the Semantic-Physical Gap in Vision-Language Models",
+    "arxiv_id": "2605.07574",
+    "arxiv_url": "http://arxiv.org/abs/2605.07574v1",
+    "published": "2026-05-08",
+    "authors": [
+      "Yuliang Li",
+      "Chu Zhou",
+      "Heng Guo",
+      "Boxin Shi",
+      "Imari Sato"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -57759,6 +58060,32 @@
       "Xinjie Shen",
       "Zehao Jin",
       "Pan Li"
+    ]
+  },
+  {
+    "benchmark_name": "RuleSafe-VL",
+    "category": "safety_bias",
+    "num_samples": 2166,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "content moderation",
+      "rule-based reasoning",
+      "policy compliance"
+    ],
+    "description": "A benchmark for rule-conditioned decision reasoning in vision-language content moderation featuring 93 atomic rules and 92 typed rule relations. Evaluates rule-governed moderation processes through four diagnostic tasks.",
+    "repo_links": [],
+    "paper_title": "RuleSafe-VL: Evaluating Rule-Conditioned Decision Reasoning in Vision-Language Content Moderation",
+    "arxiv_id": "2605.07760",
+    "arxiv_url": "http://arxiv.org/abs/2605.07760v1",
+    "published": "2026-05-08",
+    "authors": [
+      "Zhifeng Lu",
+      "Dianyuan Wang",
+      "Yuhu Shang",
+      "Zhenbo Xu"
     ]
   },
   {
@@ -70944,6 +71271,32 @@
       "Yunxiang Jiang",
       "Yuhuan Lu",
       "Haifeng Lu"
+    ]
+  },
+  {
+    "benchmark_name": "Video Understanding Reward Bench (VURB)",
+    "category": "video_understanding",
+    "num_samples": 2100,
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "preference evaluation",
+      "reward modeling",
+      "chain-of-thought reasoning"
+    ],
+    "description": "A benchmark featuring preference pairs with long chain-of-thought reasoning traces for evaluating video understanding reward models. Covers general, long, and reasoning-oriented video tasks with majority voting evaluation.",
+    "repo_links": [],
+    "paper_title": "Video Understanding Reward Modeling: A Robust Benchmark and Performant Reward Models",
+    "arxiv_id": "2605.07872",
+    "arxiv_url": "http://arxiv.org/abs/2605.07872v1",
+    "published": "2026-05-08",
+    "authors": [
+      "Yuancheng Wei",
+      "Linli Yao",
+      "Lei Li",
+      "Haojie Zhang",
+      "Hao Zhou"
     ]
   },
   {
