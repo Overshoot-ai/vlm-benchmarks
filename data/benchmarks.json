@@ -1530,6 +1530,63 @@
     ]
   },
   {
+    "benchmark_name": "FLARE",
+    "category": "audio_visual",
+    "num_samples": 87697,
+    "modalities": [
+      "visual",
+      "audio",
+      "text"
+    ],
+    "task_types": [
+      "retrieval"
+    ],
+    "description": "A full-modality long-video audiovisual retrieval benchmark with user-simulated queries built from 399 screened Video-MME videos. Contains 87,697 clips with vision, audio, and unified audiovisual captions, together with 274,933 user-style queries requiring both visual and auditory evidence.",
+    "repo_links": [
+      "https://flarebench.github.io/"
+    ],
+    "paper_title": "FLARE: Full-Modality Long-Video Audiovisual Retrieval Benchmark with User-Simulated Queries",
+    "arxiv_id": "2605.10228",
+    "arxiv_url": "http://arxiv.org/abs/2605.10228v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Qijie You",
+      "Hao Liang",
+      "Mingrui Chen",
+      "Bohan Zeng",
+      "Meiyi Qiang"
+    ]
+  },
+  {
+    "benchmark_name": "Omni-DeepSearch",
+    "category": "audio_visual",
+    "num_samples": 640,
+    "modalities": [
+      "audio",
+      "text",
+      "image",
+      "video"
+    ],
+    "task_types": [
+      "multi-hop reasoning",
+      "cross-modal retrieval",
+      "audio-driven search"
+    ],
+    "description": "A benchmark for audio-driven omni-modal deep search where models must start from audio clips, infer useful clues, and actively search across text, image, and video modalities to answer questions. It covers 15 fine-grained categories with four retrieval target modalities and four audio content types.",
+    "repo_links": [],
+    "paper_title": "Omni-DeepSearch: A Benchmark for Audio-Driven Omni-Modal Deep Search",
+    "arxiv_id": "2605.08762",
+    "arxiv_url": "http://arxiv.org/abs/2605.08762v1",
+    "published": "2026-05-09",
+    "authors": [
+      "Tao Yu",
+      "yiming ding",
+      "Shenghua Chai",
+      "Minghui Zhang",
+      "Zhongtian Luo"
+    ]
+  },
+  {
     "benchmark_name": "ChartAB",
     "category": "chart_figure",
     "num_samples": null,
@@ -6449,6 +6506,34 @@
       "Zulong Chen",
       "Zhenghao Liu",
       "Qing Liu"
+    ]
+  },
+  {
+    "benchmark_name": "DocScope",
+    "category": "document_ocr",
+    "num_samples": 1124,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "visual question answering",
+      "document understanding"
+    ],
+    "description": "A benchmark that formulates long-document QA as structured reasoning trajectory prediction with 1,124 questions from 273 PDF documents. Features four-stage evaluation protocol auditing evidence pages, supporting regions, factual statements, and final answers independently through inter-stage decoupling.",
+    "repo_links": [
+      "https://github.com/MiliLab/DocScope"
+    ],
+    "paper_title": "DocScope: Benchmarking Verifiable Reasoning for Trustworthy Long-Document Understanding",
+    "arxiv_id": "2605.08888",
+    "arxiv_url": "http://arxiv.org/abs/2605.08888v1",
+    "published": "2026-05-09",
+    "authors": [
+      "Xiang Feng",
+      "Jiawei Zhou",
+      "Zhangfeng Huang",
+      "Kewei Wang",
+      "Shanshan Ye"
     ]
   },
   {
@@ -12102,6 +12187,56 @@
       "Xueheng Li",
       "Wenwen Tong",
       "Chenxu Guo"
+    ]
+  },
+  {
+    "benchmark_name": "RoboMemArena",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [],
+    "description": "A large-scale benchmark of 26 tasks with average trajectory lengths exceeding 1,000 steps per task and 68.9% memory-dependent subtasks. Evaluates robotic memory formation and management in partially observable environments with VLM-designed subtasks and native keyframe annotations.",
+    "repo_links": [],
+    "paper_title": "RoboMemArena: A Comprehensive and Challenging Robotic Memory Benchmark",
+    "arxiv_id": "2605.10921",
+    "arxiv_url": "http://arxiv.org/abs/2605.10921v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Huashuo Lei",
+      "Wenxuan Song",
+      "Huarui Zhang",
+      "Jieyuan Pei",
+      "Jiayi Chen"
+    ]
+  },
+  {
+    "benchmark_name": "HOME-KGQA",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "knowledge graph question answering"
+    ],
+    "description": "A novel KGQA benchmark built on a multimodal knowledge graph of daily household activities featuring complex, multi-hop natural language questions paired with graph database query languages. Includes challenging questions involving multi-level spatiotemporal reasoning, multimodal grounding, and aggregate functions.",
+    "repo_links": [
+      "https://github.com/aistairc/home-kgqa"
+    ],
+    "paper_title": "HOME-KGQA: A Benchmark Dataset for Multimodal Knowledge Graph Question Answering on Household Daily Activities",
+    "arxiv_id": "2605.09348",
+    "arxiv_url": "http://arxiv.org/abs/2605.09348v1",
+    "published": "2026-05-10",
+    "authors": [
+      "Shusaku Egami",
+      "Aoi Ohta",
+      "Tomoki Tsujimura",
+      "Masaki Asada",
+      "Tatsuya Ishigaki"
     ]
   },
   {
@@ -20712,6 +20847,86 @@
     ]
   },
   {
+    "benchmark_name": "Omni-Persona",
+    "category": "general_multimodal",
+    "num_samples": 750,
+    "modalities": [
+      "text",
+      "visual",
+      "audio"
+    ],
+    "task_types": [],
+    "description": "The first comprehensive benchmark for omnimodal personalization encompassing 4 task groups and 18 fine-grained tasks across ~750 items. Features cross-modal routing over the Persona Modality Graph and introduces Calibrated Accuracy for rigorous grounding behavior diagnosis.",
+    "repo_links": [
+      "https://github.com/oyt9306/Omni-Persona"
+    ],
+    "paper_title": "Omni-Persona: Systematic Benchmarking and Improving Omnimodal Personalization",
+    "arxiv_id": "2605.09996",
+    "arxiv_url": "http://arxiv.org/abs/2605.09996v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Yeongtak Oh",
+      "Dongwook Lee",
+      "Sangkwon Park",
+      "Heeseung Kim",
+      "Sungroh Yoon"
+    ]
+  },
+  {
+    "benchmark_name": "EmoS",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "audio",
+      "text"
+    ],
+    "task_types": [
+      "emotion recognition"
+    ],
+    "description": "A high-fidelity bilingual benchmark for fine-grained streaming emotional understanding that combines strictly filtered static slices with dynamic Streaming Monologue subset. Features dual-layer human annotation pipeline providing trusted ground truth capturing continuous emotional evolution.",
+    "repo_links": [
+      "https://github.com/NLP2CT/EmoS"
+    ],
+    "paper_title": "EmoS: A High-Fidelity Multimodal Benchmark for Fine-grained Streaming Emotional Understanding",
+    "arxiv_id": "2605.08847",
+    "arxiv_url": "http://arxiv.org/abs/2605.08847v1",
+    "published": "2026-05-09",
+    "authors": [
+      "Pengze Guo",
+      "Jingxi Liang",
+      "Zhiwen Xie",
+      "Qifeng Wang",
+      "Derek F. Wong"
+    ]
+  },
+  {
+    "benchmark_name": "SalesSim",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "user simulation",
+      "conversation"
+    ],
+    "description": "A framework and testbed for evaluating MLLMs as retail user simulators in multi-turn, multi-modal, tool-augmented online retail conversations. Models grounded, agentic customer behavior with diverse backgrounds, preferences, and dealbreakers for realistic persona-driven interactions.",
+    "repo_links": [],
+    "paper_title": "SalesSim: Benchmarking and Aligning Multimodal Language Models as Retail User Simulators",
+    "arxiv_id": "2605.08334",
+    "arxiv_url": "http://arxiv.org/abs/2605.08334v1",
+    "published": "2026-05-08",
+    "authors": [
+      "Yada Pruksachatkun",
+      "Elaine Wan",
+      "Lyanna Chen",
+      "Kai-Wei Chang",
+      "Chien-Sheng Wu"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -26996,6 +27211,58 @@
     ]
   },
   {
+    "benchmark_name": "WildClawBench",
+    "category": "gui_web_agent",
+    "num_samples": 60,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [],
+    "description": "A native-runtime benchmark of 60 human-authored, bilingual, multimodal tasks spanning six thematic categories. Each task averages 8 minutes of wall-clock time and over 20 tool calls, running inside Docker containers with actual CLI agent harnesses.",
+    "repo_links": [
+      "https://github.com/internlm/WildClawBench"
+    ],
+    "paper_title": "WildClawBench: A Benchmark for Real-World, Long-Horizon Agent Evaluation",
+    "arxiv_id": "2605.10912",
+    "arxiv_url": "http://arxiv.org/abs/2605.10912v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Shuangrui Ding",
+      "Xuanlang Dai",
+      "Long Xing",
+      "Shengyuan Ding",
+      "Ziyu Liu"
+    ]
+  },
+  {
+    "benchmark_name": "RUC (Real UI Clickboxes)",
+    "category": "gui_web_agent",
+    "num_samples": 1407,
+    "modalities": [
+      "visual",
+      "web interfaces"
+    ],
+    "task_types": [
+      "web navigation",
+      "deception detection",
+      "GUI interaction"
+    ],
+    "description": "A benchmark of scenarios spanning four domains and deception categories for evaluating web agents' resistance to deceptive interface elements. It tests VLM-based web agents' ability to avoid clicking on deceptive UI components.",
+    "repo_links": [],
+    "paper_title": "Don't Click That: Teaching Web Agents to Resist Deceptive Interfaces",
+    "arxiv_id": "2605.09497",
+    "arxiv_url": "http://arxiv.org/abs/2605.09497v1",
+    "published": "2026-05-10",
+    "authors": [
+      "Yilin Zhang",
+      "Yingkai Hua",
+      "Chunyu Wei",
+      "Xin Wang",
+      "Yueguo Chen"
+    ]
+  },
+  {
     "benchmark_name": "DeCapBench",
     "category": "hallucination",
     "num_samples": null,
@@ -30465,6 +30732,30 @@
     ]
   },
   {
+    "benchmark_name": "EgoMemReason",
+    "category": "long_video",
+    "num_samples": 500,
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "memory-driven reasoning"
+    ],
+    "description": "A comprehensive benchmark for week-long egocentric video understanding through memory-driven reasoning with 500 questions across three memory types. Features an average of 5.1 video segments of evidence per question and 25.9 hours of memory backtracking for ultra-long horizon reasoning.",
+    "repo_links": [],
+    "paper_title": "EgoMemReason: A Memory-Driven Reasoning Benchmark for Long-Horizon Egocentric Video Understanding",
+    "arxiv_id": "2605.09874",
+    "arxiv_url": "http://arxiv.org/abs/2605.09874v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Ziyang Wang",
+      "Yue Zhang",
+      "Shoubin Yu",
+      "Ce Zhang",
+      "Zengqi Zhao"
+    ]
+  },
+  {
     "benchmark_name": "DynaMath",
     "category": "math_science",
     "num_samples": 501,
@@ -33297,6 +33588,34 @@
       "Haihong E",
       "Mengyuan Ji",
       "Yang Liu"
+    ]
+  },
+  {
+    "benchmark_name": "SciVQR",
+    "category": "math_science",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "visual question answering",
+      "scientific reasoning"
+    ],
+    "description": "A multimodal benchmark covering 54 subfields in mathematics, physics, chemistry, geography, astronomy, and biology with domain-specific visuals. Tasks range from basic factual recall to complex multi-step inferences, with 46% including expert-authored solutions and process evaluation.",
+    "repo_links": [
+      "https://github.com/CASIA-IVA-Lab/SciVQR"
+    ],
+    "paper_title": "SciVQR: A Multidisciplinary Multimodal Benchmark for Advanced Scientific Reasoning Evaluation",
+    "arxiv_id": "2605.10187",
+    "arxiv_url": "http://arxiv.org/abs/2605.10187v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Longteng Guo",
+      "Xuanxu Lin",
+      "Dongze Hao",
+      "Tongtian Yue",
+      "Pengkang Huo"
     ]
   },
   {
@@ -39104,6 +39423,109 @@
       "Yi Pan",
       "Lifeng Chen",
       "Weihang You"
+    ]
+  },
+  {
+    "benchmark_name": "DeepTumorVQA",
+    "category": "medical",
+    "num_samples": 476000,
+    "modalities": [
+      "3D",
+      "text"
+    ],
+    "task_types": [
+      "visual question answering",
+      "medical diagnosis"
+    ],
+    "description": "A hierarchical benchmark with 476K questions across 42 clinical subtypes on 9,262 3D CT volumes for stage-wise tumor diagnosis evaluation. Decomposes 3D CT reasoning into four stages: recognition, measurement, visual reasoning, and medical reasoning with tool-interaction environments.",
+    "repo_links": [
+      "https://github.com/Schuture/DeepTumorVQA"
+    ],
+    "paper_title": "DeepTumorVQA: A Hierarchical 3D CT Benchmark for Stage-Wise Evaluation of Medical VLMs and Tool-Augmented Agents",
+    "arxiv_id": "2605.09679",
+    "arxiv_url": "http://arxiv.org/abs/2605.09679v1",
+    "published": "2026-05-10",
+    "authors": [
+      "Yixiong Chen",
+      "Wenjie Xiao",
+      "Pedro R. A. S. Bassi",
+      "Boyan Wang",
+      "Liang He"
+    ]
+  },
+  {
+    "benchmark_name": "CT-SpatialVQA",
+    "category": "medical",
+    "num_samples": 9077,
+    "modalities": [
+      "3D",
+      "text"
+    ],
+    "task_types": [
+      "visual question answering",
+      "spatial reasoning"
+    ],
+    "description": "A benchmark designed to evaluate semantic-spatial reasoning in 3D CT data comprising 9,077 clinically grounded QA pairs derived from 1,601 radiology reports and CT volumes. Requires explicit anatomical localization, laterality awareness, and 3D inter-structure relational reasoning.",
+    "repo_links": [],
+    "paper_title": "Lost in Volume: The CT-SpatialVQA Benchmark for Evaluating Semantic-Spatial Understanding of 3D Medical Vision-Language Models",
+    "arxiv_id": "2605.08787",
+    "arxiv_url": "http://arxiv.org/abs/2605.08787v1",
+    "published": "2026-05-09",
+    "authors": [
+      "Mashrafi Monon",
+      "Umaima Rahman",
+      "Asif Hanif",
+      "Numan Saeed",
+      "Mohammad Yaqub"
+    ]
+  },
+  {
+    "benchmark_name": "AgentRx",
+    "category": "medical",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "clinical prediction"
+    ],
+    "description": "A benchmark study of LLM agents for multimodal clinical prediction tasks using large-scale real-world data. Evaluates performance in unimodal and multimodal settings across temporal EHR data, medical images, radiology reports, and clinical notes in both single agent and multi-agent frameworks.",
+    "repo_links": [],
+    "paper_title": "AgentRx: A Benchmark Study of LLM Agents for Multimodal Clinical Prediction Tasks",
+    "arxiv_id": "2605.10286",
+    "arxiv_url": "http://arxiv.org/abs/2605.10286v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Baraa Al Jorf",
+      "Farah E. Shamout"
+    ]
+  },
+  {
+    "benchmark_name": "Med-StepBench",
+    "category": "medical",
+    "num_samples": null,
+    "modalities": [
+      "3D medical imaging",
+      "PET/CT"
+    ],
+    "task_types": [
+      "hallucination detection",
+      "medical diagnosis",
+      "step-wise reasoning"
+    ],
+    "description": "The first large-scale benchmark for step-wise hallucination detection in 3D oncological PET/CT imaging, comprising over 12,000 images and more than 1,000,000 image-statement pairs. It decomposes clinical reasoning into four expert-designed diagnostic stages to evaluate medical VLMs systematically.",
+    "repo_links": [],
+    "paper_title": "Med-StepBench: A Hierarchical Reasoning Framework for Evaluating Hallucinations in Medical Vision-Language Models",
+    "arxiv_id": "2605.10002",
+    "arxiv_url": "http://arxiv.org/abs/2605.10002v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Minh Khoi Nguyen",
+      "Dai Lam Le",
+      "Amir Reza Jafari",
+      "Tuan Dung Nguyen",
+      "Mai Hong Son"
     ]
   },
   {
@@ -51902,6 +52324,60 @@
     ]
   },
   {
+    "benchmark_name": "SAGE",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "image"
+    ],
+    "task_types": [
+      "disease diagnosis",
+      "visual reasoning"
+    ],
+    "description": "The largest plant disease image-symptom dataset covering 335 crops, 1,251 disease classes, and approximately 839K images. It supports training-free, agentic disease prediction with source-grounded symptom descriptions linked to web quotes.",
+    "repo_links": [
+      "https://sage-dataset.github.io/"
+    ],
+    "paper_title": "SAGE: Scalable Agentic Grounded Evaluation for Crop Disease Diagnosis",
+    "arxiv_id": "2605.09768",
+    "arxiv_url": "http://arxiv.org/abs/2605.09768v1",
+    "published": "2026-05-10",
+    "authors": [
+      "Muhammad Arbab Arshad",
+      "Tirtho Roy",
+      "Yanben Shen",
+      "Dinakaran Elango",
+      "Shivani Chiranjeevi"
+    ]
+  },
+  {
+    "benchmark_name": "DeepAccident-CCoT",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "driving scenes"
+    ],
+    "task_types": [
+      "autonomous driving",
+      "safety planning",
+      "counterfactual reasoning"
+    ],
+    "description": "A dataset constructed based on the DeepAccident benchmark for evaluating counterfactual chain-of-thought reasoning in autonomous driving scenarios. It focuses on safety-critical planning at urban intersections with structured meta-action evaluation.",
+    "repo_links": [],
+    "paper_title": "C-CoT: Counterfactual Chain-of-Thought with Vision-Language Models for Safe Autonomous Driving",
+    "arxiv_id": "2605.10744",
+    "arxiv_url": "http://arxiv.org/abs/2605.10744v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Kefei Tian",
+      "Yuansheng Lian",
+      "Kai Yang",
+      "Xiangdong Chen",
+      "Shen Li"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -53298,6 +53774,33 @@
       "Shreshth Saini",
       "Avinab Saha",
       "Alan C. Bovik"
+    ]
+  },
+  {
+    "benchmark_name": "SenseBench",
+    "category": "quality_aesthetics",
+    "num_samples": 10000,
+    "modalities": [
+      "visual"
+    ],
+    "task_types": [
+      "visual perception",
+      "diagnostic description"
+    ],
+    "description": "The first dedicated diagnostic benchmark for remote sensing low-level visual perception and description with over 10K curated instances across 6 major and 22 fine-grained RS degradation categories. Features physics-based hierarchical taxonomy unifying non-reference and reference-based paradigms.",
+    "repo_links": [
+      "https://github.com/Zhong-Chenchen/SenseBench"
+    ],
+    "paper_title": "SenseBench: A Benchmark for Remote Sensing Low-Level Visual Perception and Description in Large Vision-Language Models",
+    "arxiv_id": "2605.10576",
+    "arxiv_url": "http://arxiv.org/abs/2605.10576v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Chen Zhong",
+      "Xiao An",
+      "Jiaxing Sun",
+      "Zihan Gui",
+      "Guangyi Yang"
     ]
   },
   {
@@ -58089,6 +58592,79 @@
     ]
   },
   {
+    "benchmark_name": "FraudBench",
+    "category": "safety_bias",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "fraud detection"
+    ],
+    "description": "A multimodal benchmark for detecting AI-generated fraudulent refund evidence constructed from real-world user-review evidence across e-commerce, food delivery, and travel services. Features genuine and synthetic damaged evidence with MLLM-assisted filtering and human annotation.",
+    "repo_links": [],
+    "paper_title": "FraudBench: A Multimodal Benchmark for Detecting AI-Generated Fraudulent Refund Evidence",
+    "arxiv_id": "2605.08820",
+    "arxiv_url": "http://arxiv.org/abs/2605.08820v1",
+    "published": "2026-05-09",
+    "authors": [
+      "Xinyu Yan",
+      "Boyang Chen",
+      "Jiaming Zhang",
+      "Tiantong Wu",
+      "Hong Xi Tae"
+    ]
+  },
+  {
+    "benchmark_name": "PPU-Bench",
+    "category": "safety_bias",
+    "num_samples": 24000,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "unlearning"
+    ],
+    "description": "A real-world benchmark for personalized partial unlearning in MLLMs with 24K multimodal and unimodal samples from 500 public figures. Features three progressively challenging settings: Complete, Selective, and Personalized unlearning with fine-grained factual control evaluation.",
+    "repo_links": [],
+    "paper_title": "PPU-Bench:Real World Benchmark for Personalized Partial Unlearning in Vision Language Models",
+    "arxiv_id": "2605.08800",
+    "arxiv_url": "http://arxiv.org/abs/2605.08800v1",
+    "published": "2026-05-09",
+    "authors": [
+      "Jiahui Guang",
+      "Zexun Zhan",
+      "Zhenlin Xu",
+      "Cuiyun Gao",
+      "Haiyan Wang"
+    ]
+  },
+  {
+    "benchmark_name": "Sens-VisualNews",
+    "category": "safety_bias",
+    "num_samples": 9576,
+    "modalities": [
+      "visual"
+    ],
+    "task_types": [
+      "sensational content detection"
+    ],
+    "description": "A benchmark dataset for sensational image detection containing 9,576 images from news items annotated based on the existence of various sensational concepts and events. Aims to determine whether images contain shocking, provocative, or emotionally charged features to grab attention.",
+    "repo_links": [],
+    "paper_title": "Sens-VisualNews: A Benchmark Dataset for Sensational Image Detection",
+    "arxiv_id": "2605.10394",
+    "arxiv_url": "http://arxiv.org/abs/2605.10394v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Andreas Goulas",
+      "Damianos Galanopoulos",
+      "Evlampios Apostolidis",
+      "Vasileios Mezaris"
+    ]
+  },
+  {
     "benchmark_name": "SRBench",
     "category": "spatial_3d",
     "num_samples": null,
@@ -62183,6 +62759,114 @@
     ]
   },
   {
+    "benchmark_name": "CADBench",
+    "category": "spatial_3d",
+    "num_samples": 18000,
+    "modalities": [
+      "visual",
+      "3D"
+    ],
+    "task_types": [
+      "CAD program generation"
+    ],
+    "description": "A unified benchmark for multimodal CAD program generation containing 18,000 evaluation samples spanning six benchmark families. Supports five input modalities including clean meshes, noisy meshes, and various renders, with six metrics covering geometric fidelity and program compactness.",
+    "repo_links": [
+      "https://huggingface.co/datasets/DeCoDELab/CADBench"
+    ],
+    "paper_title": "CADBench: A Multimodal Benchmark for AI-Assisted CAD Program Generation",
+    "arxiv_id": "2605.10873",
+    "arxiv_url": "http://arxiv.org/abs/2605.10873v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Anna C. Doris",
+      "Jacob Thomas Sony",
+      "Ghadi Nehme",
+      "Era Syla",
+      "Amin Heyrani Nobari"
+    ]
+  },
+  {
+    "benchmark_name": "SleepWalk",
+    "category": "spatial_3d",
+    "num_samples": 2472,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "trajectory prediction",
+      "navigation"
+    ],
+    "description": "A benchmark for evaluating instruction-grounded trajectory prediction in single-scene 3D worlds generated from textual descriptions. Targets localized, interaction-centric embodied reasoning with three tiers of spatial and temporal difficulty across 2,472 curated 3D environments.",
+    "repo_links": [],
+    "paper_title": "SleepWalk: A Three-Tier Benchmark for Stress-Testing Instruction-Guided Vision-Language Navigation",
+    "arxiv_id": "2605.10376",
+    "arxiv_url": "http://arxiv.org/abs/2605.10376v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Niyati Rawal",
+      "Sushant Ravva",
+      "Shah Alam Abir",
+      "Saksham Jain",
+      "Aman Chadha"
+    ]
+  },
+  {
+    "benchmark_name": "BenchCAD",
+    "category": "spatial_3d",
+    "num_samples": 17900,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "visual question answering",
+      "code question answering",
+      "image-to-code generation",
+      "instruction-guided code editing"
+    ],
+    "description": "A unified benchmark for industrial CAD reasoning containing 17,900 execution-verified CadQuery programs across 106 industrial part families. Evaluates models through visual QA, code QA, image-to-code generation, and instruction-guided code editing for parametric CAD program synthesis.",
+    "repo_links": [],
+    "paper_title": "BenchCAD: A Comprehensive, Industry-Standard Benchmark for Programmatic CAD",
+    "arxiv_id": "2605.10865",
+    "arxiv_url": "http://arxiv.org/abs/2605.10865v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Haozhe Zhang",
+      "Kaichen Liu",
+      "Miaomiao Chen",
+      "Lei Li",
+      "Shaojie Yang"
+    ]
+  },
+  {
+    "benchmark_name": null,
+    "category": "spatial_3d",
+    "num_samples": null,
+    "modalities": [
+      "3D visual",
+      "first-person view"
+    ],
+    "task_types": [
+      "self-recognition",
+      "mirror self-identification",
+      "embodied AI"
+    ],
+    "description": "A controlled 3D benchmark where first-person VLM agents must recognize themselves in mirrors by inferring hidden body attributes from reflections. It tests mirror-grounded self-identification while avoiding shortcuts and self-other misattribution.",
+    "repo_links": [],
+    "paper_title": "Mirror, Mirror on the Wall: Can VLM Agents Tell Who They Are at All?",
+    "arxiv_id": "2605.08816",
+    "arxiv_url": "http://arxiv.org/abs/2605.08816v1",
+    "published": "2026-05-09",
+    "authors": [
+      "Filippo Ziliotto",
+      "Ciro Beneduce",
+      "Bruno Lepri",
+      "Luciano Serafini",
+      "Massimiliano Luca"
+    ]
+  },
+  {
     "benchmark_name": "Temporally-Grounded Language Generation (TGLG)",
     "category": "streaming_video",
     "num_samples": null,
@@ -64219,6 +64903,31 @@
       "Luyuan Jiao",
       "Yixuan Li",
       "Zitong Wang"
+    ]
+  },
+  {
+    "benchmark_name": "TOC-Bench",
+    "category": "temporal_reasoning",
+    "num_samples": 2323,
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "temporal reasoning",
+      "object consistency"
+    ],
+    "description": "A diagnostic benchmark for evaluating temporal object consistency in Video-LLMs with 2,323 high-quality QA pairs over 1,951 videos. Object-track grounded with per frame object trajectories and structured temporal event timelines, filtered through three-layer temporal-necessity protocol.",
+    "repo_links": [],
+    "paper_title": "TOC-Bench: A Temporal Object Consistency Benchmark for Video Large Language Models",
+    "arxiv_id": "2605.09904",
+    "arxiv_url": "http://arxiv.org/abs/2605.09904v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Junzhe Chen",
+      "Siyuan Meng",
+      "Yuxi Chen",
+      "Man Zhao",
+      "Xiaojie Guo"
     ]
   },
   {
@@ -71297,6 +72006,57 @@
       "Lei Li",
       "Haojie Zhang",
       "Hao Zhou"
+    ]
+  },
+  {
+    "benchmark_name": "SYNCR",
+    "category": "video_understanding",
+    "num_samples": 8163,
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "cross-video reasoning"
+    ],
+    "description": "A controlled synthetic benchmark for cross-video reasoning with programmatically verified grounding containing 8,163 multi-video QA pairs across 9,650 unique videos. Evaluates MLLMs across Temporal Alignment, Spatial Tracking, Comparative Reasoning, and Holistic Synthesis using Habitat, Kubric, and CLEVRER simulators.",
+    "repo_links": [
+      "https://github.com/SaraGhazanfari/SYNCR"
+    ],
+    "paper_title": "SYNCR: A Cross-Video Reasoning Benchmark with Synthetic Grounding",
+    "arxiv_id": "2605.08412",
+    "arxiv_url": "http://arxiv.org/abs/2605.08412v1",
+    "published": "2026-05-08",
+    "authors": [
+      "Sara Ghazanfari",
+      "Siddharth Garg",
+      "Prashanth Krishnamurthy",
+      "Farshad Khorrami"
+    ]
+  },
+  {
+    "benchmark_name": "SoccerLens",
+    "category": "video_understanding",
+    "num_samples": null,
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "video understanding",
+      "grounded evaluation",
+      "sports analysis"
+    ],
+    "description": "A benchmark for grounded soccer video understanding containing annotated video segments spanning 13 common soccer events. It features structured visual cues organized into three levels of semantic relevance to assess whether VLMs rely on meaningful visual evidence.",
+    "repo_links": [],
+    "paper_title": "SoccerLens: Grounded Soccer Video Understanding Beyond Accuracy",
+    "arxiv_id": "2605.09598",
+    "arxiv_url": "http://arxiv.org/abs/2605.09598v1",
+    "published": "2026-05-10",
+    "authors": [
+      "Ismael Elsharkawi",
+      "Ahmed Sait",
+      "Silvio Giancola",
+      "Bernard Ghanem",
+      "Hossam Sharara"
     ]
   },
   {
@@ -79435,6 +80195,107 @@
       "Linli Yao",
       "Lei Li",
       "Jiali Chen"
+    ]
+  },
+  {
+    "benchmark_name": "PhyGround",
+    "category": "visual_reasoning",
+    "num_samples": 250,
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "physical reasoning evaluation"
+    ],
+    "description": "A criteria-grounded benchmark for evaluating physical reasoning in video generation with 250 curated prompts and a taxonomy of 13 physical laws. Features observable sub-questions for per-law diagnostics and quality-controlled human annotations from 459 annotators.",
+    "repo_links": [
+      "https://phyground.github.io/"
+    ],
+    "paper_title": "PhyGround: Benchmarking Physical Reasoning in Generative World Models",
+    "arxiv_id": "2605.10806",
+    "arxiv_url": "http://arxiv.org/abs/2605.10806v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Juyi Lin",
+      "Arash Akbari",
+      "Yumei He",
+      "Lin Zhao",
+      "Haichao Zhang"
+    ]
+  },
+  {
+    "benchmark_name": "KnotBench",
+    "category": "visual_reasoning",
+    "num_samples": 858318,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "equivalence judgment",
+      "move prediction",
+      "identification",
+      "cross-modal grounding"
+    ],
+    "description": "A vision-language benchmark with an 858,318-image corpus from 1,951 prime-knot prototypes for diagrammatic knot reasoning. Features 14 tasks across four families: equivalence judgment, move prediction, identification, and cross-modal grounding with answers checked against canonical knot signatures.",
+    "repo_links": [],
+    "paper_title": "The Gordian Knot for VLMs: Diagrammatic Knot Reasoning as a Hard Benchmark",
+    "arxiv_id": "2605.09900",
+    "arxiv_url": "http://arxiv.org/abs/2605.09900v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Hao Liu",
+      "Jicheng Liu"
+    ]
+  },
+  {
+    "benchmark_name": "Polaris-Bench",
+    "category": "visual_reasoning",
+    "num_samples": 53,
+    "modalities": [
+      "visual"
+    ],
+    "task_types": [
+      "visual reasoning",
+      "spatial reasoning"
+    ],
+    "description": "A benchmark that re-formulates visual reasoning tasks in polar coordinate space to dismantle the 'Cartesian Shortcut' vulnerability in MLLMs. It preserves consistent logical constraints while fundamentally breaking the orthogonal grid-based layouts that models exploit.",
+    "repo_links": [],
+    "paper_title": "The Cartesian Shortcut: Re-evaluate Vision Reasoning in Polar Coordinate Space",
+    "arxiv_id": "2605.09883",
+    "arxiv_url": "http://arxiv.org/abs/2605.09883v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Xia Hu",
+      "Zhenrui Yue",
+      "Brian Potetz",
+      "Howard Zhou",
+      "Leonidas Guibas"
+    ]
+  },
+  {
+    "benchmark_name": "KubriCount",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "image"
+    ],
+    "task_types": [
+      "object counting",
+      "multi-grained counting"
+    ],
+    "description": "The largest and most comprehensively annotated counting dataset supporting multi-grained evaluation across five explicit granularity levels. It uses a fully automatic data-scaling pipeline integrating controllable 3D synthesis with consistent image editing.",
+    "repo_links": [
+      "https://verg-avesta.github.io/KubriCount/"
+    ],
+    "paper_title": "Count Anything at Any Granularity",
+    "arxiv_id": "2605.10887",
+    "arxiv_url": "http://arxiv.org/abs/2605.10887v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Chang Liu",
+      "Haoning Wu",
+      "Weidi Xie"
     ]
   }
 ]
