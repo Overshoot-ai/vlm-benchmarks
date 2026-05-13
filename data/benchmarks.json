@@ -12240,6 +12240,37 @@
     ]
   },
   {
+    "benchmark_name": "BARISTA",
+    "category": "egocentric_embodied",
+    "num_samples": 185,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "phrase grounding",
+      "hand-object interaction recognition",
+      "activity recognition",
+      "relation extraction",
+      "temporal visual question answering"
+    ],
+    "description": "A densely annotated egocentric dataset of coffee-preparation videos with verified per-frame scene graphs linking object identities to masks, tracks, boxes, attributes, and hand-object interactions. Derives zero-shot language-based tasks spanning phrase grounding, activity recognition, and temporal visual question answering for procedural video understanding.",
+    "repo_links": [
+      "https://huggingface.co/datasets/ramblr/BARISTA"
+    ],
+    "paper_title": "BARISTA: A Multi-Task Egocentric Benchmark for Compositional Visual Understanding",
+    "arxiv_id": "2605.12074",
+    "arxiv_url": "http://arxiv.org/abs/2605.12074v1",
+    "published": "2026-05-12",
+    "authors": [
+      "Patrick Knab",
+      "Orgest Xhelili",
+      "Inis Buzi",
+      "Drago Andres Guggiana Nilo",
+      "Mohd Saquib Khan"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "general_multimodal",
     "num_samples": null,
@@ -20927,6 +20958,29 @@
     ]
   },
   {
+    "benchmark_name": "MM-Eval",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "text",
+      "visual"
+    ],
+    "task_types": [
+      "multimodal summarization evaluation"
+    ],
+    "description": "A unified evaluation framework for Multimodal Summarization with Multimodal Output (MSMO) that integrates assessments of textual quality, cross-modal alignment, and visual diversity. Includes components for text quality, image-text relevance, and image-set diversity with learned aggregation aligned to human preferences.",
+    "repo_links": [],
+    "paper_title": "Measuring What Matters Beyond Text: Evaluating Multimodal Summaries by Quality, Alignment, and Diversity",
+    "arxiv_id": "2605.11693",
+    "arxiv_url": "http://arxiv.org/abs/2605.11693v1",
+    "published": "2026-05-12",
+    "authors": [
+      "Abid Ali",
+      "Diego Molla-Aliod",
+      "Usman Naseem"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -23027,6 +23081,35 @@
       "Hang Dong",
       "Tianjin Huang",
       "Wei Han"
+    ]
+  },
+  {
+    "benchmark_name": "UHR-Micro",
+    "category": "geospatial",
+    "num_samples": 11253,
+    "modalities": [
+      "ultra-high-resolution imagery",
+      "text"
+    ],
+    "task_types": [
+      "spatial grounding",
+      "micro-target detection",
+      "evidence parsing"
+    ],
+    "description": "A benchmark comprising 11,253 instructions grounded in 1,212 ultra-high-resolution Earth observation images, designed to evaluate VLMs at the spatial limits of native imagery. Provides diagnostic annotations for controlled evaluation and error attribution of micro-target detection and spatial grounding challenges.",
+    "repo_links": [
+      "https://github.com/MiliLab/UHR-Micro"
+    ],
+    "paper_title": "UHR-Micro: Diagnosing and Mitigating the Resolution Illusion in Earth Observation VLMs",
+    "arxiv_id": "2605.12237",
+    "arxiv_url": "http://arxiv.org/abs/2605.12237v1",
+    "published": "2026-05-12",
+    "authors": [
+      "Shuo Ni",
+      "Tong Wang",
+      "Jing Zhang",
+      "He Chen",
+      "Haonan Guo"
     ]
   },
   {
@@ -33616,6 +33699,91 @@
       "Dongze Hao",
       "Tongtian Yue",
       "Pengkang Huo"
+    ]
+  },
+  {
+    "benchmark_name": "MM-OptBench",
+    "category": "math_science",
+    "num_samples": 780,
+    "modalities": [
+      "text",
+      "visual",
+      "code"
+    ],
+    "task_types": [
+      "optimization modeling",
+      "mathematical formulation",
+      "solver code generation"
+    ],
+    "description": "A solver-grounded benchmark for multimodal optimization modeling where models construct mathematical formulations and executable solver code from text-and-visual problem specifications. Uses a framework that generates structured optimization instances verified with exact solvers across 6 optimization families and 3 difficulty levels.",
+    "repo_links": [],
+    "paper_title": "MM-OptBench: A Solver-Grounded Benchmark for Multimodal Optimization Modeling",
+    "arxiv_id": "2605.12154",
+    "arxiv_url": "http://arxiv.org/abs/2605.12154v1",
+    "published": "2026-05-12",
+    "authors": [
+      "Zhong Li",
+      "Qi Huang",
+      "Yuxuan Zhu",
+      "Mohammad Mohammadi Amiri",
+      "Niki van Stein"
+    ]
+  },
+  {
+    "benchmark_name": "Gakucho Benchmark",
+    "category": "math_science",
+    "num_samples": null,
+    "modalities": [
+      "text",
+      "visual",
+      "diagrams"
+    ],
+    "task_types": [
+      "educational assessment",
+      "academic reasoning"
+    ],
+    "description": "A multimodal dataset from Japan's National Assessment of Academic Ability comprising middle-school items in Science, Mathematics, and Japanese Language with real exam layouts and diagrams. Includes nationwide aggregated student response distributions from approximately 900,000 students for human-grounded evaluation.",
+    "repo_links": [
+      "https://github.com/KyosukeTakami/gakucho-benchmark"
+    ],
+    "paper_title": "Human-Grounded Multimodal Benchmark with 900K-Scale Aggregated Student Response Distributions from Japan's National Assessment of Academic Ability",
+    "arxiv_id": "2605.11663",
+    "arxiv_url": "http://arxiv.org/abs/2605.11663v1",
+    "published": "2026-05-12",
+    "authors": [
+      "Kyosuke Takami",
+      "Yuka Tateisi",
+      "Satoshi Sekine",
+      "Yusuke Miyao"
+    ]
+  },
+  {
+    "benchmark_name": "MolDeTox",
+    "category": "math_science",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "molecular structures"
+    ],
+    "task_types": [
+      "molecular detoxification",
+      "molecular optimization",
+      "toxicity assessment"
+    ],
+    "description": "A benchmark for molecular detoxification designed for fine-grained evaluation of toxicity-aware molecular optimization across stepwise tasks. Focuses on fragment-level molecular understanding and generation to improve structural validity and enhance quality of generated molecules for drug discovery applications.",
+    "repo_links": [
+      "https://huggingface.co/datasets/MolDeTox/MolDeTox"
+    ],
+    "paper_title": "MolDeTox: Evaluating Language Model's Stepwise Fragment Editing for Molecular Detoxification",
+    "arxiv_id": "2605.12181",
+    "arxiv_url": "http://arxiv.org/abs/2605.12181v1",
+    "published": "2026-05-12",
+    "authors": [
+      "Jueon Park",
+      "Wonjune Jang",
+      "Jiwoo Lee",
+      "Yein Park",
+      "Jaewoo Kang"
     ]
   },
   {
@@ -58665,6 +58833,30 @@
     ]
   },
   {
+    "benchmark_name": null,
+    "category": "safety_bias",
+    "num_samples": 800,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "hazard detection",
+      "visual question answering",
+      "risk assessment"
+    ],
+    "description": "A geographically diverse dataset spanning 20 cities across six continents with over 800 annotated images and 18,000 answered questions for urban navigation hazard detection. Uses VQA-based event maps and hierarchical query structures to assess pedestrian safety risks for visually impaired navigation assistance.",
+    "repo_links": [],
+    "paper_title": "Urban Risk-Aware Navigation via VQA-Based Event Maps for People with Low Vision",
+    "arxiv_id": "2605.11782",
+    "arxiv_url": "http://arxiv.org/abs/2605.11782v1",
+    "published": "2026-05-12",
+    "authors": [
+      "Antoni Valls",
+      "Jordi Sanchez-Riera"
+    ]
+  },
+  {
     "benchmark_name": "SRBench",
     "category": "spatial_3d",
     "num_samples": null,
@@ -80296,6 +80488,55 @@
       "Chang Liu",
       "Haoning Wu",
       "Weidi Xie"
+    ]
+  },
+  {
+    "benchmark_name": "Vision2Code",
+    "category": "visual_reasoning",
+    "num_samples": 2169,
+    "modalities": [
+      "visual",
+      "code"
+    ],
+    "task_types": [
+      "image-to-code generation"
+    ],
+    "description": "A reference-code-free benchmark for evaluating image-to-code generation across 15 source datasets spanning charts, plots, geometry, graphs, scientific imagery, documents, and 3D spatial scenes. Models generate executable programs which are rendered and scored against source images using VLM raters with dataset-specific rubrics.",
+    "repo_links": [
+      "https://image2code.github.io/vision2code/"
+    ],
+    "paper_title": "Vision2Code: A Multi-Domain Benchmark for Evaluating Image-to-Code Generation",
+    "arxiv_id": "2605.11307",
+    "arxiv_url": "http://arxiv.org/abs/2605.11307v1",
+    "published": "2026-05-11",
+    "authors": [
+      "Ajay Vikram Periasami",
+      "Junlin Wang",
+      "Bhuwan Dhingra"
+    ]
+  },
+  {
+    "benchmark_name": "ShapeCodeBench",
+    "category": "visual_reasoning",
+    "num_samples": 150,
+    "modalities": [
+      "visual",
+      "code"
+    ],
+    "task_types": [
+      "perception-to-program reconstruction",
+      "program synthesis"
+    ],
+    "description": "A synthetic benchmark for perception-to-program reconstruction where models must emit executable drawing programs from rendered raster images. Features a renewable design with seeded RNG generation to create fresh held-out sets and reduce contamination, with evaluation across easy, medium, and hard difficulty tiers.",
+    "repo_links": [
+      "https://github.com/shivamk3r/shape-code-bench"
+    ],
+    "paper_title": "ShapeCodeBench: A Renewable Benchmark for Perception-to-Program Reconstruction of Synthetic Shape Scenes",
+    "arxiv_id": "2605.11680",
+    "arxiv_url": "http://arxiv.org/abs/2605.11680v1",
+    "published": "2026-05-12",
+    "authors": [
+      "Shivam Kumar"
     ]
   }
 ]
