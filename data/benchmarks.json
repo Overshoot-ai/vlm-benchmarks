@@ -6537,6 +6537,34 @@
     ]
   },
   {
+    "benchmark_name": "CiteVQA",
+    "category": "document_ocr",
+    "num_samples": 1897,
+    "modalities": [
+      "text",
+      "PDF documents"
+    ],
+    "task_types": [
+      "document VQA",
+      "evidence attribution"
+    ],
+    "description": "A benchmark requiring models to return element-level bounding-box citations alongside each answer in document VQA tasks. It comprises 1,897 questions across 711 PDFs spanning seven domains and two languages, evaluating both answer correctness and citation accuracy through Strict Attributed Accuracy.",
+    "repo_links": [
+      "https://github.com/opendatalab/CiteVQA"
+    ],
+    "paper_title": "CiteVQA: Benchmarking Evidence Attribution for Trustworthy Document Intelligence",
+    "arxiv_id": "2605.12882",
+    "arxiv_url": "http://arxiv.org/abs/2605.12882v1",
+    "published": "2026-05-13",
+    "authors": [
+      "Dongsheng Ma",
+      "Jiayu Li",
+      "Zhengren Wang",
+      "Yijie Wang",
+      "Jiahao Kong"
+    ]
+  },
+  {
     "benchmark_name": "EGONORMIA",
     "category": "egocentric_embodied",
     "num_samples": 1853,
@@ -20978,6 +21006,58 @@
       "Abid Ali",
       "Diego Molla-Aliod",
       "Usman Naseem"
+    ]
+  },
+  {
+    "benchmark_name": "OxyEcomBench",
+    "category": "general_multimodal",
+    "num_samples": 6300,
+    "modalities": [
+      "text",
+      "images"
+    ],
+    "task_types": [
+      "29 tasks across 6 capability aspects"
+    ],
+    "description": "A unified multimodal benchmark for real-world bilingual Chinese-English e-commerce evaluation. It covers platform operators, merchants, and customers across 6 capability aspects and 29 tasks with text-only and mixed-modality inputs, featuring single-image, multi-image, single-turn, and multi-turn configurations.",
+    "repo_links": [],
+    "paper_title": "OxyEcomBench: Benchmarking Multimodal Foundation Models across E-Commerce Ecosystems",
+    "arxiv_id": "2605.13173",
+    "arxiv_url": "http://arxiv.org/abs/2605.13173v1",
+    "published": "2026-05-13",
+    "authors": [
+      "Yong Liu",
+      "Ximan Liu",
+      "Guoqing Yang",
+      "Bing Bai",
+      "Xiaoqiang Xu"
+    ]
+  },
+  {
+    "benchmark_name": "Edit-Compass & EditReward-Compass",
+    "category": "general_multimodal",
+    "num_samples": 2388,
+    "modalities": [
+      "text",
+      "images"
+    ],
+    "task_types": [
+      "world knowledge reasoning",
+      "visual reasoning",
+      "multi-image editing"
+    ],
+    "description": "A unified evaluation suite for image editing and reward modeling with 2,388 carefully annotated instances spanning six challenging task categories. It adopts fine-grained multidimensional evaluation with structured reasoning and includes EditReward-Compass with 2,251 preference pairs for realistic reward modeling scenarios.",
+    "repo_links": [],
+    "paper_title": "Edit-Compass & EditReward-Compass: A Unified Benchmark for Image Editing and Reward Modeling",
+    "arxiv_id": "2605.13062",
+    "arxiv_url": "http://arxiv.org/abs/2605.13062v1",
+    "published": "2026-05-13",
+    "authors": [
+      "Xuehai Bai",
+      "Yang Shi",
+      "Yi-Fan Zhang",
+      "Xuanyu Zhu",
+      "Yuran Wang"
     ]
   },
   {
@@ -53972,6 +54052,34 @@
     ]
   },
   {
+    "benchmark_name": "Visual Aesthetic Benchmark (VAB)",
+    "category": "quality_aesthetics",
+    "num_samples": 1195,
+    "modalities": [
+      "images"
+    ],
+    "task_types": [
+      "aesthetic evaluation",
+      "comparative selection"
+    ],
+    "description": "A benchmark casting aesthetic evaluation as comparative selection over candidate sets with matched subject matter. It contains 400 tasks and 1,195 images across fine art, photography, and illustration, with labels derived from consensus of 10 independent expert judges per task.",
+    "repo_links": [
+      "https://github.com/BakeLab/Visual-Aesthetic-Benchmark",
+      "https://huggingface.co/datasets/BakeLab/Visual-Aesthetic-Benchmark"
+    ],
+    "paper_title": "Visual Aesthetic Benchmark: Can Frontier Models Judge Beauty?",
+    "arxiv_id": "2605.12684",
+    "arxiv_url": "http://arxiv.org/abs/2605.12684v1",
+    "published": "2026-05-12",
+    "authors": [
+      "Yichen Feng",
+      "Yuetai Li",
+      "Chunjiang Liu",
+      "Yuanyuan Chen",
+      "Fengqing Jiang"
+    ]
+  },
+  {
     "benchmark_name": "RoboDriveBench",
     "category": "safety_bias",
     "num_samples": 64559,
@@ -63056,6 +63164,32 @@
       "Bruno Lepri",
       "Luciano Serafini",
       "Massimiliano Luca"
+    ]
+  },
+  {
+    "benchmark_name": "SpatialBabel",
+    "category": "spatial_3d",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "code"
+    ],
+    "task_types": [
+      "3D scene reconstruction",
+      "spatial reasoning"
+    ],
+    "description": "A benchmark evaluating fourteen VLMs on primitive-based 3D scene reconstruction across six scene-code languages. It reveals that geometric primitives serve as a powerful intermediate representation for spatial understanding, with the same model's performance varying significantly across different programming languages.",
+    "repo_links": [],
+    "paper_title": "3D Primitives are a Spatial Language for VLMs",
+    "arxiv_id": "2605.12586",
+    "arxiv_url": "http://arxiv.org/abs/2605.12586v1",
+    "published": "2026-05-12",
+    "authors": [
+      "Junze Liu",
+      "Kun Qian",
+      "Florian Dubost",
+      "Kai Zhong",
+      "Arvind Srinivasan"
     ]
   },
   {
@@ -80537,6 +80671,53 @@
     "published": "2026-05-12",
     "authors": [
       "Shivam Kumar"
+    ]
+  },
+  {
+    "benchmark_name": "GeoBuildBench",
+    "category": "visual_reasoning",
+    "num_samples": 489,
+    "modalities": [
+      "text",
+      "geometric diagrams"
+    ],
+    "task_types": [
+      "geometry construction",
+      "interactive construction"
+    ],
+    "description": "A benchmark for evaluating whether LLMs and multimodal agents can ground natural-language plane geometry problems into executable geometric constructions. Unlike existing geometry benchmarks, it treats geometry diagrams as interactive construction tasks requiring DSL program generation to satisfy geometric constraints.",
+    "repo_links": [],
+    "paper_title": "GeoBuildBench: A Benchmark for Interactive and Executable Geometry Construction from Natural Language",
+    "arxiv_id": "2605.13167",
+    "arxiv_url": "http://arxiv.org/abs/2605.13167v1",
+    "published": "2026-05-13",
+    "authors": [
+      "Jinwoong Kim",
+      "Rui Yang",
+      "Huishuai Zhang"
+    ]
+  },
+  {
+    "benchmark_name": "KamonBench",
+    "category": "visual_reasoning",
+    "num_samples": 20000,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "compositional visual recognition",
+      "factor recovery"
+    ],
+    "description": "A grammar-based image-to-structure benchmark with 20,000 synthetic composite Japanese family crests (kamon) for compositional visual recognition. Each crest combines symbolic choices and is paired with formal descriptions, supporting evaluation beyond caption-level accuracy through direct program-code factor metrics.",
+    "repo_links": [],
+    "paper_title": "KamonBench: A Grammar-Based Dataset for Evaluating Compositional Factor Recovery in Vision-Language Models",
+    "arxiv_id": "2605.13322",
+    "arxiv_url": "http://arxiv.org/abs/2605.13322v1",
+    "published": "2026-05-13",
+    "authors": [
+      "Richard Sproat",
+      "Stefano Peluchetti"
     ]
   }
 ]
