@@ -12299,6 +12299,35 @@
     ]
   },
   {
+    "benchmark_name": "LongAct",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "long-horizon household tasks",
+      "instruction understanding",
+      "dependency management",
+      "memory maintenance",
+      "adaptive planning"
+    ],
+    "description": "A benchmark designed to evaluate planning-level autonomy in long-horizon household tasks specified through free-form instructions. Abstracts away embodiment-specific low-level control to isolate high-level cognitive capabilities such as instruction understanding, dependency management, memory maintenance, and adaptive planning.",
+    "repo_links": [],
+    "paper_title": "When Robots Do the Chores: A Benchmark and Agent for Long-Horizon Household Task Execution",
+    "arxiv_id": "2605.14504",
+    "arxiv_url": "http://arxiv.org/abs/2605.14504v1",
+    "published": "2026-05-14",
+    "authors": [
+      "Zilin Zhu",
+      "Longteng Guo",
+      "Yanghong Mei",
+      "Bowen Pang",
+      "Zongxun Zhang"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "general_multimodal",
     "num_samples": null,
@@ -21058,6 +21087,33 @@
       "Yi-Fan Zhang",
       "Xuanyu Zhu",
       "Yuran Wang"
+    ]
+  },
+  {
+    "benchmark_name": "MemEye",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "memory evaluation",
+      "visual evidence preservation",
+      "temporal reasoning"
+    ],
+    "description": "A visual-centric evaluation framework for multimodal agent memory that evaluates memory capabilities from two dimensions: granularity of decisive visual evidence and how retrieved evidence must be used. Constructs a benchmark across 8 life-scenario tasks with validation gates for assessing answerability, shortcut resistance, visual necessity, and reasoning structure.",
+    "repo_links": [],
+    "paper_title": "MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory",
+    "arxiv_id": "2605.15128",
+    "arxiv_url": "http://arxiv.org/abs/2605.15128v1",
+    "published": "2026-05-14",
+    "authors": [
+      "Minghao Guo",
+      "Qingyue Jiao",
+      "Zeru Shi",
+      "Yihao Quan",
+      "Boxuan Zhang"
     ]
   },
   {
@@ -40524,6 +40580,37 @@
       "Megha Mariam K. M",
       "Vineeth N. Balasubramanian",
       "C. V. Jawahar"
+    ]
+  },
+  {
+    "benchmark_name": "MEMLENS",
+    "category": "multi_image",
+    "num_samples": 789,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "information extraction",
+      "multi-session reasoning",
+      "temporal reasoning",
+      "knowledge update",
+      "answer refusal"
+    ],
+    "description": "A comprehensive benchmark for memory in multimodal multi-session conversations, comprising 789 questions across five memory abilities (information extraction, multi-session reasoning, temporal reasoning, knowledge update, and answer refusal) at four standard context lengths (32K-256K tokens). Uses an image-ablation study to confirm that solving requires visual evidence.",
+    "repo_links": [
+      "https://github.com/xrenaf/MEMLENS"
+    ],
+    "paper_title": "MemLens: Benchmarking Multimodal Long-Term Memory in Large Vision-Language Models",
+    "arxiv_id": "2605.14906",
+    "arxiv_url": "http://arxiv.org/abs/2605.14906v1",
+    "published": "2026-05-14",
+    "authors": [
+      "Xiyu Ren",
+      "Zhaowei Wang",
+      "Yiming Du",
+      "Zhongwei Xie",
+      "Chi Liu"
     ]
   },
   {
@@ -65257,6 +65344,31 @@
     ]
   },
   {
+    "benchmark_name": "TAB-VLM",
+    "category": "temporal_reasoning",
+    "num_samples": 600,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "temporal reasoning",
+      "cultural anachronism detection"
+    ],
+    "description": "The Temporal Anachronism Benchmark for Vision-Language Models, a dataset of 600 questions across six categories, designed to evaluate temporal reasoning on 1,600 Indian cultural artifacts spanning prehistoric to modern periods. Quantifies cultural anachronism in VLMs when interpreting historical objects.",
+    "repo_links": [],
+    "paper_title": "On the Cultural Anachronism and Temporal Reasoning in Vision Language Models",
+    "arxiv_id": "2605.15071",
+    "arxiv_url": "http://arxiv.org/abs/2605.15071v1",
+    "published": "2026-05-14",
+    "authors": [
+      "Mukul Ranjan",
+      "Prince Jha",
+      "Khushboo Kumari",
+      "Zhiqiang Shen"
+    ]
+  },
+  {
     "benchmark_name": "AEGIS",
     "category": "video_hallucination",
     "num_samples": 10000,
@@ -72383,6 +72495,30 @@
       "Silvio Giancola",
       "Bernard Ghanem",
       "Hossam Sharara"
+    ]
+  },
+  {
+    "benchmark_name": "ViMU",
+    "category": "video_understanding",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "metaphorical understanding",
+      "implicit meaning inference",
+      "subtext understanding"
+    ],
+    "description": "The first benchmark designed to systematically evaluate the subtext understanding capabilities of frontier models in videos. Assesses whether video understanding models can go beyond literal perception to infer implicit meaning, metaphorical, ironic, and social meanings embedded in videos.",
+    "repo_links": [],
+    "paper_title": "ViMU: Benchmarking Video Metaphorical Understanding",
+    "arxiv_id": "2605.14607",
+    "arxiv_url": "http://arxiv.org/abs/2605.14607v1",
+    "published": "2026-05-14",
+    "authors": [
+      "Qi Li",
+      "Xinchao Wang"
     ]
   },
   {
@@ -80718,6 +80854,57 @@
     "authors": [
       "Richard Sproat",
       "Stefano Peluchetti"
+    ]
+  },
+  {
+    "benchmark_name": "CurveBench",
+    "category": "visual_reasoning",
+    "num_samples": 756,
+    "modalities": [
+      "visual"
+    ],
+    "task_types": [
+      "structured prediction",
+      "topological reasoning"
+    ],
+    "description": "A benchmark for hierarchical topological reasoning from visual input, consisting of 756 images of pairwise non-intersecting Jordan curves across different configurations. The task is structured prediction where models must recover the full rooted containment tree induced by the curves.",
+    "repo_links": [],
+    "paper_title": "CurveBench: A Benchmark for Exact Topological Reasoning over Nested Jordan Curves",
+    "arxiv_id": "2605.14068",
+    "arxiv_url": "http://arxiv.org/abs/2605.14068v1",
+    "published": "2026-05-13",
+    "authors": [
+      "Amirreza Mohseni",
+      "Mona Mohammadi",
+      "Morteza Saghafian",
+      "Naser Talebizadeh Saradari"
+    ]
+  },
+  {
+    "benchmark_name": "ProcedureVQA",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "visual procedure question answering",
+      "next-step prediction",
+      "procedural reasoning"
+    ],
+    "description": "A novel multimodal benchmark specifically designed for visual procedural reasoning where users query next-step actions by uploading images for intermediate states of complex procedures. Presents unique challenges in cross-modal retrieval of structured procedures and alignment between visual states and textual steps.",
+    "repo_links": [],
+    "paper_title": "Chain-of-Procedure: Hierarchical Visual-Language Reasoning for Procedural QA",
+    "arxiv_id": "2605.14928",
+    "arxiv_url": "http://arxiv.org/abs/2605.14928v1",
+    "published": "2026-05-14",
+    "authors": [
+      "Guanhua Chen",
+      "Yutong Yao",
+      "Shenghe Sun",
+      "Ci-Jun Gao",
+      "Shudong Liu"
     ]
   }
 ]
