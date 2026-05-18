@@ -3303,6 +3303,32 @@
     ]
   },
   {
+    "benchmark_name": "VCG-Bench",
+    "category": "chart_figure",
+    "num_samples": 1449,
+    "modalities": [
+      "diagrams",
+      "structured visual content"
+    ],
+    "task_types": [
+      "Generation (Vision-to-Code)",
+      "Editability (Code-to-Code)"
+    ],
+    "description": "A unified benchmark for visual-centric structured generation and editing using a Diagram-as-Code paradigm. It features diverse diagrams spanning 6 domains and 15 sub-domains with mxGraph XML for precise diagram generation and editing.",
+    "repo_links": [],
+    "paper_title": "VCG-Bench: Towards A Unified Visual-Centric Benchmark for Structured Generation and Editing",
+    "arxiv_id": "2605.15677",
+    "arxiv_url": "http://arxiv.org/abs/2605.15677v1",
+    "published": "2026-05-15",
+    "authors": [
+      "Xiaoyan Su",
+      "Peijie Dong",
+      "Zhenheng Tang",
+      "Song Tang",
+      "Yuyao Zhai"
+    ]
+  },
+  {
     "benchmark_name": "Document Haystack",
     "category": "document_ocr",
     "num_samples": 8250,
@@ -21117,6 +21143,39 @@
     ]
   },
   {
+    "benchmark_name": "SMMBench",
+    "category": "general_multimodal",
+    "num_samples": 1877,
+    "modalities": [
+      "images",
+      "text",
+      "screenshots",
+      "tables",
+      "documents"
+    ],
+    "task_types": [
+      "cross-source multimodal reasoning",
+      "conflict resolution",
+      "preference reasoning",
+      "memory-grounded action prediction"
+    ],
+    "description": "A benchmark for evaluating multimodal agent memory across source-distributed contexts. It measures whether agents can retrieve, align, and compose evidence scattered across multiple heterogeneous sources like conversations, profiles, screenshots, tables, images, and documents.",
+    "repo_links": [
+      "https://huggingface.co/datasets/HuacanChai/SMMBench"
+    ],
+    "paper_title": "SMMBench: A Benchmark for Source-Distributed Multimodal Agent Memory",
+    "arxiv_id": "2605.15710",
+    "arxiv_url": "http://arxiv.org/abs/2605.15710v1",
+    "published": "2026-05-15",
+    "authors": [
+      "Huacan Chai",
+      "Yukai Wang",
+      "Yingxuan Yang",
+      "Dan Peng",
+      "Yuanyi Song"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -27479,6 +27538,32 @@
       "Chunyu Wei",
       "Xin Wang",
       "Yueguo Chen"
+    ]
+  },
+  {
+    "benchmark_name": "PAGE Bench",
+    "category": "gui_web_agent",
+    "num_samples": 4906,
+    "modalities": [
+      "GUI screenshots",
+      "geometric primitives"
+    ],
+    "task_types": [
+      "geometric construction",
+      "precision-sensitive GUI control"
+    ],
+    "description": "A benchmark for point-precise geometric GUI control requiring pixel-level accuracy. It evaluates precision-sensitive GUI tasks with over 224K process-supervised, pixel-level GUI actions for geometric construction tasks.",
+    "repo_links": [],
+    "paper_title": "PAGER: Bridging the Semantic-Execution Gap in Point-Precise Geometric GUI Control",
+    "arxiv_id": "2605.15963",
+    "arxiv_url": "http://arxiv.org/abs/2605.15963v1",
+    "published": "2026-05-15",
+    "authors": [
+      "Jingxuan Wei",
+      "Xi Bai",
+      "Shan Liu",
+      "Caijun Jia",
+      "Zheng Sun"
     ]
   },
   {
@@ -39830,6 +39915,33 @@
       "Amir Reza Jafari",
       "Tuan Dung Nguyen",
       "Mai Hong Son"
+    ]
+  },
+  {
+    "benchmark_name": "MI-CXR",
+    "category": "medical",
+    "num_samples": null,
+    "modalities": [
+      "chest X-rays",
+      "medical images"
+    ],
+    "task_types": [
+      "Temporal Event Localization",
+      "Interval-wise Change Reasoning",
+      "Global Trajectory Summarization"
+    ],
+    "description": "A benchmark for longitudinal reasoning over multi-interval chest X-rays across multiple patient visits. It features five-way multiple-choice questions over five-visit patient timelines with three task families: Temporal Event Localization, Interval-wise Change Reasoning, and Global Trajectory Summarization.",
+    "repo_links": [
+      "https://github.com/AIDASLab/MI-CXR"
+    ],
+    "paper_title": "MI-CXR: A Benchmark for Longitudinal Reasoning over Multi-Interval Chest X-rays",
+    "arxiv_id": "2605.15574",
+    "arxiv_url": "http://arxiv.org/abs/2605.15574v1",
+    "published": "2026-05-15",
+    "authors": [
+      "Sunghwan Steve Cho",
+      "Yunseok Han",
+      "Jaeyoung Do"
     ]
   },
   {
