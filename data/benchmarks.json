@@ -12469,6 +12469,61 @@
     ]
   },
   {
+    "benchmark_name": "Machine-DevBench",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "language"
+    ],
+    "task_types": [
+      "language grounding",
+      "multimodal learning",
+      "developmental evaluation"
+    ],
+    "description": "A corpus-grounded benchmark of lexical and grammatical competence automatically generated from model training vocabulary, designed to evaluate VLMs trained on naturalistic egocentric video data. Part of the EgoBabyVLM Challenge for grounded language learning from infant-like naturalistic data.",
+    "repo_links": [],
+    "paper_title": "EgoBabyVLM: Benchmarking Cross-Modal Learning from Naturalistic Egocentric Video Data",
+    "arxiv_id": "2605.19130",
+    "arxiv_url": "http://arxiv.org/abs/2605.19130v1",
+    "published": "2026-05-18",
+    "authors": [
+      "Dongyan Lin",
+      "Phillip Rust",
+      "Angel Villar Corrales",
+      "Alvin W. M. Tan",
+      "Mahi Luthra"
+    ]
+  },
+  {
+    "benchmark_name": "EgoCoT-Bench",
+    "category": "egocentric_embodied",
+    "num_samples": 3172,
+    "modalities": [
+      "video",
+      "language"
+    ],
+    "task_types": [
+      "egocentric video understanding",
+      "operation-centric reasoning",
+      "spatio-temporal reasoning"
+    ],
+    "description": "A fine-grained egocentric benchmark for grounded and verifiable operation-centric reasoning with explicit step-by-step rationale annotations. Comprises 3,172 verifiable QA pairs over 351 egocentric videos across 4 task groups encompassing perception, anticipation, and high-level reasoning.",
+    "repo_links": [
+      "https://dstardust.github.io/EgoCoT/"
+    ],
+    "paper_title": "EgoCoT-Bench: Benchmarking Grounded and Verifiable Operation-Centric Chain of Thought Reasoning for MLLMs",
+    "arxiv_id": "2605.19559",
+    "arxiv_url": "http://arxiv.org/abs/2605.19559v1",
+    "published": "2026-05-19",
+    "authors": [
+      "Yang Dai",
+      "Dian Jiao",
+      "Tianwei Lin",
+      "Wenqiao Zhang"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "general_multimodal",
     "num_samples": null,
@@ -21291,6 +21346,36 @@
     ]
   },
   {
+    "benchmark_name": "PEOD-Chat",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "RGB images",
+      "event streams",
+      "text"
+    ],
+    "task_types": [
+      "captioning",
+      "visual question answering",
+      "scene understanding"
+    ],
+    "description": "A dual-stream vision-language benchmark that combines RGB images and event streams for robust scene understanding. PEOD-Chat targets illumination-challenged scenes while RGBE-Chat covers diverse scenarios, enabling evaluation of event-augmented VLMs across normal and challenging conditions.",
+    "repo_links": [
+      "https://github.com/bupt-ai-cz/RE-VLM"
+    ],
+    "paper_title": "RE-VLM: Event-Augmented Vision-Language Model for Scene Understanding",
+    "arxiv_id": "2605.19329",
+    "arxiv_url": "http://arxiv.org/abs/2605.19329v1",
+    "published": "2026-05-19",
+    "authors": [
+      "Hanqing Liu",
+      "Mingjie Liu",
+      "Luoping Cui",
+      "Endian Lin",
+      "Donghong Jiang"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -27763,6 +27848,34 @@
     ]
   },
   {
+    "benchmark_name": "Cutverse",
+    "category": "gui_web_agent",
+    "num_samples": 186,
+    "modalities": [
+      "visual",
+      "text",
+      "interaction logs"
+    ],
+    "task_types": [
+      "GUI automation",
+      "media editing",
+      "long-horizon planning"
+    ],
+    "description": "A benchmark for evaluating autonomous GUI agents in realistic media post-production environments across 7 professional applications. Covers 186 complex, long-horizon tasks grounded in authentic editing workflows with dense multimodal interfaces and tightly coupled interaction sequences.",
+    "repo_links": [],
+    "paper_title": "CutVerse: A Compositional GUI Agents Benchmark for Media Post-Production Editing",
+    "arxiv_id": "2605.19484",
+    "arxiv_url": "http://arxiv.org/abs/2605.19484v1",
+    "published": "2026-05-19",
+    "authors": [
+      "Haobo Hu",
+      "Xiangwu Guo",
+      "Zhiheng Chen",
+      "Difei Gao",
+      "Haotian Liu"
+    ]
+  },
+  {
     "benchmark_name": "DeCapBench",
     "category": "hallucination",
     "num_samples": null,
@@ -29758,6 +29871,32 @@
       "Eunju Lee",
       "JungMin Yun",
       "Byeonggeuk Lim"
+    ]
+  },
+  {
+    "benchmark_name": "FAGER",
+    "category": "hallucination",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "factual correctness evaluation",
+      "text-to-image assessment",
+      "grounded fact verification"
+    ],
+    "description": "An agentic framework that evaluates whether generated images correctly reflect visually verifiable facts grounded in or implied by prompts, with focus on scientific knowledge, historical facts, and culture-specific concepts. Introduces Factual A/B test for validating factuality metrics across five datasets.",
+    "repo_links": [],
+    "paper_title": "FAGER: Factually Grounded Evaluation and Refinement of Text-to-Image Models",
+    "arxiv_id": "2605.19111",
+    "arxiv_url": "http://arxiv.org/abs/2605.19111v1",
+    "published": "2026-05-18",
+    "authors": [
+      "Youngsun Lim",
+      "Cusuh Ham",
+      "Pin-Yu Chen",
+      "Deepti Ghadiyaram"
     ]
   },
   {
@@ -54604,6 +54743,33 @@
     ]
   },
   {
+    "benchmark_name": "Artifact-Bench",
+    "category": "quality_aesthetics",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "language"
+    ],
+    "task_types": [
+      "artifact detection",
+      "realism assessment",
+      "video quality evaluation"
+    ],
+    "description": "A comprehensive benchmark for evaluating MLLMs on AI-generated video artifact detection and analysis across photorealistic, animated, and CG-style videos. Features a three-level hierarchical taxonomy of realism artifacts and three complementary evaluation tasks.",
+    "repo_links": [],
+    "paper_title": "Artifact-Bench: Evaluating MLLMs on Detecting and Assessing the Artifacts of AI-Generated Videos",
+    "arxiv_id": "2605.18984",
+    "arxiv_url": "http://arxiv.org/abs/2605.18984v1",
+    "published": "2026-05-18",
+    "authors": [
+      "Yuqi Tang",
+      "Yang Shi",
+      "Zhuoran Zhang",
+      "Qixun Wang",
+      "Xuehai Bai"
+    ]
+  },
+  {
     "benchmark_name": "RoboDriveBench",
     "category": "safety_bias",
     "num_samples": 64559,
@@ -59512,6 +59678,35 @@
       "Rasika Muralidharan",
       "Haewoon Kwak",
       "Jisun An"
+    ]
+  },
+  {
+    "benchmark_name": "RoboJailBench",
+    "category": "safety_bias",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "language"
+    ],
+    "task_types": [
+      "adversarial attack evaluation",
+      "security assessment",
+      "embodied AI safety"
+    ],
+    "description": "A standardized evaluation framework for jailbreak attacks in embodied AI systems, featuring a security taxonomy with 18 categories of violation consequences and an intent contrast dataset pipeline. Provides the first comprehensive benchmark for adversarial security evaluation in embodied VLMs.",
+    "repo_links": [
+      "https://purseclab.github.io/benchmark-for-robotics-security"
+    ],
+    "paper_title": "RoboJailBench: Benchmarking Adversarial Attacks and Defenses in Embodied Robotic Agents",
+    "arxiv_id": "2605.19328",
+    "arxiv_url": "http://arxiv.org/abs/2605.19328v1",
+    "published": "2026-05-19",
+    "authors": [
+      "Doguhuan Yeke",
+      "Yanming Zhou",
+      "Leo Y. Lin",
+      "Hongyu Cai",
+      "Antonio Bianchi"
     ]
   },
   {
@@ -73124,6 +73319,88 @@
     ]
   },
   {
+    "benchmark_name": "FineBench",
+    "category": "video_understanding",
+    "num_samples": 199420,
+    "modalities": [
+      "video",
+      "language"
+    ],
+    "task_types": [
+      "video question answering",
+      "spatial reasoning",
+      "human activity understanding"
+    ],
+    "description": "A human-centric video QA benchmark with 199,420 multiple-choice QA pairs densely annotated across 64 long-form videos (15 minutes each). Focuses on fine-grained understanding of person movement, interaction, and object manipulation including compositional actions.",
+    "repo_links": [],
+    "paper_title": "FineBench: Benchmarking and Enhancing Vision-Language Models for Fine-grained Human Activity Understanding",
+    "arxiv_id": "2605.19846",
+    "arxiv_url": "http://arxiv.org/abs/2605.19846v1",
+    "published": "2026-05-19",
+    "authors": [
+      "Gueter Josmy Faure",
+      "Min-Hung Chen",
+      "Jia-Fong Yeh",
+      "Hung-Ting Su",
+      "Winston H. Hsu"
+    ]
+  },
+  {
+    "benchmark_name": "HAVEN",
+    "category": "video_understanding",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "video summarization",
+      "temporal reasoning",
+      "multimodal grounding",
+      "saliency ranking"
+    ],
+    "description": "A hierarchically aligned multimodal benchmark for unified video understanding with fully granular (frame, shot, video levels) and fully multimodal annotation architecture. Features explicit continuous alignment between video and text modalities across summarization, temporal reasoning, multimodal grounding, and saliency ranking tasks.",
+    "repo_links": [],
+    "paper_title": "HAVEN: Hierarchically Aligned Multimodal Benchmark for Unified Video Understanding",
+    "arxiv_id": "2605.19223",
+    "arxiv_url": "http://arxiv.org/abs/2605.19223v1",
+    "published": "2026-05-19",
+    "authors": [
+      "Mengqi Shi",
+      "Haopeng Zhang"
+    ]
+  },
+  {
+    "benchmark_name": "CogReasonBench",
+    "category": "video_understanding",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text",
+      "sketches"
+    ],
+    "task_types": [
+      "controllable video generation",
+      "creative intent reasoning",
+      "professional workflow evaluation"
+    ],
+    "description": "Built from professional workflows data that carry genuine creative intent rather than simulated ones, designed to evaluate reasoning-driven controllable video generation. Part of a framework that includes CogControlBench for comprehensive assessment of creative intent cognition and video generation alignment.",
+    "repo_links": [
+      "https://um-lab.github.io/CogOmniControl/"
+    ],
+    "paper_title": "CogOmniControl: Reasoning-Driven Controllable Video Generation via Creative Intent Cognition",
+    "arxiv_id": "2605.19995",
+    "arxiv_url": "http://arxiv.org/abs/2605.19995v1",
+    "published": "2026-05-19",
+    "authors": [
+      "Hongji Yang",
+      "Songlian Li",
+      "Yucheng Zhou",
+      "Xiaotong Zhao",
+      "Alan Zhao"
+    ]
+  },
+  {
     "benchmark_name": "GraphVLM",
     "category": "visual_reasoning",
     "num_samples": null,
@@ -81534,6 +81811,60 @@
       "Jian Xu",
       "Junho Kim",
       "Ismini Lourentzou"
+    ]
+  },
+  {
+    "benchmark_name": "EyeVLM",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "language"
+    ],
+    "task_types": [
+      "gaze following",
+      "social gaze prediction"
+    ],
+    "description": "A systematic evaluation framework for gaze understanding in VLMs across two core tasks: gaze following (predicting 2D location where person is looking) and social gaze prediction (reasoning over multi-person interactions). Evaluates both zero-shot and fine-tuning approaches on existing gaze understanding datasets.",
+    "repo_links": [],
+    "paper_title": "Eyes on VLM: Benchmarking Gaze Following and Social Gaze Prediction in Vision Language Models",
+    "arxiv_id": "2605.19859",
+    "arxiv_url": "http://arxiv.org/abs/2605.19859v1",
+    "published": "2026-05-19",
+    "authors": [
+      "Hengfei Wang",
+      "Anshul Gupta",
+      "Pierre Vuillecard",
+      "Jean-Marc Odobez"
+    ]
+  },
+  {
+    "benchmark_name": "R^3-Bench",
+    "category": "visual_reasoning",
+    "num_samples": 600,
+    "modalities": [
+      "visual",
+      "language"
+    ],
+    "task_types": [
+      "iterative visual generation",
+      "error identification",
+      "rectification reasoning"
+    ],
+    "description": "A benchmark of over 600 expert-annotated instances that quantifies iterative reasoning and rectification capabilities in reflective visual generation. Evaluates models' ability to identify generation errors and generate actionable rectification instructions through the Reason-Reflect-Rectify framework.",
+    "repo_links": [
+      "https://github.com/xiaomoguhz/R3-Bench"
+    ],
+    "paper_title": "Benchmarking and Evolving Reason-Reflect-Rectify for Reflective Visual Generation",
+    "arxiv_id": "2605.19639",
+    "arxiv_url": "http://arxiv.org/abs/2605.19639v1",
+    "published": "2026-05-19",
+    "authors": [
+      "Junjie Wang",
+      "Xinghua Lou",
+      "Jason Li",
+      "Ye Tian",
+      "Keyu Chen"
     ]
   }
 ]
