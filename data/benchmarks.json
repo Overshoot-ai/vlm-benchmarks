@@ -6617,6 +6617,36 @@
     ]
   },
   {
+    "benchmark_name": "TextSculpt-Bench",
+    "category": "document_ocr",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "text editing",
+      "text addition",
+      "text replacement",
+      "text removal"
+    ],
+    "description": "A benchmark for scene text editing covering four fundamental tasks: text addition, replacement, removal, and hybrid editing. Features tailored evaluation protocol measuring text accuracy, visual quality, and background preservation through OCR-based alignment.",
+    "repo_links": [
+      "https://github.com/linyiheng123/TextSculptor"
+    ],
+    "paper_title": "TextSculptor: Training and Benchmarking Scene Text Editing",
+    "arxiv_id": "2605.21090",
+    "arxiv_url": "http://arxiv.org/abs/2605.21090v1",
+    "published": "2026-05-20",
+    "authors": [
+      "Yiheng Lin",
+      "Siyu Jiao",
+      "Xiaohan Lan",
+      "Wei Zhou",
+      "Qi She"
+    ]
+  },
+  {
     "benchmark_name": "EGONORMIA",
     "category": "egocentric_embodied",
     "num_samples": 1853,
@@ -12521,6 +12551,35 @@
       "Dian Jiao",
       "Tianwei Lin",
       "Wenqiao Zhang"
+    ]
+  },
+  {
+    "benchmark_name": "RoboAbstention",
+    "category": "egocentric_embodied",
+    "num_samples": 6069,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "abstention detection",
+      "embodied planning",
+      "instruction following"
+    ],
+    "description": "A framework for evaluating abstention in embodied robotic agents when instructions are ambiguous, physically infeasible, or unresolvable. Features a scalable pipeline generating abstention instructions grounded in robotics datasets with verifiable conditions.",
+    "repo_links": [
+      "https://purseclab.github.io/RoboAbstention/"
+    ],
+    "paper_title": "The Yes-Man Syndrome: Benchmarking Abstention in Embodied Robotic Agents",
+    "arxiv_id": "2605.20544",
+    "arxiv_url": "http://arxiv.org/abs/2605.20544v1",
+    "published": "2026-05-19",
+    "authors": [
+      "Doguhan Yeke",
+      "Elif Su Temirel",
+      "Ananth Shreekumar",
+      "Brandon Lee",
+      "Dongyan Xu"
     ]
   },
   {
@@ -21376,6 +21435,30 @@
     ]
   },
   {
+    "benchmark_name": "WikiVQABench",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "visual question answering",
+      "knowledge-grounded reasoning"
+    ],
+    "description": "A knowledge-grounded VQA benchmark combining Wikipedia images, captions, and Wikidata structured knowledge. Questions require external knowledge beyond visual content, with human-curated multiple-choice format to evaluate knowledge-aware vision-language models.",
+    "repo_links": [],
+    "paper_title": "WikiVQABench: A Knowledge-Grounded Visual Question Answering Benchmark from Wikipedia and Wikidata",
+    "arxiv_id": "2605.21479",
+    "arxiv_url": "http://arxiv.org/abs/2605.21479v1",
+    "published": "2026-05-20",
+    "authors": [
+      "Basel Shbita",
+      "Pengyuan Li",
+      "Anna Lisa Gentile"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -25148,6 +25231,62 @@
       "Peng Wang",
       "Guoqing Wang",
       "Yang Yang"
+    ]
+  },
+  {
+    "benchmark_name": "WildRoadBench",
+    "category": "grounding_localization",
+    "num_samples": null,
+    "modalities": [
+      "aerial imagery",
+      "text"
+    ],
+    "task_types": [
+      "visual grounding",
+      "damage detection",
+      "autonomous agent evaluation"
+    ],
+    "description": "A wild aerial road-damage grounding benchmark coupling visual grounding by VLMs with autonomous research by LLM-driven agents on UAV imagery. Features dual evaluation tracks for direct VLM grounding and autonomous agent performance.",
+    "repo_links": [
+      "https://anonymous.4open.science/r/wildroadbench-0607"
+    ],
+    "paper_title": "WildRoadBench: A Wild Aerial Road-Damage Grounding Benchmark for Vision-Language Models and Autonomous Agents",
+    "arxiv_id": "2605.20306",
+    "arxiv_url": "http://arxiv.org/abs/2605.20306v1",
+    "published": "2026-05-19",
+    "authors": [
+      "Bingnan Liu",
+      "Chenhang Cui",
+      "Rui Huang",
+      "Jiani Luo",
+      "Zhirong Shen"
+    ]
+  },
+  {
+    "benchmark_name": "VISTAQA",
+    "category": "grounding_localization",
+    "num_samples": 1157,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "visual question answering",
+      "grounding",
+      "segmentation"
+    ],
+    "description": "A benchmark for joint evaluation of free-form answer correctness and pixel-level evidence grounding in VQA. Features 1,157 expert-curated samples spanning six task types and domains, requiring both correct answers and precise segmentation masks.",
+    "repo_links": [],
+    "paper_title": "VISTAQA: Benchmarking Joint Visual Question Answering and Pixel-Level Evidence",
+    "arxiv_id": "2605.20676",
+    "arxiv_url": "http://arxiv.org/abs/2605.20676v1",
+    "published": "2026-05-20",
+    "authors": [
+      "Mozhgan Nasr Azadani",
+      "Yimu Wang",
+      "Yongpeng Zhu",
+      "Lihong Chen",
+      "Milan Ganai"
     ]
   },
   {
@@ -29897,6 +30036,30 @@
       "Cusuh Ham",
       "Pin-Yu Chen",
       "Deepti Ghadiyaram"
+    ]
+  },
+  {
+    "benchmark_name": "HalluCXR",
+    "category": "hallucination",
+    "num_samples": 15408,
+    "modalities": [
+      "medical imaging",
+      "text"
+    ],
+    "task_types": [
+      "hallucination detection",
+      "medical image interpretation",
+      "chest X-ray analysis"
+    ],
+    "description": "A benchmark evaluating hallucinations in medical vision-language models for chest radiograph interpretation across 856 stratified MIMIC-CXR images. Features an eight-category hallucination taxonomy with clinical severity ratings and automated detection pipeline.",
+    "repo_links": [],
+    "paper_title": "HalluCXR: Benchmarking and Mitigating Hallucinations in Medical Vision-Language Models for Chest Radiograph Interpretation",
+    "arxiv_id": "2605.20469",
+    "arxiv_url": "http://arxiv.org/abs/2605.20469v1",
+    "published": "2026-05-19",
+    "authors": [
+      "Haoyu Wang",
+      "Zitong Li"
     ]
   },
   {
@@ -40355,6 +40518,33 @@
       " Chih-Hua",
       " Liu",
       "Yannan Yu"
+    ]
+  },
+  {
+    "benchmark_name": "NeuroQA",
+    "category": "medical",
+    "num_samples": 56953,
+    "modalities": [
+      "3D medical imaging",
+      "text"
+    ],
+    "task_types": [
+      "medical visual question answering",
+      "3D medical image understanding",
+      "clinical reasoning"
+    ],
+    "description": "A large-scale benchmark for 3D brain MRI visual question answering with 56,953 QA pairs from 12,977 subjects across clinical domains. Every item paired with full 3D volume, evaluating 11 clinically grounded reasoning skills with expert verification.",
+    "repo_links": [],
+    "paper_title": "NeuroQA: A Large-Scale Image-Grounded Benchmark for 3D Brain MRI Understanding",
+    "arxiv_id": "2605.20525",
+    "arxiv_url": "http://arxiv.org/abs/2605.20525v1",
+    "published": "2026-05-19",
+    "authors": [
+      "Mohammad H. Abbasi",
+      "Favour Nerrise",
+      "Shaurnav Ghosh",
+      "Ridvan Yesiloglu",
+      "Yuncong Mao"
     ]
   },
   {
@@ -53289,6 +53479,32 @@
     ]
   },
   {
+    "benchmark_name": "SURGE",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "text",
+      "social network structure"
+    ],
+    "task_types": [
+      "sentiment forecasting",
+      "time series prediction",
+      "social media analysis"
+    ],
+    "description": "A multi-event social media benchmark pairing event-level time series with aligned text and interaction structure across 67 events and 800K+ posts. Enables controlled evaluation of how social interactions shape collective dynamics in sentiment forecasting.",
+    "repo_links": [],
+    "paper_title": "SURGE: An Event-Centric Social Media Sentiment Time Series Benchmark with Interaction Structure",
+    "arxiv_id": "2605.21198",
+    "arxiv_url": "http://arxiv.org/abs/2605.21198v1",
+    "published": "2026-05-20",
+    "authors": [
+      "Chen Su",
+      "Pengsen Cheng",
+      "Yuanhe Tian",
+      "Yan Song"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -63965,6 +64181,67 @@
     ]
   },
   {
+    "benchmark_name": "ArchSIBench",
+    "category": "spatial_3d",
+    "num_samples": 3000,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "spatial perception",
+      "spatial reasoning",
+      "navigation",
+      "spatial transformation",
+      "spatial configuration"
+    ],
+    "description": "A benchmark for architectural spatial intelligence covering five core dimensions: perception, reasoning, navigation, transformation, and configuration across 17 fine-grained subtasks. Features 3,000 question-answer pairs manually annotated by architectural experts to evaluate higher-level spatial cognition in built environments.",
+    "repo_links": [
+      "https://huggingface.co/datasets/ArchSIBench/ArchSIBench"
+    ],
+    "paper_title": "ArchSIBench: Benchmarking the Architectural Spatial Intelligence of Vision-Language Models",
+    "arxiv_id": "2605.20837",
+    "arxiv_url": "http://arxiv.org/abs/2605.20837v1",
+    "published": "2026-05-20",
+    "authors": [
+      "Qirui Shen",
+      "Wenda Wang",
+      "Jiachen Lu",
+      "Zilong Huang",
+      "Jin Bai"
+    ]
+  },
+  {
+    "benchmark_name": "ShadeBench",
+    "category": "spatial_3d",
+    "num_samples": null,
+    "modalities": [
+      "satellite imagery",
+      "3D meshes",
+      "text"
+    ],
+    "task_types": [
+      "shade generation",
+      "shade segmentation",
+      "3D building reconstruction"
+    ],
+    "description": "A comprehensive dataset for urban shade understanding with geographically diverse scenes, temporally varying shade maps, satellite imagery, and 3D building meshes. Supports shade generation, segmentation, and 3D reconstruction tasks for urban climate research.",
+    "repo_links": [
+      "https://darl-genai.github.io/shadebench/"
+    ],
+    "paper_title": "ShadeBench: A Benchmark Dataset for Building Shade Simulation in Sustainable Society",
+    "arxiv_id": "2605.20510",
+    "arxiv_url": "http://arxiv.org/abs/2605.20510v1",
+    "published": "2026-05-19",
+    "authors": [
+      "Longchao Da",
+      "Mithun Shivakoti",
+      "Xiangrui Liu",
+      "T Pranav Kutralingam",
+      "Yezhou Yang"
+    ]
+  },
+  {
     "benchmark_name": "Temporally-Grounded Language Generation (TGLG)",
     "category": "streaming_video",
     "num_samples": null,
@@ -66106,6 +66383,33 @@
       "Prince Jha",
       "Khushboo Kumari",
       "Zhiqiang Shen"
+    ]
+  },
+  {
+    "benchmark_name": "TempGlitch",
+    "category": "temporal_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "temporal glitch detection",
+      "video analysis",
+      "quality assurance"
+    ],
+    "description": "A controlled gameplay video benchmark for temporal glitch detection, distinguishing between spatial glitches visible in single frames and temporal glitches evident only through frame sequences. Covers five temporal glitch types with balanced samples and paired glitch-free videos.",
+    "repo_links": [],
+    "paper_title": "TempGlitch: Evaluating Vision-Language Models for Temporal Glitch Detection in Gameplay Videos",
+    "arxiv_id": "2605.21443",
+    "arxiv_url": "http://arxiv.org/abs/2605.21443v1",
+    "published": "2026-05-20",
+    "authors": [
+      "Yakun Yu",
+      "Ashley Wiens",
+      "Adrián Barahona-Ríos",
+      "Benedict Wilkins",
+      "Saman Zadtootaghaj"
     ]
   },
   {
