@@ -6647,6 +6647,35 @@
     ]
   },
   {
+    "benchmark_name": "ReceiptBench",
+    "category": "document_ocr",
+    "num_samples": 10000,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "visual information extraction",
+      "document understanding",
+      "structure parsing"
+    ],
+    "description": "Large-scale receipt understanding benchmark with 10k diverse receipts organized into four hierarchical sub-tasks from basic perception to structure parsing. Focuses on real-world document understanding challenges.",
+    "repo_links": [
+      "https://github.com/wwwT0ri/ReceiptBench"
+    ],
+    "paper_title": "From Recognition to Reasoning: Benchmarking and Enhancing MLLMs on Real-World Receipt Document Understanding",
+    "arxiv_id": "2605.22413",
+    "arxiv_url": "http://arxiv.org/abs/2605.22413v1",
+    "published": "2026-05-21",
+    "authors": [
+      "Yandi Wang",
+      "Libin Zhan",
+      "Ziwei Huang",
+      "Tiancheng Luo",
+      "Yuxuan Jiang"
+    ]
+  },
+  {
     "benchmark_name": "EGONORMIA",
     "category": "egocentric_embodied",
     "num_samples": 1853,
@@ -21459,6 +21488,54 @@
     ]
   },
   {
+    "benchmark_name": "VLM Explainability Benchmark with Synergistic Faithfulness",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "explainability",
+      "cross-modal reasoning"
+    ],
+    "description": "Introduces Synergistic Faithfulness metric for evaluating cross-modal explainability in VLMs. Evaluates 8 XAI methods across 3 VLM architectures and 3 datasets to measure true cross-modal synergy.",
+    "repo_links": [],
+    "paper_title": "Measuring Cross-Modal Synergy: A Benchmark for VLM Explainability",
+    "arxiv_id": "2605.22168",
+    "arxiv_url": "http://arxiv.org/abs/2605.22168v1",
+    "published": "2026-05-21",
+    "authors": [
+      "Joël Roman Ky",
+      "Salah Ghamizi",
+      "Maxime Cordy"
+    ]
+  },
+  {
+    "benchmark_name": "Image Captioning Evaluation Benchmark",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "image captioning",
+      "evaluation"
+    ],
+    "description": "New benchmark designed to assess detailed captioning evaluation across diverse scenarios. Introduces BEiTScore metric for reference-free evaluation with focus on fine-grained visual-linguistic errors.",
+    "repo_links": [],
+    "paper_title": "BEiTScore: Reference-free Image Captioning Evaluation with an Efficient Cross-Encoder Model",
+    "arxiv_id": "2605.21728",
+    "arxiv_url": "http://arxiv.org/abs/2605.21728v1",
+    "published": "2026-05-20",
+    "authors": [
+      "Gonçalo Gomes",
+      "Bruno Martins",
+      "Chrysoula Zerva"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -25290,6 +25367,35 @@
     ]
   },
   {
+    "benchmark_name": "AgroVG",
+    "category": "grounding_localization",
+    "num_samples": 10071,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "visual grounding",
+      "object localization",
+      "set prediction"
+    ],
+    "description": "Multi-source agricultural visual grounding benchmark with 10,071 annotation-grounded image-query pairs across six target families. Formulates grounding as generalized set prediction with abstention capability.",
+    "repo_links": [
+      "https://anonymous.4open.science/r/AgroVG-5172/"
+    ],
+    "paper_title": "AgroVG: A Large-Scale Multi-Source Benchmark for Agricultural Visual Grounding",
+    "arxiv_id": "2605.22034",
+    "arxiv_url": "http://arxiv.org/abs/2605.22034v1",
+    "published": "2026-05-21",
+    "authors": [
+      "Haocheng Li",
+      "Juepeng Zheng",
+      "Zenghao Yang",
+      "Kaiqi Du",
+      "Guilong Xiao"
+    ]
+  },
+  {
     "benchmark_name": "CANVAS",
     "category": "gui_web_agent",
     "num_samples": 598,
@@ -28012,6 +28118,35 @@
       "Zhiheng Chen",
       "Difei Gao",
       "Haotian Liu"
+    ]
+  },
+  {
+    "benchmark_name": "AgroTools",
+    "category": "gui_web_agent",
+    "num_samples": 539,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "tool use",
+      "agent evaluation",
+      "agricultural applications"
+    ],
+    "description": "Benchmark for evaluating tool-augmented multimodal agents in agriculture with 539 QA instances and 1,097 agricultural images. Features executable environment of 14 agricultural tools with structured tool-use traces.",
+    "repo_links": [
+      "https://huggingface.co/datasets/AgroTools/AgroTools"
+    ],
+    "paper_title": "AgroTools: A Benchmark for Tool-Augmented Multimodal Agents in Agriculture",
+    "arxiv_id": "2605.22366",
+    "arxiv_url": "http://arxiv.org/abs/2605.22366v1",
+    "published": "2026-05-21",
+    "authors": [
+      "Zi Ye",
+      "Yibin Wen",
+      "Xiaoya Fan",
+      "Xinyu Zhang",
+      "Jing Wu"
     ]
   },
   {
@@ -40545,6 +40680,89 @@
       "Shaurnav Ghosh",
       "Ridvan Yesiloglu",
       "Yuncong Mao"
+    ]
+  },
+  {
+    "benchmark_name": "JMed48k",
+    "category": "medical",
+    "num_samples": 48862,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "medical licensing",
+      "visual question answering"
+    ],
+    "description": "Multi-profession Japanese medical licensing benchmark with 48,862 exam questions and 20,142 images from 11 national licensing examinations. Features JMed48k-Eval subset with 12,484 scored questions for systematic evaluation.",
+    "repo_links": [],
+    "paper_title": "JMed48k: A Multi-Profession Japanese Medical Licensing Benchmark for Vision-Language Model Evaluation",
+    "arxiv_id": "2605.22080",
+    "arxiv_url": "http://arxiv.org/abs/2605.22080v1",
+    "published": "2026-05-21",
+    "authors": [
+      "Yue Xun",
+      "Junyu Liu",
+      "Qian Niu",
+      "Xinyi Wang",
+      "Zheng Yuan"
+    ]
+  },
+  {
+    "benchmark_name": "Seizure-Semiology-Suite",
+    "category": "medical",
+    "num_samples": 438,
+    "modalities": [
+      "video",
+      "language"
+    ],
+    "task_types": [
+      "seizure analysis",
+      "medical video understanding",
+      "temporal sequencing"
+    ],
+    "description": "Clinically grounded dataset with 438 seizure videos annotated with over 35,000 dense labels covering 20 ILAE-defined semiological features. Includes seven-task hierarchical benchmark for seizure understanding.",
+    "repo_links": [],
+    "paper_title": "Seizure-Semiology-Suite (S3): A Clinically Multimodal Dataset, Benchmark, and Models for Seizure Semiology Understanding",
+    "arxiv_id": "2605.21852",
+    "arxiv_url": "http://arxiv.org/abs/2605.21852v1",
+    "published": "2026-05-21",
+    "authors": [
+      "Lina Zhang",
+      "Tonmoy Monsoor",
+      "Peizheng Li",
+      "Jiarui Cui",
+      "Xinyi Peng"
+    ]
+  },
+  {
+    "benchmark_name": "Clinical Abnormality Benchmarking Substrate (CABS)",
+    "category": "medical",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "language",
+      "3D"
+    ],
+    "task_types": [
+      "medical analysis",
+      "3D CT",
+      "clinical evaluation"
+    ],
+    "description": "Structured system that decomposes radiology reports into verifiable clinical semantic units for 3D CT analysis. Designed to address evaluation hallucinations in medical VLMs.",
+    "repo_links": [
+      "https://github.com/ZJU4HealthCare/TIF-GRPO"
+    ],
+    "paper_title": "Regulating Anatomy-Aware Rewards via Trajectory-Integral Feedback for Volumetric Computed Tomography Analysis",
+    "arxiv_id": "2605.20277",
+    "arxiv_url": "http://arxiv.org/abs/2605.20277v1",
+    "published": "2026-05-19",
+    "authors": [
+      "Tianwei Lin",
+      "Zhongwei Qiu",
+      "Jie Cao",
+      "Jiang Liu",
+      "Wenjie Yan"
     ]
   },
   {
@@ -53505,6 +53723,32 @@
     ]
   },
   {
+    "benchmark_name": "AtelierEval",
+    "category": "other",
+    "num_samples": 360,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "prompt evaluation",
+      "text-to-image"
+    ],
+    "description": "First unified benchmark quantifying prompting proficiency across 360 expert-crafted tasks for text-to-image systems. Features dual interface for both humans and MLLMs with skill-based evaluation.",
+    "repo_links": [],
+    "paper_title": "AtelierEval: Agentic Evaluation of Humans & LLMs as Text-to-Image Prompters",
+    "arxiv_id": "2605.22645",
+    "arxiv_url": "http://arxiv.org/abs/2605.22645v1",
+    "published": "2026-05-21",
+    "authors": [
+      "Hanjun Luo",
+      "Zhimu Huang",
+      "Sylvia Chung",
+      "Yiran Wang",
+      "Yingbin Jin"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -59926,6 +60170,32 @@
     ]
   },
   {
+    "benchmark_name": "SDGBiasBench",
+    "category": "safety_bias",
+    "num_samples": 550000,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "bias evaluation",
+      "sustainable development",
+      "reasoning"
+    ],
+    "description": "Large-scale benchmark suite for SDG-oriented vision-language reasoning spanning 500k multiple-choice questions and 50k regression tasks. Enables assessment of both decision-level and estimation-level bias in VLMs.",
+    "repo_links": [],
+    "paper_title": "SDGBiasBench: Benchmarking and Mitigating Vision--Language Models' Biases in Sustainable Development Goals",
+    "arxiv_id": "2605.21919",
+    "arxiv_url": "http://arxiv.org/abs/2605.21919v1",
+    "published": "2026-05-21",
+    "authors": [
+      "Zihang Lin",
+      "Huaiyuan Qin",
+      "Muli Yang",
+      "Hongyuan Zhu"
+    ]
+  },
+  {
     "benchmark_name": "SRBench",
     "category": "spatial_3d",
     "num_samples": null,
@@ -64242,6 +64512,59 @@
     ]
   },
   {
+    "benchmark_name": "MM-Conv",
+    "category": "spatial_3d",
+    "num_samples": 4200,
+    "modalities": [
+      "vision",
+      "language",
+      "3D"
+    ],
+    "task_types": [
+      "3D grounding",
+      "conversational reference resolution"
+    ],
+    "description": "Benchmark for referential communication in dynamic 3D environments built from 6.7 hours of egocentric VR interaction. Includes over 4,200 manually verified referring expressions with synchronized speech, motion, and gaze data.",
+    "repo_links": [],
+    "paper_title": "MM-Conv: A Multimodal Dataset and Benchmark for Context-Aware Grounding in 3D Dialogue",
+    "arxiv_id": "2605.21796",
+    "arxiv_url": "http://arxiv.org/abs/2605.21796v1",
+    "published": "2026-05-20",
+    "authors": [
+      "Anna Deichler",
+      "Jim O'Regan",
+      "Fethiye Irmak Dogan",
+      "Lubos Marcinek",
+      "Anna Klezovich"
+    ]
+  },
+  {
+    "benchmark_name": "SpaceDG",
+    "category": "spatial_3d",
+    "num_samples": 1000000,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "spatial reasoning",
+      "degradation robustness"
+    ],
+    "description": "First large-scale dataset for degradation-aware spatial understanding with ~1M QA pairs from nearly 1,000 indoor scenes. SpaceDG-Bench includes 1,102 questions spanning 11 reasoning categories and 9 visual degradation types.",
+    "repo_links": [],
+    "paper_title": "SpaceDG: Benchmarking Spatial Intelligence under Visual Degradation",
+    "arxiv_id": "2605.22536",
+    "arxiv_url": "http://arxiv.org/abs/2605.22536v1",
+    "published": "2026-05-21",
+    "authors": [
+      "Xiaolong Zhou",
+      "Yifei Liu",
+      "Ziyang Gong",
+      "Jiarui Li",
+      "Qiyue Zhao"
+    ]
+  },
+  {
     "benchmark_name": "Temporally-Grounded Language Generation (TGLG)",
     "category": "streaming_video",
     "num_samples": null,
@@ -66410,6 +66733,57 @@
       "Adrián Barahona-Ríos",
       "Benedict Wilkins",
       "Saman Zadtootaghaj"
+    ]
+  },
+  {
+    "benchmark_name": "VGenST-Bench",
+    "category": "temporal_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "spatio-temporal reasoning",
+      "video synthesis"
+    ],
+    "description": "Video benchmark employing generative models to actively synthesize controlled evaluation scenarios for spatio-temporal reasoning. Features comprehensive 3x2x2 video taxonomy and hierarchical task suite.",
+    "repo_links": [],
+    "paper_title": "VGenST-Bench: A Benchmark for Spatio-Temporal Reasoning via Active Video Synthesis",
+    "arxiv_id": "2605.22570",
+    "arxiv_url": "http://arxiv.org/abs/2605.22570v1",
+    "published": "2026-05-21",
+    "authors": [
+      "Jinho Park",
+      "Youbin Kim",
+      "Hogun Park",
+      "Eunbyung Park"
+    ]
+  },
+  {
+    "benchmark_name": "Flat-Pack Bench",
+    "category": "temporal_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "language"
+    ],
+    "task_types": [
+      "furniture assembly",
+      "spatio-temporal reasoning",
+      "action understanding"
+    ],
+    "description": "Novel benchmark centered on furniture assembly tasks for evaluating fine-grained spatio-temporal understanding. Includes temporal ordering, localization, part mating understanding, and tracking tasks.",
+    "repo_links": [],
+    "paper_title": "Flat-Pack Bench: Evaluating Spatio-Temporal Understanding in Large Vision-Language Models through Furniture Assembly",
+    "arxiv_id": "2605.21625",
+    "arxiv_url": "http://arxiv.org/abs/2605.21625v1",
+    "published": "2026-05-20",
+    "authors": [
+      "Aditya Chetan",
+      "Eric Cai",
+      "Peeyush Kushwaha",
+      "Bharath Raj Nagoor Kani",
+      "Utkarsh Mall"
     ]
   },
   {
@@ -82169,6 +82543,31 @@
       "Jason Li",
       "Ye Tian",
       "Keyu Chen"
+    ]
+  },
+  {
+    "benchmark_name": "COCOTree",
+    "category": "visual_reasoning",
+    "num_samples": 21000,
+    "modalities": [
+      "vision"
+    ],
+    "task_types": [
+      "tree decomposition",
+      "hierarchical segmentation"
+    ],
+    "description": "Massive-scale benchmark for open tree decomposition with over 21K images and 1.8M structural nodes. Uses automated pipeline with LVLMs and SAM for hierarchical visual component segmentation.",
+    "repo_links": [
+      "https://github.com/melonkick3090/COCOTree"
+    ],
+    "paper_title": "COCOTree: A Dataset and Benchmark for Open Tree-Structured Visual Decomposition",
+    "arxiv_id": "2605.22068",
+    "arxiv_url": "http://arxiv.org/abs/2605.22068v1",
+    "published": "2026-05-21",
+    "authors": [
+      "Junhyub Lee",
+      "Seunghun Chae",
+      "Hyosu Kim"
     ]
   }
 ]
