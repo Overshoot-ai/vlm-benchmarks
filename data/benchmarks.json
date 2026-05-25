@@ -3329,6 +3329,33 @@
     ]
   },
   {
+    "benchmark_name": "ChartFI-Bench",
+    "category": "chart_figure",
+    "num_samples": 896,
+    "modalities": [
+      "charts",
+      "text"
+    ],
+    "task_types": [
+      "chart description generation",
+      "visual comprehension",
+      "factual accuracy assessment"
+    ],
+    "description": "The Chart Faithfulness and Insightfulness Benchmark featuring visually complex charts with semantically rich descriptions. Evaluates chart description quality across four dimensions: factual accuracy, salient feature emphasis, domain-informed guidance, and chart-text complementarity with aligned evaluation metrics.",
+    "repo_links": [],
+    "paper_title": "ChartFI: Benchmarking Faithfulness and Insightfulness of Chart Descriptions from Multimodal Large Language Models",
+    "arxiv_id": "2605.23694",
+    "arxiv_url": "http://arxiv.org/abs/2605.23694v1",
+    "published": "2026-05-22",
+    "authors": [
+      "Fen Wang",
+      "Zekai Shao",
+      "Qiman Kang",
+      "Chunran Hu",
+      "Zhixuan Zhang"
+    ]
+  },
+  {
     "benchmark_name": "Document Haystack",
     "category": "document_ocr",
     "num_samples": 8250,
@@ -12609,6 +12636,34 @@
       "Ananth Shreekumar",
       "Brandon Lee",
       "Dongyan Xu"
+    ]
+  },
+  {
+    "benchmark_name": "IntentionNav",
+    "category": "egocentric_embodied",
+    "num_samples": 500,
+    "modalities": [
+      "RGB-D",
+      "text",
+      "pose"
+    ],
+    "task_types": [
+      "object navigation",
+      "intent inference",
+      "embodied AI"
+    ],
+    "description": "A diagnostic benchmark for intent-driven object navigation from implicit human instructions where agents must infer target objects from free-text intents without explicit object names. Features 176 Isaac Sim scenes with four controlled instruction styles and intent modes for comprehensive analysis.",
+    "repo_links": [],
+    "paper_title": "IntentionNav: A Benchmark for Intent-Driven Object Navigation from Implicit Human Instruction",
+    "arxiv_id": "2605.23187",
+    "arxiv_url": "http://arxiv.org/abs/2605.23187v1",
+    "published": "2026-05-22",
+    "authors": [
+      "Lin Qian",
+      "Shijie Li",
+      "Sihao Lin",
+      "Xuan Zhang",
+      "Bangya Liu"
     ]
   },
   {
@@ -31693,6 +31748,34 @@
     ]
   },
   {
+    "benchmark_name": "VideoOdyssey",
+    "category": "long_video",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "audio",
+      "text"
+    ],
+    "task_types": [
+      "ultra-long video understanding",
+      "continuous reasoning",
+      "audio-visual synchronization"
+    ],
+    "description": "A benchmark for ultra-long-context and omni-modal video understanding with extreme video durations (average 109 minutes) across 11 domains. Features two subsets (VideoOdyssey-V and VideoOdyssey-AV) with ultra-long continuous certificates extending to 16 and 12.8 minutes respectively.",
+    "repo_links": [],
+    "paper_title": "VideoOdyssey: A Benchmark for Ultra-Long-Context and Omni-Modal Video Understanding",
+    "arxiv_id": "2605.22907",
+    "arxiv_url": "http://arxiv.org/abs/2605.22907v1",
+    "published": "2026-05-21",
+    "authors": [
+      "Haichen He",
+      "Jiayi Zhou",
+      "Sifeng Shang",
+      "Yihan Hu",
+      "Yuanhan Zhang"
+    ]
+  },
+  {
     "benchmark_name": "DynaMath",
     "category": "math_science",
     "num_samples": 501,
@@ -40763,6 +40846,62 @@
       "Jie Cao",
       "Jiang Liu",
       "Wenjie Yan"
+    ]
+  },
+  {
+    "benchmark_name": "DDX-TRACE",
+    "category": "medical",
+    "num_samples": 211,
+    "modalities": [
+      "text",
+      "medical images",
+      "clinical history"
+    ],
+    "task_types": [
+      "diagnostic trajectory evaluation",
+      "evidence-based reasoning",
+      "sequential decision making"
+    ],
+    "description": "A physician-adjudicated benchmark for multimodal neuroradiology that evaluates diagnostic trajectories under hidden evidence. Models sequentially request imaging studies, receive matched image bundles, and update probabilistic differential diagnoses to reach a localized final diagnosis.",
+    "repo_links": [],
+    "paper_title": "DDX-TRACE: A Benchmark for Medical Diagnostic Trajectories in VLMs",
+    "arxiv_id": "2605.23629",
+    "arxiv_url": "http://arxiv.org/abs/2605.23629v1",
+    "published": "2026-05-22",
+    "authors": [
+      "Jiazhen Pan",
+      "Weixiang Shen",
+      "Jun Li",
+      "Julian Canisius",
+      "Felix Bitzer"
+    ]
+  },
+  {
+    "benchmark_name": "RoboSurg-VQA",
+    "category": "medical",
+    "num_samples": null,
+    "modalities": [
+      "surgical images",
+      "text",
+      "segmentation masks"
+    ],
+    "task_types": [
+      "visual question answering",
+      "surgical understanding",
+      "segmentation-aware reasoning"
+    ],
+    "description": "A segmentation-aware visual question answering benchmark for surgical contexts built by repurposing public surgical segmentation datasets. Features clinically motivated questions about procedural context, anatomy, imaging modality, surgical artifacts, and image quality under challenging surgical conditions.",
+    "repo_links": [
+      "https://github.com/ziyangwang007/Robosurg-VQA"
+    ],
+    "paper_title": "RoboSurg-VQA: A Multimodal Benchmark for Surgical Segmentation-Aware Visual Question Answering",
+    "arxiv_id": "2605.23068",
+    "arxiv_url": "http://arxiv.org/abs/2605.23068v1",
+    "published": "2026-05-21",
+    "authors": [
+      "Chengyi Zhang",
+      "Zi Ye",
+      "Ziyang Wang"
     ]
   },
   {
@@ -55230,6 +55369,35 @@
     ]
   },
   {
+    "benchmark_name": "EvalVerse",
+    "category": "quality_aesthetics",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "audio",
+      "text"
+    ],
+    "task_types": [
+      "cinematic quality evaluation",
+      "aesthetic assessment",
+      "multi-shot sequencing",
+      "audio-visual integration"
+    ],
+    "description": "A comprehensive, pipeline-aware evaluation framework for professional cinematic video generation that assesses both basic prompt-following and cinematic quality/aesthetics. Features expert-calibrated fine-tuning and Chain-of-Thought reasoning for VLMs to evaluate complex multi-shot sequencing and audio-visual integration.",
+    "repo_links": [],
+    "paper_title": "EvalVerse: Pipeline-Aware and Expert-Calibrated Benchmarking for Professional Cinematic Video Generation",
+    "arxiv_id": "2605.23271",
+    "arxiv_url": "http://arxiv.org/abs/2605.23271v1",
+    "published": "2026-05-22",
+    "authors": [
+      "Songlin Yang",
+      "Haobin Zhong",
+      "Ruilin Zhang",
+      "Xiaotong Zhao",
+      "Shuai Li"
+    ]
+  },
+  {
     "benchmark_name": "RoboDriveBench",
     "category": "safety_bias",
     "num_samples": 64559,
@@ -64565,6 +64733,91 @@
     ]
   },
   {
+    "benchmark_name": "DriveSpatial",
+    "category": "spatial_3d",
+    "num_samples": 15600,
+    "modalities": [
+      "multi-view images",
+      "text"
+    ],
+    "task_types": [
+      "spatiotemporal reasoning",
+      "multi-view understanding",
+      "autonomous driving",
+      "scene construction"
+    ],
+    "description": "A benchmark for spatiotemporal intelligence in VLMs for autonomous driving with human-verified QA pairs across 20 tasks. Generated from dynamic multi-relational scene graphs that enforce genuine cross-view and spatiotemporal reasoning, evaluating cognitive scene construction and multi-view relational understanding.",
+    "repo_links": [],
+    "paper_title": "DRIVESPATIAL: A Benchmark for Spatiotemporal Intelligence in VLMs for Autonomous Driving",
+    "arxiv_id": "2605.23176",
+    "arxiv_url": "http://arxiv.org/abs/2605.23176v1",
+    "published": "2026-05-22",
+    "authors": [
+      "Hao Vo",
+      "Khoa Vo",
+      "Phu Loc Nguyen",
+      "Sieu Tran",
+      "Duc Minh Nguyen"
+    ]
+  },
+  {
+    "benchmark_name": "SpaceNum",
+    "category": "spatial_3d",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "text",
+      "numerical coordinates"
+    ],
+    "task_types": [
+      "spatial numerical understanding",
+      "coordinate mapping",
+      "spatial reasoning"
+    ],
+    "description": "A unified framework for spatial numerical understanding that captures numbers as dynamic transitions during spatial exploration and as static layouts in spatial reasoning. Features bidirectional Num2Space and Space2Num tasks to evaluate mapping between spatial structure and numerical representations.",
+    "repo_links": [],
+    "paper_title": "SPACENUM: Revisiting Spatial Numerical Understanding in VLMs",
+    "arxiv_id": "2605.23898",
+    "arxiv_url": "http://arxiv.org/abs/2605.23898v1",
+    "published": "2026-05-22",
+    "authors": [
+      "Jianshu Zhang",
+      "Yijiang Li",
+      "Huifeixin Chen",
+      "Haoran Lu",
+      "Letian Xue"
+    ]
+  },
+  {
+    "benchmark_name": "VPhotoBench",
+    "category": "spatial_3d",
+    "num_samples": 141,
+    "modalities": [
+      "3D scenes",
+      "text",
+      "rendered images"
+    ],
+    "task_types": [
+      "virtual photography",
+      "3D spatial reasoning",
+      "aesthetic evaluation",
+      "camera positioning"
+    ],
+    "description": "A benchmark of 47 open-license Blender scenes with 141 language-conditioned photography missions for virtual photography tasks. Spans subject placement, relational composition, and atmosphere/style evaluation for 3D spatial understanding and aesthetic judgment in virtual environments.",
+    "repo_links": [],
+    "paper_title": "PhotoFlow: Agentic 3D Virtual Photography Missions",
+    "arxiv_id": "2605.23771",
+    "arxiv_url": "http://arxiv.org/abs/2605.23771v1",
+    "published": "2026-05-22",
+    "authors": [
+      "Jiarui Guo",
+      "Haojia Wei",
+      "Yiming Zhang",
+      "Yifei Liu",
+      "Yuning Gong"
+    ]
+  },
+  {
     "benchmark_name": "Temporally-Grounded Language Generation (TGLG)",
     "category": "streaming_video",
     "num_samples": null,
@@ -66784,6 +67037,33 @@
       "Peeyush Kushwaha",
       "Bharath Raj Nagoor Kani",
       "Utkarsh Mall"
+    ]
+  },
+  {
+    "benchmark_name": "CaST-Bench",
+    "category": "temporal_reasoning",
+    "num_samples": 2066,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "causal reasoning",
+      "spatio-temporal evidence localization",
+      "visual grounding"
+    ],
+    "description": "A benchmark for Causal Chain-Grounded Spatio-Temporal Video Reasoning that requires models to identify and localize chains of multiple spatio-temporal evidences for causal questions. Features temporal segments and bounding-box track annotations for grounded causal reasoning evaluation.",
+    "repo_links": [],
+    "paper_title": "CaST-Bench: Benchmarking Causal Chain-Grounded Spatio-Temporal Reasoning for Video Question Answering",
+    "arxiv_id": "2605.23216",
+    "arxiv_url": "http://arxiv.org/abs/2605.23216v1",
+    "published": "2026-05-22",
+    "authors": [
+      "Mingfang Zhang",
+      "Jingjing Pan",
+      "Ashutosh Kumar",
+      "Rajat Saini",
+      "Mustafa Erdogan"
     ]
   },
   {
