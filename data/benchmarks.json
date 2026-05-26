@@ -1587,6 +1587,31 @@
     ]
   },
   {
+    "benchmark_name": "AVBench",
+    "category": "audio_visual",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "audio"
+    ],
+    "task_types": [
+      "audio-video generation evaluation"
+    ],
+    "description": "A fully automated benchmark tailored for human-centric audio-video generation evaluation. It integrates ten evaluation dimensions for human-centered scenarios covering visual quality, audio quality, and multi-level consistency across modalities, with specialized evaluators trained via preference learning on transformed real-world videos.",
+    "repo_links": [],
+    "paper_title": "AVBench: Human-Aligned and Automated Evaluation Benchmark for Audio-Video Generative Models",
+    "arxiv_id": "2605.24652",
+    "arxiv_url": "http://arxiv.org/abs/2605.24652v1",
+    "published": "2026-05-23",
+    "authors": [
+      "Jialiang Yang",
+      "Bin Xia",
+      "Ruihang Chu",
+      "Dingdong Wang",
+      "Wanke Xia"
+    ]
+  },
+  {
     "benchmark_name": "ChartAB",
     "category": "chart_figure",
     "num_samples": null,
@@ -12664,6 +12689,32 @@
       "Sihao Lin",
       "Xuan Zhang",
       "Bangya Liu"
+    ]
+  },
+  {
+    "benchmark_name": "EgoProx",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "3D proximity reasoning",
+      "egocentric reasoning"
+    ],
+    "description": "A benchmark for egocentric 3D proximity reasoning organized along a cognitive chain covering intention, exploration, exploitation, and chain-of-actions reasoning. It evaluates whether MLLMs can perform embodied 3D reasoning about relations between body and surrounding objects to guide perception and action.",
+    "repo_links": [],
+    "paper_title": "EgoProx: Evaluating MLLMs on Egocentric 3D Proximity Reasoning Across a Cognitive Hierarchy",
+    "arxiv_id": "2605.24456",
+    "arxiv_url": "http://arxiv.org/abs/2605.24456v1",
+    "published": "2026-05-23",
+    "authors": [
+      "Jinzhao Li",
+      "Yinuo Chen",
+      "Dongxu Piao",
+      "Panwang Pan",
+      "Yifan Yu"
     ]
   },
   {
@@ -25451,6 +25502,31 @@
     ]
   },
   {
+    "benchmark_name": "OpenRef",
+    "category": "grounding_localization",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "referring expression comprehension",
+      "object localization"
+    ],
+    "description": "A benchmark for referring expression comprehension in complex visual and linguistic scenarios with diverse visual domains, variable target counts (multi-target and none-target), and rich vocabulary types including proper nouns and ordinal terms. It uses F1 metric for grounding accuracy and introduces N3R for assessing rejection reliability against negative expressions.",
+    "repo_links": [
+      "https://zongjianwu.github.io/openref"
+    ],
+    "paper_title": "Towards Open-World Referring Expression Comprehension: A Benchmark with Training-free Multi-task Consistency Checker",
+    "arxiv_id": "2605.25706",
+    "arxiv_url": "http://arxiv.org/abs/2605.25706v1",
+    "published": "2026-05-25",
+    "authors": [
+      "Zongjian Wu",
+      "Lei Zhang"
+    ]
+  },
+  {
     "benchmark_name": "CANVAS",
     "category": "gui_web_agent",
     "num_samples": 598,
@@ -28202,6 +28278,34 @@
       "Xiaoya Fan",
       "Xinyu Zhang",
       "Jing Wu"
+    ]
+  },
+  {
+    "benchmark_name": "AgentHijack",
+    "category": "gui_web_agent",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "computer use",
+      "agent robustness"
+    ],
+    "description": "A benchmark designed to evaluate the robustness of computer-use agents under common corruptions like pop-ups, resolution changes, and competing applications. It introduces 9 configurable common corruptions to replicate realistic imperfect scenarios that disrupt agent execution flow without adversarial intent.",
+    "repo_links": [
+      "https://AgentHijack.github.io"
+    ],
+    "paper_title": "AgentHijack: Benchmarking Computer Use Agent Robustness to Common Environment Corruptions",
+    "arxiv_id": "2605.25707",
+    "arxiv_url": "http://arxiv.org/abs/2605.25707v1",
+    "published": "2026-05-25",
+    "authors": [
+      "Jingwei Sun",
+      "Jianing Zhu",
+      "Yuanyi Li",
+      "Tongliang Liu",
+      "Xia HU"
     ]
   },
   {
@@ -40902,6 +41006,32 @@
       "Chengyi Zhang",
       "Zi Ye",
       "Ziyang Wang"
+    ]
+  },
+  {
+    "benchmark_name": "Med-R2 Bench",
+    "category": "medical",
+    "num_samples": 110406,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "visual question answering",
+      "medical reasoning"
+    ],
+    "description": "A hierarchical benchmark aligned with clinical workflow to evaluate adversarial robustness with visual grounding in medical VLMs. It features stepwise QA tasks across four clinical stages with adversarial perturbations to test robustness against misleading cues, comprising 42,432 images and 31 task categories.",
+    "repo_links": [],
+    "paper_title": "Med-R2: An Adversarial Benchmark for Evidence-Grounded Reasoning in Medical VLMs",
+    "arxiv_id": "2605.24492",
+    "arxiv_url": "http://arxiv.org/abs/2605.24492v1",
+    "published": "2026-05-23",
+    "authors": [
+      "Wen Ma",
+      "Fucheng Niu",
+      "Zhiting Fan",
+      "Zikai Xiao",
+      "Jiaxiang Liu"
     ]
   },
   {
@@ -60364,6 +60494,32 @@
     ]
   },
   {
+    "benchmark_name": "FoodMonitor",
+    "category": "safety_bias",
+    "num_samples": 3307,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "compliance monitoring",
+      "video anomaly detection"
+    ],
+    "description": "A benchmark for explainable compliance analysis in commercial kitchen surveillance with 477 video clips and violation annotations across dual-channel design. It provides rule-driven, explainable analysis with frame-level bounding boxes specifying violations, behaviors, and responsible persons for real-world compliance scenarios.",
+    "repo_links": [],
+    "paper_title": "FoodMonitor: Benchmarking MLLMs for Explainable Compliance Analysis",
+    "arxiv_id": "2605.24503",
+    "arxiv_url": "http://arxiv.org/abs/2605.24503v1",
+    "published": "2026-05-23",
+    "authors": [
+      "Ruihao Xu",
+      "Xingming Shui",
+      "Jingxuan Niu",
+      "Yiqin Wang",
+      "Jilin Yu"
+    ]
+  },
+  {
     "benchmark_name": "SRBench",
     "category": "spatial_3d",
     "num_samples": null,
@@ -67064,6 +67220,32 @@
       "Ashutosh Kumar",
       "Rajat Saini",
       "Mustafa Erdogan"
+    ]
+  },
+  {
+    "benchmark_name": "JumpScore",
+    "category": "temporal_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "temporal localization",
+      "video grounding"
+    ],
+    "description": "A temporal-localization benchmark targeting fine-grained grounding in high-frequency, densely repeated motion, addressing a regime underrepresented by existing video evaluations. It evaluates unified perception across video understanding, temporal grounding, spatial grounding, and manipulation-trace reasoning.",
+    "repo_links": [],
+    "paper_title": "LLaVA-OneVision-2: Towards Next-Generation Perceptual Intelligence",
+    "arxiv_id": "2605.25979",
+    "arxiv_url": "http://arxiv.org/abs/2605.25979v1",
+    "published": "2026-05-25",
+    "authors": [
+      "Xiang An",
+      "Yin Xie",
+      "Feilong Tang",
+      "Yunyao Yan",
+      "Huajie Tan"
     ]
   },
   {
@@ -74356,6 +74538,59 @@
       "Yucheng Zhou",
       "Xiaotong Zhao",
       "Alan Zhao"
+    ]
+  },
+  {
+    "benchmark_name": "PedestrianQA",
+    "category": "video_understanding",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "pedestrian intention prediction",
+      "trajectory prediction",
+      "question answering"
+    ],
+    "description": "A large-scale video-based dataset that formulates pedestrian intention and trajectory prediction as question-answering tasks with structured rationales. It enables VLMs to learn from visual dynamics, contextual cues, and traffic agent interactions while generating explanations for safety-critical pedestrian behavior modeling.",
+    "repo_links": [],
+    "paper_title": "PEDESTRIANQA: A Benchmark for Vision-Language Models on Pedestrian Intention and Trajectory Prediction",
+    "arxiv_id": "2605.24562",
+    "arxiv_url": "http://arxiv.org/abs/2605.24562v1",
+    "published": "2026-05-23",
+    "authors": [
+      "Naman Mishra",
+      "Shankar Gangisetty",
+      "C. V. Jawahar"
+    ]
+  },
+  {
+    "benchmark_name": "WBench",
+    "category": "video_understanding",
+    "num_samples": 1058,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "interactive world modeling",
+      "multi-turn interaction"
+    ],
+    "description": "A comprehensive multi-turn benchmark for interactive world model evaluation across five dimensions: video quality, setting adherence, interaction adherence, consistency, and physics compliance. It contains 289 test cases with diverse scenes, styles, and interaction types including navigation, subject action, event editing, and perspective switching.",
+    "repo_links": [
+      "https://github.com/meituan-longcat/WBench"
+    ],
+    "paper_title": "WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation",
+    "arxiv_id": "2605.25874",
+    "arxiv_url": "http://arxiv.org/abs/2605.25874v1",
+    "published": "2026-05-25",
+    "authors": [
+      "Kaining Ying",
+      "Hengrui Hu",
+      "Siyu Ren",
+      "Jiamu Li",
+      "Fengjiao Chen"
     ]
   },
   {
@@ -82848,6 +83083,34 @@
       "Junhyub Lee",
       "Seunghun Chae",
       "Hyosu Kim"
+    ]
+  },
+  {
+    "benchmark_name": "VisReason",
+    "category": "visual_reasoning",
+    "num_samples": 1505,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "visual reasoning",
+      "perceptual reasoning"
+    ],
+    "description": "A benchmark for vision-centric reasoning in everyday scenarios where perception and inference are tightly coupled. It contains questions across 10 categories spanning perceptual, structural, and conceptual reasoning, designed to evaluate reasoning directly grounded in visual evidence rather than language.",
+    "repo_links": [
+      "https://github.com/CASIA-IVA-Lab/VisReason"
+    ],
+    "paper_title": "Can MLLMs Reason Beyond Language? VisReason: A Comprehensive Benchmark for Vision-Centric Reasoning",
+    "arxiv_id": "2605.25364",
+    "arxiv_url": "http://arxiv.org/abs/2605.25364v1",
+    "published": "2026-05-25",
+    "authors": [
+      "Longteng Guo",
+      "Yifan Wang",
+      "Pengkang Huo",
+      "Tailai Chen",
+      "Yuze Wu"
     ]
   }
 ]
