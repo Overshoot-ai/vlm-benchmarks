@@ -3381,6 +3381,81 @@
     ]
   },
   {
+    "benchmark_name": "ChartAct",
+    "category": "chart_figure",
+    "num_samples": 1440,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "dynamic chart understanding",
+      "interactive chart navigation"
+    ],
+    "description": "An interactive benchmark for dynamic chart understanding with 673 dynamic charts from 8 real websites. Evaluates models' ability to interact with charts through hovering, clicking, zooming, and dragging to access key information.",
+    "repo_links": [
+      "https://github.com/wulin-wulin/OSWorld_Chart"
+    ],
+    "paper_title": "ChartAct: A Benchmark for Dynamic Chart Understanding",
+    "arxiv_id": "2605.26994",
+    "arxiv_url": "http://arxiv.org/abs/2605.26994v1",
+    "published": "2026-05-26",
+    "authors": [
+      "Muye Huang",
+      "Wu Lin",
+      "Lingling Zhang",
+      "Hang Yan",
+      "Zhiyuan Wang"
+    ]
+  },
+  {
+    "benchmark_name": "Chartographer",
+    "category": "chart_figure",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "chart question answering",
+      "counterfactual evaluation"
+    ],
+    "description": "A framework for generating counterfactual charts to evaluate visual reasoning in chart QA. Reverse engineers charts into executable code and generates seed-controlled counterfactual variants to test VLM generalization.",
+    "repo_links": [],
+    "paper_title": "Chartographer: Counterfactual Chart Generation for Evaluating Vision-Language Models",
+    "arxiv_id": "2605.27311",
+    "arxiv_url": "http://arxiv.org/abs/2605.27311v1",
+    "published": "2026-05-26",
+    "authors": [
+      "Yifan Jiang",
+      "Dae Yon Hwang",
+      "Jesse C. Cresswell",
+      "Freda Shi"
+    ]
+  },
+  {
+    "benchmark_name": "EpiCurveBench",
+    "category": "chart_figure",
+    "num_samples": 1000,
+    "modalities": [
+      "visual"
+    ],
+    "task_types": [
+      "chart-to-data extraction",
+      "time series extraction"
+    ],
+    "description": "A benchmark of 1,000 real-world epidemic curve images from diverse public-health sources. Introduces EpiCurveSimilarity (ECS) metric that tolerates temporal shifts while evaluating chart-to-data extraction accuracy.",
+    "repo_links": [],
+    "paper_title": "EpiCurveBench: Evaluating VLMs on Epidemic Curve Digitization",
+    "arxiv_id": "2605.27195",
+    "arxiv_url": "http://arxiv.org/abs/2605.27195v1",
+    "published": "2026-05-26",
+    "authors": [
+      "Thomas Berkane",
+      "Maimuna S. Majumder"
+    ]
+  },
+  {
     "benchmark_name": "Document Haystack",
     "category": "document_ocr",
     "num_samples": 8250,
@@ -6725,6 +6800,30 @@
       "Ziwei Huang",
       "Tiancheng Luo",
       "Yuxuan Jiang"
+    ]
+  },
+  {
+    "benchmark_name": "IndusReqFlow",
+    "category": "document_ocr",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "flowchart conversion",
+      "requirements engineering"
+    ],
+    "description": "A dataset sourced from real-world industrial requirements containing flowcharts. Used to evaluate EdgeFlow's VLM-based flowchart-to-Mermaid conversion approach for requirements engineering applications.",
+    "repo_links": [],
+    "paper_title": "EdgeFlow: Edge-Map Augmented VLM-Based Flowchart Processing for Industrial Requirements Engineering",
+    "arxiv_id": "2605.27332",
+    "arxiv_url": "http://arxiv.org/abs/2605.27332v1",
+    "published": "2026-05-26",
+    "authors": [
+      "Zhifei Dou",
+      "Shabnam Hassani",
+      "Ou Wei"
     ]
   },
   {
@@ -21642,6 +21741,32 @@
     ]
   },
   {
+    "benchmark_name": "FTibBench",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "multimodal understanding",
+      "multilingual evaluation"
+    ],
+    "description": "Tibetan adaptations of five mainstream multimodal benchmarks with hierarchical quality-control workflow. Part of FTibSuite comprehensive resource suite for Tibetan vision-language research including training data and baseline model.",
+    "repo_links": [],
+    "paper_title": "FTibSuite: A Comprehensive Resource Suite for Tibetan Vision-Language Modeling",
+    "arxiv_id": "2605.26601",
+    "arxiv_url": "http://arxiv.org/abs/2605.26601v1",
+    "published": "2026-05-26",
+    "authors": [
+      "Guixian Xu",
+      "Yide Liang",
+      "Zeli Su",
+      "Xuexian Song",
+      "Ziyin Zhang"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -28309,6 +28434,32 @@
     ]
   },
   {
+    "benchmark_name": "HyperTrack",
+    "category": "gui_web_agent",
+    "num_samples": 16000,
+    "modalities": [
+      "visual",
+      "GUI"
+    ],
+    "task_types": [
+      "mobile GUI navigation",
+      "offline GUI evaluation"
+    ],
+    "description": "A large-scale dataset with over 16,000 real-world mobile GUI navigation tasks across 650+ Chinese mobile applications. Includes GUIEvalKit, an open-source toolkit for unified benchmarking of VLMs on offline GUI navigation tasks.",
+    "repo_links": [],
+    "paper_title": "Scaling, Benchmarking, and Reasoning of Vision-Language Agents for Mobile GUI Navigation",
+    "arxiv_id": "2605.27134",
+    "arxiv_url": "http://arxiv.org/abs/2605.27134v1",
+    "published": "2026-05-26",
+    "authors": [
+      "Heng Qu",
+      "Yike Liu",
+      "Renren Jin",
+      "Wenzong Zhang",
+      "Pengzhi Gao"
+    ]
+  },
+  {
     "benchmark_name": "DeCapBench",
     "category": "hallucination",
     "num_samples": null,
@@ -31877,6 +32028,34 @@
       "Sifeng Shang",
       "Yihan Hu",
       "Yuanhan Zhang"
+    ]
+  },
+  {
+    "benchmark_name": "LongAV-Compass",
+    "category": "long_video",
+    "num_samples": 284,
+    "modalities": [
+      "text",
+      "visual",
+      "audio"
+    ],
+    "task_types": [
+      "text-to-audio-video",
+      "image-to-audio-video",
+      "video-to-audio-video"
+    ],
+    "description": "A systematic benchmark for minute-long audio-visual generation spanning T2AV, I2AV, and V2AV. Contains 284 curated test cases with unified evaluation framework assessing quality, consistency, and alignment over extended temporal horizons.",
+    "repo_links": [],
+    "paper_title": "LongAV-Compass: Towards Unified Evaluation of Minute-Scale Audio-Visual Generation Across T2AV, I2AV, and V2AV",
+    "arxiv_id": "2605.26244",
+    "arxiv_url": "http://arxiv.org/abs/2605.26244v1",
+    "published": "2026-05-25",
+    "authors": [
+      "Tengfei Liu",
+      "Yang Shi",
+      "Xuanyu Zhu",
+      "Jiafu Tang",
+      "Liu Yang"
     ]
   },
   {
@@ -65444,6 +65623,64 @@
     ]
   },
   {
+    "benchmark_name": "OmniInteract",
+    "category": "streaming_video",
+    "num_samples": 1430,
+    "modalities": [
+      "audio",
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "streaming interaction",
+      "real-time response",
+      "multimodal trigger detection"
+    ],
+    "description": "A streaming benchmark for real-time omnimodal models evaluated through native online inference over audio-visual streams. Contains 250 videos with 1,430 temporally grounded response slots across real-time, proactive, and nested scenarios.",
+    "repo_links": [
+      "https://github.com/Lucky-Lance/OmniInteract"
+    ],
+    "paper_title": "OmniInteract: Benchmarking Real-World Streaming Interaction for Real-Time Omnimodal Assistants",
+    "arxiv_id": "2605.26485",
+    "arxiv_url": "http://arxiv.org/abs/2605.26485v1",
+    "published": "2026-05-26",
+    "authors": [
+      "Xudong Lu",
+      "Xueying Li",
+      "Annan Wang",
+      "Yang Bo",
+      "Jinpeng Chen"
+    ]
+  },
+  {
+    "benchmark_name": "IPIBench",
+    "category": "streaming_video",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "audio",
+      "text"
+    ],
+    "task_types": [
+      "proactive monitoring",
+      "task management",
+      "streaming interaction"
+    ],
+    "description": "The first benchmark for evaluating Interactive Proactive Intelligence of MLLMs under streaming video settings. Covers proactive monitoring, task management, and interleaved reactive-proactive requests in dynamic multi-turn scenarios.",
+    "repo_links": [],
+    "paper_title": "IPIBench: Evaluating Interactive Proactive Intelligence of MLLMs under Continuous Streams",
+    "arxiv_id": "2605.27074",
+    "arxiv_url": "http://arxiv.org/abs/2605.27074v1",
+    "published": "2026-05-26",
+    "authors": [
+      "Jinzhao Li",
+      "Yinuo Chen",
+      "Wenxuan Song",
+      "Yijia Lei",
+      "Yichi Zhang"
+    ]
+  },
+  {
     "benchmark_name": "TempCore",
     "category": "temporal_reasoning",
     "num_samples": null,
@@ -83111,6 +83348,32 @@
       "Pengkang Huo",
       "Tailai Chen",
       "Yuze Wu"
+    ]
+  },
+  {
+    "benchmark_name": "VisualNeedle",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "fine-grained visual search",
+      "active visual search"
+    ],
+    "description": "A challenging benchmark for fine-grained visual search in information-dense scenes where critical evidence is spatially constrained to minute regions. Features a counterfactual crop-black setting to test reliance on intermediate visual evidence.",
+    "repo_links": [],
+    "paper_title": "VisualNeedle: Benchmarking Active Visual Search in Information-Dense Scenes",
+    "arxiv_id": "2605.26380",
+    "arxiv_url": "http://arxiv.org/abs/2605.26380v1",
+    "published": "2026-05-25",
+    "authors": [
+      "Jingru Chen",
+      "Yiming Liu",
+      "Mingtao Chen",
+      "Sijie Chen",
+      "Richeng Xuan"
     ]
   }
 ]
