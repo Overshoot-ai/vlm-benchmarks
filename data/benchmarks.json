@@ -12817,6 +12817,34 @@
     ]
   },
   {
+    "benchmark_name": "EgoBench",
+    "category": "egocentric_embodied",
+    "num_samples": 1045,
+    "modalities": [
+      "video",
+      "text",
+      "tools"
+    ],
+    "task_types": [
+      "tool use",
+      "multimodal reasoning",
+      "interactive task completion"
+    ],
+    "description": "The first interactive multimodal benchmark for tool-using agents comprising 1,045 egocentric-video-grounded tasks. Features a user-agent-tool interactive environment with multi-agent simulated users for evaluating dynamic interaction capabilities.",
+    "repo_links": [],
+    "paper_title": "EgoBench: An Interactive Egocentric Multimodal Benchmark for Tool-Using Agents",
+    "arxiv_id": "2605.27820",
+    "arxiv_url": "http://arxiv.org/abs/2605.27820v1",
+    "published": "2026-05-27",
+    "authors": [
+      "Yunqi Liu",
+      "Tong Niu",
+      "Zitong Wang",
+      "Zhenlong Dai",
+      "Yuqi Qing"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "general_multimodal",
     "num_samples": null,
@@ -28460,6 +28488,61 @@
     ]
   },
   {
+    "benchmark_name": "VeriTrip",
+    "category": "gui_web_agent",
+    "num_samples": null,
+    "modalities": [
+      "text",
+      "images",
+      "web content"
+    ],
+    "task_types": [
+      "travel planning",
+      "evidence-grounded reasoning",
+      "multimodal retrieval"
+    ],
+    "description": "A verifiable benchmark for travel planning agents that shifts evaluation to evidence-grounded reasoning over unstructured multimodal web corpora. Features a Multimodal Retrieval Base and synchronized Verifiable Knowledge Base for cell-wise verification.",
+    "repo_links": [],
+    "paper_title": "VeriTrip: A Verifiable Benchmark for Travel Planning Agents over Unstructured Web Corpora",
+    "arxiv_id": "2605.28683",
+    "arxiv_url": "http://arxiv.org/abs/2605.28683v1",
+    "published": "2026-05-27",
+    "authors": [
+      "Yuting Xu",
+      "Jiayi Tian",
+      "Jian Liang",
+      "Xin Xiong",
+      "Hang Zhang"
+    ]
+  },
+  {
+    "benchmark_name": "MIRAGE",
+    "category": "gui_web_agent",
+    "num_samples": 1111,
+    "modalities": [
+      "mobile screenshots",
+      "text"
+    ],
+    "task_types": [
+      "prompt injection",
+      "adversarial attack",
+      "mobile GUI interaction"
+    ],
+    "description": "A benchmark of 1,111 prompt-injection samples for mobile GUI agents created by placing attacker-controlled text into user-generated content regions. Tests vulnerability of VLM agents to context-aware adversarial attacks across ten applications.",
+    "repo_links": [],
+    "paper_title": "MIRAGE: Context-Aware Prompt Injection against Mobile GUI Agents via User-Generated Content",
+    "arxiv_id": "2605.28116",
+    "arxiv_url": "http://arxiv.org/abs/2605.28116v1",
+    "published": "2026-05-27",
+    "authors": [
+      "Ruoqi Guo",
+      "Yi Liu",
+      "Gelei Deng",
+      "Yiheng Xiong",
+      "Yuekang Li"
+    ]
+  },
+  {
     "benchmark_name": "DeCapBench",
     "category": "hallucination",
     "num_samples": null,
@@ -41211,6 +41294,35 @@
       "Zhiting Fan",
       "Zikai Xiao",
       "Jiaxiang Liu"
+    ]
+  },
+  {
+    "benchmark_name": "MeniOmni",
+    "category": "medical",
+    "num_samples": 746,
+    "modalities": [
+      "MRI",
+      "clinical data",
+      "text"
+    ],
+    "task_types": [
+      "severity grading",
+      "diagnostic report generation"
+    ],
+    "description": "A structured multimodal benchmark for meniscus injury assessment consisting of 746 multi-center MRI studies with tri-planar volumetric inputs and clinical priors. Supports fine-grained Stoller severity grading and diagnostic report generation tasks.",
+    "repo_links": [
+      "https://github.com/ShuruiXu/MeniOmni"
+    ],
+    "paper_title": "MeniOmni: A Structured Multimodal Benchmark for Holistic Meniscus Injury Assessment",
+    "arxiv_id": "2605.28161",
+    "arxiv_url": "http://arxiv.org/abs/2605.28161v1",
+    "published": "2026-05-27",
+    "authors": [
+      "Shurui Xu",
+      "Siqi Yang",
+      "Weiping Ding",
+      "Hui Wang",
+      "Mengzhen Fan"
     ]
   },
   {
@@ -54197,6 +54309,62 @@
     ]
   },
   {
+    "benchmark_name": "MUSE",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "text",
+      "3D CAD"
+    ],
+    "task_types": [
+      "text-to-CAD generation",
+      "functionality assessment",
+      "manufacturability assessment",
+      "assemblability assessment"
+    ],
+    "description": "A Text-to-CAD benchmark focused on complex, editable boundary representation (B-Rep) assemblies. Evaluates generated models through code check, geometric check, and design-intent alignment using rubric-based VLM judges.",
+    "repo_links": [
+      "https://dong7313.github.io/muse-benchmark/"
+    ],
+    "paper_title": "MUSE: Benchmarking Manufacturable, Functional, and Assemblable Text-to-CAD Generation",
+    "arxiv_id": "2605.28579",
+    "arxiv_url": "http://arxiv.org/abs/2605.28579v1",
+    "published": "2026-05-27",
+    "authors": [
+      "Xiaoyu Dong",
+      "Zhi Li",
+      "Xiao-Ming Wu"
+    ]
+  },
+  {
+    "benchmark_name": "PointQ-Bench",
+    "category": "other",
+    "num_samples": 3083,
+    "modalities": [
+      "point cloud",
+      "text"
+    ],
+    "task_types": [
+      "anomaly sensing",
+      "defect diagnosis",
+      "usability grading",
+      "quality reporting"
+    ],
+    "description": "A benchmark for comprehensive point cloud quality assessment extending beyond scalar scoring. Consists of 3,083 point clouds with annotations for anomaly sensing, defect diagnosis, and usability grading tasks.",
+    "repo_links": [],
+    "paper_title": "PointQ-Bench: Benchmarking Diagnostic and Interpretable Point Cloud Quality Assessment",
+    "arxiv_id": "2605.28241",
+    "arxiv_url": "http://arxiv.org/abs/2605.28241v1",
+    "published": "2026-05-27",
+    "authors": [
+      "Duanchu Wang",
+      "Cheng Li",
+      "Junjie Yang",
+      "Jing Huang",
+      "Zihang Cheng"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -60696,6 +60864,33 @@
       "Jingxuan Niu",
       "Yiqin Wang",
       "Jilin Yu"
+    ]
+  },
+  {
+    "benchmark_name": "KSAFE-MM",
+    "category": "safety_bias",
+    "num_samples": null,
+    "modalities": [
+      "text",
+      "images"
+    ],
+    "task_types": [
+      "safety evaluation",
+      "cultural risk assessment",
+      "jailbreak detection"
+    ],
+    "description": "A multimodal safety benchmark for Korean cultural contexts, covering both general safety risks through linguistic contextualization and culture-specific vulnerabilities through localized visual queries paired with jailbreak-style textual queries.",
+    "repo_links": [],
+    "paper_title": "KSAFE-MM: A Multimodal Safety Benchmark via Localized Contextualization for Korean Cultural Risks",
+    "arxiv_id": "2605.28013",
+    "arxiv_url": "http://arxiv.org/abs/2605.28013v1",
+    "published": "2026-05-27",
+    "authors": [
+      "Yongwoo Kim",
+      "Sojung An",
+      "Yunjin Park",
+      "Jungwon Yoon",
+      "Dujin Lee"
     ]
   },
   {
@@ -74831,6 +75026,36 @@
     ]
   },
   {
+    "benchmark_name": "AgenticVBench",
+    "category": "video_understanding",
+    "num_samples": 100,
+    "modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "task_types": [
+      "video production",
+      "post-production workflow",
+      "tool use"
+    ],
+    "description": "A benchmark of 100 agentic tasks across 4 task families spanning real-world post-production workflows, constructed from contributions by 20 industry experts. Evaluates composite capabilities across text, image, audio, and video understanding with tool use.",
+    "repo_links": [
+      "https://agenticvbench.com"
+    ],
+    "paper_title": "AgenticVBench: Can AI Agents Complete Real-World Post-Production Tasks?",
+    "arxiv_id": "2605.27705",
+    "arxiv_url": "http://arxiv.org/abs/2605.27705v1",
+    "published": "2026-05-26",
+    "authors": [
+      "Zongheng Cao",
+      "Yi Zheng",
+      "Rui Song",
+      "Xinyu Hu"
+    ]
+  },
+  {
     "benchmark_name": "GraphVLM",
     "category": "visual_reasoning",
     "num_samples": null,
@@ -83374,6 +83599,29 @@
       "Mingtao Chen",
       "Sijie Chen",
       "Richeng Xuan"
+    ]
+  },
+  {
+    "benchmark_name": "CAGE",
+    "category": "visual_reasoning",
+    "num_samples": 49500,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "causal reasoning",
+      "visual explanation"
+    ],
+    "description": "Causal Abstraction Gap Evaluation benchmark with 49,500 questions across 5,500 images spanning Pearl's causal hierarchy. Uses dual-probe methodology to distinguish linguistic plausibility from faithful causal reasoning in VLMs.",
+    "repo_links": [],
+    "paper_title": "The Abstraction Gap in Vision-Language Causal Reasoning",
+    "arxiv_id": "2605.28779",
+    "arxiv_url": "http://arxiv.org/abs/2605.28779v1",
+    "published": "2026-05-27",
+    "authors": [
+      "Chinh Hoang",
+      "Mohammad Rashedul Hasan"
     ]
   }
 ]
