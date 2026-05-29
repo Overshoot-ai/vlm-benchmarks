@@ -6827,6 +6827,31 @@
     ]
   },
   {
+    "benchmark_name": "MultiDocR",
+    "category": "document_ocr",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "document retrieval"
+    ],
+    "description": "A new benchmark for multimodal document retrieval with diverse assessment dimensions and comprehensive relevance annotations. Designed for rigorous evaluation of document retrieval systems handling tables, figures, and layouts.",
+    "repo_links": [],
+    "paper_title": "DocRetriever: A Plug-and-Play Framework for Multimodal Document Retrieval with Comprehensive Benchmark",
+    "arxiv_id": "2605.30027",
+    "arxiv_url": "http://arxiv.org/abs/2605.30027v1",
+    "published": "2026-05-28",
+    "authors": [
+      "Ruofan Hu",
+      "Menghui Zhu",
+      "Jieming Zhu",
+      "Bo Chen",
+      "Shengyang Xu"
+    ]
+  },
+  {
     "benchmark_name": "EGONORMIA",
     "category": "egocentric_embodied",
     "num_samples": 1853,
@@ -12842,6 +12867,36 @@
       "Zitong Wang",
       "Zhenlong Dai",
       "Yuqi Qing"
+    ]
+  },
+  {
+    "benchmark_name": "Embodied3DBench",
+    "category": "egocentric_embodied",
+    "num_samples": 21000,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "grounding",
+      "spatial relation prediction",
+      "multi-view correspondence",
+      "affordance prediction",
+      "grasp point prediction",
+      "trajectory prediction"
+    ],
+    "description": "A robot-centric benchmark targeting low-level spatial intelligence in embodied 3D environments with 6 task categories spanning spatial understanding and interaction-oriented perception. Includes over 21k high-quality QA pairs across 12 subcategories.",
+    "repo_links": [],
+    "paper_title": "Embodied3DBench: Benchmarking Low-Level Embodied Spatial Intelligence of Vision Language Models",
+    "arxiv_id": "2605.29074",
+    "arxiv_url": "http://arxiv.org/abs/2605.29074v1",
+    "published": "2026-05-27",
+    "authors": [
+      "Jiyao Zhang",
+      "Mingxu Zhang",
+      "Yitong Peng",
+      "Haoxuan Liu",
+      "Chenshuo Wang"
     ]
   },
   {
@@ -21795,6 +21850,34 @@
     ]
   },
   {
+    "benchmark_name": "CFMME",
+    "category": "general_multimodal",
+    "num_samples": 6052,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "question answering",
+      "detection",
+      "recognition",
+      "information extraction"
+    ],
+    "description": "A comprehensive Chinese financial multimodal evaluation benchmark covering eight financial image modalities and four core multimodal tasks. Evaluates LVLMs across the entire financial business workflow in Chinese contexts from fundamental knowledge to complex real-world applications.",
+    "repo_links": [],
+    "paper_title": "Benchmarking Large Vision-Language Models on CFMME: A Comprehensive Chinese Financial Multimodal Evaluation Dataset",
+    "arxiv_id": "2605.29462",
+    "arxiv_url": "http://arxiv.org/abs/2605.29462v1",
+    "published": "2026-05-28",
+    "authors": [
+      "Qian Chen",
+      "Xianyin Zhang",
+      "Yanzhi Liu",
+      "Lifan Guo",
+      "Feng Chen"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -28543,6 +28626,57 @@
     ]
   },
   {
+    "benchmark_name": "GUITestScape",
+    "category": "gui_web_agent",
+    "num_samples": 508,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "GUI testing",
+      "defect detection"
+    ],
+    "description": "An interactive benchmark covering 61 real-world Android applications with 508 preset defects spanning interaction and display types for exploratory GUI testing. Features open-set evaluation beyond predefined annotations.",
+    "repo_links": [],
+    "paper_title": "GUITestScape: Towards Open-set Evaluation on Exploratory GUI Testing",
+    "arxiv_id": "2605.29532",
+    "arxiv_url": "http://arxiv.org/abs/2605.29532v1",
+    "published": "2026-05-28",
+    "authors": [
+      "Xiaoyi Chen",
+      "Yifei Gao",
+      "Yang Xu",
+      "Xingxing Song",
+      "Yi Zhang"
+    ]
+  },
+  {
+    "benchmark_name": "DiffSpot",
+    "category": "gui_web_agent",
+    "num_samples": 4400,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "spot-the-difference",
+      "visual change detection"
+    ],
+    "description": "A code-driven benchmark for open-ended spot-the-difference on web interfaces. Contains 4,400 pairs including 3,900 has-diff pairs balanced across 13 CSS-property operators and three difficulty tiers, plus 500 no-diff pairs for hallucination control.",
+    "repo_links": [],
+    "paper_title": "DiffSpot: Can VLMs Spot Fine-Grained Visual Differences in Web Interfaces?",
+    "arxiv_id": "2605.29615",
+    "arxiv_url": "http://arxiv.org/abs/2605.29615v1",
+    "published": "2026-05-28",
+    "authors": [
+      "Linhao Zhang",
+      "Aiwei Liu",
+      "Yuan Liu",
+      "Xiao Zhou"
+    ]
+  },
+  {
     "benchmark_name": "DeCapBench",
     "category": "hallucination",
     "num_samples": null,
@@ -30588,6 +30722,36 @@
     "authors": [
       "Haoyu Wang",
       "Zitong Li"
+    ]
+  },
+  {
+    "benchmark_name": "ReactBench",
+    "category": "hallucination",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "Relational Erasure",
+      "Counterfactual Attribute",
+      "Alteration Tracing",
+      "Dense Counting"
+    ],
+    "description": "A cause-driven hallucination benchmark featuring adversarial images and four targeted tasks to expose specific failure modes like co-occurrence bias and language priors. Uses exam-style evaluation format with Chain-of-Thought reasoning to identify fine-grained sub-causes.",
+    "repo_links": [
+      "https://reactbench.github.io/"
+    ],
+    "paper_title": "ReactBench: A Cause-Driven Benchmark for Multimodal Hallucination via Systematic Evaluation",
+    "arxiv_id": "2605.29579",
+    "arxiv_url": "http://arxiv.org/abs/2605.29579v1",
+    "published": "2026-05-28",
+    "authors": [
+      "Shizhe Zhou",
+      "Bohan Jia",
+      "Kai Wu",
+      "Yan Shen",
+      "Tongyun Li"
     ]
   },
   {
@@ -35087,6 +35251,58 @@
       "Jiwoo Lee",
       "Yein Park",
       "Jaewoo Kang"
+    ]
+  },
+  {
+    "benchmark_name": "CrystalXRD-Bench",
+    "category": "math_science",
+    "num_samples": 250,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "XRD peak indexing",
+      "Miller-index identification"
+    ],
+    "description": "A benchmark for Miller-index identification from powder XRD patterns, requiring models to read peak locations from scientific curves and perform multi-step crystallographic reasoning. Built from 10 public crystallographic databases with paired XRD images, CIF text, and chemical formulas.",
+    "repo_links": [],
+    "paper_title": "CrystalXRD-Bench: Benchmarking Vision-Language Models for XRD Peak Indexing Across Diverse Crystalline Materials",
+    "arxiv_id": "2605.29446",
+    "arxiv_url": "http://arxiv.org/abs/2605.29446v1",
+    "published": "2026-05-28",
+    "authors": [
+      "Chengliang Xu",
+      "Xiaogang Li",
+      "Peiyao Xiao",
+      "Beng Wang",
+      "Hu Wei"
+    ]
+  },
+  {
+    "benchmark_name": "OmniMatBench",
+    "category": "math_science",
+    "num_samples": 3171,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "QA",
+      "calculation problems"
+    ],
+    "description": "A human-calibrated multimodal reasoning benchmark across 19 materials science subfields, spanning from fundamental knowledge to application-driven problems. Contains expert-curated QA and calculation problems covering the full materials science workflow.",
+    "repo_links": [],
+    "paper_title": "OmniMatBench: A Human-Calibrated Multimodal Reasoning Benchmark Across 19 Materials Science Subfields",
+    "arxiv_id": "2605.29833",
+    "arxiv_url": "http://arxiv.org/abs/2605.29833v1",
+    "published": "2026-05-28",
+    "authors": [
+      "Wanhao Liu",
+      "Jiaqing Xie",
+      "Qian Tan",
+      "Weida Wang",
+      "Jue Wang"
     ]
   },
   {
@@ -41323,6 +41539,31 @@
       "Weiping Ding",
       "Hui Wang",
       "Mengzhen Fan"
+    ]
+  },
+  {
+    "benchmark_name": "Pocket-Dentist",
+    "category": "medical",
+    "num_samples": 1159,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "multimodal question answering"
+    ],
+    "description": "An efficiency-aware benchmark for dental multimodal question answering bringing together three datasets spanning approximately 1,159 patients, five task types and seven metrics. Designed for on-device dental image understanding and clinical prescreening.",
+    "repo_links": [],
+    "paper_title": "Pocket-Dentist: On-Device Dental Image Understanding via Efficient Multimodal Large Language Models",
+    "arxiv_id": "2605.29299",
+    "arxiv_url": "http://arxiv.org/abs/2605.29299v1",
+    "published": "2026-05-28",
+    "authors": [
+      "Kai Bian",
+      "Xucheng Guo",
+      "Bin Chen",
+      "Lingyan Ruan",
+      "Yiran Shen"
     ]
   },
   {
@@ -54365,6 +54606,34 @@
     ]
   },
   {
+    "benchmark_name": "GPIC",
+    "category": "other",
+    "num_samples": 100000000,
+    "modalities": [
+      "vision"
+    ],
+    "task_types": [
+      "generative modeling"
+    ],
+    "description": "A Giant Permissive Image Corpus of approximately 28 trillion pixels for visual generative modeling. Comprises diverse internet images with captions, including 100M training, 200K validation, and 1M test examples, all permissively licensed.",
+    "repo_links": [
+      "https://huggingface.co/datasets/stanford-vision-lab/gpic",
+      "https://huggingface.co/datasets/stanford-vision-lab/giant-permissive-image-corpus",
+      "https://gpic.stanford.edu"
+    ],
+    "paper_title": "GPIC: A Giant Permissive Image Corpus for Visual Generation",
+    "arxiv_id": "2605.30341",
+    "arxiv_url": "http://arxiv.org/abs/2605.30341v1",
+    "published": "2026-05-28",
+    "authors": [
+      "Keshigeyan Chandrasegaran",
+      "Kyle Sargent",
+      "Suchir Agarwal",
+      "Michael Jang",
+      "Michael Poli"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -60894,6 +61163,32 @@
     ]
   },
   {
+    "benchmark_name": "MuPHI",
+    "category": "safety_bias",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "harm detection",
+      "harm reasoning"
+    ],
+    "description": "Multimodal Pragmatic Harm Interpretation dataset containing image-text pairs where harm is encoded in subtle multimodal cues. Includes annotated harm rationales for assessing VLM reasoning chains across diverse harm categories.",
+    "repo_links": [],
+    "paper_title": "MuPHI: Learning Implicit Multimodal Harm Reasoning via Semantically Grounded Reward Optimization",
+    "arxiv_id": "2605.29951",
+    "arxiv_url": "http://arxiv.org/abs/2605.29951v1",
+    "published": "2026-05-28",
+    "authors": [
+      "Anisha Saha",
+      "Varsha Suresh",
+      "Teodora Kamova",
+      "Sophia Wiedmann",
+      "Timothy Hospedales"
+    ]
+  },
+  {
     "benchmark_name": "SRBench",
     "category": "spatial_3d",
     "num_samples": null,
@@ -65348,6 +65643,33 @@
     ]
   },
   {
+    "benchmark_name": "SpatialTunnel",
+    "category": "spatial_3d",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "spatial reasoning"
+    ],
+    "description": "A synthetic benchmark designed to expose spatial shortcut biases in VLMs by removing common correlations present in natural images. Focuses on measuring how spatial axes are organized and disentangled within VLM embeddings.",
+    "repo_links": [
+      "https://cheolhong0916.github.io/whyfarlooksup.github.io/"
+    ],
+    "paper_title": "Why Far Looks Up: Probing Spatial Representation in Vision-Language Models",
+    "arxiv_id": "2605.30161",
+    "arxiv_url": "http://arxiv.org/abs/2605.30161v1",
+    "published": "2026-05-28",
+    "authors": [
+      "Cheolhong Min",
+      "Jaeyun Jung",
+      "Daeun Lee",
+      "Hyeonseong Jeon",
+      "Yu Su"
+    ]
+  },
+  {
     "benchmark_name": "Temporally-Grounded Language Generation (TGLG)",
     "category": "streaming_video",
     "num_samples": null,
@@ -67678,6 +68000,31 @@
       "Feilong Tang",
       "Yunyao Yan",
       "Huajie Tan"
+    ]
+  },
+  {
+    "benchmark_name": "DMC-CF",
+    "category": "temporal_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "causal counterfactual reasoning"
+    ],
+    "description": "A large-scale benchmark for multimodal causal counterfactual reasoning built from real-world videos. Includes both static (DMC-CF-Static) and dynamic (DMC-CF-Dynamic) evaluation components using Dynamic Graph Intervention framework.",
+    "repo_links": [],
+    "paper_title": "DMC-CF: Dynamic Multimodal CounterFactual QA benchmark for Causal Reasoning",
+    "arxiv_id": "2605.29339",
+    "arxiv_url": "http://arxiv.org/abs/2605.29339v1",
+    "published": "2026-05-28",
+    "authors": [
+      "Junzhe Zhang",
+      "Huixuan Zhang",
+      "Guirong Wang",
+      "Xingyao Zhang",
+      "Pei Liu"
     ]
   },
   {
@@ -83622,6 +83969,28 @@
     "authors": [
       "Chinh Hoang",
       "Mohammad Rashedul Hasan"
+    ]
+  },
+  {
+    "benchmark_name": "TraceBank",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "physical reasoning",
+      "state transition prediction"
+    ],
+    "description": "A controlled trace resource with schema- and recomputation-validated synthetic scenarios across physics families for auditing language-expressed physical commitments of VLMs. Includes minimally perturbed contrastive preference pairs and typed error labels.",
+    "repo_links": [],
+    "paper_title": "World Models in Words: Auditing Physical State-Transition Commitments in Vision-Language Models",
+    "arxiv_id": "2605.29585",
+    "arxiv_url": "http://arxiv.org/abs/2605.29585v1",
+    "published": "2026-05-28",
+    "authors": [
+      "Emmanuelle Bourigault"
     ]
   }
 ]
