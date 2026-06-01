@@ -12900,6 +12900,87 @@
     ]
   },
   {
+    "benchmark_name": "nuReasoning",
+    "category": "egocentric_embodied",
+    "num_samples": "20,000 clips",
+    "modalities": [
+      "images",
+      "LiDAR",
+      "text"
+    ],
+    "task_types": [
+      "spatial reasoning",
+      "decision reasoning",
+      "counterfactual reasoning",
+      "planning evaluation"
+    ],
+    "description": "A large-scale real-world dataset and benchmark for reasoning-centric autonomous driving in long-tail scenarios. It contains 20,000 clips with synchronized multi-camera images, LiDAR data, HD maps, and human-verified reasoning annotations spanning spatial, decision, and counterfactual reasoning.",
+    "repo_links": [],
+    "paper_title": "nuReasoning: A Reasoning-Centric Dataset and Benchmark for Long-Tail Autonomous Driving",
+    "arxiv_id": "2605.31572",
+    "arxiv_url": "http://arxiv.org/abs/2605.31572v1",
+    "published": "2026-05-29",
+    "authors": [
+      "Zhiyu Huang",
+      "Johnson Liu",
+      "Rui Song",
+      "Zewei Zhou",
+      "Ruining Yang"
+    ]
+  },
+  {
+    "benchmark_name": "PInVerify",
+    "category": "egocentric_embodied",
+    "num_samples": "3,000 evaluation episodes",
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "active instance verification",
+      "viewpoint selection"
+    ],
+    "description": "An offline embodied benchmark for Active Instance Verification (AIV) where agents actively select viewpoints around candidate objects to decide whether they match fine-grained natural-language descriptions. Features multi-view captures with a 6-sector navigation topology across 18 object categories.",
+    "repo_links": [
+      "https://github.com/Avalon-S/PInVerify"
+    ],
+    "paper_title": "PInVerify: An Offline Embodied Benchmark for Active Instance Verification",
+    "arxiv_id": "2605.30639",
+    "arxiv_url": "http://arxiv.org/abs/2605.30639v1",
+    "published": "2026-05-28",
+    "authors": [
+      "Yuhang Jiang"
+    ]
+  },
+  {
+    "benchmark_name": "MineExplorer",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "open-world exploration",
+      "multi-hop reasoning"
+    ],
+    "description": "A benchmark for evaluating open-world exploration capabilities of MLLM agents in Minecraft. It organizes atomic tasks into implicit multi-hop tasks using a ReAct-style capability formulation and uses a multi-agent synthesis workflow to create reliable instances.",
+    "repo_links": [
+      "https://github.com/Jometeorie/MineExplorer"
+    ],
+    "paper_title": "MineExplorer: Evaluating Open-World Exploration of MLLM Agents in Minecraft",
+    "arxiv_id": "2605.30931",
+    "arxiv_url": "http://arxiv.org/abs/2605.30931v1",
+    "published": "2026-05-29",
+    "authors": [
+      "Tianjie Ju",
+      "Yueqing Sun",
+      "Zheng Wu",
+      "Wei Zhang",
+      "Yaqi Huo"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "general_multimodal",
     "num_samples": null,
@@ -21878,6 +21959,30 @@
     ]
   },
   {
+    "benchmark_name": "HoraVQA",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "visual question answering"
+    ],
+    "description": "A culturally native evaluation set grounded in Romanian everyday scenes for evaluating Romanian Vision-Language Models. Part of a systematic study building language-specific VLMs for Romanian, including translated English VLM training and evaluation corpora.",
+    "repo_links": [],
+    "paper_title": "\"Intelegi Româneşte?'' A Recipe for Romanian Vision-Language Models",
+    "arxiv_id": "2605.31401",
+    "arxiv_url": "http://arxiv.org/abs/2605.31401v1",
+    "published": "2026-05-29",
+    "authors": [
+      "Mihai Masala",
+      "Marius Leordeanu",
+      "Mihai Dascalu",
+      "Traian Rebedea"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -24062,6 +24167,34 @@
     ]
   },
   {
+    "benchmark_name": "ERGeoBench",
+    "category": "geospatial",
+    "num_samples": "2,207",
+    "modalities": [
+      "images"
+    ],
+    "task_types": [
+      "geo-localization",
+      "spatial reasoning",
+      "embodied navigation"
+    ],
+    "description": "A diagnostic benchmark for vision-driven embodied geo-localization that evaluates models under three progressive settings: single-view, panorama-view, and embodied-view. It measures four complementary capabilities including foundational perception, spatial awareness, common sense reasoning, and geo-localization reasoning.",
+    "repo_links": [
+      "https://kaixuewen.github.io/ERGeoBench/"
+    ],
+    "paper_title": "ERGeoBench:A Comprehensive Benchmark for Embodied Reasoning and Geo-localization in Multimodal Large Language Models",
+    "arxiv_id": "2605.31251",
+    "arxiv_url": "http://arxiv.org/abs/2605.31251v1",
+    "published": "2026-05-29",
+    "authors": [
+      "Kaiwen Xue",
+      "Tao Wei",
+      "Guoxin Zhang",
+      "Zhonghong Ou",
+      "Kaoyan Lu"
+    ]
+  },
+  {
     "benchmark_name": "Point-It-Out (PIO)",
     "category": "grounding_localization",
     "num_samples": null,
@@ -25760,6 +25893,32 @@
     "authors": [
       "Zongjian Wu",
       "Lei Zhang"
+    ]
+  },
+  {
+    "benchmark_name": "SOCO",
+    "category": "grounding_localization",
+    "num_samples": "over 1M correspondence pairs",
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "semantic correspondence",
+      "part-level understanding"
+    ],
+    "description": "A benchmark for Semantic Object Correspondence that introduces a taxonomy of correspondence types and provides consistent, functionally meaningful keypoint annotations across 100 categories. It tests whether object parts can be matched across instances and categories under large variations in appearance, viewpoint, and geometry.",
+    "repo_links": [],
+    "paper_title": "SOCO: Benchmarking Semantic Object Correspondence in Vision Foundation Models",
+    "arxiv_id": "2605.31597",
+    "arxiv_url": "http://arxiv.org/abs/2605.31597v1",
+    "published": "2026-05-29",
+    "authors": [
+      "Olaf Dünkel",
+      "Basavaraj Sunagad",
+      "Haoran Wang",
+      "David T. Hoffmann",
+      "Christian Theobalt"
     ]
   },
   {
@@ -54634,6 +54793,112 @@
     ]
   },
   {
+    "benchmark_name": "FAM-Bench",
+    "category": "other",
+    "num_samples": "2500",
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "dish-level suitability assessment",
+      "comparative dish analysis"
+    ],
+    "description": "A multi-modal Food-as-Medicine benchmark with 2500 nutrition-expert-verified instances across 13 diet-related health conditions. It evaluates whether models can decide if a food choice is appropriate for a specific health condition through dish-level suitability assessment and comparative dish analysis.",
+    "repo_links": [],
+    "paper_title": "FAM-Bench: A Multimodal Benchmark for Condition-Aware Food-as-Medicine Reasoning",
+    "arxiv_id": "2605.31410",
+    "arxiv_url": "http://arxiv.org/abs/2605.31410v1",
+    "published": "2026-05-29",
+    "authors": [
+      "Mingyang Mao",
+      "Bhargav Rishi Medisetti",
+      "Utkarsh Grover",
+      "Tanvir Ibrahim",
+      "Wenyan Li"
+    ]
+  },
+  {
+    "benchmark_name": "VIABLE",
+    "category": "other",
+    "num_samples": "over 300K judgment samples",
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "visually impaired assistance",
+      "VLM-as-a-Judge evaluation"
+    ],
+    "description": "The first benchmark for VLM-as-a-Judge evaluation in Visually Impaired Assistance (VIA) tasks. It introduces an Effectiveness-Impartiality-Stability framework with a 12-mode failure taxonomy for evaluating AI assistance quality.",
+    "repo_links": [
+      "https://github.com/YiyiyiZhao/VIABLE"
+    ],
+    "paper_title": "A Visually Impaired Assistance Benchmark for VLM-as-a-Judge Evaluation",
+    "arxiv_id": "2605.31351",
+    "arxiv_url": "http://arxiv.org/abs/2605.31351v1",
+    "published": "2026-05-29",
+    "authors": [
+      "Yi Zhao",
+      "Siqi Wang",
+      "Zhe Hu",
+      "Yushi Li",
+      "Jing Li"
+    ]
+  },
+  {
+    "benchmark_name": "MechVQA",
+    "category": "other",
+    "num_samples": "21K question-answer pairs",
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "mechanical drawing understanding",
+      "visual question answering"
+    ],
+    "description": "The first comprehensive mechanical drawing understanding dataset with 3.3k high-density pictures and 21K question-answer pairs spanning 10 different fine-grained tasks. It provides evaluation across three capability levels: Recognition, Reasoning, and Judging for mechanical engineering drawings.",
+    "repo_links": [],
+    "paper_title": "MechVQA: Benchmarking and Enhancing Multimodal LLMs on Comprehensive Mechanical Drawing Understanding",
+    "arxiv_id": "2605.30794",
+    "arxiv_url": "http://arxiv.org/abs/2605.30794v1",
+    "published": "2026-05-29",
+    "authors": [
+      "Qian Kou",
+      "Xiaofeng Shi",
+      "Yulin Li",
+      "Xiaosong Qiu",
+      "Xinyang Wang"
+    ]
+  },
+  {
+    "benchmark_name": "TeachObs",
+    "category": "other",
+    "num_samples": "5,158 fixed 15-second scenes",
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "teaching observation",
+      "classroom video analysis"
+    ],
+    "description": "A human-validated benchmark for multimodal teaching observation in classroom videos with 30 public lesson videos from eight countries. Features 39 binary observation codes covering visual and nonvisual teaching practices, plus lesson-level ratings from expert educators.",
+    "repo_links": [],
+    "paper_title": "TeachObs: A Human-Validated Benchmark for Multimodal Teaching Observation and Model Evaluation",
+    "arxiv_id": "2605.30673",
+    "arxiv_url": "http://arxiv.org/abs/2605.30673v1",
+    "published": "2026-05-29",
+    "authors": [
+      "Yeil Jeong",
+      "Youngjin Yoo",
+      "Seobin Sohn",
+      "Hyejin Han",
+      "Jinseo Lee"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -61189,6 +61454,56 @@
     ]
   },
   {
+    "benchmark_name": "FBHM",
+    "category": "safety_bias",
+    "num_samples": "5,000",
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "hateful meme detection"
+    ],
+    "description": "A systematically curated benchmark of Functionality Based Hateful Memes constructed along two orthogonal axes: 25 distinct rhetorical functionalities and 10 target communities. It addresses structural observational confounds in existing datasets and enables causal evaluation of model vulnerabilities.",
+    "repo_links": [],
+    "paper_title": "FBHM: Functional Benchmarking and Steering of VLMs for Hateful Meme Detection",
+    "arxiv_id": "2605.31349",
+    "arxiv_url": "http://arxiv.org/abs/2605.31349v1",
+    "published": "2026-05-29",
+    "authors": [
+      "Paramananda Bhaskar",
+      "Naquee Rizwan",
+      "Daksh Jogchand",
+      "Saurabh Kumar Pandey",
+      "Animesh Mukherjee"
+    ]
+  },
+  {
+    "benchmark_name": "TouchSafeBench",
+    "category": "safety_bias",
+    "num_samples": "2,940 simulated indoor co-presence episodes",
+    "modalities": [
+      "images",
+      "depth",
+      "text"
+    ],
+    "task_types": [
+      "collision detection",
+      "safety classification"
+    ],
+    "description": "A physics-grounded benchmark for evaluating collision grounding in vision-language models for safe human-robot collaboration. Built in Habitat 3.0, it tests whether models can determine if a robot is safely separated, colliding, or about to collide with humans or objects.",
+    "repo_links": [],
+    "paper_title": "Probing Collision Grounding in Vision-Language Models for Safe Human-Robot Collaboration",
+    "arxiv_id": "2605.31196",
+    "arxiv_url": "http://arxiv.org/abs/2605.31196v1",
+    "published": "2026-05-29",
+    "authors": [
+      "Jun Wang",
+      "Xiaohao Xu",
+      "Xiaonan Huang"
+    ]
+  },
+  {
     "benchmark_name": "SRBench",
     "category": "spatial_3d",
     "num_samples": null,
@@ -65670,6 +65985,32 @@
     ]
   },
   {
+    "benchmark_name": "SpatialUncertain",
+    "category": "spatial_3d",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "spatial reasoning",
+      "uncertainty estimation"
+    ],
+    "description": "A controlled evaluation framework that challenges VLMs with spatial reasoning questions under occlusion and perspective ambiguity. It evaluates whether models recognize when questions cannot be answered and what additional observations would be needed.",
+    "repo_links": [],
+    "paper_title": "Seeing Isn't Knowing: Do VLMs Know When Not to Answer Spatial Questions (and Why)?",
+    "arxiv_id": "2605.30557",
+    "arxiv_url": "http://arxiv.org/abs/2605.30557v1",
+    "published": "2026-05-28",
+    "authors": [
+      "Yue Zhang",
+      "Zun Wang",
+      "Han Lin",
+      "Yonatan Bitton",
+      "Idan Szpektor"
+    ]
+  },
+  {
     "benchmark_name": "Temporally-Grounded Language Generation (TGLG)",
     "category": "streaming_video",
     "num_samples": null,
@@ -66195,6 +66536,29 @@
       "Wenxuan Song",
       "Yijia Lei",
       "Yichi Zhang"
+    ]
+  },
+  {
+    "benchmark_name": "EGOSTREAM",
+    "category": "streaming_video",
+    "num_samples": "2,250 curated questions",
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "episodic memory",
+      "temporal reasoning"
+    ],
+    "description": "A diagnostic benchmark for streaming episodic memory evaluation in egocentric vision. It organizes questions along seven cognitive dimensions and introduces the Answer Validity Window to enable controlled testing from instant to ultra-long-term recall while separating genuine model forgetting from natural world-state changes.",
+    "repo_links": [],
+    "paper_title": "EGOSTREAM: A Diagnostic Benchmark for Streaming Episodic Memory in Egocentric Vision",
+    "arxiv_id": "2605.31557",
+    "arxiv_url": "http://arxiv.org/abs/2605.31557v1",
+    "published": "2026-05-29",
+    "authors": [
+      "Rosario Forte",
+      "Giuseppe Lando",
+      "Antonino Furnari"
     ]
   },
   {
@@ -83991,6 +84355,32 @@
     "published": "2026-05-28",
     "authors": [
       "Emmanuelle Bourigault"
+    ]
+  },
+  {
+    "benchmark_name": "BilliardPhys-Bench",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "images"
+    ],
+    "task_types": [
+      "physical reasoning",
+      "collision prediction",
+      "motion estimation"
+    ],
+    "description": "A benchmark for physical reasoning in synthetic billiards environments with a procedural engine that generates randomized scenarios. It tests three abilities: predicting ball-to-ball collisions, reasoning about wall bounces, and estimating final ball positions after motion stops.",
+    "repo_links": [],
+    "paper_title": "BilliardPhys-Bench: Benchmarking Physical Reasoning and Visual Dynamics of Multimodal LLMs",
+    "arxiv_id": "2605.30900",
+    "arxiv_url": "http://arxiv.org/abs/2605.30900v1",
+    "published": "2026-05-29",
+    "authors": [
+      "Ben Wang",
+      "Xiaogang Li",
+      "Ruochen Gao",
+      "Peiyao Xiao",
+      "Chengliang Xu"
     ]
   }
 ]
