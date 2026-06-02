@@ -3456,6 +3456,60 @@
     ]
   },
   {
+    "benchmark_name": "HakushoBench",
+    "category": "chart_figure",
+    "num_samples": 2053,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "visual question answering",
+      "chart understanding",
+      "table understanding"
+    ],
+    "description": "A Japanese chart and table VQA benchmark built from 33 governmental white papers. Contains images spanning over 10 image types with manually annotated QA pairs designed to assess deep understanding of charts and tables.",
+    "repo_links": [],
+    "paper_title": "HakushoBench: A Japanese Chart and Table VQA Benchmark from Governmental White Papers",
+    "arxiv_id": "2606.01132",
+    "arxiv_url": "http://arxiv.org/abs/2606.01132v1",
+    "published": "2026-05-31",
+    "authors": [
+      "Issa Sugiura",
+      "Shuhei Kurita",
+      "Yusuke Oda",
+      "Naoaki Okazaki"
+    ]
+  },
+  {
+    "benchmark_name": "ChartArena",
+    "category": "chart_figure",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "chart parsing",
+      "diagram understanding"
+    ],
+    "description": "A comprehensive bilingual benchmark covering eight chart families including numeric charts and diagrammatic structures, evaluated across three visual scenarios: digital renderings, printed photos, and hand-drawn photos. Features format-agnostic evaluation protocol with structure-aware metrics.",
+    "repo_links": [
+      "https://github.com/pspdada/ChartArena"
+    ],
+    "paper_title": "ChartArena: Benchmarking Chart Parsing across Languages, Scenarios, and Formats",
+    "arxiv_id": "2606.01348",
+    "arxiv_url": "http://arxiv.org/abs/2606.01348v1",
+    "published": "2026-05-31",
+    "authors": [
+      "Shangpin Peng",
+      "Gengluo Li",
+      "Xingyu Wan",
+      "Chengquan Zhang",
+      "Hao Feng"
+    ]
+  },
+  {
     "benchmark_name": "Document Haystack",
     "category": "document_ocr",
     "num_samples": 8250,
@@ -6849,6 +6903,59 @@
       "Jieming Zhu",
       "Bo Chen",
       "Shengyang Xu"
+    ]
+  },
+  {
+    "benchmark_name": "Dr. DocBench",
+    "category": "document_ocr",
+    "num_samples": 4514,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "document parsing",
+      "OCR",
+      "layout analysis"
+    ],
+    "description": "A difficulty-aware benchmark for expert-level document parsing from 52 BISAC subject domains. Selects challenging documents through parser-failure-based sampling and includes 65k high-quality annotations for layout, reading order, and domain-specific visual contents.",
+    "repo_links": [],
+    "paper_title": "Dr. DocBench: A Comprehensive Benchmark for Expert-Level and Difficult Document Parsing",
+    "arxiv_id": "2606.01393",
+    "arxiv_url": "http://arxiv.org/abs/2606.01393v1",
+    "published": "2026-05-31",
+    "authors": [
+      "Minglai Yang",
+      "Xinyan Velocity Yu",
+      "Pengyuan Li",
+      "Xinyu Guo",
+      "Zhenting Qi"
+    ]
+  },
+  {
+    "benchmark_name": "DocFormBench",
+    "category": "document_ocr",
+    "num_samples": null,
+    "modalities": [
+      "text",
+      "document"
+    ],
+    "task_types": [
+      "document formatting",
+      "text formatting"
+    ],
+    "description": "A benchmark for content-aware document formatting that extends Text-to-Format evaluation to diverse formatting requirements. Includes metrics for both accuracy and efficiency in realistic content-aware scenarios.",
+    "repo_links": [],
+    "paper_title": "What to Format and How: A Benchmark and Workflow Approach for Document Formatting",
+    "arxiv_id": "2606.01936",
+    "arxiv_url": "http://arxiv.org/abs/2606.01936v1",
+    "published": "2026-06-01",
+    "authors": [
+      "Shihao Rao",
+      "Liang Li",
+      "Jiapeng Liu",
+      "Tong Lin",
+      "Bing Li"
     ]
   },
   {
@@ -12978,6 +13085,116 @@
       "Zheng Wu",
       "Wei Zhang",
       "Yaqi Huo"
+    ]
+  },
+  {
+    "benchmark_name": "RoboStressBench",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "visual recognition",
+      "reasoning",
+      "planning"
+    ],
+    "description": "A benchmark for evaluating VLM robustness to physical visual stress in embodied scenes. Decomposes visual stress into four physically grounded dimensions: Material, Viewpoint, Lighting, and Geometry based on inverse graphics perspective.",
+    "repo_links": [],
+    "paper_title": "RoboStressBench: Benchmarking VLM Robustness to Physical Visual Stress in Embodied Scenes",
+    "arxiv_id": "2606.00828",
+    "arxiv_url": "http://arxiv.org/abs/2606.00828v1",
+    "published": "2026-05-30",
+    "authors": [
+      "Leyi Wu",
+      "Yifan Zhao",
+      "Jinjie Zhang",
+      "Suzeyu Chen",
+      "Wosong Chen"
+    ]
+  },
+  {
+    "benchmark_name": "RoboTrustBench",
+    "category": "egocentric_embodied",
+    "num_samples": 1207,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "robotic manipulation",
+      "video world modeling",
+      "trustworthiness evaluation"
+    ],
+    "description": "A benchmark for evaluating trustworthiness of video world models in robotic manipulation under four scenarios: Normal, Constraint-Sensitive, Counterfactual, and Adversarial. Built from real-world DROID episodes with expert-validated instruction-image pairs.",
+    "repo_links": [],
+    "paper_title": "RoboTrustBench: Benchmarking the Trustworthiness of Video World Models for Robotic Manipulation",
+    "arxiv_id": "2606.01600",
+    "arxiv_url": "http://arxiv.org/abs/2606.01600v1",
+    "published": "2026-06-01",
+    "authors": [
+      "Huiqiong Li",
+      "Jiayu Wang",
+      "Zhiting Mei",
+      "Anirudha Majumdar",
+      "Jingjing Chen"
+    ]
+  },
+  {
+    "benchmark_name": "SuperMemory-VQA",
+    "category": "egocentric_embodied",
+    "num_samples": 4853,
+    "modalities": [
+      "video",
+      "audio",
+      "text"
+    ],
+    "task_types": [
+      "visual question answering",
+      "memory tasks",
+      "egocentric understanding"
+    ],
+    "description": "An egocentric VQA dataset for evaluating AI assistants on practical, long-horizon memory tasks. Contains 52.9 hours of everyday activities with synchronized multimodal data and 4,853 grounded QA pairs spanning various memory types with explicit \"unanswerable\" options.",
+    "repo_links": [],
+    "paper_title": "SuperMemory-VQA: An Egocentric Visual Question-Answering Benchmark for Long-Horizon Memory",
+    "arxiv_id": "2606.00825",
+    "arxiv_url": "http://arxiv.org/abs/2606.00825v1",
+    "published": "2026-05-30",
+    "authors": [
+      "Samiul Alam",
+      "Shakhrul Iman Siam",
+      "Michael J. Proulx",
+      "James Fort",
+      "Richard Newcombe"
+    ]
+  },
+  {
+    "benchmark_name": "Ego-METAS",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "audio",
+      "gaze",
+      "IMU"
+    ],
+    "task_types": [
+      "temporal action segmentation",
+      "energy-efficient perception"
+    ],
+    "description": "The first egocentric online multimodal energy-efficient temporal action segmentation benchmark. Provides over 100 hours of untrimmed egocentric video from multiple datasets spanning 5 modalities, formulated as online task with hardware-representative energy budgets.",
+    "repo_links": [],
+    "paper_title": "Ego-METAS: Egocentric online Multimodal Energy-efficient Temporal Action Segmentation benchmark",
+    "arxiv_id": "2606.02246",
+    "arxiv_url": "http://arxiv.org/abs/2606.02246v1",
+    "published": "2026-05-29",
+    "authors": [
+      "Maria Santos-Villafranca",
+      "Jesus Bermudez-cameo",
+      "Alejandro Perez-Yus",
+      "Giovanni Maria Farinella",
+      "Antonino Furnari"
     ]
   },
   {
@@ -21983,6 +22200,88 @@
     ]
   },
   {
+    "benchmark_name": "CV-Arena",
+    "category": "general_multimodal",
+    "num_samples": 12000,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "instruction-guided image editing",
+      "visual task solving"
+    ],
+    "description": "An open benchmark for instructional computer vision problem solving with 12K high-resolution real-image instruction pairs spanning 16 instruction-based visual task types. Features human-AI collaborative evaluation through Active Elo protocol.",
+    "repo_links": [],
+    "paper_title": "CV-Arena: An Open Benchmark for Instructional Computer Vision Problem Solving with Human-AI Collaborative Preferences",
+    "arxiv_id": "2606.00931",
+    "arxiv_url": "http://arxiv.org/abs/2606.00931v1",
+    "published": "2026-05-30",
+    "authors": [
+      "Fangzhou Lin",
+      "Peiran Li",
+      "Lingyu Xu",
+      "Wenjing Chen",
+      "Qianwen Ge"
+    ]
+  },
+  {
+    "benchmark_name": "ProductWebGen",
+    "category": "general_multimodal",
+    "num_samples": 500,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "webpage generation",
+      "product showcase",
+      "multimodal generation"
+    ],
+    "description": "A benchmark for product webpage generation from source images with layout and visual content instructions. Contains 500 test samples covering 13 product categories, requiring visual consistency and instruction following to generate renderable HTML code.",
+    "repo_links": [
+      "https://github.com/SJTU-DENG-Lab/ProductWebGen"
+    ],
+    "paper_title": "ProductWebGen: Benchmarking Multimodal Product Webpage Generation",
+    "arxiv_id": "2606.01022",
+    "arxiv_url": "http://arxiv.org/abs/2606.01022v1",
+    "published": "2026-05-31",
+    "authors": [
+      "Zhihong Liu",
+      "Siqi Kou",
+      "Zheng Li",
+      "Ye Ma",
+      "Quan Chen"
+    ]
+  },
+  {
+    "benchmark_name": "UniKE",
+    "category": "general_multimodal",
+    "num_samples": 2971,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "knowledge editing",
+      "cross-modal transfer"
+    ],
+    "description": "The first benchmark for cross-modality knowledge editing in unified multimodal models, comprising 2,971 edit subjects spanning attribute and relation edits. Uses VQA-based visual verification to measure cross-modal knowledge transfer.",
+    "repo_links": [
+      "https://github.com/gxx27/UniKE"
+    ],
+    "paper_title": "Do Text Edits Generalize to Visual Generation? Benchmarking Cross-Modal Knowledge Editing in UMMs",
+    "arxiv_id": "2606.00477",
+    "arxiv_url": "http://arxiv.org/abs/2606.00477v1",
+    "published": "2026-05-30",
+    "authors": [
+      "Xin Gao",
+      "Cheng Yang",
+      "Chufan Shi",
+      "Taylor Berg-Kirkpatrick"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -28836,6 +29135,66 @@
     ]
   },
   {
+    "benchmark_name": "WebIGBench",
+    "category": "gui_web_agent",
+    "num_samples": 103,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "code generation",
+      "web development",
+      "interactive design"
+    ],
+    "description": "The first benchmark for evaluating code generation for interactive webpages with complex interactions. Contains 103 complex webpages covering 5 interactive action types with 871 distinct interactive actions, featuring novel evaluation pipeline for automated assessment.",
+    "repo_links": [
+      "https://github.com/anoa12159-hue/WebIGBench_eval"
+    ],
+    "paper_title": "Benchmarking Multimodal LLMs on Code Generation for Complex Interactive Webpages",
+    "arxiv_id": "2606.00154",
+    "arxiv_url": "http://arxiv.org/abs/2606.00154v1",
+    "published": "2026-05-29",
+    "authors": [
+      "Fan Wu",
+      "Lishuai Dong",
+      "Cuiyun Gao",
+      "Yujia Chen",
+      "Yiming Huang"
+    ]
+  },
+  {
+    "benchmark_name": "MMG2Skill-Bench",
+    "category": "gui_web_agent",
+    "num_samples": null,
+    "modalities": [
+      "multimodal",
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "guide-to-skill learning",
+      "GUI control",
+      "gameplay",
+      "strategic card play"
+    ],
+    "description": "The first benchmark designed for guide-to-skill learning, evaluating agents' ability to convert in-the-wild multimodal guides into executable skills. It covers GUI control, open-ended gameplay, and strategic card play across six VLM backbones.",
+    "repo_links": [
+      "https://github.com/NJU-LINK/MMG2Skill"
+    ],
+    "paper_title": "MMG2Skill: Can Agents Distill In-the-Wild Guides into Self-Evolving Skills?",
+    "arxiv_id": "2606.01993",
+    "arxiv_url": "http://arxiv.org/abs/2606.01993v1",
+    "published": "2026-06-01",
+    "authors": [
+      "Xinyu Che",
+      "Junqi Xiong",
+      "Yunfei Ge",
+      "Xinping Lei",
+      "Shihao Li"
+    ]
+  },
+  {
     "benchmark_name": "DeCapBench",
     "category": "hallucination",
     "num_samples": null,
@@ -30914,6 +31273,35 @@
     ]
   },
   {
+    "benchmark_name": "MM-Snowball",
+    "category": "hallucination",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "dialogue",
+      "hallucination detection",
+      "multi-turn conversation"
+    ],
+    "description": "The first benchmark for fine-grained diagnosis of hallucination snowballing within multimodal dialogues. Evaluates how initial errors amplify across conversational turns, revealing failure modes in long-horizon interactive settings.",
+    "repo_links": [
+      "https://frenkie-chiang.github.io/MM-Snowball"
+    ],
+    "paper_title": "MM-Snowball: Evaluating and Mitigating Hallucination Snowballing in Multimodal Multi-Turn Dialogue",
+    "arxiv_id": "2606.00622",
+    "arxiv_url": "http://arxiv.org/abs/2606.00622v1",
+    "published": "2026-05-30",
+    "authors": [
+      "Yue Jiang",
+      "Xue Jiang",
+      "Lihua Zhang",
+      "Zhiqiang Wang",
+      "Yuhang Lu"
+    ]
+  },
+  {
     "benchmark_name": "SceneBench",
     "category": "long_video",
     "num_samples": null,
@@ -32462,6 +32850,31 @@
       "Xuanyu Zhu",
       "Jiafu Tang",
       "Liu Yang"
+    ]
+  },
+  {
+    "benchmark_name": "MBench",
+    "category": "long_video",
+    "num_samples": null,
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "video generation",
+      "long-term consistency"
+    ],
+    "description": "A comprehensive benchmark for quantifying memory capability of video world models across long-term horizons. Decomposes memory into three hierarchical dimensions: entity consistency, environment consistency, and causal consistency with 12 quantifiable sub-dimensions.",
+    "repo_links": [],
+    "paper_title": "MBench: A Comprehensive Benchmark on Memory Capability for Video World Models",
+    "arxiv_id": "2606.00793",
+    "arxiv_url": "http://arxiv.org/abs/2606.00793v1",
+    "published": "2026-05-30",
+    "authors": [
+      "Shengjun Zhang",
+      "Zhang Zhang",
+      "Simin Huang",
+      "Zhenyu Tang",
+      "Hanyang Wang"
     ]
   },
   {
@@ -35462,6 +35875,33 @@
       "Qian Tan",
       "Weida Wang",
       "Jue Wang"
+    ]
+  },
+  {
+    "benchmark_name": "DAWN",
+    "category": "math_science",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "distribution fitting",
+      "time series modeling",
+      "astronomical modeling"
+    ],
+    "description": "Dataset for Automated Workflows and Numerical Modeling, targeting distribution fitting and time series modeling with varying difficulty tiers. It culminates in real-world astronomy tasks including modeling initial mass functions and gravitational-wave chirp signals.",
+    "repo_links": [],
+    "paper_title": "VESTA: Visual Exploration with Statistical Tool Agents",
+    "arxiv_id": "2606.00384",
+    "arxiv_url": "http://arxiv.org/abs/2606.00384v1",
+    "published": "2026-05-29",
+    "authors": [
+      "William Rudman",
+      "Abhishek Divekar",
+      "Kanishk Jain",
+      "Sebastian Joseph",
+      "Stella S. R. Offner"
     ]
   },
   {
@@ -54899,6 +55339,54 @@
     ]
   },
   {
+    "benchmark_name": "Text-Guided Anomaly Detection (TGAD)",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "anomaly detection",
+      "text-guided inspection"
+    ],
+    "description": "A benchmark for evaluating whether text actually conditions anomaly detection decisions in multimodal vision-language models. Includes three scenarios: prompt-sensitivity on MVTec AD, component-tagged MVTec AD extension, and new Assembled Panel Dataset (APD) for realistic industrial settings.",
+    "repo_links": [],
+    "paper_title": "A Structured Benchmark for Text-Guided Anomaly Detection: When Language Stops Conditioning the Decision",
+    "arxiv_id": "2606.01992",
+    "arxiv_url": "http://arxiv.org/abs/2606.01992v1",
+    "published": "2026-06-01",
+    "authors": [
+      "Stefano Samele",
+      "Eugenio Lomurno",
+      "Teodora Jovanovic",
+      "Sanjay Shivakumar Manohar",
+      "Alberto Crivellaro"
+    ]
+  },
+  {
+    "benchmark_name": null,
+    "category": "other",
+    "num_samples": 100,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "urban perception",
+      "streetscape auditing"
+    ],
+    "description": "A benchmark of 100 Montreal street scenes annotated along 30 dimensions by 12 participants from community organizations for evaluating VLMs in urban perception tasks. Emphasizes disagreement measurement and inter-annotator reliability alongside model alignment.",
+    "repo_links": [],
+    "paper_title": "Benchmarks for Vision-Language Models in Urban Perception Should Be Reliability-Aware and Negotiated",
+    "arxiv_id": "2606.00871",
+    "arxiv_url": "http://arxiv.org/abs/2606.00871v1",
+    "published": "2026-05-30",
+    "authors": [
+      "Rashid Mushkani"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -56406,6 +56894,55 @@
       "Ruilin Zhang",
       "Xiaotong Zhao",
       "Shuai Li"
+    ]
+  },
+  {
+    "benchmark_name": "LL-Bench",
+    "category": "quality_aesthetics",
+    "num_samples": 2469,
+    "modalities": [
+      "image"
+    ],
+    "task_types": [
+      "image restoration",
+      "low-level vision"
+    ],
+    "description": "A comprehensive benchmark for evaluating large-scale generative models on low-level vision tasks. Comprises 2,469 real-world degraded images covering 16 degradation tasks with 28,919 restored images and 152,020 expert-level pairwise human preferences.",
+    "repo_links": [],
+    "paper_title": "LL-Bench: Rethinking Low-Level Vision Evaluation in the Era of Large-Scale Generative Models",
+    "arxiv_id": "2606.02535",
+    "arxiv_url": "http://arxiv.org/abs/2606.02535v1",
+    "published": "2026-06-01",
+    "authors": [
+      "Lu Liu",
+      "Huiyu Duan",
+      "Chenxin Zhu",
+      "Jintong Lu",
+      "Haoyun Jiang"
+    ]
+  },
+  {
+    "benchmark_name": "PRISM",
+    "category": "quality_aesthetics",
+    "num_samples": 100000,
+    "modalities": [
+      "image"
+    ],
+    "task_types": [
+      "design evaluation",
+      "layout analysis"
+    ],
+    "description": "A benchmark that systematically perturbs professional layouts along measurable design principles. Comprises 100K perturbed training samples and 10K validation designs, each isolating specific principle violations for controlled analysis of design quality.",
+    "repo_links": [],
+    "paper_title": "Through the PRISM: Principle-Aware, Interpretable, and Multi-Scale Evaluation of Visual Designs",
+    "arxiv_id": "2606.00592",
+    "arxiv_url": "http://arxiv.org/abs/2606.00592v1",
+    "published": "2026-05-30",
+    "authors": [
+      "Mona Gandhi",
+      "KJ Joseph",
+      "Srinivasan Parthasarathy",
+      "Sayan Nag"
     ]
   },
   {
@@ -61504,6 +62041,32 @@
     ]
   },
   {
+    "benchmark_name": "TextFake",
+    "category": "safety_bias",
+    "num_samples": 20000,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "AI-generated image detection",
+      "forgery detection"
+    ],
+    "description": "A benchmark for AI-generated image detection specifically on text-rich forgeries like screenshots, documents, and news pages. Spans 28 languages, 4 topic categories, and 2 scene modalities with controlled synthetic generation pipeline.",
+    "repo_links": [],
+    "paper_title": "TextFake: Benchmarking AI-Generated Image Detection on Text-Rich Images",
+    "arxiv_id": "2606.01050",
+    "arxiv_url": "http://arxiv.org/abs/2606.01050v1",
+    "published": "2026-05-31",
+    "authors": [
+      "Yuning Zhang",
+      "Changtao Miao",
+      "Mingyu Liao",
+      "Tingyu Liu",
+      "Xinghao Wang"
+    ]
+  },
+  {
     "benchmark_name": "SRBench",
     "category": "spatial_3d",
     "num_samples": null,
@@ -66011,6 +66574,33 @@
     ]
   },
   {
+    "benchmark_name": "3DCodeBench",
+    "category": "spatial_3d",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text",
+      "3D"
+    ],
+    "task_types": [
+      "procedural 3D modeling",
+      "code generation"
+    ],
+    "description": "A benchmark for evaluating VLM agents for procedural 3D generation in modeling software. Evaluates how effectively models can translate text and image references into procedural code, with accompanying 3DCodeArena platform for human preference evaluation.",
+    "repo_links": [],
+    "paper_title": "3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code",
+    "arxiv_id": "2606.01057",
+    "arxiv_url": "http://arxiv.org/abs/2606.01057v1",
+    "published": "2026-05-31",
+    "authors": [
+      "Yipeng Gao",
+      "Lei Shu",
+      "Genzhi Ye",
+      "Xi Xiong",
+      "Ameesh Makadia"
+    ]
+  },
+  {
     "benchmark_name": "Temporally-Grounded Language Generation (TGLG)",
     "category": "streaming_video",
     "num_samples": null,
@@ -66559,6 +67149,32 @@
       "Rosario Forte",
       "Giuseppe Lando",
       "Antonino Furnari"
+    ]
+  },
+  {
+    "benchmark_name": "PaSBench-Video",
+    "category": "streaming_video",
+    "num_samples": 740,
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "safety warning",
+      "risk detection",
+      "temporal reasoning"
+    ],
+    "description": "A streaming video benchmark for proactive safety warning with 481 risk and 259 no-risk videos across driving, healthcare, daily life, and industrial domains. Tests temporal calibration and content-correct warning generation during the intervention window before accidents.",
+    "repo_links": [],
+    "paper_title": "PaSBench-Video: A Streaming Video Benchmark for Proactive Safety Warning",
+    "arxiv_id": "2606.02443",
+    "arxiv_url": "http://arxiv.org/abs/2606.02443v1",
+    "published": "2026-06-01",
+    "authors": [
+      "Yusong Zhao",
+      "Yuejin Xie",
+      "Youliang Yuan",
+      "Junjie Hu",
+      "Jitian Guo"
     ]
   },
   {
@@ -68389,6 +69005,33 @@
       "Guirong Wang",
       "Xingyao Zhang",
       "Pei Liu"
+    ]
+  },
+  {
+    "benchmark_name": "MTRefSeg-21K",
+    "category": "temporal_reasoning",
+    "num_samples": 21000,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "referring segmentation",
+      "temporal reasoning",
+      "change detection"
+    ],
+    "description": "The first benchmark for Multi-temporal Referring Segmentation (MTRS), containing high-quality multi-temporal image-text-mask triplets across diverse scenes. Extends conventional referring segmentation to require temporal correspondence reasoning and language grounding.",
+    "repo_links": [],
+    "paper_title": "An Open-Source Benchmark and Baseline for Multi-temporal Referring Segmentation",
+    "arxiv_id": "2606.00987",
+    "arxiv_url": "http://arxiv.org/abs/2606.00987v1",
+    "published": "2026-05-31",
+    "authors": [
+      "Bingyu Li",
+      "Da Zhang",
+      "Tao Huo",
+      "Zhiyuan Zhao",
+      "Junyu Gao"
     ]
   },
   {
@@ -75764,6 +76407,33 @@
       "Yi Zheng",
       "Rui Song",
       "Xinyu Hu"
+    ]
+  },
+  {
+    "benchmark_name": "pause-and-think-B",
+    "category": "video_understanding",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "contextual understanding",
+      "goal planning",
+      "video reasoning"
+    ],
+    "description": "A reasoning-centric benchmark targeting contextual understanding and goal planning tasks in videos. Promotes structured reasoning prior to answer generation for scene-grounded assistance and actionable responses.",
+    "repo_links": [],
+    "paper_title": "Pause and Think: A Dataset and Benchmark for Video-Grounded Assistive Action Suggestion",
+    "arxiv_id": "2606.00616",
+    "arxiv_url": "http://arxiv.org/abs/2606.00616v1",
+    "published": "2026-05-30",
+    "authors": [
+      "Shivam Singh",
+      "Saptarshi Majumdar",
+      "Pratik Prabhanjan",
+      "Zicheng Liu",
+      "Emad Barsoum"
     ]
   },
   {
@@ -84381,6 +85051,57 @@
       "Ruochen Gao",
       "Peiyao Xiao",
       "Chengliang Xu"
+    ]
+  },
+  {
+    "benchmark_name": "InsightVQA",
+    "category": "visual_reasoning",
+    "num_samples": 725000,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "emotion recognition",
+      "cognitive reasoning",
+      "visual question answering"
+    ],
+    "description": "A large-scale dataset for hierarchical visual question answering on emotion understanding and cognitive reasoning. Contains 725K QA pairs across three hierarchical levels: perception QA, grounded understanding QA, and cognition QA with InsightVQA-Bench containing 30K evaluation samples.",
+    "repo_links": [],
+    "paper_title": "InsightVQA: High-Dimensional Emotion-Cognitive Visual Question Answering Benchmark",
+    "arxiv_id": "2606.02171",
+    "arxiv_url": "http://arxiv.org/abs/2606.02171v1",
+    "published": "2026-06-01",
+    "authors": [
+      "Shiyu Wang",
+      "Ziyu Liu",
+      "Chaoyi Yu",
+      "Yujie Yin",
+      "Zhongqian Mao"
+    ]
+  },
+  {
+    "benchmark_name": "DeepLatent-180K",
+    "category": "visual_reasoning",
+    "num_samples": 180000,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "latent visual reasoning"
+    ],
+    "description": "A large-scale dataset tailored for latent visual reasoning, designed to support the training and evaluation of models that think with images via parallel latent visual reasoning. It enables testing of context-conditioned latent state generation.",
+    "repo_links": [],
+    "paper_title": "DeepLatent: Think with Images via Parallel Latent Visual Reasoning",
+    "arxiv_id": "2606.00562",
+    "arxiv_url": "http://arxiv.org/abs/2606.00562v1",
+    "published": "2026-05-30",
+    "authors": [
+      "Dongchen Lu",
+      "Zhimo Li",
+      "Mao Shu",
+      "Huo Cao"
     ]
   }
 ]
