@@ -3510,6 +3510,33 @@
     ]
   },
   {
+    "benchmark_name": "CVLAT",
+    "category": "chart_figure",
+    "num_samples": null,
+    "modalities": [
+      "image"
+    ],
+    "task_types": [
+      "visualization literacy",
+      "chart reading"
+    ],
+    "description": "Counterfactual Visualization Literacy Assessment Test that isolates visual correctness from factual correctness in LVLMs' chart interpretation. Uses capability-normalized arbitration metrics to classify models by visual-factual reliance.",
+    "repo_links": [
+      "https://github.com/JaeyoungKim-HCIL/CVLAT"
+    ],
+    "paper_title": "Disentangling Visual and Factual Correctness in LVLMs' Visualization Literacy",
+    "arxiv_id": "2606.03142",
+    "arxiv_url": "http://arxiv.org/abs/2606.03142v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Soohyun Lee",
+      "Jaeyoung Kim",
+      "Seokhyeon Park",
+      "Sihyeon Lee",
+      "Jiwon Song"
+    ]
+  },
+  {
     "benchmark_name": "Document Haystack",
     "category": "document_ocr",
     "num_samples": 8250,
@@ -6956,6 +6983,31 @@
       "Jiapeng Liu",
       "Tong Lin",
       "Bing Li"
+    ]
+  },
+  {
+    "benchmark_name": "Enginuity",
+    "category": "document_ocr",
+    "num_samples": null,
+    "modalities": [
+      "image"
+    ],
+    "task_types": [
+      "parts-table extraction",
+      "visual diagram QA"
+    ],
+    "description": "The first open dataset and benchmark for evaluating VLMs on complex engineering diagrams from U.S. military service manuals. Includes structured parts-table extraction and free-form visual diagram question answering tasks.",
+    "repo_links": [],
+    "paper_title": "Enginuity: A Dataset and Benchmark for Vision-Language Understanding of Engineering Diagrams",
+    "arxiv_id": "2606.03410",
+    "arxiv_url": "http://arxiv.org/abs/2606.03410v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Abhishek Kumar",
+      "Isha Motiyani",
+      "Tilak Kasturi",
+      "Ethan Seefried",
+      "Prahitha Movva"
     ]
   },
   {
@@ -13195,6 +13247,109 @@
       "Alejandro Perez-Yus",
       "Giovanni Maria Farinella",
       "Antonino Furnari"
+    ]
+  },
+  {
+    "benchmark_name": "GN-Bench",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "3D",
+      "video"
+    ],
+    "task_types": [
+      "instruction following",
+      "human following",
+      "goal navigation"
+    ],
+    "description": "The first BEV-based benchmark incorporating dynamic 3DGS avatars for human-robot interaction evaluation. Built on a 3D Gaussian Splatting engine supporting interactive roaming and collision-aware navigation.",
+    "repo_links": [],
+    "paper_title": "GN0: Toward a Unified Paradigm for Generation, Evaluation, and Policy Learning in Visual-Language Navigation",
+    "arxiv_id": "2606.03682",
+    "arxiv_url": "http://arxiv.org/abs/2606.03682v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Xinhai Li",
+      "Xiaotao Zhang",
+      "Yuehao Huang",
+      "Jiankun Dong",
+      "Tianhang Wang"
+    ]
+  },
+  {
+    "benchmark_name": "RobotValues",
+    "category": "egocentric_embodied",
+    "num_samples": "10K value-conflict scenarios",
+    "modalities": [
+      "image"
+    ],
+    "task_types": [
+      "value-based decision making",
+      "robot planning"
+    ],
+    "description": "A benchmark to evaluate household robot planners in value-conflicting situations. Each instance consists of a realistic household image with multiple plausible robot actions that prioritize different human values.",
+    "repo_links": [],
+    "paper_title": "RobotValues: Evaluating Household Robots When Human Values Conflict",
+    "arxiv_id": "2606.03312",
+    "arxiv_url": "http://arxiv.org/abs/2606.03312v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Jongwook Han",
+      "Hyeongjin Kim",
+      "Yohan Jo"
+    ]
+  },
+  {
+    "benchmark_name": "SCOPE",
+    "category": "egocentric_embodied",
+    "num_samples": "536 tasks",
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "camera control",
+      "spatial reasoning",
+      "optical character recognition"
+    ],
+    "description": "A modular agent benchmark for natural-language, open-vocabulary pan-tilt-zoom camera control spanning QA, commands, counting, spatial reasoning, descriptions, and OCR in a Blender-based simulation environment.",
+    "repo_links": [
+      "https://github.com/HindsboNikolaj/SCOPE"
+    ],
+    "paper_title": "SCOPE: Real-Time Natural Language Camera Agent at the Edge",
+    "arxiv_id": "2606.02951",
+    "arxiv_url": "http://arxiv.org/abs/2606.02951v1",
+    "published": "2026-06-01",
+    "authors": [
+      "Nikolaj Hindsbo",
+      "Sina Ehsani",
+      "Pragyana Mishra"
+    ]
+  },
+  {
+    "benchmark_name": "GeoDrive-Bench",
+    "category": "egocentric_embodied",
+    "num_samples": 5053,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "perception",
+      "prediction",
+      "planning",
+      "region reasoning"
+    ],
+    "description": "A novel benchmark for evaluating vision-language models' geo-culturally grounded driving reasoning across six countries. Features 5,053 human-validated multiple-choice QA pairs covering perception, prediction, planning, and region reasoning tasks in diverse driving cultures.",
+    "repo_links": [],
+    "paper_title": "GeoDrive-Bench: Benchmarking Region-Specific Multimodal Reasoning in Autonomous Driving",
+    "arxiv_id": "2606.02774",
+    "arxiv_url": "http://arxiv.org/abs/2606.02774v1",
+    "published": "2026-06-01",
+    "authors": [
+      "Yingzi Ma",
+      "Chaowei Xiao",
+      "Ming Jiang"
     ]
   },
   {
@@ -29195,6 +29350,35 @@
     ]
   },
   {
+    "benchmark_name": "WebRISE",
+    "category": "gui_web_agent",
+    "num_samples": "442 tasks with 5,495 transitions and 5,271 requirement checks",
+    "modalities": [
+      "text",
+      "markdown",
+      "sketch",
+      "image",
+      "video"
+    ],
+    "task_types": [
+      "web development",
+      "requirement evaluation"
+    ],
+    "description": "A benchmark that compiles task requirements into Interaction Contract Graphs for evaluating MLLM-generated web artifacts. Spans five input modalities and uses implementation-agnostic browser execution.",
+    "repo_links": [],
+    "paper_title": "WebRISE: Requirement-Induced State Evaluation for MLLM-Generated Web Artifacts",
+    "arxiv_id": "2606.03220",
+    "arxiv_url": "http://arxiv.org/abs/2606.03220v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Yuxin Meng",
+      "Yuhan Suo",
+      "Junjie Wang",
+      "Yuhan Sun",
+      "Yiyao Yu"
+    ]
+  },
+  {
     "benchmark_name": "DeCapBench",
     "category": "hallucination",
     "num_samples": null,
@@ -32875,6 +33059,31 @@
       "Simin Huang",
       "Zhenyu Tang",
       "Hanyang Wang"
+    ]
+  },
+  {
+    "benchmark_name": "SagaQA",
+    "category": "long_video",
+    "num_samples": null,
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "multi-hop reasoning",
+      "narrative understanding"
+    ],
+    "description": "A long-form video benchmark for multi-hop reasoning over full-length TV series. Requires high-level comprehension of extended multimodal narratives with long-range reasoning hops connecting information across different episodes.",
+    "repo_links": [],
+    "paper_title": "SagaQA: A Multi-hop Reasoning Benchmark for Long-form Narrative Understanding in TV Series",
+    "arxiv_id": "2606.03301",
+    "arxiv_url": "http://arxiv.org/abs/2606.03301v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Galann Pennec",
+      "Zhengyuan Liu",
+      "Nicholas Asher",
+      "Philippe Muller",
+      "Nancy F. Chen"
     ]
   },
   {
@@ -42163,6 +42372,55 @@
       "Bin Chen",
       "Lingyan Ruan",
       "Yiran Shen"
+    ]
+  },
+  {
+    "benchmark_name": "Automated Report-Derived Oncology VQA Benchmark",
+    "category": "medical",
+    "num_samples": null,
+    "modalities": [
+      "3D medical imaging"
+    ],
+    "task_types": [
+      "visual question answering",
+      "medical imaging"
+    ],
+    "description": "An automated agent-driven pipeline generating multiple-choice VQA datasets from paired private radiology reports and 3D oncology imaging. Produces RADS-style questions and radiology report-derived questions.",
+    "repo_links": [],
+    "paper_title": "Automated Report-Derived Oncology VQA Benchmark for Evaluating Vision-Language Models on 3D Medical Imaging",
+    "arxiv_id": "2606.02809",
+    "arxiv_url": "http://arxiv.org/abs/2606.02809v1",
+    "published": "2026-06-01",
+    "authors": [
+      "Bo Liu",
+      "Hanxue Gu",
+      "Xiangru Li",
+      "Zheren Zhu",
+      "Jacob Ellison"
+    ]
+  },
+  {
+    "benchmark_name": "IndoRad-VQA",
+    "category": "medical",
+    "num_samples": null,
+    "modalities": [
+      "image"
+    ],
+    "task_types": [
+      "medical visual question answering"
+    ],
+    "description": "An Indonesian adaptation of VQA-RAD for assessing medical VLMs' radiology reasoning ability in Bahasa Indonesia. Features translated radiology question-answer pairs with quality control to preserve clinical meaning.",
+    "repo_links": [
+      "https://huggingface.co/datasets/Lab-IS/IndoRad-VQA"
+    ],
+    "paper_title": "Does Language Shift Break Medical Vision-Language Models? Indonesian Radiology Visual Question Answering Case Study",
+    "arxiv_id": "2606.03693",
+    "arxiv_url": "http://arxiv.org/abs/2606.03693v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Pieter Christy Yan Yudhistira",
+      "Dzaki Rafif Malik",
+      "Novanto Yudistira"
     ]
   },
   {
@@ -55387,6 +55645,57 @@
     ]
   },
   {
+    "benchmark_name": "SLU-2K",
+    "category": "other",
+    "num_samples": "2,350 video question-answer pairs",
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "sign language understanding",
+      "video question answering"
+    ],
+    "description": "A dataset of closed-ended video question-answer pairs for evaluating semantic understanding in Sign Language Translation systems. Features questions across 7 categories including actions, locations, numbers, objects, people, time, and weather conditions.",
+    "repo_links": [
+      "https://github.com/ZenoTsT/SLU-2K"
+    ],
+    "paper_title": "SLU-2K: A Question-Based Benchmark for Semantic Evaluation of Sign Language Translation",
+    "arxiv_id": "2606.03788",
+    "arxiv_url": "http://arxiv.org/abs/2606.03788v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Zeno Testa",
+      "Antonino Furnari",
+      "Lorenzo Baraldi",
+      "Natalia Díaz-Rodríguez"
+    ]
+  },
+  {
+    "benchmark_name": "Semi-supervised Multi-modal Crowd Counting Benchmark",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "multi-modal"
+    ],
+    "task_types": [
+      "crowd counting"
+    ],
+    "description": "The first benchmark for semi-supervised multi-modal crowd counting. Establishes a standardized protocol specifying labeled-unlabeled data partition across different labeled ratios with diverse representative baselines.",
+    "repo_links": [
+      "https://github.com/HenryCilence/Semi-supervised-Multimodal-Crowd-Counting"
+    ],
+    "paper_title": "A Benchmark for Semi-supervised Multi-modal Crowd Counting",
+    "arxiv_id": "2606.03646",
+    "arxiv_url": "http://arxiv.org/abs/2606.03646v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Haoliang Meng",
+      "Xiaopeng Hong",
+      "Yabin Wang",
+      "Wangmeng Zuo"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -62067,6 +62376,31 @@
     ]
   },
   {
+    "benchmark_name": "SYNCRED-Bench",
+    "category": "safety_bias",
+    "num_samples": "600 AI-generated misinformation images",
+    "modalities": [
+      "image"
+    ],
+    "task_types": [
+      "misinformation detection",
+      "synthetic credibility assessment"
+    ],
+    "description": "A benchmark of AI-generated misinformation images balanced across six credible-form categories and seven circulation styles, designed to evaluate synthetic credibility detection. Includes FP450, a real-image negative set for measuring false positives.",
+    "repo_links": [],
+    "paper_title": "SynCred-Bench: Benchmarking Synthetic Credibility in AI-Generated Visual Misinformation",
+    "arxiv_id": "2606.03348",
+    "arxiv_url": "http://arxiv.org/abs/2606.03348v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Junxiao Yang",
+      "Minghao Zhang",
+      "Xiaoce Wang",
+      "Haoran Liu",
+      "Shiyao Cui"
+    ]
+  },
+  {
     "benchmark_name": "SRBench",
     "category": "spatial_3d",
     "num_samples": null,
@@ -66601,6 +66935,57 @@
     ]
   },
   {
+    "benchmark_name": "Imaginative Perception Tasks",
+    "category": "spatial_3d",
+    "num_samples": "approximately 20K examples",
+    "modalities": [
+      "image"
+    ],
+    "task_types": [
+      "perspective taking",
+      "path tracing",
+      "multiview counting"
+    ],
+    "description": "Three spatial reasoning tasks (Perspective Taking, Path Tracing, and Multiview Counting) requiring imaginative perception - inferring what would be seen from unseen viewpoints or integrating partial observations.",
+    "repo_links": [],
+    "paper_title": "Imaginative Perception Tokens Enhance Spatial Reasoning in Multimodal Language Models",
+    "arxiv_id": "2606.03988",
+    "arxiv_url": "http://arxiv.org/abs/2606.03988v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Mahtab Bigverdi",
+      "Lindsey Li",
+      "Weikai Huang",
+      "Yiming Liu",
+      "Jaemin Cho"
+    ]
+  },
+  {
+    "benchmark_name": "ViewDiag",
+    "category": "spatial_3d",
+    "num_samples": 176,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "spatial reasoning",
+      "metric distance queries"
+    ],
+    "description": "A controlled multi-view evaluation protocol for testing spatial reasoning in vision-language models. Built from Hypersim, ScanNet, and KITTI360 with 176 object-pair tracks across 80 scenes, evaluating metric accuracy, distributional concentration, and internal representation collapse.",
+    "repo_links": [
+      "https://github.com/SDivakarBhat/Consistent_Yet_Wrong.git"
+    ],
+    "paper_title": "Consistent Yet Wrong: Evidence Insensitivity in Spatial Vision-Language Models",
+    "arxiv_id": "2606.02742",
+    "arxiv_url": "http://arxiv.org/abs/2606.02742v1",
+    "published": "2026-06-01",
+    "authors": [
+      "S Divakar Bhat",
+      "Toshihiko Yamasaki"
+    ]
+  },
+  {
     "benchmark_name": "Temporally-Grounded Language Generation (TGLG)",
     "category": "streaming_video",
     "num_samples": null,
@@ -67175,6 +67560,32 @@
       "Youliang Yuan",
       "Junjie Hu",
       "Jitian Guo"
+    ]
+  },
+  {
+    "benchmark_name": "OVO-S-Bench",
+    "category": "streaming_video",
+    "num_samples": "1,680 questions over 348 videos",
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "streaming spatial intelligence",
+      "egocentric perception",
+      "spatial reasoning"
+    ],
+    "description": "A fully human-annotated benchmark for streaming spatial intelligence in multimodal LLMs. Features four levels of spatial reasoning from instantaneous perception to allocentric mapping, with models only seeing video prefixes up to query timestamps.",
+    "repo_links": [],
+    "paper_title": "OVO-S-Bench: A Hierarchical Benchmark for Streaming Spatial Intelligence in Multimodal LLMs",
+    "arxiv_id": "2606.03890",
+    "arxiv_url": "http://arxiv.org/abs/2606.03890v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Yifei Li",
+      "Pengyiang Liu",
+      "Yuhang Zang",
+      "Zhongyue Shi",
+      "Qi Fu"
     ]
   },
   {
@@ -69536,6 +69947,32 @@
       "Sihaeng Lee",
       "Soonyoung Lee",
       "Gunhee Lee"
+    ]
+  },
+  {
+    "benchmark_name": "OmniHalluc-L",
+    "category": "video_hallucination",
+    "num_samples": "3,600 single-claim QA items from 638 videos",
+    "modalities": [
+      "audio",
+      "video"
+    ],
+    "task_types": [
+      "hallucination detection",
+      "event binding"
+    ],
+    "description": "A counterfactual event-binding protocol benchmark for long-video Omni hallucination. Constructs paired supported/counterfactual claims from the same audio-visual event evidence, covering 256.87 hours of content.",
+    "repo_links": [],
+    "paper_title": "OmniHalluc-L: Counterfactual Benchmarking and Modality-Perturbation Reliability Calibration for Long-Form Omni Hallucination",
+    "arxiv_id": "2606.03614",
+    "arxiv_url": "http://arxiv.org/abs/2606.03614v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Zixuan Dong",
+      "Jiafu Tang",
+      "Zhide Lei",
+      "Zhe Cao",
+      "Zijie Zhang"
     ]
   },
   {
@@ -76434,6 +76871,53 @@
       "Pratik Prabhanjan",
       "Zicheng Liu",
       "Emad Barsoum"
+    ]
+  },
+  {
+    "benchmark_name": "VSTAT",
+    "category": "video_understanding",
+    "num_samples": "834 clips with 1,500 questions",
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "visual state tracking"
+    ],
+    "description": "A video-based benchmark designed to diagnose visual state tracking in MLLMs. Questions require continuous perception and integration of events across the entire video stream, rather than being answerable from single frames or short segments.",
+    "repo_links": [],
+    "paper_title": "Benchmarking Visual State Tracking in Multimodal Video Understanding",
+    "arxiv_id": "2606.03920",
+    "arxiv_url": "http://arxiv.org/abs/2606.03920v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Sihyun Yu",
+      "Nanye Ma",
+      "Pinzhi Huang",
+      "Hyunseok Lee",
+      "Shusheng Yang"
+    ]
+  },
+  {
+    "benchmark_name": "VidMsg",
+    "category": "video_understanding",
+    "num_samples": "400 YouTube-derived clips",
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "message-clip retrieval",
+      "multiple-choice QA"
+    ],
+    "description": "A benchmark for evaluating implicit message understanding in short, internet-native video clips. Contains clips across 9 practical topic areas and 52 fine-grained target messages, requiring pragmatic inference and contextual understanding.",
+    "repo_links": [],
+    "paper_title": "VidMsg: A Benchmark for Implicit Message Inference in Short Videos",
+    "arxiv_id": "2606.03635",
+    "arxiv_url": "http://arxiv.org/abs/2606.03635v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Issar Tzachor",
+      "Michael Green",
+      "Rami Ben-Ari"
     ]
   },
   {
@@ -85102,6 +85586,54 @@
       "Zhimo Li",
       "Mao Shu",
       "Huo Cao"
+    ]
+  },
+  {
+    "benchmark_name": "VistaHop",
+    "category": "visual_reasoning",
+    "num_samples": "300 high-resolution images with 350 multi-hop QA tasks",
+    "modalities": [
+      "image"
+    ],
+    "task_types": [
+      "visual search",
+      "multi-hop visual reasoning"
+    ],
+    "description": "A benchmark for evaluating vision-centric search and multi-hop visual reasoning in Visual DeepSearch. Requires models to follow evidence chains from visual anchors and fuse information across multiple image-grounded reasoning paths.",
+    "repo_links": [],
+    "paper_title": "VistaHop: Benchmarking Multi-hop Visual Reasoning for Visual DeepSearch",
+    "arxiv_id": "2606.03273",
+    "arxiv_url": "http://arxiv.org/abs/2606.03273v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Hang He",
+      "Chuhuai Yue",
+      "Chengqi Dong",
+      "Chengcheng Wan",
+      "Ting Su"
+    ]
+  },
+  {
+    "benchmark_name": "TurtleAI",
+    "category": "visual_reasoning",
+    "num_samples": "823 tasks",
+    "modalities": [
+      "image"
+    ],
+    "task_types": [
+      "visual programming",
+      "geometric pattern recognition"
+    ],
+    "description": "A benchmark containing tasks curated from real-world visual programming in Turtle Graphics. Requires models to perceive geometric patterns, reason about spatial relationships, and synthesize Python code reproducing patterns.",
+    "repo_links": [],
+    "paper_title": "TurtleAI: Benchmarking Multimodal Models for Visual Programming in Turtle Graphics",
+    "arxiv_id": "2606.03626",
+    "arxiv_url": "http://arxiv.org/abs/2606.03626v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Chao Wen",
+      "Jacqueline Staub",
+      "Adish Singla"
     ]
   }
 ]
