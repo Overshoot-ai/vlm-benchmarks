@@ -13353,6 +13353,33 @@
     ]
   },
   {
+    "benchmark_name": "NoRA",
+    "category": "egocentric_embodied",
+    "num_samples": 1420,
+    "modalities": [
+      "first-person video",
+      "text"
+    ],
+    "task_types": [
+      "action generation",
+      "normative reasoning",
+      "visual grounding"
+    ],
+    "description": "A visual first-person video benchmark requiring models to generate candidate next actions and justify each through explicit fact-reason-action support graphs. It comprises 1,420 annotated video clips evaluating normative competence through action alignment, factual grounding, and support binding.",
+    "repo_links": [],
+    "paper_title": "NoRA: Evaluating Grounded Reasonableness in Visual First-person Normative Action Reasoning",
+    "arxiv_id": "2606.04806",
+    "arxiv_url": "http://arxiv.org/abs/2606.04806v1",
+    "published": "2026-06-03",
+    "authors": [
+      "Sichao Li",
+      "Sai Ma",
+      "Daniel Kilov",
+      "Secil Yanik Guyot",
+      "Zhuang Li"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "general_multimodal",
     "num_samples": null,
@@ -22437,6 +22464,32 @@
     ]
   },
   {
+    "benchmark_name": "Agent Planning Benchmark (APB)",
+    "category": "general_multimodal",
+    "num_samples": 4209,
+    "modalities": [
+      "multimodal"
+    ],
+    "task_types": [
+      "holistic planning",
+      "feedback-conditioned step-wise planning",
+      "robustness testing"
+    ],
+    "description": "A planning-specific diagnostic benchmark with 4,209 multimodal cases across 22 domains covering holistic planning, feedback-conditioned step-wise planning, and robustness testing. It focuses on evaluating planning capabilities separate from execution in LLM agents across various challenging scenarios.",
+    "repo_links": [],
+    "paper_title": "Agent Planning Benchmark: A Diagnostic Framework for Planning Capabilities in LLM Agents",
+    "arxiv_id": "2606.04874",
+    "arxiv_url": "http://arxiv.org/abs/2606.04874v1",
+    "published": "2026-06-03",
+    "authors": [
+      "Haoyu Sun",
+      "Wenxuan Wang",
+      "Mingyang Song",
+      "Jujie He",
+      "Weinan Zhang"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -24649,6 +24702,34 @@
     ]
   },
   {
+    "benchmark_name": "Plan2Map",
+    "category": "geospatial",
+    "num_samples": 208,
+    "modalities": [
+      "documents",
+      "maps",
+      "text"
+    ],
+    "task_types": [
+      "geospatial boundary reconstruction"
+    ],
+    "description": "A multimodal benchmark for document-grounded geospatial boundary reconstruction from UK planning records. Systems must reconstruct valid geospatial boundaries from planning documents containing notice text, schedules, map plates, labels, and boundary annotations with reference GeoJSON held out for scoring.",
+    "repo_links": [
+      "https://odeb1.github.io/Plan2Map_Project_Page/"
+    ],
+    "paper_title": "Plan2Map: A Multimodal Benchmark for Document-Grounded Geospatial Boundary Reconstruction from Planning Records",
+    "arxiv_id": "2606.02747",
+    "arxiv_url": "http://arxiv.org/abs/2606.02747v1",
+    "published": "2026-06-01",
+    "authors": [
+      "Fabian Degen",
+      "Oishi Deb",
+      "Jindong Gu",
+      "Junchi Yu",
+      "Samuele Marro"
+    ]
+  },
+  {
     "benchmark_name": "Point-It-Out (PIO)",
     "category": "grounding_localization",
     "num_samples": null,
@@ -26373,6 +26454,34 @@
       "Haoran Wang",
       "David T. Hoffmann",
       "Christian Theobalt"
+    ]
+  },
+  {
+    "benchmark_name": "FindIt",
+    "category": "grounding_localization",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "video"
+    ],
+    "task_types": [
+      "object detection",
+      "referring expression detection",
+      "instance-level detection",
+      "video-based detection"
+    ],
+    "description": "The first comprehensive benchmark designed to assess promptable localization abilities of generalist MLLMs across four core categories: object detection, referring expression detection, instance-level detection, and video-based detection. It provides standardized evaluation with parsable bounding box outputs and transparent protocols.",
+    "repo_links": [],
+    "paper_title": "FindIt: A Format-Informed Visual Detection Benchmark for Generalist Multimodal LLMs",
+    "arxiv_id": "2606.04282",
+    "arxiv_url": "http://arxiv.org/abs/2606.04282v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Eshika Khandelwal",
+      "Jingjing Pan",
+      "Mingfang Zhang",
+      "Quan Kong",
+      "Lorenzo Garattoni"
     ]
   },
   {
@@ -33087,6 +33196,35 @@
     ]
   },
   {
+    "benchmark_name": "M³Eval",
+    "category": "long_video",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "memory evaluation",
+      "long-form video understanding",
+      "cognitive assessment"
+    ],
+    "description": "The first comprehensive evaluation framework and benchmark for probing different memory dimensions in multi-modal models through cognitively-grounded video tasks. It features carefully constructed tasks that isolate key aspects of memory including retention, information preservation fidelity, and robustness under interference.",
+    "repo_links": [
+      "https://pku-value-lab.github.io/m3eval-homepage"
+    ],
+    "paper_title": "M$^3$Eval: Multi-Modal Memory Evaluation through Cognitively-Grounded Video Tasks",
+    "arxiv_id": "2606.05008",
+    "arxiv_url": "http://arxiv.org/abs/2606.05008v1",
+    "published": "2026-06-03",
+    "authors": [
+      "Jie Huang",
+      "Ruixun Liu",
+      "Sirui Sun",
+      "Xinyi Yang",
+      "Yin Li"
+    ]
+  },
+  {
     "benchmark_name": "DynaMath",
     "category": "math_science",
     "num_samples": 501,
@@ -36111,6 +36249,34 @@
       "Kanishk Jain",
       "Sebastian Joseph",
       "Stella S. R. Offner"
+    ]
+  },
+  {
+    "benchmark_name": "VAMPS",
+    "category": "math_science",
+    "num_samples": 1168,
+    "modalities": [
+      "text",
+      "graphs",
+      "mathematical notation"
+    ],
+    "task_types": [
+      "mathematical problem solving",
+      "graph construction",
+      "visual reasoning"
+    ],
+    "description": "A benchmark for graph-assisted mathematics containing 1,168 multimodal, bilingual multiple-choice problems from Iranian University Entrance Exams. It tests whether models can benefit from constructing useful graphs and grounding answers in visualizations, going beyond reasoning over fixed visual inputs.",
+    "repo_links": [],
+    "paper_title": "VAMPS: Visual-Assisted Mathematical Problem Solving Benchmark",
+    "arxiv_id": "2606.04244",
+    "arxiv_url": "http://arxiv.org/abs/2606.04244v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Amirhossein Dabiriaghdam",
+      "Shayan Vassef",
+      "Mohammadreza Bakhtiari",
+      "Yasamin Medghalchi",
+      "Ilker Hacihaliloglu"
     ]
   },
   {
@@ -55696,6 +55862,31 @@
     ]
   },
   {
+    "benchmark_name": "Impostor",
+    "category": "other",
+    "num_samples": 100000,
+    "modalities": [
+      "images"
+    ],
+    "task_types": [
+      "image manipulation detection",
+      "localization"
+    ],
+    "description": "A high-quality AI-edited image manipulation localization dataset containing 100K manipulated images created by CraftAgent framework. It covers seven recent AIGC models across three manipulation types with multiple manipulated regions, providing a comprehensive benchmark for AIGC-based image manipulation detection and localization.",
+    "repo_links": [],
+    "paper_title": "Impostor: An Agent-Curated Benchmark for Realistic AIGC Manipulation Localization",
+    "arxiv_id": "2606.04545",
+    "arxiv_url": "http://arxiv.org/abs/2606.04545v1",
+    "published": "2026-06-03",
+    "authors": [
+      "Zhenliang Li",
+      "Yutao Hu",
+      "Qixiong Wang",
+      "Wenpeng Du",
+      "Hongxiang Jiang"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -66986,6 +67177,35 @@
     ]
   },
   {
+    "benchmark_name": "UniCAD",
+    "category": "spatial_3d",
+    "num_samples": null,
+    "modalities": [
+      "text",
+      "images",
+      "sketches",
+      "point clouds"
+    ],
+    "task_types": [
+      "point-to-CAD reconstruction",
+      "text/image-to-CAD generation",
+      "CAD question answering"
+    ],
+    "description": "A unified benchmark for multi-modal CAD learning covering point-to-CAD reconstruction, text/image-to-CAD generation, and CAD question answering across diverse input modalities. It enables comprehensive evaluation of CAD-related tasks in a single framework with multiple input types.",
+    "repo_links": [],
+    "paper_title": "UniCAD: A Unified Benchmark and Universal Model for Multi-Modal Multi-Task CAD",
+    "arxiv_id": "2606.05058",
+    "arxiv_url": "http://arxiv.org/abs/2606.05058v1",
+    "published": "2026-06-03",
+    "authors": [
+      "Jingyuan Chen",
+      "Sheng Jin",
+      "Haopeng Sun",
+      "Wentao Liu",
+      "Chen Qian"
+    ]
+  },
+  {
     "benchmark_name": "Temporally-Grounded Language Generation (TGLG)",
     "category": "streaming_video",
     "num_samples": null,
@@ -69973,6 +70193,33 @@
       "Zhide Lei",
       "Zhe Cao",
       "Zijie Zhang"
+    ]
+  },
+  {
+    "benchmark_name": "EVID-Bench",
+    "category": "video_hallucination",
+    "num_samples": 222,
+    "modalities": [
+      "video",
+      "web content"
+    ],
+    "task_types": [
+      "video misinformation detection",
+      "cross-video comparison",
+      "web search integration"
+    ],
+    "description": "A benchmark for search-grounded video misinformation detection comprising 222 videos spanning 9 manipulation types across AI generation, single-source editing, and multi-source editing. Systems must search the open web for related videos and identify false information through cross-video comparison.",
+    "repo_links": [],
+    "paper_title": "When Seeing Is Not Believing -- A Benchmark for Search-Grounded Video Misinformation Detection",
+    "arxiv_id": "2606.04098",
+    "arxiv_url": "http://arxiv.org/abs/2606.04098v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Tao Yu",
+      "Yujia Yang",
+      "Shenghua Chai",
+      "Zhang Jinshuai",
+      "Haopeng Jin"
     ]
   },
   {
@@ -76918,6 +77165,81 @@
       "Issar Tzachor",
       "Michael Green",
       "Rami Ben-Ari"
+    ]
+  },
+  {
+    "benchmark_name": "NextMotionQA",
+    "category": "video_understanding",
+    "num_samples": null,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "multiple-choice question answering",
+      "video captioning",
+      "fine-grained error correction"
+    ],
+    "description": "A comprehensive benchmark for evaluating human motion understanding with vision-language models, featuring three tasks (multiple-choice QA, video captioning, and fine-grained error correction) structured across semantic axes and complexity levels. It uses VLMs for semi-automated, expert-verified dataset creation and includes evaluation of VLMs as judges for text-to-motion tasks.",
+    "repo_links": [],
+    "paper_title": "NextMotionQA: Benchmarking and Judging Human Motion Understanding with Vision-Language Models",
+    "arxiv_id": "2606.04773",
+    "arxiv_url": "http://arxiv.org/abs/2606.04773v1",
+    "published": "2026-06-03",
+    "authors": [
+      "Yong Cao",
+      "Chuqiao Li",
+      "Xianghui Xie",
+      "Gerard Pons-Moll",
+      "Andreas Geiger"
+    ]
+  },
+  {
+    "benchmark_name": null,
+    "category": "video_understanding",
+    "num_samples": null,
+    "modalities": [
+      "video"
+    ],
+    "task_types": [
+      "multi-video summarization",
+      "positional bias evaluation"
+    ],
+    "description": "A benchmark constructed from ActivityNet and News videos for studying positional bias in multi-video summarization, covering Cooking, Domestic, Leisure, and News settings. It evaluates how video summary quality changes based on input position using Coverage, Directional Positional Bias, and Middle-Edge Gap metrics.",
+    "repo_links": [],
+    "paper_title": "A Systematic Evaluation of Positional Bias in Multi-Video Summarization with MLLMs",
+    "arxiv_id": "2606.04596",
+    "arxiv_url": "http://arxiv.org/abs/2606.04596v1",
+    "published": "2026-06-03",
+    "authors": [
+      "Huangchen Xu",
+      "Yuan Wu",
+      "Yi Chang"
+    ]
+  },
+  {
+    "benchmark_name": "VCIFBench",
+    "category": "video_understanding",
+    "num_samples": 306,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "complex instruction following",
+      "video understanding",
+      "constraint satisfaction"
+    ],
+    "description": "A benchmark for evaluating complex instruction following in video understanding with 306 satisfiable test instructions, a 540-pair DPO preference dataset, and a 30-item conflict diagnostic subset. It constructs constraint-rich instructions covering content, format, style, and structure requirements with hybrid verification pipeline.",
+    "repo_links": [],
+    "paper_title": "VCIFBench: Evaluating Complex Instruction Following for Video Understanding",
+    "arxiv_id": "2606.04588",
+    "arxiv_url": "http://arxiv.org/abs/2606.04588v1",
+    "published": "2026-06-03",
+    "authors": [
+      "Huangchen Xu",
+      "Yuan Wu",
+      "Yi Chang"
     ]
   },
   {
@@ -85634,6 +85956,32 @@
       "Chao Wen",
       "Jacqueline Staub",
       "Adish Singla"
+    ]
+  },
+  {
+    "benchmark_name": "GroupToM-Bench",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "multimodal"
+    ],
+    "task_types": [
+      "theory of mind reasoning",
+      "group behavior prediction",
+      "social structure analysis"
+    ],
+    "description": "The first multimodal benchmark for group-level Theory of Mind, built around a causal chain spanning micro-level BDI states, meso-level group tensions and structural constraints, and macro-level outcome prediction. It uses a seven-level cognitive audit framework to probe collective behavior emergence from social dynamics.",
+    "repo_links": [],
+    "paper_title": "GroupToM-Bench: Benchmarking Group Theory of Mind and Nonlinear Social Emergence in MLLMs",
+    "arxiv_id": "2606.04184",
+    "arxiv_url": "http://arxiv.org/abs/2606.04184v1",
+    "published": "2026-06-02",
+    "authors": [
+      "Weidong Tang",
+      "Jierui Li",
+      "Yueling Hou",
+      "Zihan Mei",
+      "Can Zhang"
     ]
   }
 ]
