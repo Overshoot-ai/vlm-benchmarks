@@ -22490,6 +22490,38 @@
     ]
   },
   {
+    "benchmark_name": "Almieyar-Oryx-BloomBench",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "remember",
+      "understand",
+      "apply",
+      "analyze",
+      "evaluate",
+      "create"
+    ],
+    "description": "The first cognitively human-grounded, bilingual (English-Arabic) multimodal benchmark for VLMs. Grounded in Bloom's Taxonomy, it systematically evaluates six levels of cognition through carefully designed image-question-answer tasks with cultural inclusivity and linguistic fidelity.",
+    "repo_links": [
+      "https://github.com/qcri/Almieyar-Oryx-BloomBench"
+    ],
+    "paper_title": "Almieyar-Oryx-BloomBench: A Bilingual Multimodal Benchmark for Cognitively Informed Evaluation of Vision-Language Models",
+    "arxiv_id": "2606.05531",
+    "arxiv_url": "http://arxiv.org/abs/2606.05531v1",
+    "published": "2026-06-04",
+    "authors": [
+      "Mohammad Mahdi Abootorabi",
+      "Omid Ghahroodi",
+      "Anas Madkoor",
+      "Marzia Nouri",
+      "Doratossadat Dastgheib"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -55884,6 +55916,37 @@
       "Qixiong Wang",
       "Wenpeng Du",
       "Hongxiang Jiang"
+    ]
+  },
+  {
+    "benchmark_name": "PlanBench-V",
+    "category": "other",
+    "num_samples": 1629,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "spatial planning map interpretation",
+      "perception",
+      "reasoning",
+      "association",
+      "implementation"
+    ],
+    "description": "The first comprehensive benchmark for evaluating Vision-Language Models in spatial planning map interpretation. It includes an expert-annotated dataset of 223 planning maps and 1629 question-answer pairs curated by professional planners, assessing four progressive capabilities: Perception, Reasoning, Association, and Implementation.",
+    "repo_links": [
+      "https://plangpt.github.io"
+    ],
+    "paper_title": "PlanBench-V: A Spatial Planning Map Benchmark for Vision-Language Models",
+    "arxiv_id": "2606.05744",
+    "arxiv_url": "http://arxiv.org/abs/2606.05744v1",
+    "published": "2026-06-04",
+    "authors": [
+      "Minxin Chen",
+      "He Zhu",
+      "Junyou Su",
+      "Wen Wang",
+      "Yijie Deng"
     ]
   },
   {
