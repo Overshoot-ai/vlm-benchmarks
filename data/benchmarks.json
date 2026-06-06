@@ -22522,6 +22522,33 @@
     ]
   },
   {
+    "benchmark_name": "RandomBench",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "visual",
+      "text"
+    ],
+    "task_types": [
+      "distributional neutrality evaluation",
+      "randomness assessment",
+      "logic-neutral decision making"
+    ],
+    "description": "A benchmark designed to evaluate whether MLLMs can maintain distributionally neutral behavior when selecting among equivalent options in logic-neutral scenarios. It introduces three metrics (RI, BCI, BII) to quantify entropy and distributional bias, revealing a phenomenon called 'Stochastic Collapse' where models fail to maintain uniform randomness.",
+    "repo_links": [],
+    "paper_title": "Evaluating Stochastic Collapse and Implicit Bias in Multimodal Large Language Models",
+    "arxiv_id": "2606.05874",
+    "arxiv_url": "http://arxiv.org/abs/2606.05874v1",
+    "published": "2026-06-04",
+    "authors": [
+      "Huiyuan Zheng",
+      "Houtao Zhang",
+      "Boyang Wang",
+      "Qingyi Si",
+      "Hongcheng Guo"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
