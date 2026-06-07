@@ -29547,6 +29547,32 @@
     ]
   },
   {
+    "benchmark_name": "DragOn",
+    "category": "gui_web_agent",
+    "num_samples": "286K training screenshots, 3.5M training tasks, 2000 evaluation examples",
+    "modalities": [
+      "visual",
+      "GUI"
+    ],
+    "task_types": [
+      "text highlighting",
+      "cell selection",
+      "element resizing",
+      "slider manipulation"
+    ],
+    "description": "A drag grounding benchmark for GUI interactions covering text highlighting, cell selection, element resizing and slider manipulation. Designed to evaluate vision-based models on complex drag-based interactions like drag-and-drop and swipe gestures.",
+    "repo_links": [],
+    "paper_title": "DragOn: A Benchmark and Dataset for Drag-Based GUI Interactions",
+    "arxiv_id": "2606.06322",
+    "arxiv_url": "http://arxiv.org/abs/2606.06322v1",
+    "published": "2026-06-04",
+    "authors": [
+      "Nathan Bout",
+      "Maxime Langevin",
+      "Ronan Riochet"
+    ]
+  },
+  {
     "benchmark_name": "DeCapBench",
     "category": "hallucination",
     "num_samples": null,
@@ -36336,6 +36362,31 @@
       "Mohammadreza Bakhtiari",
       "Yasamin Medghalchi",
       "Ilker Hacihaliloglu"
+    ]
+  },
+  {
+    "benchmark_name": "FEPBench",
+    "category": "math_science",
+    "num_samples": null,
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "task_types": [
+      "scientific illustration generation"
+    ],
+    "description": "A benchmark for evaluating Text-to-Image models on scientific illustration generation across multiple disciplines and layout types. Provides fine-grained atom set annotations and evaluates models on instruction faithfulness, reasoning enrichment, and semantic precision.",
+    "repo_links": [],
+    "paper_title": "Faithful, Enriched, and Precise: Benchmarking Natural-Science Illustration Generation by T2I models",
+    "arxiv_id": "2606.05949",
+    "arxiv_url": "http://arxiv.org/abs/2606.05949v1",
+    "published": "2026-06-04",
+    "authors": [
+      "Yifan Chang",
+      "Jiaxin Ai",
+      "Jianwen Sun",
+      "Yuandong Pu",
+      "Siqi Luo"
     ]
   },
   {
@@ -55977,6 +56028,36 @@
     ]
   },
   {
+    "benchmark_name": "DisasterBench",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "UAV imagery",
+      "multimodal"
+    ],
+    "task_types": [
+      "causal attribution",
+      "propagation prediction",
+      "damage analysis",
+      "decision-oriented reasoning"
+    ],
+    "description": "A multi-stage multimodal reasoning benchmark for UAV-based disaster response spanning 14 disaster-related scene types and 9 response-critical tasks. Tests causal attribution, propagation prediction, damage analysis, and decision-oriented reasoning across pre-, during-, and post-disaster stages.",
+    "repo_links": [
+      "https://github.com/TanmouTT/DisasterBench"
+    ],
+    "paper_title": "DisasterBench: A Multimodal Benchmark for UAV-Based Disaster Response in Complex Environments",
+    "arxiv_id": "2606.06217",
+    "arxiv_url": "http://arxiv.org/abs/2606.06217v1",
+    "published": "2026-06-04",
+    "authors": [
+      "Tan Zhang",
+      "Quanyou Li",
+      "Lu Zhang",
+      "Jun Liu",
+      "Xiaofeng Zhu"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -69753,6 +69834,34 @@
       "Tao Huo",
       "Zhiyuan Zhao",
       "Junyu Gao"
+    ]
+  },
+  {
+    "benchmark_name": "ChronoVision",
+    "category": "temporal_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "image",
+      "text"
+    ],
+    "task_types": [
+      "chronological reasoning",
+      "temporal judgment"
+    ],
+    "description": "A benchmark for evaluating chronological reasoning in VLMs through three specialized datasets with visually similar objects across historical durations. Designed to test whether models rely on genuine chronological features or superficial cues like color filters.",
+    "repo_links": [
+      "https://github.com/LuoRenqiang/ChronoVision"
+    ],
+    "paper_title": "Seeing Time: Benchmarking Chronological Reasoning and Shortcut Biases in Vision-Language Models",
+    "arxiv_id": "2606.05702",
+    "arxiv_url": "http://arxiv.org/abs/2606.05702v1",
+    "published": "2026-06-04",
+    "authors": [
+      "Haoyu Zhou",
+      "Qing Qing",
+      "Caichong Li",
+      "Qixin Zhang",
+      "Yongcheng Jing"
     ]
   },
   {
@@ -86072,6 +86181,88 @@
       "Yueling Hou",
       "Zihan Mei",
       "Can Zhang"
+    ]
+  },
+  {
+    "benchmark_name": "CausalPhys",
+    "category": "visual_reasoning",
+    "num_samples": "over 3,000",
+    "modalities": [
+      "video",
+      "image"
+    ],
+    "task_types": [
+      "Perception",
+      "Anticipation",
+      "Intervention",
+      "Goal Orientation"
+    ],
+    "description": "A benchmark for causal physical reasoning with video- and image-based questions spanning Perception, Anticipation, Intervention, and Goal Orientation. Each question includes expert-annotated causal graphs for evaluating causal understanding in VLMs.",
+    "repo_links": [],
+    "paper_title": "Causal Scaffolding for Physical Reasoning: A Benchmark for Causally-Informed Physical World Understanding in VLMs",
+    "arxiv_id": "2606.05966",
+    "arxiv_url": "http://arxiv.org/abs/2606.05966v1",
+    "published": "2026-06-04",
+    "authors": [
+      "Tianyi Tang",
+      "Zhuoyi Lin",
+      "Zeyu Feng",
+      "Tianyi Ma",
+      "Yew-Soon Ong"
+    ]
+  },
+  {
+    "benchmark_name": "UltraVR",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "ultra-resolution images"
+    ],
+    "task_types": [
+      "evidence grounding",
+      "local perception",
+      "quantification",
+      "evidence integration",
+      "decision inference"
+    ],
+    "description": "A diagnostic benchmark for evidence-grounded visual reasoning over ultra-resolution images spanning CCTV surveillance, remote sensing, pathology, and industrial anomaly detection. Features structured ground-truth chains of thought with step-level reasoning labels for process-level diagnosis.",
+    "repo_links": [],
+    "paper_title": "UltraVR: A Diagnostic Ultra-Resolution Image-VQA Benchmark for Evidence-Grounded Reasoning",
+    "arxiv_id": "2606.05576",
+    "arxiv_url": "http://arxiv.org/abs/2606.05576v1",
+    "published": "2026-06-04",
+    "authors": [
+      "Gexin Huang",
+      "Yanting Yang",
+      "Myeongkyun Kang",
+      "Beidi Zhao",
+      "Jun Zhou"
+    ]
+  },
+  {
+    "benchmark_name": "Novel Visual References Dataset (NVRD)",
+    "category": "visual_reasoning",
+    "num_samples": "19,176 images",
+    "modalities": [
+      "image",
+      "language"
+    ],
+    "task_types": [
+      "visual concept learning",
+      "novel reference mapping"
+    ],
+    "description": "A dataset of 19,176 images spanning 90 novel visual concepts with up to 20 perturbed versions each to study how VLMs map novel visual references to language. Comprises entirely novel, open-ended stimuli constructed from scratch for concept learning evaluation.",
+    "repo_links": [],
+    "paper_title": "Would you still call this Dax? Novel Visual References in VLMs and Humans",
+    "arxiv_id": "2606.05409",
+    "arxiv_url": "http://arxiv.org/abs/2606.05409v1",
+    "published": "2026-06-03",
+    "authors": [
+      "Ada Defne Tür",
+      "Gaurav Kamath",
+      "Joyce Chai",
+      "Siva Reddy",
+      "Benno Krojer"
     ]
   }
 ]
