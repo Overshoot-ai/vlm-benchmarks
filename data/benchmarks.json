@@ -7011,6 +7011,32 @@
     ]
   },
   {
+    "benchmark_name": "RealDocBench",
+    "category": "document_ocr",
+    "num_samples": 1356,
+    "modalities": [
+      "document images",
+      "text"
+    ],
+    "task_types": [
+      "field-level QA",
+      "layout understanding"
+    ],
+    "description": "A two-track benchmark built from real regulated documents with QA track containing 1,356 field-level questions over 581 documents and layout track with 1,500 human-verified page images. Evaluates document parsing systems on field-level accuracy rather than traditional OCR similarity scores.",
+    "repo_links": [],
+    "paper_title": "RealDocBench: A Benchmark for Field-Level QA and Layout Understanding on Real-World Regulated Documents",
+    "arxiv_id": "2606.07401",
+    "arxiv_url": "http://arxiv.org/abs/2606.07401v1",
+    "published": "2026-06-05",
+    "authors": [
+      "Ameya Joshi",
+      "Joon Kim",
+      "Gus Eggert",
+      "Joseph Bajor",
+      "Cindy Hao"
+    ]
+  },
+  {
     "benchmark_name": "EGONORMIA",
     "category": "egocentric_embodied",
     "num_samples": 1853,
@@ -13377,6 +13403,33 @@
       "Daniel Kilov",
       "Secil Yanik Guyot",
       "Zhuang Li"
+    ]
+  },
+  {
+    "benchmark_name": "FLIGHT",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "UAV camera feeds",
+      "natural language instructions"
+    ],
+    "task_types": [
+      "UAV navigation",
+      "instruction following",
+      "trajectory planning"
+    ],
+    "description": "A fine-grained long-horizon instruction-guided benchmark for hybrid UAV navigation and reasoning tasks with dense 6-DoF trajectory annotations. Features two dataset splits: Fine-grained VLN and Long-horizon Flow for continuous flight control.",
+    "repo_links": [],
+    "paper_title": "Think Like a Pilot: Fine-Grained Long-Horizon UAV Navigation",
+    "arxiv_id": "2606.06836",
+    "arxiv_url": "http://arxiv.org/abs/2606.06836v1",
+    "published": "2026-06-05",
+    "authors": [
+      "Xiangyi Zheng",
+      "Xiangyu Wang",
+      "Qinan Liao",
+      "Zimu Tang",
+      "Yue Liao"
     ]
   },
   {
@@ -22546,6 +22599,33 @@
       "Boyang Wang",
       "Qingyi Si",
       "Hongcheng Guo"
+    ]
+  },
+  {
+    "benchmark_name": "M³Exam",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "multimodal",
+      "conversational"
+    ],
+    "task_types": [
+      "conversational memory",
+      "cross-modal grounding",
+      "implicit information inference"
+    ],
+    "description": "A query-centric multimodal conversational memory benchmark built on realistic user-agent interactions. Evaluates cross-modal grounding and implicit information inference across multi-dimensional aspects.",
+    "repo_links": [],
+    "paper_title": "M$^3$Exam: Benchmarking Multimodal Memory for Realistic User-Agent Interactions",
+    "arxiv_id": "2606.07402",
+    "arxiv_url": "http://arxiv.org/abs/2606.07402v1",
+    "published": "2026-06-05",
+    "authors": [
+      "Zhengjun Huang",
+      "Wenxuan Liu",
+      "Zhoujin Tian",
+      "Wei Chen",
+      "Junle Chen"
     ]
   },
   {
@@ -42700,6 +42780,33 @@
     ]
   },
   {
+    "benchmark_name": "MMBU",
+    "category": "medical",
+    "num_samples": null,
+    "modalities": [
+      "biomedical images",
+      "text"
+    ],
+    "task_types": [
+      "ungrounded classification",
+      "grounded classification",
+      "object detection"
+    ],
+    "description": "The largest biomedical vision and language benchmark covering 35 submodalities with rich structured metadata. Includes ungrounded classification, grounded classification, and object detection tasks across diverse biomedical imaging contexts.",
+    "repo_links": [],
+    "paper_title": "MMBU: A Massive Multi-modal Biomedical Understanding Benchmark to Probe the Perception Capabilities of Vision-Language Models",
+    "arxiv_id": "2606.06696",
+    "arxiv_url": "http://arxiv.org/abs/2606.06696v1",
+    "published": "2026-06-04",
+    "authors": [
+      "Ryan D'Cunha",
+      "Alejandro Lozano",
+      "Xiaoxiao Sun",
+      "Daniel Vela Jarquin",
+      "Min Woo Sun"
+    ]
+  },
+  {
     "benchmark_name": "MIRB",
     "category": "multi_image",
     "num_samples": null,
@@ -62760,6 +62867,32 @@
       "Xiaoce Wang",
       "Haoran Liu",
       "Shiyao Cui"
+    ]
+  },
+  {
+    "benchmark_name": "SopriBench",
+    "category": "safety_bias",
+    "num_samples": 1569,
+    "modalities": [
+      "social media images",
+      "text",
+      "metadata"
+    ],
+    "task_types": [
+      "privacy leakage detection"
+    ],
+    "description": "A synthetic benchmark for user-level multimodal privacy leakage covering 50 user profiles and 1,569 images with comprehensive attributes. Introduces Privacy Exposure Score (PES) metric for evaluating cumulative privacy exposure across social media posts.",
+    "repo_links": [],
+    "paper_title": "What Your Posts Reveal: A Benchmark and Agentic Framework for User-Level Privacy Leakage on Social Media",
+    "arxiv_id": "2606.06784",
+    "arxiv_url": "http://arxiv.org/abs/2606.06784v1",
+    "published": "2026-06-05",
+    "authors": [
+      "Zifan Peng",
+      "Yini Huang",
+      "Aiwen Lu",
+      "Qiming Ye",
+      "Peixian Zhang"
     ]
   },
   {
@@ -86263,6 +86396,57 @@
       "Joyce Chai",
       "Siva Reddy",
       "Benno Krojer"
+    ]
+  },
+  {
+    "benchmark_name": "ZeroSight",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "video frames",
+      "text captions"
+    ],
+    "task_types": [
+      "composed image retrieval"
+    ],
+    "description": "A novel benchmark for Zero-Shot Composed Image Retrieval featuring consistent reference-target pairs sourced from videos published after March 2022. Ensures genuine zero-shot evaluation by using data not included in CLIP's pre-training.",
+    "repo_links": [
+      "https://github.com/sotayang/ZeroSight"
+    ],
+    "paper_title": "Never Seen Before: Benchmarking Genuine Zero-Shot Composed Image Retrieval with Consistent Video-Sourced Datasets",
+    "arxiv_id": "2606.07032",
+    "arxiv_url": "http://arxiv.org/abs/2606.07032v1",
+    "published": "2026-06-05",
+    "authors": [
+      "Zhenyu Yang",
+      "Zemin Du",
+      "Shengsheng Qian",
+      "Changsheng Xu"
+    ]
+  },
+  {
+    "benchmark_name": "WorldBench",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "text"
+    ],
+    "task_types": [
+      "multimodal reasoning"
+    ],
+    "description": "A challenging and visually diverse multimodal reasoning benchmark built on a taxonomy of thousands of visual concepts across multiple domains. Features manually designed challenging questions that frontier MLLMs fail to answer.",
+    "repo_links": [],
+    "paper_title": "WorldBench: A Challenging and Visually Diverse Multimodal Reasoning Benchmark",
+    "arxiv_id": "2606.06538",
+    "arxiv_url": "http://arxiv.org/abs/2606.06538v1",
+    "published": "2026-06-04",
+    "authors": [
+      "Yida Yin",
+      "Harish Krishnakumar",
+      "Chung Peng Lee",
+      "Boya Zeng",
+      "Wenhao Chai"
     ]
   }
 ]
