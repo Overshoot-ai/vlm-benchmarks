@@ -7037,6 +7037,62 @@
     ]
   },
   {
+    "benchmark_name": "TABVERSE",
+    "category": "document_ocr",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "Question Answering (QA)",
+      "Structural Understanding Capability (SUC)",
+      "Structure Reconstruction (SR)"
+    ],
+    "description": "A controlled multimodal table benchmark that aligns the same table content across multiple structural formats (HTML, Markdown, LaTeX) and rendered images with question category and difficulty tags. Enables systematic evaluation of representation effects while holding table content fixed.",
+    "repo_links": [],
+    "paper_title": "TABVERSE: Benchmarking Cross-Format Table Understanding in LLMs and VLMs",
+    "arxiv_id": "2606.09578",
+    "arxiv_url": "http://arxiv.org/abs/2606.09578v1",
+    "published": "2026-06-08",
+    "authors": [
+      "Momina Ahsan",
+      "Sarfraz Ahmad",
+      "Ming Shan Hee",
+      "Roy Ka-Wei Lee",
+      "Preslav Nakov"
+    ]
+  },
+  {
+    "benchmark_name": "MUDIDI",
+    "category": "document_ocr",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "OCR",
+      "dictionary digitization",
+      "lexicographic structure processing"
+    ],
+    "description": "A two-stage framework for multilingual dictionary digitization featuring human-annotated lexicographic entries from 30 public-domain dictionaries with diverse writing systems. Evaluates character recognition, markup preservation, and dictionary entry segmentation with mapping to machine-readable schema.",
+    "repo_links": [
+      "https://github.com/DavidSamuell/MUDIDI-Pipeline-for-Digitization-of-Multilingual-Dictionary/"
+    ],
+    "paper_title": "MUDIDI: A Two-Stage Framework for Multilingual Dictionary Digitization with Language Models",
+    "arxiv_id": "2606.09435",
+    "arxiv_url": "http://arxiv.org/abs/2606.09435v1",
+    "published": "2026-06-08",
+    "authors": [
+      "David Setiawan",
+      "Temuulen Khishigsuren",
+      "Milind Agarwal",
+      "Pagnarith Pit",
+      "Aso Mahmudi"
+    ]
+  },
+  {
     "benchmark_name": "EGONORMIA",
     "category": "egocentric_embodied",
     "num_samples": 1853,
@@ -22629,6 +22685,88 @@
     ]
   },
   {
+    "benchmark_name": "OmniGameArena",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "game playing",
+      "interactive environments",
+      "reflection-based improvement"
+    ],
+    "description": "A real-time benchmark of twelve Unreal Engine 5 games spanning Solo, PvP, and Coop modes with unified action interfaces for evaluating VLM game agents. Features the Improvement Dynamics Curve (IDC) harness that uses reflector LLMs to autonomously refine agent skills across multiple rounds.",
+    "repo_links": [],
+    "paper_title": "OmniGameArena: A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics",
+    "arxiv_id": "2606.09826",
+    "arxiv_url": "http://arxiv.org/abs/2606.09826v1",
+    "published": "2026-06-08",
+    "authors": [
+      "Mingxian Lin",
+      "Shengju Qian",
+      "Yuqi Liu",
+      "Yi-Hua Huang",
+      "Yiyu Wang"
+    ]
+  },
+  {
+    "benchmark_name": "H2HMem",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "audio",
+      "text"
+    ],
+    "task_types": [
+      "memory recall",
+      "reasoning",
+      "application"
+    ],
+    "description": "A Human-to-Human Multimodal Memory Benchmark for evaluating memory capabilities in complex human-human interactions. Includes both dyadic and multi-party conversations with multimodal information streams, evaluating agents along memory recall, reasoning, and application dimensions.",
+    "repo_links": [],
+    "paper_title": "H2HMem: A Multimodal Memory Benchmark for Agents in Human-Human Interactions",
+    "arxiv_id": "2606.09461",
+    "arxiv_url": "http://arxiv.org/abs/2606.09461v1",
+    "published": "2026-06-08",
+    "authors": [
+      "Shiping Zhu",
+      "Yibo Yang",
+      "Zhengyang Wang",
+      "Tiancheng Shen",
+      "Dandan Guo"
+    ]
+  },
+  {
+    "benchmark_name": "ChinaHeritaQA",
+    "category": "general_multimodal",
+    "num_samples": 14133,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "cultural reasoning",
+      "visual question answering",
+      "heritage analysis"
+    ],
+    "description": "A multimodal benchmark dataset for evaluating cultural reasoning abilities of vision-language models on UNESCO World Heritage sites in China. Comprises 2,279 in-the-wild images paired with 14,133 bilingual multiple-choice QA pairs spanning seven cognitive dimensions.",
+    "repo_links": [],
+    "paper_title": "ChinaHeritaQA: A Culturally-Grounded Visual Question Answering Dataset for World Heritage Sites in China",
+    "arxiv_id": "2606.08959",
+    "arxiv_url": "http://arxiv.org/abs/2606.08959v1",
+    "published": "2026-06-08",
+    "authors": [
+      "Yi Zhang",
+      "Bolei Ma",
+      "Yong Cao",
+      "Chengyan Wu",
+      "Daniel Hershcovich"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -36470,6 +36608,33 @@
     ]
   },
   {
+    "benchmark_name": "Sci-Rho",
+    "category": "math_science",
+    "num_samples": 42420,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "STEM reasoning",
+      "mathematical problem solving",
+      "visual grounding"
+    ],
+    "description": "A dynamic multilingual benchmark for visually-grounded STEM problems spanning five subjects and seven languages, comprising 4,242 problem templates crafted by domain experts. Each template generates diverse problem instances by varying numerical values, visual patterns, geometric shapes, and other parameters.",
+    "repo_links": [],
+    "paper_title": "Sci-Rho: A Multilingual Visually-Grounded Symbolic Benchmark for STEM Problems",
+    "arxiv_id": "2606.08034",
+    "arxiv_url": "http://arxiv.org/abs/2606.08034v1",
+    "published": "2026-06-06",
+    "authors": [
+      "Muhammad Falensi Azmi",
+      "Ikhlasul Akmal Hanif",
+      "Vallerie Alexandra Putra",
+      "Adi Yeltay",
+      "Abdullah Mubarak"
+    ]
+  },
+  {
     "benchmark_name": "MultiMedEval",
     "category": "medical",
     "num_samples": null,
@@ -43585,6 +43750,33 @@
       "Yiming Du",
       "Zhongwei Xie",
       "Chi Liu"
+    ]
+  },
+  {
+    "benchmark_name": "IMUG-Bench",
+    "category": "multi_image",
+    "num_samples": 3113,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "multi-turn dialogue",
+      "image-text generation",
+      "understanding"
+    ],
+    "description": "A comprehensive benchmark for multi-turn interleaved image-text dialogue of unified multimodal models that jointly evaluates understanding and generation capabilities. Comprises three classes with 3,113 samples and 12,034 interaction turns including dynamic understanding questions.",
+    "repo_links": [],
+    "paper_title": "IMUG-Bench: Benchmarking Unified Multimodal Models on Interleaved Understanding and Generation",
+    "arxiv_id": "2606.09169",
+    "arxiv_url": "http://arxiv.org/abs/2606.09169v1",
+    "published": "2026-06-08",
+    "authors": [
+      "Lingyi Meng",
+      "Zecong Tang",
+      "Haoran Li",
+      "Tengju Ru",
+      "Zhejun Cui"
     ]
   },
   {
@@ -56165,6 +56357,88 @@
     ]
   },
   {
+    "benchmark_name": "Popcorn",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text",
+      "audio"
+    ],
+    "task_types": [
+      "recommendation",
+      "multimodal fusion"
+    ],
+    "description": "A configurable benchmark for visual evidence in multimodal movie recommendation that combines full-movie/trailer embeddings with MovieLens-linked thumbnail features. Standardizes modality assembly, fusion, splitting, evaluation, and LLM-augmented metadata through a single configuration contract.",
+    "repo_links": [
+      "https://github.com/RecSys-lab/Popcorn"
+    ],
+    "paper_title": "Popcorn: A Configurable Benchmark for Visual Evidence in Multimodal Movie Recommendation",
+    "arxiv_id": "2606.09595",
+    "arxiv_url": "http://arxiv.org/abs/2606.09595v1",
+    "published": "2026-06-08",
+    "authors": [
+      "Ali Tourani",
+      "Fatemeh Nazary",
+      "Yashar Deldjoo",
+      "Tommaso Di Noia"
+    ]
+  },
+  {
+    "benchmark_name": null,
+    "category": "other",
+    "num_samples": 122,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "visual question answering",
+      "evidence identification",
+      "multi-view reasoning"
+    ],
+    "description": "A multi-view visual question answering benchmark for evaluating evidence-source identification in autonomous driving scenarios. Contains 122 conflict-centric question-answer pairs from 73 NuScenes scenes spanning causality, counterfactual reasoning, and intent prediction.",
+    "repo_links": [],
+    "paper_title": "Where Does the Answer Come From? Benchmarking View-Level Visual Evidence Identification in Multi-View MLLMs for Autonomous Driving",
+    "arxiv_id": "2606.09644",
+    "arxiv_url": "http://arxiv.org/abs/2606.09644v1",
+    "published": "2026-06-08",
+    "authors": [
+      "Yimu Wang",
+      "Yee Man Choi",
+      "Barry Zhang",
+      "Mozhgan Nasr Azadani",
+      "Sean Sedwards"
+    ]
+  },
+  {
+    "benchmark_name": "DriveReward",
+    "category": "other",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "trajectory evaluation",
+      "driving behavior assessment",
+      "reward modeling"
+    ],
+    "description": "A comprehensive reasoning trajectory evaluation dataset for autonomous driving rigorously labeled via temporally-grounded visual guidance and augmented with counterfactual driving behaviors. Features a specialized Vision-Language Reward Model for trajectory scoring and RL finetuning.",
+    "repo_links": [],
+    "paper_title": "DriveReward: A Comprehensive Dataset and Generative Vision-Language Reward Model for Autonomous Driving",
+    "arxiv_id": "2606.08525",
+    "arxiv_url": "http://arxiv.org/abs/2606.08525v1",
+    "published": "2026-06-07",
+    "authors": [
+      "Qimao Chen",
+      "Fang Li",
+      "Yuechen Luo",
+      "Zehan Zhang",
+      "Haiyang Sun"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "quality_aesthetics",
     "num_samples": 1000000,
@@ -62896,6 +63170,34 @@
     ]
   },
   {
+    "benchmark_name": "MLingualFC",
+    "category": "safety_bias",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "jailbreak evaluation",
+      "safety assessment",
+      "multilingual robustness"
+    ],
+    "description": "A multilingual multimodal benchmark designed to evaluate jailbreak vulnerabilities of VLMs across diverse languages using structured flowchart representations. Encodes harmful instructions into flowchart images across five languages under a black-box threat model.",
+    "repo_links": [
+      "https://github.com/Rishabhpm23/MLingualFC"
+    ],
+    "paper_title": "MLingualFC: Evaluating Jailbreak Vulnerabilities in Multilingual Vision-Language Models",
+    "arxiv_id": "2606.07706",
+    "arxiv_url": "http://arxiv.org/abs/2606.07706v1",
+    "published": "2026-06-05",
+    "authors": [
+      "Rishabh Makwana",
+      " Mamta",
+      "Deeksha Varshney",
+      "Oana Cocarascu"
+    ]
+  },
+  {
     "benchmark_name": "SRBench",
     "category": "spatial_3d",
     "num_samples": null,
@@ -67507,6 +67809,58 @@
       "Haopeng Sun",
       "Wentao Liu",
       "Chen Qian"
+    ]
+  },
+  {
+    "benchmark_name": "Guide Me Out",
+    "category": "spatial_3d",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "spatial guidance",
+      "crisis communication",
+      "evacuation planning"
+    ],
+    "description": "A benchmarking framework for evaluating Vision-Language Models tasked with guiding civilian agents through simulated evacuations. Tests communication strategies, environment representations, and threat behaviors across nine maps of varying structural complexity.",
+    "repo_links": [],
+    "paper_title": "Guide Me Out: A Framework to Benchmark VLM Operators Communication in Crisis Scenarios",
+    "arxiv_id": "2606.09428",
+    "arxiv_url": "http://arxiv.org/abs/2606.09428v1",
+    "published": "2026-06-08",
+    "authors": [
+      "Giacomo Gonella",
+      "Stefano Menini",
+      "Marco Guerini"
+    ]
+  },
+  {
+    "benchmark_name": "SpatialWorld",
+    "category": "spatial_3d",
+    "num_samples": 760,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "spatial reasoning",
+      "interactive tasks",
+      "real-world simulation"
+    ],
+    "description": "A unified benchmark for evaluating interactive spatial understanding of multimodal agents in complex real-world tasks. Features 760 human-annotated tasks across diverse domains with eight heterogeneous simulation backends under a shared, simulator-agnostic protocol.",
+    "repo_links": [],
+    "paper_title": "SpatialWorld: Benchmarking Interactive Spatial Reasoning of Multimodal Agents in Real-World Tasks",
+    "arxiv_id": "2606.09669",
+    "arxiv_url": "http://arxiv.org/abs/2606.09669v1",
+    "published": "2026-06-08",
+    "authors": [
+      "Hongcheng Gao",
+      "Hailong Qu",
+      "Jingyi Tang",
+      "Jiahao Wang",
+      "Zihao Huang"
     ]
   },
   {
@@ -77575,6 +77929,34 @@
     ]
   },
   {
+    "benchmark_name": "OmniCap-IF",
+    "category": "video_understanding",
+    "num_samples": 1920,
+    "modalities": [
+      "vision",
+      "audio",
+      "text"
+    ],
+    "task_types": [
+      "instruction following",
+      "omni-modal captioning",
+      "temporal grounding"
+    ],
+    "description": "The first comprehensive benchmark specifically designed to evaluate instruction-following capabilities in omni-modal captioning. Incorporates 50 distinct constraint types across pure visual, pure audio, and audio-visual modalities with temporal grounding assessment.",
+    "repo_links": [],
+    "paper_title": "OmniCap-IF: Benchmarking and Improving Instruction Following Abilities for Omni-Video Captioning",
+    "arxiv_id": "2606.08572",
+    "arxiv_url": "http://arxiv.org/abs/2606.08572v1",
+    "published": "2026-06-07",
+    "authors": [
+      "Jiahao Wang",
+      "An Ping",
+      "Yanghai Wang",
+      "Yuanxing Zhang",
+      "Shihao Li"
+    ]
+  },
+  {
     "benchmark_name": "GraphVLM",
     "category": "visual_reasoning",
     "num_samples": null,
@@ -86447,6 +86829,63 @@
       "Chung Peng Lee",
       "Boya Zeng",
       "Wenhao Chai"
+    ]
+  },
+  {
+    "benchmark_name": "Distract-Bench",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "robustness evaluation",
+      "visual reasoning",
+      "distraction handling"
+    ],
+    "description": "A benchmark for evaluating VLM robustness to semantic visual distractions, defined as meaningful but task-irrelevant visual cues added to inputs while preserving ground-truth answers. Exposes robustness failures distinct from vision corruptions by testing reasoning with plausible but irrelevant evidence.",
+    "repo_links": [
+      "https://github.com/Yizheng-Sun/Distract-Bench"
+    ],
+    "paper_title": "Are Reasoning Vision-Language Models Robust to Semantic Visual Distractions?",
+    "arxiv_id": "2606.08894",
+    "arxiv_url": "http://arxiv.org/abs/2606.08894v1",
+    "published": "2026-06-08",
+    "authors": [
+      "Yizheng Sun",
+      "Mochuan Zhan",
+      "Yanan Ma",
+      "Jia Tong See",
+      "Yifan Wang"
+    ]
+  },
+  {
+    "benchmark_name": "FineSightBench",
+    "category": "visual_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "text"
+    ],
+    "task_types": [
+      "fine-grained perception",
+      "pixel-level recognition",
+      "spatial reasoning",
+      "counting"
+    ],
+    "description": "A benchmark that systematically probes fine-grained visual perception limits in VLMs by separating perception tasks from reasoning tasks across controlled scales of 4-48px. Reveals sharp dissociation between perception capabilities and reasoning performance at small scales.",
+    "repo_links": [],
+    "paper_title": "The Last Visible Pixel: Probing Fine-Scale Perception in Vision-Language Models",
+    "arxiv_id": "2606.07861",
+    "arxiv_url": "http://arxiv.org/abs/2606.07861v1",
+    "published": "2026-06-05",
+    "authors": [
+      "Lujun Li",
+      "Lama Sleem",
+      "Niccolo Gentile",
+      "Yangjie Xu",
+      "Yewei Song"
     ]
   }
 ]
