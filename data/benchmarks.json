@@ -36635,6 +36635,32 @@
     ]
   },
   {
+    "benchmark_name": "EngVQA",
+    "category": "math_science",
+    "num_samples": 696,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "engineering reasoning",
+      "technical diagram interpretation",
+      "multi-step reasoning"
+    ],
+    "description": "A multimodal benchmark for evaluating engineering reasoning across 5 engineering subjects containing 696 problems. Features an 8-stage automatic evaluation framework that independently evaluates each stage of VLM-generated solutions for fine-grained analysis of reasoning failures.",
+    "repo_links": [],
+    "paper_title": "Do VLMs Reason Like Engineers? A Benchmark and a Stage-wise Evaluation",
+    "arxiv_id": "2606.10833",
+    "arxiv_url": "http://arxiv.org/abs/2606.10833v1",
+    "published": "2026-06-09",
+    "authors": [
+      "Syed Wasiq",
+      "Syed Mohamad Tawseeq",
+      "Yashwant Pravinrao Bangde",
+      "Debaditya Roy"
+    ]
+  },
+  {
     "benchmark_name": "MultiMedEval",
     "category": "medical",
     "num_samples": null,
@@ -67864,6 +67890,62 @@
     ]
   },
   {
+    "benchmark_name": "DB-3DME",
+    "category": "spatial_3d",
+    "num_samples": 2619,
+    "modalities": [
+      "3D mesh",
+      "language"
+    ],
+    "task_types": [
+      "3D mesh evaluation",
+      "geometry assessment",
+      "prompt adherence"
+    ],
+    "description": "Dataset and Benchmark for 3D Mesh Evaluation containing 2,619 synthetic 3D meshes paired with human ratings on Geometry and Prompt Adherence. Systematically benchmarks VLMs for human-aligned 3D mesh evaluation performance.",
+    "repo_links": [],
+    "paper_title": "DB-3DME: From Dataset to Benchmark for Human-aligned Automatic 3D Mesh Evaluation",
+    "arxiv_id": "2606.10142",
+    "arxiv_url": "http://arxiv.org/abs/2606.10142v1",
+    "published": "2026-06-08",
+    "authors": [
+      "Nanshan Jia",
+      "Zhenyu Zhao",
+      "Sui Huang",
+      "Jingshen Wang",
+      "Zeyu Zheng"
+    ]
+  },
+  {
+    "benchmark_name": "P3D-Bench",
+    "category": "spatial_3d",
+    "num_samples": 1003,
+    "modalities": [
+      "vision",
+      "language",
+      "3D"
+    ],
+    "task_types": [
+      "Text-to-3D",
+      "Image-to-3D",
+      "Assembly-3D",
+      "parametric 3D generation"
+    ],
+    "description": "A benchmark for parametric 3D generation covering three task families (Text-to-3D, Image-to-3D and Assembly-3D) with 400 text cases, 400 image cases and 203 annotated assemblies. Evaluates MLLMs' ability to generate parametric 3D programs that are geometrically precise, semantically aligned and assembly-consistent.",
+    "repo_links": [],
+    "paper_title": "P3D-Bench: Benchmarking MLLMs for Parametric 3D Generation and Structural Reasoning",
+    "arxiv_id": "2606.11152",
+    "arxiv_url": "http://arxiv.org/abs/2606.11152v1",
+    "published": "2026-06-09",
+    "authors": [
+      "Yikang Yang",
+      "Zhanpeng Hu",
+      "Youtian Lin",
+      "Mengqi Zhou",
+      "Jingxi Xu"
+    ]
+  },
+  {
     "benchmark_name": "Temporally-Grounded Language Generation (TGLG)",
     "category": "streaming_video",
     "num_samples": null,
@@ -70349,6 +70431,30 @@
       "Caichong Li",
       "Qixin Zhang",
       "Yongcheng Jing"
+    ]
+  },
+  {
+    "benchmark_name": "ImageTime",
+    "category": "temporal_reasoning",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "spatiotemporal consistency",
+      "visual world modeling",
+      "temporal ordering"
+    ],
+    "description": "A diagnostic benchmark that uses spatiotemporal consistency as a behavioral probe of visual world modeling in image generation. Models must generate one image containing four ordered key states: initial state, action onset, transition state, and final state from action instructions.",
+    "repo_links": [],
+    "paper_title": "Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency",
+    "arxiv_id": "2606.10620",
+    "arxiv_url": "http://arxiv.org/abs/2606.10620v1",
+    "published": "2026-06-09",
+    "authors": [
+      "Xinrui Wu",
+      "Lichen Huang"
     ]
   },
   {
@@ -86886,6 +86992,31 @@
       "Niccolo Gentile",
       "Yangjie Xu",
       "Yewei Song"
+    ]
+  },
+  {
+    "benchmark_name": null,
+    "category": "visual_reasoning",
+    "num_samples": 540,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "visual reasoning",
+      "textual-prior evaluation"
+    ],
+    "description": "A 540-image benchmark across six reasoning categories with four question variants per image to measure VLMs' reliance on textual priors versus image content. Uses phrasing as the controlled variable to isolate textual-prior behavior.",
+    "repo_links": [],
+    "paper_title": "Do Vision-Language Models See or Guess? Measuring and Reducing Textual-Prior Reliance with a Phrasing-Controlled Benchmark",
+    "arxiv_id": "2606.10400",
+    "arxiv_url": "http://arxiv.org/abs/2606.10400v1",
+    "published": "2026-06-09",
+    "authors": [
+      "Pratham Singla",
+      "Shivank Garg",
+      "Vihan Singh",
+      "Paras Chopra"
     ]
   }
 ]

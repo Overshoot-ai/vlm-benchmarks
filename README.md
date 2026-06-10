@@ -1,6 +1,6 @@
 # VLM Benchmarks
 
-A comprehensive, auto-updating catalog of **3,172 benchmarks** for evaluating Vision-Language Models (VLMs), Multimodal LLMs, and Video Understanding models.
+A comprehensive, auto-updating catalog of **3,177 benchmarks** for evaluating Vision-Language Models (VLMs), Multimodal LLMs, and Video Understanding models.
 
 Updated daily via automated arXiv scanning.
 
