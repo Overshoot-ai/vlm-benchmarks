@@ -1612,6 +1612,33 @@
     ]
   },
   {
+    "benchmark_name": "RAIL",
+    "category": "audio_visual",
+    "num_samples": null,
+    "modalities": [
+      "audio",
+      "text"
+    ],
+    "task_types": [
+      "audio perception",
+      "audio reasoning",
+      "memory"
+    ],
+    "description": "Human-centric evaluation paradigm grounded in the Cattell-Horn-Carroll (CHC) cognitive framework for auditory intelligence. Formalizes auditory cognition into five core capabilities with structured evaluation tasks that probe how models process, retain, and integrate auditory information.",
+    "repo_links": [],
+    "paper_title": "RAIL: Rethinking Auditory Intelligence in Large Audio-Language Models with a CHC-Grounded Benchmark",
+    "arxiv_id": "2606.11260",
+    "arxiv_url": "http://arxiv.org/abs/2606.11260v1",
+    "published": "2026-06-09",
+    "authors": [
+      "Hongyu Jin",
+      "Siyi Wang",
+      "Yang Xiao",
+      "Jiaheng Dong",
+      "Shihong Tan"
+    ]
+  },
+  {
     "benchmark_name": "ChartAB",
     "category": "chart_figure",
     "num_samples": null,
@@ -13486,6 +13513,33 @@
       "Qinan Liao",
       "Zimu Tang",
       "Yue Liao"
+    ]
+  },
+  {
+    "benchmark_name": "WorldTasks-Benchmark",
+    "category": "egocentric_embodied",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "task solving",
+      "planning",
+      "decision making"
+    ],
+    "description": "Benchmark for evaluating world models' task-solving abilities through self-distillation and reinforcement learning. Tests ability to generate task solutions from unlabeled scene images with short task prompts, focusing on instruction-conditioned task solving without curated supervision.",
+    "repo_links": [],
+    "paper_title": "World Model Self-Distillation: Training World Models to Solve General Tasks",
+    "arxiv_id": "2606.12072",
+    "arxiv_url": "http://arxiv.org/abs/2606.12072v1",
+    "published": "2026-06-10",
+    "authors": [
+      "Sebastian Stapf",
+      "Pablo Acuaviva Huertos",
+      "Aram Davtyan",
+      "Paolo Favaro"
     ]
   },
   {
@@ -42998,6 +43052,68 @@
     ]
   },
   {
+    "benchmark_name": "MedCTA",
+    "category": "medical",
+    "num_samples": 107,
+    "modalities": [
+      "images",
+      "text",
+      "radiology",
+      "pathology"
+    ],
+    "task_types": [
+      "tool use",
+      "clinical decision making"
+    ],
+    "description": "First benchmark for evaluating medical tool agents on clinician-validated, step-implicit tasks with realistic multimodal clinical inputs including radiology images, pathology slides, and reports. Supports process-aware evaluation of tool selection, argument validity, execution stability, trajectory fidelity, and outcome quality.",
+    "repo_links": [
+      "https://github.com/IVUL-KAUST/MedCTA",
+      "https://huggingface.co/datasets/IVUL-KAUST/MedCTA",
+      "https://ivul-kaust.github.io/MedCTA/"
+    ],
+    "paper_title": "MedCTA: A Benchmark for Clinical Tool Agents",
+    "arxiv_id": "2606.11702",
+    "arxiv_url": "http://arxiv.org/abs/2606.11702v1",
+    "published": "2026-06-10",
+    "authors": [
+      "Tajamul Ashraf",
+      "Hyewon Jeong",
+      "Fida Mohammad Thoker",
+      "Bernard Ghanem"
+    ]
+  },
+  {
+    "benchmark_name": "OpenMedReason-Bench",
+    "category": "medical",
+    "num_samples": null,
+    "modalities": [
+      "images",
+      "text",
+      "medical scans",
+      "microscopic images"
+    ],
+    "task_types": [
+      "medical reasoning",
+      "visual question answering"
+    ],
+    "description": "Held-out benchmark enabling fine-grained evaluation of large vision-language models along three complementary axes: perception, medical knowledge, and rationale. Covers diverse medical domain vision modalities including radiological scans, microscopic images, visible light photographs, and charts.",
+    "repo_links": [
+      "https://huggingface.co/datasets/neginb/OpenMedReason",
+      "huggingface.co/datasets/neginb/OpenMedReason"
+    ],
+    "paper_title": "OpenMedReason: Scientific Reasoning Supervision for Medical Vision-Language Models",
+    "arxiv_id": "2606.12169",
+    "arxiv_url": "http://arxiv.org/abs/2606.12169v1",
+    "published": "2026-06-10",
+    "authors": [
+      "Negin Baghbanzadeh",
+      "Pritam Sarkar",
+      "Michael Colacci",
+      "Abeer Badawi",
+      "Adibvafa Fallahpour"
+    ]
+  },
+  {
     "benchmark_name": "MIRB",
     "category": "multi_image",
     "num_samples": null,
@@ -70455,6 +70571,30 @@
     "authors": [
       "Xinrui Wu",
       "Lichen Huang"
+    ]
+  },
+  {
+    "benchmark_name": "ExtremeWhenBench",
+    "category": "temporal_reasoning",
+    "num_samples": 2273,
+    "modalities": [
+      "video",
+      "text"
+    ],
+    "task_types": [
+      "temporal grounding"
+    ],
+    "description": "First open hour-scale temporal grounding benchmark focusing on natural-language queries over extremely long videos (mean 75.7 min, max 9 hr). Tests the hypothesis that hour-scale grounding is primarily a search problem rather than recognition, with open-form query distribution.",
+    "repo_links": [
+      "https://github.com/naver-ai/ExtremeWhenBench"
+    ],
+    "paper_title": "Natural-Language Temporal Grounding in Hour-Long Videos is a Search Problem: A Benchmark and Empirical Decomposition",
+    "arxiv_id": "2606.12300",
+    "arxiv_url": "http://arxiv.org/abs/2606.12300v1",
+    "published": "2026-06-10",
+    "authors": [
+      "Sukmin Seo",
+      "Geewook Kim"
     ]
   },
   {
