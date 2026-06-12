@@ -13543,6 +13543,41 @@
     ]
   },
   {
+    "benchmark_name": "RoboProcessBench",
+    "category": "egocentric_embodied",
+    "num_samples": 58000,
+    "modalities": [
+      "vision",
+      "language",
+      "robotics"
+    ],
+    "task_types": [
+      "static monitoring",
+      "dynamic reasoning",
+      "phase detection",
+      "contact analysis",
+      "motion tracking",
+      "coordination assessment",
+      "progress monitoring",
+      "temporal ordering"
+    ],
+    "description": "A benchmark for process-aware understanding in vision-language robotic manipulation, decomposing capability into static monitoring and dynamic reasoning through 12 diagnostic question families. Built from physically grounded execution traces across 260 manipulation tasks with question-answer pairs covering phase, contact, motion, coordination, and temporal aspects.",
+    "repo_links": [
+      "https://processbench-2026.github.io"
+    ],
+    "paper_title": "RoboProcessBench: Benchmarking Process-Aware Understanding in Vision-Language Robotic Manipulation",
+    "arxiv_id": "2606.13040",
+    "arxiv_url": "http://arxiv.org/abs/2606.13040v1",
+    "published": "2026-06-11",
+    "authors": [
+      "Dayu Xia",
+      "Yue Shi",
+      "Yao Mu",
+      "Huiting Ji",
+      "Chaofan Ma"
+    ]
+  },
+  {
     "benchmark_name": null,
     "category": "general_multimodal",
     "num_samples": null,
@@ -22821,6 +22856,35 @@
     ]
   },
   {
+    "benchmark_name": "MLUBench",
+    "category": "general_multimodal",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "lifelong unlearning",
+      "data removal",
+      "multimodal alignment preservation"
+    ],
+    "description": "A large-scale and comprehensive benchmark featuring 127 entities across 9 classes under lifelong unlearning requests for multimodal large language models. Designed to capture the complexities of MLLM lifelong unlearning where data owners request sequential removal of specific content over time.",
+    "repo_links": [
+      "https://github.com/lihe-maxsize/Lifelong_Unlearning_main"
+    ],
+    "paper_title": "MLUBench: A Benchmark for Lifelong Unlearning Evaluation in MLLMs",
+    "arxiv_id": "2606.12809",
+    "arxiv_url": "http://arxiv.org/abs/2606.12809v1",
+    "published": "2026-06-11",
+    "authors": [
+      "He Li",
+      "Haoang Chi",
+      "Qizhou Wang",
+      "Yunxin Mao",
+      "Zhiheng Zhang"
+    ]
+  },
+  {
     "benchmark_name": "CLeaRS",
     "category": "geospatial",
     "num_samples": 207000,
@@ -29845,6 +29909,62 @@
     ]
   },
   {
+    "benchmark_name": "UXBench",
+    "category": "gui_web_agent",
+    "num_samples": 2000,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "layout analysis",
+      "visual hierarchy assessment",
+      "content consistency evaluation",
+      "UI reasoning"
+    ],
+    "description": "A multimodal benchmark consisting of VQA data samples designed to assess MLLMs' ability to perform UI-based reasoning for user experience evaluation. Includes 8 tasks based on real-world UI screenshots requiring fine-grained diagnosis of UX issues across layout relationships, visual hierarchy, and content consistency.",
+    "repo_links": [],
+    "paper_title": "Reasoning for Mobile User Experience with Multimodal LLMs: Task, Benchmark, and Approach",
+    "arxiv_id": "2606.13192",
+    "arxiv_url": "http://arxiv.org/abs/2606.13192v1",
+    "published": "2026-06-11",
+    "authors": [
+      "Ruichao Mao",
+      "Zhou Fang",
+      "Teng Guo",
+      "Hao Yang",
+      "Yaping Li"
+    ]
+  },
+  {
+    "benchmark_name": "Chinese Mobile Screen Teach Benchmark",
+    "category": "gui_web_agent",
+    "num_samples": null,
+    "modalities": [
+      "vision",
+      "language",
+      "mobile screens"
+    ],
+    "task_types": [
+      "operational knowledge extraction",
+      "screen trajectory analysis",
+      "mobile GUI understanding"
+    ],
+    "description": "A novel benchmark for fine-grained evaluation of mobile screen trajectory understanding and operational knowledge extraction. Designed to evaluate models' ability to convert visual state transitions into operational knowledge through step-wise analysis of mobile demonstrations.",
+    "repo_links": [],
+    "paper_title": "Teach-and-Repeat: Accurately Extracting Operational Knowledge from Mobile Screen Demonstrations to Empower GUI Agents",
+    "arxiv_id": "2606.12817",
+    "arxiv_url": "http://arxiv.org/abs/2606.12817v1",
+    "published": "2026-06-11",
+    "authors": [
+      "Yudong Zhang",
+      "Lei Hu",
+      "Daoyang Liu",
+      "Jiawei Liu",
+      "Yangfan Luo"
+    ]
+  },
+  {
     "benchmark_name": "DeCapBench",
     "category": "hallucination",
     "num_samples": null,
@@ -31949,6 +32069,36 @@
       "Lihua Zhang",
       "Zhiqiang Wang",
       "Yuhang Lu"
+    ]
+  },
+  {
+    "benchmark_name": "SalArt-VQA",
+    "category": "hallucination",
+    "num_samples": 3681,
+    "modalities": [
+      "vision",
+      "language"
+    ],
+    "task_types": [
+      "presence detection",
+      "semantic localization",
+      "spatial grounding",
+      "defect identification"
+    ],
+    "description": "A diagnostic benchmark for fine-grained salient artifact understanding in AI-generated images, containing 950 images and human-authored multiple-choice questions. Evaluates presence detection, semantic localization, spatial grounding, and evidence-grounded defect identification across artifact images and reference splits.",
+    "repo_links": [
+      "https://huggingface.co/datasets/salartvqa/SalArt-VQA"
+    ],
+    "paper_title": "SalArt-VQA: Diagnosing Whether VLMs Understand Salient Artifacts in Generated Images",
+    "arxiv_id": "2606.12671",
+    "arxiv_url": "http://arxiv.org/abs/2606.12671v1",
+    "published": "2026-06-10",
+    "authors": [
+      "Xiaoxiao Sun",
+      "Ruotian Zhang",
+      "Junzhe Huang",
+      "James Burgess",
+      "Serena Yeung-Levy"
     ]
   },
   {
